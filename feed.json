@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-25",
- "generated_at": "2026-11-25T10:32:55Z",
+ "generated_at": "2026-11-25T16:05:18Z",
  "items": {
   "bluesky": [
    {
@@ -137,43 +137,44 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "One tag adds up across projects",
-    "name": "MoneyTag: Income & Expense",
-    "title": "One tag adds up across projects | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#SideHustle",
-     "#Projects",
-     "#MoneyTag"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #MoneyTag",
-    "button": "Get it on the App Store",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
     "variant": "b",
-    "alt": "MoneyTag: Income & Expense — One tag adds up across projects — Net result, month by month — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
@@ -222,48 +223,25 @@
     "slot": 15
    },
    {
-    "kind": "clip",
-    "key": "studydown/en",
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-25",
     "locale": "en",
-    "app": "studydown",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ginoyv.mp4",
-    "hook": "Tap start, then flip it face down",
-    "name": "Studydown: Face-Down Timer",
-    "title": "Tap start, then flip it face down | Face-down activity time ledger | Studydown",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261125.jpg",
+    "caption": "Thanksgiving 1 days to go\nPlan the menu backwards\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards",
+    "title": "Thanksgiving 1 days to go",
+    "alt": "CountDaysNow — Thanksgiving 1 days to go — Plan the menu backwards — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 1 days to go",
     "tags": [
-     "#FaceDownTimer",
-     "#FacedownActivityTimeLedger",
-     "#StudyTimer",
-     "#FocusTimer",
-     "#Studydown"
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
     ],
-    "caption": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #Studydown",
     "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Studydown: Face-Down Timer — Tap start, then flip it face down — See your week add up — Face-down activity time ledger",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6807335593?action=write-review"
-    },
-    "keywords": [
-     "study",
-     "focus",
-     "flip",
-     "productivity",
-     "hours",
-     "exam"
-    ],
-    "keyline": "Face-down activity time ledger",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "5c7b92390f83895f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -285,370 +263,6 @@
     "button": "在 App Store 下載",
     "store": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimission"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/claudeusagemini-en-pain-20261022",
-    "locale": "en",
-    "app": "claudeusagemini",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/05.jpg"
-    ],
-    "caption": "AI limit hit mid-task again?\n\nClaude, Codex, Copilot & Gemini\nSearch “UsageNow” on the App Store\n\n#AIUsageTracker #Developer #Coding",
-    "title": "AI limit hit mid-task again?",
-    "alt": "AI limit hit mid-task again? | Claude, Codex, Copilot & Gemini | What's left & when it resets | UsageNow: AI Usage Tracker / Claude, Codex & Copilot Limits / Search “UsageNow” on the App Store",
-    "name": "UsageNow: AI Usage Tracker",
-    "hook": "AI limit hit mid-task again?",
-    "tags": [
-     "#AIUsageTracker",
-     "#Developer",
-     "#Coding"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/lumiweather-en-pain-20261022",
-    "locale": "en",
-    "app": "lumiweather",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Need sunscreen today?\n\nIt tells you what to wear\nSearch “Lumi Weather” on the App Store\n\n#WhatToWear #Forecast #Rain",
-    "title": "Need sunscreen today?",
-    "alt": "Need sunscreen today? | It tells you what to wear | Good day out? See exactly why | Lumi Weather: What to Wear / Outing Score, Umbrella & UV / Search “Lumi Weather” on the App Store",
-    "name": "Lumi Weather: What to Wear",
-    "hook": "Need sunscreen today?",
-    "tags": [
-     "#WhatToWear",
-     "#Forecast",
-     "#Rain"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/notesstudio100-en-pain-20261022",
-    "locale": "en",
-    "app": "notesstudio100",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Handwritten notes, 100 notebook styles\n\nEvery notebook, its own look\nSearch “100 Notes Studio” on the App Store\n\n#PenPaper #Notebook #Journal",
-    "title": "Handwritten notes, 100 notebook styles",
-    "alt": "Handwritten notes, 100 notebook styles | Every notebook, its own look | Audio saved to the page | Review with flashcards | 100 Notes Studio: Pen & Paper / Note Taking, Handwriting & PDF / Search “100 Notes Studio” on the App Store",
-    "name": "100 Notes Studio: Pen & Paper",
-    "hook": "Handwritten notes, 100 notebook styles",
-    "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/moneytag-ja-pain-20261022",
-    "locale": "ja",
-    "app": "moneytag",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "その副業、ほんとに黒字？\n\nタグひとつで全プロジェクトを集計\nApp Store で「MoneyTag」を検索\n\n#MoneyTag",
-    "title": "その副業、ほんとに黒字？",
-    "alt": "その副業、ほんとに黒字？ | タグひとつで全プロジェクトを集計 | 毎月の収支が ひと目でわかる | PDF・CSVで書き出し | MoneyTag: 収入と支出 / プロジェクト · タグ · レポート / App Store で「MoneyTag」を検索",
-    "name": "MoneyTag: 収入と支出",
-    "hook": "その副業、ほんとに黒字？",
-    "tags": [
-     "#MoneyTag"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/photocream-en-pain-20261022",
-    "locale": "en",
-    "app": "photocream",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Your selfie, but make it film\n\n100+ film looks\nSearch “PhotoCream Pro” on the App Store\n\n#FilmFilters #Retro #Grain",
-    "title": "Your selfie, but make it film",
-    "alt": "Your selfie, but make it film | 100+ film looks | Real grain & halation | Natural beauty & reshape | PhotoCream Pro: Film Filters / Vintage Camera & Photo Editor / Search “PhotoCream Pro” on the App Store",
-    "name": "PhotoCream Pro: Film Filters",
-    "hook": "Your selfie, but make it film",
-    "tags": [
-     "#FilmFilters",
-     "#Retro",
-     "#Grain"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/sononote-en-pain-20261022",
-    "locale": "en",
-    "app": "sononote",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Hit stop. Your note is done.\n\nTranscribed and tidied up\nSearch “Sono Note” on the App Store\n\n#VoiceToTextNotes #Transcription #Speech",
-    "title": "Hit stop. Your note is done.",
-    "alt": "Hit stop. Your note is done. | Transcribed and tidied up | A summary and the key points | Action items, ready to check | Sono Note: Voice to Text Notes / Transcribe Meetings & Lectures / Search “Sono Note” on the App Store",
-    "name": "Sono Note: Voice to Text Notes",
-    "hook": "Hit stop. Your note is done.",
-    "tags": [
-     "#VoiceToTextNotes",
-     "#Transcription",
-     "#Speech"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/stayclock-en-pain-20261022",
-    "locale": "en",
-    "app": "stayclock",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Phone charging? Make it a bedside clock\n\nBig time and a month calendar\nSearch “Stay Clock” on the App Store\n\n#FlipDeskClock #Standby #Alarm",
-    "title": "Phone charging? Make it a bedside clock",
-    "alt": "Phone charging? Make it a bedside clock | Big time and a month calendar | Flip card faces and more | Same face on StandBy | Stay Clock: Flip Desk Clock / Nightstand & Bedside Clock / Search “Stay Clock” on the App Store",
-    "name": "Stay Clock: Flip Desk Clock",
-    "hook": "Phone charging? Make it a bedside clock",
-    "tags": [
-     "#FlipDeskClock",
-     "#Standby",
-     "#Alarm"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbee-ja-pain-20261022",
-    "locale": "ja",
-    "app": "tripbee",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "旅の予定、まだ スクショ？\n\nAppleマップを ワンタップで\nApp Store で「TripBee」を検索",
-    "title": "旅の予定、まだ スクショ？",
-    "alt": "旅の予定、まだ スクショ？ | Appleマップを ワンタップで | オフラインでも 旅の計画ができる | 旅行プランナー | TripBee: 旅行プランナー / 家族や友達と共同編集・持ち物リスト / App Store で「TripBee」を検索",
-    "name": "TripBee: 旅行プランナー",
-    "hook": "旅の予定、まだ スクショ？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/studydown-en-pain-20261022",
-    "locale": "en",
-    "app": "studydown",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Pick up your phone, the timer pauses\n\nTap start, then flip it face down\nSearch “Studydown” on the App Store\n\n#FaceDownTimer #Study #Focus",
-    "title": "Pick up your phone, the timer pauses",
-    "alt": "Pick up your phone, the timer pauses | Tap start, then flip it face down | See your week add up | Count down to your deadlines | Studydown: Face-Down Timer / Face-down activity time ledger / Search “Studydown” on the App Store",
-    "name": "Studydown: Face-Down Timer",
-    "hook": "Pick up your phone, the timer pauses",
-    "tags": [
-     "#FaceDownTimer",
-     "#Study",
-     "#Focus"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbee-en-pain-20261022",
-    "locale": "en",
-    "app": "tripbee",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Trip plans buried in screenshots?\n\nOpen in Maps in one tap\nSearch “TripBee Pro” on the App Store\n\n#TripPlanner #Family #Friends",
-    "title": "Trip plans buried in screenshots?",
-    "alt": "Trip plans buried in screenshots? | Open in Maps in one tap | Plan every trip, even offline | Trip Planner | TripBee Pro: Trip Planner / Group Travel & Packing List / Search “TripBee Pro” on the App Store",
-    "name": "TripBee Pro: Trip Planner",
-    "hook": "Trip plans buried in screenshots?",
-    "tags": [
-     "#TripPlanner",
-     "#Family",
-     "#Friends"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripplanet-ja-pain-20261022",
-    "locale": "ja",
-    "app": "tripplanet",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "「まだ着かないの？」 が冒険に変わる\n\n移動日のミッションも ワンタップで\nApp Store で「Trip Planet 子ども旅行ゲーム」を検索",
-    "title": "「まだ着かないの？」 が冒険に変わる",
-    "alt": "「まだ着かないの？」 が冒険に変わる | 移動日のミッションも ワンタップで | パパもママも 一緒に計画 | 小さなミッション 大きな笑顔 | Trip Planet 子ども旅行ゲーム / 子連れ旅のミッション＆スタンプ / App Store で「Trip Planet 子ども旅行ゲーム」を検索",
-    "name": "Trip Planet 子ども旅行ゲーム",
-    "hook": "「まだ着かないの？」 が冒険に変わる",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaid-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wifiaid",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "ネット不調？ 勘より証拠\n\nワンタップで診断\nApp Store で「WiFi Aid」を検索",
-    "title": "ネット不調？ 勘より証拠",
-    "alt": "ネット不調？ 勘より証拠 | ワンタップで診断 | 遅延も安定性も | 不安定なら 詳細チェック | WiFi Aid：ネット不調の原因を特定 / ルーター・メッシュ・DNS診断 / App Store で「WiFi Aid」を検索",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "hook": "ネット不調？ 勘より証拠",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaidlite-en-pain-20261022",
-    "locale": "en",
-    "app": "wifiaidlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Wi-Fi slow again?\n\nWi-Fi, DNS or internet?\nSearch “WiFi Aid Lite” on the App Store\n\n#NetworkCheck #Ping #Slow",
-    "title": "Wi-Fi slow again?",
-    "alt": "Wi-Fi slow again? | Wi-Fi, DNS or internet? | …or just one site? | Plus what to do next | WiFi Aid Lite: Network Check / Internet Down? Find the Cause / Search “WiFi Aid Lite” on the App Store",
-    "name": "WiFi Aid Lite: Network Check",
-    "hook": "Wi-Fi slow again?",
-    "tags": [
-     "#NetworkCheck",
-     "#Ping",
-     "#Slow"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/zipbox-en-pain-20261022",
-    "locale": "en",
-    "app": "zipbox",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Need one file from a ZIP?\n\nPeek inside, take only that one\nSearch “Zipbox” on the App Store\n\n#UnzipRARZIP7z #Decompress #Unpack",
-    "title": "Need one file from a ZIP?",
-    "alt": "Need one file from a ZIP? | Peek inside, take only that one | Create encrypted ZIP or 7z | ZIP, RAR, 7z…13 formats | Zipbox: Unzip RAR, ZIP & 7z / Unarchiver & File Extractor / Search “Zipbox” on the App Store",
-    "name": "Zipbox: Unzip RAR, ZIP & 7z",
-    "hook": "Need one file from a ZIP?",
-    "tags": [
-     "#UnzipRARZIP7z",
-     "#Decompress",
-     "#Unpack"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox"
    }
   ],
   "mastodon": [
@@ -785,43 +399,44 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "One tag adds up across projects",
-    "name": "MoneyTag: Income & Expense",
-    "title": "One tag adds up across projects | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#SideHustle",
-     "#Projects",
-     "#MoneyTag"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #Projects #MoneyTag",
-    "button": "Get it on the App Store",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
     "variant": "b",
-    "alt": "MoneyTag: Income & Expense — One tag adds up across projects — Net result, month by month — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
@@ -870,48 +485,25 @@
     "slot": 15
    },
    {
-    "kind": "clip",
-    "key": "studydown/en",
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-25",
     "locale": "en",
-    "app": "studydown",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ginoyv.mp4",
-    "hook": "Tap start, then flip it face down",
-    "name": "Studydown: Face-Down Timer",
-    "title": "Tap start, then flip it face down | Face-down activity time ledger | Studydown",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261125.jpg",
+    "caption": "Thanksgiving 1 days to go\nPlan the menu backwards\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 1 days to go",
+    "alt": "CountDaysNow — Thanksgiving 1 days to go — Plan the menu backwards — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 1 days to go",
     "tags": [
-     "#FaceDownTimer",
-     "#FacedownActivityTimeLedger",
-     "#StudyTimer",
-     "#FocusTimer",
-     "#Studydown"
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
     ],
-    "caption": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #StudyTimer #FocusTimer #Studydown",
     "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Studydown: Face-Down Timer — Tap start, then flip it face down — See your week add up — Face-down activity time ledger",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6807335593?action=write-review"
-    },
-    "keywords": [
-     "study",
-     "focus",
-     "flip",
-     "productivity",
-     "hours",
-     "exam"
-    ],
-    "keyline": "Face-down activity time ledger",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "5c7b92390f83895f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1114,59 +706,62 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "One tag adds up across projects",
-    "name": "MoneyTag: Income & Expense",
-    "title": "One tag adds up across projects | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#SideHustle",
-     "#Projects",
-     "#MoneyTag"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #Projects #MoneyTag",
-    "button": "Get it on the App Store",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
     "variant": "b",
-    "alt": "MoneyTag: Income & Expense — One tag adds up across projects — Net result, month by month — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "One tag adds up across projects | MoneyTag #Shorts",
-     "description": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\n\nMoneyTag: Income & Expense\nApp Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6801956402?action=write-review\n\nprofit · loss · side hustle · freelance · business · accounting\n\n#Shorts #IncomeExpense #MoneyTag",
+     "title": "Besoin, envie ou impulsion ? | HoursTag Lite #Shorts",
+     "description": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\n\nHoursTag Lite: Prix en heures\nApp Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nachat impulsif · dépenses · vaut le coup · besoin · envie · shopping\n\n#Shorts #PrixEnHeures #HoursTagLite",
      "tags": [
-      "profit",
-      "loss",
-      "side hustle",
-      "freelance",
-      "business",
-      "accounting",
-      "IncomeExpense",
-      "SideHustle",
-      "Projects",
-      "MoneyTag"
+      "achat impulsif",
+      "dépenses",
+      "vaut le coup",
+      "besoin",
+      "envie",
+      "shopping",
+      "PrixEnHeures",
+      "AchatConscient",
+      "AchatImpulsif",
+      "VautLeCoup",
+      "HoursTagLite",
+      "HoursTag Lite"
      ]
     },
     "slot": 15
@@ -1227,67 +822,6 @@
       "Cute",
       "MochiCuteChecklist",
       "Mochi Cute Checklist"
-     ]
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "studydown/en",
-    "locale": "en",
-    "app": "studydown",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ginoyv.mp4",
-    "hook": "Tap start, then flip it face down",
-    "name": "Studydown: Face-Down Timer",
-    "title": "Tap start, then flip it face down | Face-down activity time ledger | Studydown",
-    "tags": [
-     "#FaceDownTimer",
-     "#FacedownActivityTimeLedger",
-     "#StudyTimer",
-     "#FocusTimer",
-     "#Studydown"
-    ],
-    "caption": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #StudyTimer #FocusTimer #Studydown",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Studydown: Face-Down Timer — Tap start, then flip it face down — See your week add up — Face-down activity time ledger",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6807335593?action=write-review"
-    },
-    "keywords": [
-     "study",
-     "focus",
-     "flip",
-     "productivity",
-     "hours",
-     "exam"
-    ],
-    "keyline": "Face-down activity time ledger",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "5c7b92390f83895f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Tap start, then flip it face down | Studydown #Shorts",
-     "description": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\n\nStudydown: Face-Down Timer\nApp Store: https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6807335593?action=write-review\n\nstudy · focus · flip · productivity · hours · exam\n\n#Shorts #FaceDownTimer #Studydown",
-     "tags": [
-      "study",
-      "focus",
-      "flip",
-      "productivity",
-      "hours",
-      "exam",
-      "FaceDownTimer",
-      "FacedownActivityTimeLedger",
-      "StudyTimer",
-      "FocusTimer",
-      "Studydown"
      ]
     },
     "slot": 15
@@ -1439,48 +973,49 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "One tag adds up across projects",
-    "name": "MoneyTag: Income & Expense",
-    "title": "One tag adds up across projects | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#SideHustle",
-     "#Projects",
-     "#MoneyTag"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #Projects #MoneyTag",
-    "button": "Get it on the App Store",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
     "variant": "b",
-    "alt": "MoneyTag: Income & Expense — One tag adds up across projects — Net result, month by month — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #Projects #MoneyTag\n\nGet it on the App Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
-     "link": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8"
+     "description": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+     "link": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
@@ -1532,52 +1067,29 @@
     "slot": 15
    },
    {
-    "kind": "clip",
-    "key": "studydown/en",
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-25",
     "locale": "en",
-    "app": "studydown",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ginoyv.mp4",
-    "hook": "Tap start, then flip it face down",
-    "name": "Studydown: Face-Down Timer",
-    "title": "Tap start, then flip it face down | Face-down activity time ledger | Studydown",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261125.jpg",
+    "caption": "Thanksgiving 1 days to go\nPlan the menu backwards\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 1 days to go",
+    "alt": "CountDaysNow — Thanksgiving 1 days to go — Plan the menu backwards — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 1 days to go",
     "tags": [
-     "#FaceDownTimer",
-     "#FacedownActivityTimeLedger",
-     "#StudyTimer",
-     "#FocusTimer",
-     "#Studydown"
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
     ],
-    "caption": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #StudyTimer #FocusTimer #Studydown",
     "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Studydown: Face-Down Timer — Tap start, then flip it face down — See your week add up — Face-down activity time ledger",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6807335593?action=write-review"
-    },
-    "keywords": [
-     "study",
-     "focus",
-     "flip",
-     "productivity",
-     "hours",
-     "exam"
-    ],
-    "keyline": "Face-down activity time ledger",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "5c7b92390f83895f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "pinterest": {
-     "description": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #StudyTimer #FocusTimer #Studydown\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-     "link": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
+     "description": "Thanksgiving 1 days to go\nPlan the menu backwards\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -1602,176 +1114,6 @@
     "pinterest": {
      "description": "今晚睡前 5 步：安靜的月亮\n1. 洗澡\n2. 換上睡衣\n3. 慢慢深呼吸三次\n4. 唱一首晚安歌\n5. 關大燈，開小夜燈\n順序可依孩子習慣調整\n\nLumi 任務星球: 把每日生活常規變成溫柔的小任務\nApp Store／Google Play 搜尋「Lumi 任務星球」\n\n#生活習慣養成 #集點卡 #集星星 #好寶寶 #Lumi任務星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimission",
      "link": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/sononote-en-pain-20261022",
-    "locale": "en",
-    "app": "sononote",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Hit stop. Your note is done.\n\nTranscribed and tidied up\n✓ A summary and the key points\n✓ Action items, ready to check\n\nSearch “Sono Note” on the App Store\n\n#VoiceToTextNotes #Transcription #Speech #Audio #Dictation",
-    "title": "Hit stop. Your note is done.",
-    "alt": "Hit stop. Your note is done. | Transcribed and tidied up | A summary and the key points | Action items, ready to check | Sono Note: Voice to Text Notes / Transcribe Meetings & Lectures / Search “Sono Note” on the App Store",
-    "name": "Sono Note: Voice to Text Notes",
-    "hook": "Hit stop. Your note is done.",
-    "tags": [
-     "#VoiceToTextNotes",
-     "#Transcription",
-     "#Speech",
-     "#Audio",
-     "#Dictation"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote",
-    "pinterest": {
-     "description": "Hit stop. Your note is done.\n\nTranscribed and tidied up\n✓ A summary and the key points\n✓ Action items, ready to check\n\nSearch “Sono Note” on the App Store\n\n#VoiceToTextNotes #Transcription #Speech #Audio #Dictation\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote",
-     "link": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/stayclock-en-pain-20261022",
-    "locale": "en",
-    "app": "stayclock",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Phone charging? Make it a bedside clock\n\nBig time and a month calendar\n✓ Flip card faces and more\n✓ Same face on StandBy\n\nSearch “Stay Clock” on the App Store\n\n#FlipDeskClock #Standby #Alarm #Charging #Digital",
-    "title": "Phone charging? Make it a bedside clock",
-    "alt": "Phone charging? Make it a bedside clock | Big time and a month calendar | Flip card faces and more | Same face on StandBy | Stay Clock: Flip Desk Clock / Nightstand & Bedside Clock / Search “Stay Clock” on the App Store",
-    "name": "Stay Clock: Flip Desk Clock",
-    "hook": "Phone charging? Make it a bedside clock",
-    "tags": [
-     "#FlipDeskClock",
-     "#Standby",
-     "#Alarm",
-     "#Charging",
-     "#Digital"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
-    "pinterest": {
-     "description": "Phone charging? Make it a bedside clock\n\nBig time and a month calendar\n✓ Flip card faces and more\n✓ Same face on StandBy\n\nSearch “Stay Clock” on the App Store\n\n#FlipDeskClock #Standby #Alarm #Charging #Digital\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
-     "link": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/studydown-en-pain-20261022",
-    "locale": "en",
-    "app": "studydown",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Pick up your phone, the timer pauses\n\nTap start, then flip it face down\n✓ See your week add up\n✓ Count down to your deadlines\n\nSearch “Studydown” on the App Store\n\n#FaceDownTimer #Study #Focus #Flip #Productivity",
-    "title": "Pick up your phone, the timer pauses",
-    "alt": "Pick up your phone, the timer pauses | Tap start, then flip it face down | See your week add up | Count down to your deadlines | Studydown: Face-Down Timer / Face-down activity time ledger / Search “Studydown” on the App Store",
-    "name": "Studydown: Face-Down Timer",
-    "hook": "Pick up your phone, the timer pauses",
-    "tags": [
-     "#FaceDownTimer",
-     "#Study",
-     "#Focus",
-     "#Flip",
-     "#Productivity"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "pinterest": {
-     "description": "Pick up your phone, the timer pauses\n\nTap start, then flip it face down\n✓ See your week add up\n✓ Count down to your deadlines\n\nSearch “Studydown” on the App Store\n\n#FaceDownTimer #Study #Focus #Flip #Productivity\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-     "link": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaidlite-en-pain-20261022",
-    "locale": "en",
-    "app": "wifiaidlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Wi-Fi slow again?\n\nWi-Fi, DNS or internet?\n✓ …or just one site?\n✓ Plus what to do next\n\nSearch “WiFi Aid Lite” on the App Store\n\n#NetworkCheck #Ping #Slow #Outage #Troubleshoot",
-    "title": "Wi-Fi slow again?",
-    "alt": "Wi-Fi slow again? | Wi-Fi, DNS or internet? | …or just one site? | Plus what to do next | WiFi Aid Lite: Network Check / Internet Down? Find the Cause / Search “WiFi Aid Lite” on the App Store",
-    "name": "WiFi Aid Lite: Network Check",
-    "hook": "Wi-Fi slow again?",
-    "tags": [
-     "#NetworkCheck",
-     "#Ping",
-     "#Slow",
-     "#Outage",
-     "#Troubleshoot"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "pinterest": {
-     "description": "Wi-Fi slow again?\n\nWi-Fi, DNS or internet?\n✓ …or just one site?\n✓ Plus what to do next\n\nSearch “WiFi Aid Lite” on the App Store\n\n#NetworkCheck #Ping #Slow #Outage #Troubleshoot\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-     "link": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/zipbox-en-pain-20261022",
-    "locale": "en",
-    "app": "zipbox",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Need one file from a ZIP?\n\nPeek inside, take only that one\n✓ Create encrypted ZIP or 7z\n✓ ZIP, RAR, 7z…13 formats\n\nSearch “Zipbox” on the App Store\n\n#UnzipRARZIP7z #Decompress #Unpack #Unrar #Gzip",
-    "title": "Need one file from a ZIP?",
-    "alt": "Need one file from a ZIP? | Peek inside, take only that one | Create encrypted ZIP or 7z | ZIP, RAR, 7z…13 formats | Zipbox: Unzip RAR, ZIP & 7z / Unarchiver & File Extractor / Search “Zipbox” on the App Store",
-    "name": "Zipbox: Unzip RAR, ZIP & 7z",
-    "hook": "Need one file from a ZIP?",
-    "tags": [
-     "#UnzipRARZIP7z",
-     "#Decompress",
-     "#Unpack",
-     "#Unrar",
-     "#Gzip"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-    "pinterest": {
-     "description": "Need one file from a ZIP?\n\nPeek inside, take only that one\n✓ Create encrypted ZIP or 7z\n✓ ZIP, RAR, 7z…13 formats\n\nSearch “Zipbox” on the App Store\n\n#UnzipRARZIP7z #Decompress #Unpack #Unrar #Gzip\n\nGet it on the App Store: https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-     "link": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8"
     }
    }
   ],
@@ -1918,47 +1260,48 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "One tag adds up across projects",
-    "name": "MoneyTag: Income & Expense",
-    "title": "One tag adds up across projects | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#SideHustle",
-     "#Projects",
-     "#MoneyTag"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #Projects #MoneyTag",
-    "button": "Get it on the App Store",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
     "variant": "b",
-    "alt": "MoneyTag: Income & Expense — One tag adds up across projects — Net result, month by month — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #SideHustle #Projects #MoneyTag\n\nGet it on the App Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
+     "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite"
     },
     "slot": 15
    },
@@ -2005,53 +1348,6 @@
     },
     "tiktok": {
      "caption": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "studydown/en",
-    "locale": "en",
-    "app": "studydown",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ginoyv.mp4",
-    "hook": "Tap start, then flip it face down",
-    "name": "Studydown: Face-Down Timer",
-    "title": "Tap start, then flip it face down | Face-down activity time ledger | Studydown",
-    "tags": [
-     "#FaceDownTimer",
-     "#FacedownActivityTimeLedger",
-     "#StudyTimer",
-     "#FocusTimer",
-     "#Studydown"
-    ],
-    "caption": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #StudyTimer #FocusTimer #Studydown",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Studydown: Face-Down Timer — Tap start, then flip it face down — See your week add up — Face-down activity time ledger",
-    "store": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6807335593?action=write-review"
-    },
-    "keywords": [
-     "study",
-     "focus",
-     "flip",
-     "productivity",
-     "hours",
-     "exam"
-    ],
-    "keyline": "Face-down activity time ledger",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "5c7b92390f83895f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Tap start, then flip it face down\nSee your week add up\nFace-down activity time ledger\nStudydown: Face-Down Timer\nSearch “Studydown” on the App Store\nAlso on Google Play\n\n#FaceDownTimer #FacedownActivityTimeLedger #StudyTimer #FocusTimer #Studydown\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown"
     },
     "slot": 15
    }
@@ -18078,6 +17374,261 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "53ca986526ffb1b1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/en",
+    "locale": "en",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/133c0d5871.mp4",
+    "hook": "Every leg and transfer on a timeline",
+    "name": "Metro Time Helper",
+    "title": "Every leg and transfer on a timeline | Taipei MRT | Metro Time Helper",
+    "tags": [
+     "#TaipeiMRT",
+     "#LeaveByPlanner",
+     "#LeaveBy",
+     "#MetroTimeHelper"
+    ],
+    "caption": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\nSearch “Metro Time Helper” on the App Store\nAlso on Google Play\n\n#TaipeiMRT #LeaveByPlanner #MetroTimeHelper",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Metro Time Helper — Every leg and transfer on a timeline — Xiaobitan branch: next-train countdown — Taipei MRT",
+    "store": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "subway",
+     "train",
+     "schedule",
+     "taiwan",
+     "last",
+     "first"
+    ],
+    "keyline": "Taipei MRT",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3aa38778ff.mp4",
+    "hook": "每段搭乘與轉乘，逐段時間軸",
+    "name": "捷運時間助手",
+    "title": "每段搭乘與轉乘，逐段時間軸 | 反推出門時間｜小碧潭・新北投班表 | 捷運時間助手",
+    "tags": [
+     "#末班車",
+     "#首班車",
+     "#路線圖",
+     "#地鐵",
+     "#捷運時間助手"
+    ],
+    "caption": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n在 App Store 搜尋「捷運時間助手」\nAndroid 版在 Google Play\n\n#末班車 #首班車 #捷運時間助手",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "捷運時間助手 — 每段搭乘與轉乘，逐段時間軸 — 小碧潭支線，下一班倒數 — 反推出門時間｜小碧潭・新北投班表",
+    "store": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "末班車",
+     "首班車",
+     "路線圖",
+     "地鐵",
+     "通勤",
+     "上班"
+    ],
+    "keyline": "反推出門時間｜小碧潭・新北投班表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ja",
+    "locale": "ja",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6cfc1f9d37.mp4",
+    "hook": "50言語に対応",
+    "name": "捷運時間助手",
+    "title": "50言語に対応 | 到着時刻から出発を逆算・新北投も | 捷運時間助手",
+    "tags": [
+     "#台湾",
+     "#地下鉄",
+     "#時刻表",
+     "#路線図",
+     "#捷運時間助手"
+    ],
+    "caption": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\nApp Storeで「捷運時間助手」を検索\nAndroidはGoogle Playで\n\n#台湾 #地下鉄 #捷運時間助手",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "捷運時間助手 — 50言語に対応 — 乗車と乗り換えを、区間ごとのタイムライン — 到着時刻から出発を逆算・新北投も",
+    "store": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "台湾",
+     "地下鉄",
+     "時刻表",
+     "路線図",
+     "終電",
+     "始発"
+    ],
+    "keyline": "到着時刻から出発を逆算・新北投も",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ko",
+    "locale": "ko",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/91562e156a.mp4",
+    "hook": "승차와 환승을 구간별 타임라인으로",
+    "name": "타이베이 지하철 시간 도우미",
+    "title": "승차와 환승을 구간별 타임라인으로 | 도착 시각으로 출발 시각 역산 | 타이베이 지하철 시간 도우미",
+    "tags": [
+     "#대만",
+     "#타이페이",
+     "#환승",
+     "#노선도",
+     "#타이베이지하철시간도우미"
+    ],
+    "caption": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n타이베이 지하철 시간 도우미\nApp Store에서 'mrt 시간표' 검색\nAndroid는 Google Play에서\n\n#대만 #타이페이 #타이베이지하철시간도우미",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "타이베이 지하철 시간 도우미 — 승차와 환승을 구간별 타임라인으로 — 샤오비탄 지선 다음 열차 카운트다운 — 도착 시각으로 출발 시각 역산",
+    "store": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "대만",
+     "타이페이",
+     "환승",
+     "노선도",
+     "시간표",
+     "막차"
+    ],
+    "keyline": "도착 시각으로 출발 시각 역산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/de",
+    "locale": "de",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ed8922118.mp4",
+    "hook": "Abschnitte & Umstiege als Zeitleiste",
+    "name": "Metro-Zeithelfer Taipeh",
+    "title": "Abschnitte & Umstiege als Zeitleiste | Wann los? Pünktlich ankommen | Metro-Zeithelfer Taipeh",
+    "tags": [
+     "#WannLosPünktlichAnkommen",
+     "#MetroZeithelfer",
+     "#Taipeh",
+     "#MetroZeithelferTaipeh"
+    ],
+    "caption": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\nMetro-Zeithelfer Taipeh\nIm App Store nach „mrt fahrplan“ suchen\nAuch bei Google Play\n\n#WannLosPünktlichAnkommen #MetroZeithelfer #MetroZeithelferTaipeh",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Metro-Zeithelfer Taipeh — Abschnitte & Umstiege als Zeitleiste — Zweiglinie Xiaobitan: Countdown zum nächsten Zug — Wann los? Pünktlich ankommen",
+    "store": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "Taipei",
+     "U-Bahn",
+     "Fahrplan",
+     "Umsteigen",
+     "Taiwan",
+     "Reise"
+    ],
+    "keyline": "Wann los? Pünktlich ankommen",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/pt-BR",
+    "locale": "pt-BR",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/02b4784987.mp4",
+    "hook": "Cada trecho e baldeação em uma linha do tempo",
+    "name": "Hora do Metrô em Taipei",
+    "title": "Cada trecho e baldeação em uma linha do tempo | Saiba quando sair de casa | Hora do Metrô em Taipei",
+    "tags": [
+     "#Casa",
+     "#Hora",
+     "#Metrô",
+     "#HoraDoMetrôEmTaipei"
+    ],
+    "caption": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\nHora do Metrô em Taipei\nPesquise “horário mrt” na App Store\nTambém no Google Play\n\n#Casa #Hora #HoradoMetrôemTaipei",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Hora do Metrô em Taipei — Cada trecho e baldeação em uma linha do tempo — Ramal Xinbeitou: contagem do próximo trem — Saiba quando sair de casa",
+    "store": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "horário",
+     "mapa",
+     "trem",
+     "baldeação",
+     "estação",
+     "último"
+    ],
+    "keyline": "Saiba quando sair de casa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -40983,6 +40534,352 @@
    },
    {
     "kind": "clip",
+    "key": "metrotimehelper/en",
+    "locale": "en",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/133c0d5871.mp4",
+    "hook": "Every leg and transfer on a timeline",
+    "name": "Metro Time Helper",
+    "title": "Every leg and transfer on a timeline | Taipei MRT | Metro Time Helper",
+    "tags": [
+     "#TaipeiMRT",
+     "#LeaveByPlanner",
+     "#LeaveBy",
+     "#MetroTimeHelper"
+    ],
+    "caption": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\nSearch “Metro Time Helper” on the App Store\nAlso on Google Play\n\n#TaipeiMRT #LeaveByPlanner #LeaveBy #MetroTimeHelper",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Metro Time Helper — Every leg and transfer on a timeline — Xiaobitan branch: next-train countdown — Taipei MRT",
+    "store": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "subway",
+     "train",
+     "schedule",
+     "taiwan",
+     "last",
+     "first"
+    ],
+    "keyline": "Taipei MRT",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Every leg and transfer on a timeline | Metro Time Helper #Shorts",
+     "description": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\n\nMetro Time Helper\nApp Store: https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6819061896?action=write-review\n\nsubway · train · schedule · taiwan · last · first\n\n#Shorts #TaipeiMRT #MetroTimeHelper",
+     "tags": [
+      "subway",
+      "train",
+      "schedule",
+      "taiwan",
+      "last",
+      "first",
+      "TaipeiMRT",
+      "LeaveByPlanner",
+      "LeaveBy",
+      "MetroTimeHelper",
+      "Metro Time Helper"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3aa38778ff.mp4",
+    "hook": "每段搭乘與轉乘，逐段時間軸",
+    "name": "捷運時間助手",
+    "title": "每段搭乘與轉乘，逐段時間軸 | 反推出門時間｜小碧潭・新北投班表 | 捷運時間助手",
+    "tags": [
+     "#末班車",
+     "#首班車",
+     "#路線圖",
+     "#地鐵",
+     "#捷運時間助手"
+    ],
+    "caption": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n在 App Store 搜尋「捷運時間助手」\nAndroid 版在 Google Play\n\n#末班車 #首班車 #路線圖 #地鐵 #捷運時間助手",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "捷運時間助手 — 每段搭乘與轉乘，逐段時間軸 — 小碧潭支線，下一班倒數 — 反推出門時間｜小碧潭・新北投班表",
+    "store": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "末班車",
+     "首班車",
+     "路線圖",
+     "地鐵",
+     "通勤",
+     "上班"
+    ],
+    "keyline": "反推出門時間｜小碧潭・新北投班表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "每段搭乘與轉乘，逐段時間軸 | 捷運時間助手 #Shorts",
+     "description": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n\n捷運時間助手\nApp Store: https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6819061896?action=write-review\n\n末班車 · 首班車 · 路線圖 · 地鐵 · 通勤 · 上班\n\n#Shorts #末班車 #捷運時間助手",
+     "tags": [
+      "末班車",
+      "首班車",
+      "路線圖",
+      "地鐵",
+      "通勤",
+      "上班",
+      "捷運時間助手"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ja",
+    "locale": "ja",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6cfc1f9d37.mp4",
+    "hook": "50言語に対応",
+    "name": "捷運時間助手",
+    "title": "50言語に対応 | 到着時刻から出発を逆算・新北投も | 捷運時間助手",
+    "tags": [
+     "#台湾",
+     "#地下鉄",
+     "#時刻表",
+     "#路線図",
+     "#捷運時間助手"
+    ],
+    "caption": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\nApp Storeで「捷運時間助手」を検索\nAndroidはGoogle Playで\n\n#台湾 #地下鉄 #時刻表 #路線図 #捷運時間助手",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "捷運時間助手 — 50言語に対応 — 乗車と乗り換えを、区間ごとのタイムライン — 到着時刻から出発を逆算・新北投も",
+    "store": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "台湾",
+     "地下鉄",
+     "時刻表",
+     "路線図",
+     "終電",
+     "始発"
+    ],
+    "keyline": "到着時刻から出発を逆算・新北投も",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "50言語に対応 | 捷運時間助手 #Shorts",
+     "description": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\n\n捷運時間助手\nApp Store: https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6819061896?action=write-review\n\n台湾 · 地下鉄 · 時刻表 · 路線図 · 終電 · 始発\n\n#Shorts #台湾 #捷運時間助手",
+     "tags": [
+      "台湾",
+      "地下鉄",
+      "時刻表",
+      "路線図",
+      "終電",
+      "始発",
+      "捷運時間助手"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ko",
+    "locale": "ko",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/91562e156a.mp4",
+    "hook": "승차와 환승을 구간별 타임라인으로",
+    "name": "타이베이 지하철 시간 도우미",
+    "title": "승차와 환승을 구간별 타임라인으로 | 도착 시각으로 출발 시각 역산 | 타이베이 지하철 시간 도우미",
+    "tags": [
+     "#대만",
+     "#타이페이",
+     "#환승",
+     "#노선도",
+     "#타이베이지하철시간도우미"
+    ],
+    "caption": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n타이베이 지하철 시간 도우미\nApp Store에서 'mrt 시간표' 검색\nAndroid는 Google Play에서\n\n#대만 #타이페이 #환승 #노선도 #타이베이지하철시간도우미",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "타이베이 지하철 시간 도우미 — 승차와 환승을 구간별 타임라인으로 — 샤오비탄 지선 다음 열차 카운트다운 — 도착 시각으로 출발 시각 역산",
+    "store": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "대만",
+     "타이페이",
+     "환승",
+     "노선도",
+     "시간표",
+     "막차"
+    ],
+    "keyline": "도착 시각으로 출발 시각 역산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "승차와 환승을 구간별 타임라인으로 | 타이베이 지하철 시간 도우미 #Shorts",
+     "description": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n\n타이베이 지하철 시간 도우미\nApp Store: https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6819061896?action=write-review\n\n대만 · 타이페이 · 환승 · 노선도 · 시간표 · 막차\n\n#Shorts #대만 #타이베이지하철시간도우미",
+     "tags": [
+      "대만",
+      "타이페이",
+      "환승",
+      "노선도",
+      "시간표",
+      "막차",
+      "타이베이지하철시간도우미",
+      "타이베이 지하철 시간 도우미"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/de",
+    "locale": "de",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ed8922118.mp4",
+    "hook": "Abschnitte & Umstiege als Zeitleiste",
+    "name": "Metro-Zeithelfer Taipeh",
+    "title": "Abschnitte & Umstiege als Zeitleiste | Wann los? Pünktlich ankommen | Metro-Zeithelfer Taipeh",
+    "tags": [
+     "#WannLosPünktlichAnkommen",
+     "#MetroZeithelfer",
+     "#Taipeh",
+     "#MetroZeithelferTaipeh"
+    ],
+    "caption": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\nMetro-Zeithelfer Taipeh\nIm App Store nach „mrt fahrplan“ suchen\nAuch bei Google Play\n\n#WannLosPünktlichAnkommen #MetroZeithelfer #Taipeh #MetroZeithelferTaipeh",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Metro-Zeithelfer Taipeh — Abschnitte & Umstiege als Zeitleiste — Zweiglinie Xiaobitan: Countdown zum nächsten Zug — Wann los? Pünktlich ankommen",
+    "store": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "Taipei",
+     "U-Bahn",
+     "Fahrplan",
+     "Umsteigen",
+     "Taiwan",
+     "Reise"
+    ],
+    "keyline": "Wann los? Pünktlich ankommen",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Abschnitte & Umstiege als Zeitleiste | Metro-Zeithelfer Taipeh #Shorts",
+     "description": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\n\nMetro-Zeithelfer Taipeh\nApp Store: https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper\nDu nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store\nhttps://apps.apple.com/app/id6819061896?action=write-review\n\nTaipei · U-Bahn · Fahrplan · Umsteigen · Taiwan · Reise\n\n#Shorts #WannLosPünktlichAnkommen #MetroZeithelferTaipeh",
+     "tags": [
+      "Taipei",
+      "U-Bahn",
+      "Fahrplan",
+      "Umsteigen",
+      "Taiwan",
+      "Reise",
+      "WannLosPünktlichAnkommen",
+      "MetroZeithelfer",
+      "Taipeh",
+      "MetroZeithelferTaipeh",
+      "Metro-Zeithelfer Taipeh"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/pt-BR",
+    "locale": "pt-BR",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/02b4784987.mp4",
+    "hook": "Cada trecho e baldeação em uma linha do tempo",
+    "name": "Hora do Metrô em Taipei",
+    "title": "Cada trecho e baldeação em uma linha do tempo | Saiba quando sair de casa | Hora do Metrô em Taipei",
+    "tags": [
+     "#Casa",
+     "#Hora",
+     "#Metrô",
+     "#HoraDoMetrôEmTaipei"
+    ],
+    "caption": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\nHora do Metrô em Taipei\nPesquise “horário mrt” na App Store\nTambém no Google Play\n\n#Casa #Hora #Metrô #HoraDoMetrôEmTaipei",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Hora do Metrô em Taipei — Cada trecho e baldeação em uma linha do tempo — Ramal Xinbeitou: contagem do próximo trem — Saiba quando sair de casa",
+    "store": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "horário",
+     "mapa",
+     "trem",
+     "baldeação",
+     "estação",
+     "último"
+    ],
+    "keyline": "Saiba quando sair de casa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Cada trecho e baldeação em uma linha do tempo | Hora do Metrô em Taipei #Shorts",
+     "description": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\n\nHora do Metrô em Taipei\nApp Store: https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6819061896?action=write-review\n\nhorário · mapa · trem · baldeação · estação · último\n\n#Shorts #Casa #HoradoMetrôemTaipei",
+     "tags": [
+      "horário",
+      "mapa",
+      "trem",
+      "baldeação",
+      "estação",
+      "último",
+      "Casa",
+      "Hora",
+      "Metrô",
+      "HoraDoMetrôEmTaipei",
+      "Hora do Metrô em Taipei"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "duowallpaperstudio_e/en",
     "locale": "en",
     "app": "duowallpaperstudio_e",
@@ -59899,6 +59796,285 @@
    },
    {
     "kind": "clip",
+    "key": "metrotimehelper/en",
+    "locale": "en",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/133c0d5871.mp4",
+    "hook": "Every leg and transfer on a timeline",
+    "name": "Metro Time Helper",
+    "title": "Every leg and transfer on a timeline | Taipei MRT | Metro Time Helper",
+    "tags": [
+     "#TaipeiMRT",
+     "#LeaveByPlanner",
+     "#LeaveBy",
+     "#MetroTimeHelper"
+    ],
+    "caption": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\nSearch “Metro Time Helper” on the App Store\nAlso on Google Play\n\n#TaipeiMRT #LeaveByPlanner #LeaveBy #MetroTimeHelper",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Metro Time Helper — Every leg and transfer on a timeline — Xiaobitan branch: next-train countdown — Taipei MRT",
+    "store": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "subway",
+     "train",
+     "schedule",
+     "taiwan",
+     "last",
+     "first"
+    ],
+    "keyline": "Taipei MRT",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\nSearch “Metro Time Helper” on the App Store\nAlso on Google Play\n\n#TaipeiMRT #LeaveByPlanner #LeaveBy #MetroTimeHelper\n\nGet it on the App Store: https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+     "link": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3aa38778ff.mp4",
+    "hook": "每段搭乘與轉乘，逐段時間軸",
+    "name": "捷運時間助手",
+    "title": "每段搭乘與轉乘，逐段時間軸 | 反推出門時間｜小碧潭・新北投班表 | 捷運時間助手",
+    "tags": [
+     "#末班車",
+     "#首班車",
+     "#路線圖",
+     "#地鐵",
+     "#捷運時間助手"
+    ],
+    "caption": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n在 App Store 搜尋「捷運時間助手」\nAndroid 版在 Google Play\n\n#末班車 #首班車 #路線圖 #地鐵 #捷運時間助手",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "捷運時間助手 — 每段搭乘與轉乘，逐段時間軸 — 小碧潭支線，下一班倒數 — 反推出門時間｜小碧潭・新北投班表",
+    "store": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "末班車",
+     "首班車",
+     "路線圖",
+     "地鐵",
+     "通勤",
+     "上班"
+    ],
+    "keyline": "反推出門時間｜小碧潭・新北投班表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n在 App Store 搜尋「捷運時間助手」\nAndroid 版在 Google Play\n\n#末班車 #首班車 #路線圖 #地鐵 #捷運時間助手\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+     "link": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ja",
+    "locale": "ja",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6cfc1f9d37.mp4",
+    "hook": "50言語に対応",
+    "name": "捷運時間助手",
+    "title": "50言語に対応 | 到着時刻から出発を逆算・新北投も | 捷運時間助手",
+    "tags": [
+     "#台湾",
+     "#地下鉄",
+     "#時刻表",
+     "#路線図",
+     "#捷運時間助手"
+    ],
+    "caption": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\nApp Storeで「捷運時間助手」を検索\nAndroidはGoogle Playで\n\n#台湾 #地下鉄 #時刻表 #路線図 #捷運時間助手",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "捷運時間助手 — 50言語に対応 — 乗車と乗り換えを、区間ごとのタイムライン — 到着時刻から出発を逆算・新北投も",
+    "store": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "台湾",
+     "地下鉄",
+     "時刻表",
+     "路線図",
+     "終電",
+     "始発"
+    ],
+    "keyline": "到着時刻から出発を逆算・新北投も",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\nApp Storeで「捷運時間助手」を検索\nAndroidはGoogle Playで\n\n#台湾 #地下鉄 #時刻表 #路線図 #捷運時間助手\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+     "link": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ko",
+    "locale": "ko",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/91562e156a.mp4",
+    "hook": "승차와 환승을 구간별 타임라인으로",
+    "name": "타이베이 지하철 시간 도우미",
+    "title": "승차와 환승을 구간별 타임라인으로 | 도착 시각으로 출발 시각 역산 | 타이베이 지하철 시간 도우미",
+    "tags": [
+     "#대만",
+     "#타이페이",
+     "#환승",
+     "#노선도",
+     "#타이베이지하철시간도우미"
+    ],
+    "caption": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n타이베이 지하철 시간 도우미\nApp Store에서 'mrt 시간표' 검색\nAndroid는 Google Play에서\n\n#대만 #타이페이 #환승 #노선도 #타이베이지하철시간도우미",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "타이베이 지하철 시간 도우미 — 승차와 환승을 구간별 타임라인으로 — 샤오비탄 지선 다음 열차 카운트다운 — 도착 시각으로 출발 시각 역산",
+    "store": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "대만",
+     "타이페이",
+     "환승",
+     "노선도",
+     "시간표",
+     "막차"
+    ],
+    "keyline": "도착 시각으로 출발 시각 역산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n타이베이 지하철 시간 도우미\nApp Store에서 'mrt 시간표' 검색\nAndroid는 Google Play에서\n\n#대만 #타이페이 #환승 #노선도 #타이베이지하철시간도우미\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+     "link": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/de",
+    "locale": "de",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ed8922118.mp4",
+    "hook": "Abschnitte & Umstiege als Zeitleiste",
+    "name": "Metro-Zeithelfer Taipeh",
+    "title": "Abschnitte & Umstiege als Zeitleiste | Wann los? Pünktlich ankommen | Metro-Zeithelfer Taipeh",
+    "tags": [
+     "#WannLosPünktlichAnkommen",
+     "#MetroZeithelfer",
+     "#Taipeh",
+     "#MetroZeithelferTaipeh"
+    ],
+    "caption": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\nMetro-Zeithelfer Taipeh\nIm App Store nach „mrt fahrplan“ suchen\nAuch bei Google Play\n\n#WannLosPünktlichAnkommen #MetroZeithelfer #Taipeh #MetroZeithelferTaipeh",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Metro-Zeithelfer Taipeh — Abschnitte & Umstiege als Zeitleiste — Zweiglinie Xiaobitan: Countdown zum nächsten Zug — Wann los? Pünktlich ankommen",
+    "store": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "Taipei",
+     "U-Bahn",
+     "Fahrplan",
+     "Umsteigen",
+     "Taiwan",
+     "Reise"
+    ],
+    "keyline": "Wann los? Pünktlich ankommen",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\nMetro-Zeithelfer Taipeh\nIm App Store nach „mrt fahrplan“ suchen\nAuch bei Google Play\n\n#WannLosPünktlichAnkommen #MetroZeithelfer #Taipeh #MetroZeithelferTaipeh\n\nIm App Store laden: https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+     "link": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/pt-BR",
+    "locale": "pt-BR",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/02b4784987.mp4",
+    "hook": "Cada trecho e baldeação em uma linha do tempo",
+    "name": "Hora do Metrô em Taipei",
+    "title": "Cada trecho e baldeação em uma linha do tempo | Saiba quando sair de casa | Hora do Metrô em Taipei",
+    "tags": [
+     "#Casa",
+     "#Hora",
+     "#Metrô",
+     "#HoraDoMetrôEmTaipei"
+    ],
+    "caption": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\nHora do Metrô em Taipei\nPesquise “horário mrt” na App Store\nTambém no Google Play\n\n#Casa #Hora #Metrô #HoraDoMetrôEmTaipei",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Hora do Metrô em Taipei — Cada trecho e baldeação em uma linha do tempo — Ramal Xinbeitou: contagem do próximo trem — Saiba quando sair de casa",
+    "store": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "horário",
+     "mapa",
+     "trem",
+     "baldeação",
+     "estação",
+     "último"
+    ],
+    "keyline": "Saiba quando sair de casa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\nHora do Metrô em Taipei\nPesquise “horário mrt” na App Store\nTambém no Google Play\n\n#Casa #Hora #Metrô #HoraDoMetrôEmTaipei\n\nBaixar na App Store: https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+     "link": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "duowallpaperstudio_e/en",
     "locale": "en",
     "app": "duowallpaperstudio_e",
@@ -78165,6 +78341,279 @@
     },
     "tiktok": {
      "caption": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/en",
+    "locale": "en",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/133c0d5871.mp4",
+    "hook": "Every leg and transfer on a timeline",
+    "name": "Metro Time Helper",
+    "title": "Every leg and transfer on a timeline | Taipei MRT | Metro Time Helper",
+    "tags": [
+     "#TaipeiMRT",
+     "#LeaveByPlanner",
+     "#LeaveBy",
+     "#MetroTimeHelper"
+    ],
+    "caption": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\nSearch “Metro Time Helper” on the App Store\nAlso on Google Play\n\n#TaipeiMRT #LeaveByPlanner #LeaveBy #MetroTimeHelper",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Metro Time Helper — Every leg and transfer on a timeline — Xiaobitan branch: next-train countdown — Taipei MRT",
+    "store": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "subway",
+     "train",
+     "schedule",
+     "taiwan",
+     "last",
+     "first"
+    ],
+    "keyline": "Taipei MRT",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Every leg and transfer on a timeline\nXiaobitan branch: next-train countdown\nTaipei MRT\nSearch “Metro Time Helper” on the App Store\nAlso on Google Play\n\n#TaipeiMRT #LeaveByPlanner #LeaveBy #MetroTimeHelper\n\nGet it on the App Store: https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3aa38778ff.mp4",
+    "hook": "每段搭乘與轉乘，逐段時間軸",
+    "name": "捷運時間助手",
+    "title": "每段搭乘與轉乘，逐段時間軸 | 反推出門時間｜小碧潭・新北投班表 | 捷運時間助手",
+    "tags": [
+     "#末班車",
+     "#首班車",
+     "#路線圖",
+     "#地鐵",
+     "#捷運時間助手"
+    ],
+    "caption": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n在 App Store 搜尋「捷運時間助手」\nAndroid 版在 Google Play\n\n#末班車 #首班車 #路線圖 #地鐵 #捷運時間助手",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "捷運時間助手 — 每段搭乘與轉乘，逐段時間軸 — 小碧潭支線，下一班倒數 — 反推出門時間｜小碧潭・新北投班表",
+    "store": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "末班車",
+     "首班車",
+     "路線圖",
+     "地鐵",
+     "通勤",
+     "上班"
+    ],
+    "keyline": "反推出門時間｜小碧潭・新北投班表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "每段搭乘與轉乘，逐段時間軸\n小碧潭支線，下一班倒數\n反推出門時間｜小碧潭・新北投班表\n在 App Store 搜尋「捷運時間助手」\nAndroid 版在 Google Play\n\n#末班車 #首班車 #路線圖 #地鐵 #捷運時間助手\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ja",
+    "locale": "ja",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6cfc1f9d37.mp4",
+    "hook": "50言語に対応",
+    "name": "捷運時間助手",
+    "title": "50言語に対応 | 到着時刻から出発を逆算・新北投も | 捷運時間助手",
+    "tags": [
+     "#台湾",
+     "#地下鉄",
+     "#時刻表",
+     "#路線図",
+     "#捷運時間助手"
+    ],
+    "caption": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\nApp Storeで「捷運時間助手」を検索\nAndroidはGoogle Playで\n\n#台湾 #地下鉄 #時刻表 #路線図 #捷運時間助手",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "捷運時間助手 — 50言語に対応 — 乗車と乗り換えを、区間ごとのタイムライン — 到着時刻から出発を逆算・新北投も",
+    "store": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "台湾",
+     "地下鉄",
+     "時刻表",
+     "路線図",
+     "終電",
+     "始発"
+    ],
+    "keyline": "到着時刻から出発を逆算・新北投も",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "50言語に対応\n乗車と乗り換えを、区間ごとのタイムライン\n到着時刻から出発を逆算・新北投も\nApp Storeで「捷運時間助手」を検索\nAndroidはGoogle Playで\n\n#台湾 #地下鉄 #時刻表 #路線図 #捷運時間助手\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/ko",
+    "locale": "ko",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/91562e156a.mp4",
+    "hook": "승차와 환승을 구간별 타임라인으로",
+    "name": "타이베이 지하철 시간 도우미",
+    "title": "승차와 환승을 구간별 타임라인으로 | 도착 시각으로 출발 시각 역산 | 타이베이 지하철 시간 도우미",
+    "tags": [
+     "#대만",
+     "#타이페이",
+     "#환승",
+     "#노선도",
+     "#타이베이지하철시간도우미"
+    ],
+    "caption": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n타이베이 지하철 시간 도우미\nApp Store에서 'mrt 시간표' 검색\nAndroid는 Google Play에서\n\n#대만 #타이페이 #환승 #노선도 #타이베이지하철시간도우미",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "타이베이 지하철 시간 도우미 — 승차와 환승을 구간별 타임라인으로 — 샤오비탄 지선 다음 열차 카운트다운 — 도착 시각으로 출발 시각 역산",
+    "store": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "대만",
+     "타이페이",
+     "환승",
+     "노선도",
+     "시간표",
+     "막차"
+    ],
+    "keyline": "도착 시각으로 출발 시각 역산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "승차와 환승을 구간별 타임라인으로\n샤오비탄 지선 다음 열차 카운트다운\n도착 시각으로 출발 시각 역산\n타이베이 지하철 시간 도우미\nApp Store에서 'mrt 시간표' 검색\nAndroid는 Google Play에서\n\n#대만 #타이페이 #환승 #노선도 #타이베이지하철시간도우미\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/de",
+    "locale": "de",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ed8922118.mp4",
+    "hook": "Abschnitte & Umstiege als Zeitleiste",
+    "name": "Metro-Zeithelfer Taipeh",
+    "title": "Abschnitte & Umstiege als Zeitleiste | Wann los? Pünktlich ankommen | Metro-Zeithelfer Taipeh",
+    "tags": [
+     "#WannLosPünktlichAnkommen",
+     "#MetroZeithelfer",
+     "#Taipeh",
+     "#MetroZeithelferTaipeh"
+    ],
+    "caption": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\nMetro-Zeithelfer Taipeh\nIm App Store nach „mrt fahrplan“ suchen\nAuch bei Google Play\n\n#WannLosPünktlichAnkommen #MetroZeithelfer #Taipeh #MetroZeithelferTaipeh",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Metro-Zeithelfer Taipeh — Abschnitte & Umstiege als Zeitleiste — Zweiglinie Xiaobitan: Countdown zum nächsten Zug — Wann los? Pünktlich ankommen",
+    "store": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "Taipei",
+     "U-Bahn",
+     "Fahrplan",
+     "Umsteigen",
+     "Taiwan",
+     "Reise"
+    ],
+    "keyline": "Wann los? Pünktlich ankommen",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Abschnitte & Umstiege als Zeitleiste\nZweiglinie Xiaobitan: Countdown zum nächsten Zug\nWann los? Pünktlich ankommen\nMetro-Zeithelfer Taipeh\nIm App Store nach „mrt fahrplan“ suchen\nAuch bei Google Play\n\n#WannLosPünktlichAnkommen #MetroZeithelfer #Taipeh #MetroZeithelferTaipeh\n\nIm App Store laden: https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "metrotimehelper/pt-BR",
+    "locale": "pt-BR",
+    "app": "metrotimehelper",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/02b4784987.mp4",
+    "hook": "Cada trecho e baldeação em uma linha do tempo",
+    "name": "Hora do Metrô em Taipei",
+    "title": "Cada trecho e baldeação em uma linha do tempo | Saiba quando sair de casa | Hora do Metrô em Taipei",
+    "tags": [
+     "#Casa",
+     "#Hora",
+     "#Metrô",
+     "#HoraDoMetrôEmTaipei"
+    ],
+    "caption": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\nHora do Metrô em Taipei\nPesquise “horário mrt” na App Store\nTambém no Google Play\n\n#Casa #Hora #Metrô #HoraDoMetrôEmTaipei",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Hora do Metrô em Taipei — Cada trecho e baldeação em uma linha do tempo — Ramal Xinbeitou: contagem do próximo trem — Saiba quando sair de casa",
+    "store": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6819061896?action=write-review"
+    },
+    "keywords": [
+     "horário",
+     "mapa",
+     "trem",
+     "baldeação",
+     "estação",
+     "último"
+    ],
+    "keyline": "Saiba quando sair de casa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "7dec58167bb2561d",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Cada trecho e baldeação em uma linha do tempo\nRamal Xinbeitou: contagem do próximo trem\nSaiba quando sair de casa\nHora do Metrô em Taipei\nPesquise “horário mrt” na App Store\nTambém no Google Play\n\n#Casa #Hora #Metrô #HoraDoMetrôEmTaipei\n\nBaixar na App Store: https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid&referrer=utm_source%3Dsocial%26utm_campaign%3Dmetrotimehelper"
     }
    },
    {

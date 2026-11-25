@@ -124,5 +124,62 @@ class ShippedManualQueueTests(unittest.TestCase):
         self.assertEqual(sorted(item["manual_id"] for item in self.items), sorted(row for _day, row in sends))
 
 
+MOCHI = "6785004775"
+MOCHI_US_PPID = "f3475620-28f9-41bc-8758-e4e7927c187d"   # T5 "US Cute To-Do List" (cpp_ppids/mochi.json)
+
+
+class ManualPpidTests(unittest.TestCase):
+    """A row's optional "ppid" lands its App Store link on a reviewed Custom Product Page (MANUAL_PPIDS) and
+    refuses the row for any other page, App, locale or a bundle row."""
+
+    @classmethod
+    def setUpClass(cls):
+        with open(telegram_post.MANUAL_QUEUE_PATH, encoding="utf-8") as handle:
+            cls.rows = {row["id"]: row for row in json.load(handle)["posts"]}
+        cls.pool = telegram_post.load_pool()
+        cls.items, _refused = telegram_post.load_manual_queue(cls.pool)
+
+    def _load(self, row):
+        path = os.path.join(os.environ.get("TMPDIR", "/tmp"), "manual_ppid_queue.json")
+        with open(path, "w", encoding="utf-8") as handle:
+            json.dump({"schema_version": 1, "hold_apps": {}, "posts": [row]}, handle)
+        try:
+            return telegram_post.load_manual_queue(self.pool, path)
+        finally:
+            os.remove(path)
+
+    def test_shipped_mochi_us_row_lands_on_the_us_custom_page(self):
+        item = next(item for item in self.items if item["manual_id"] == "tg_mochi_us_errands")
+        text = telegram_post.compose_text(item)
+        self.assertIn(
+            f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=tg_mochi_us_errands&mt=8&ppid={MOCHI_US_PPID}",
+            text,
+        )
+        self.assertEqual([], telegram_post.download_link_problems(item, text))
+        self.assertNotIn("ppid", telegram_post.compose_text(dict(item, ppid=None)))
+
+    def test_rows_without_ppid_compose_as_before(self):
+        for item in self.items:
+            if not item.get("ppid"):
+                with self.subTest(row=item["manual_id"]):
+                    self.assertNotIn("ppid=", telegram_post.compose_text(item))
+
+    def test_an_unreviewed_ppid_locale_or_bundle_refuses_the_row(self):
+        base = {key: value for key, value in self.rows["tg_mochi_us_errands"].items() if key != "not_before"}
+        cases = {
+            "unknown page": dict(base, ppid="00000000-0000-0000-0000-000000000000"),
+            "not a uuid": dict(base, ppid="F3475620"),
+            "wrong locale": dict(base, lang="en-GB"),
+        }
+        for label, row in cases.items():
+            with self.subTest(case=label):
+                items, refused = self._load(row)
+                self.assertEqual([], items)
+                self.assertTrue([p for ps in refused.values() for p in ps if "ppid" in p], refused)
+        items, refused = self._load(base)
+        self.assertEqual({}, refused)
+        self.assertEqual(MOCHI_US_PPID, items[0]["ppid"])
+
+
 if __name__ == "__main__":
     unittest.main()

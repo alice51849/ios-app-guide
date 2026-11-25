@@ -787,6 +787,8 @@ def compose_text(item, android=True, review=True, ct=None, legacy_play=False, ch
         channel_level = False
     ct = telegram_campaign(item) if ct is None else ct
     url = campaign_app_store_url(item.get("url"), ct, channel_level=channel_level)
+    if item.get("source") == MANUAL_SOURCE and item.get("ppid"):
+        url = f"{url}&ppid={item['ppid']}"   # a reviewed Custom Product Page of MANUAL_PPIDS (manual_item)
     if not android:
         play = None
     elif legacy_play:
@@ -1350,6 +1352,16 @@ _SNAPPORT_BANNED = re.compile(
 )
 MANUAL_BANNED_COPY = {"6780575828": _SNAPPORT_BANNED, "6792856304": _SNAPPORT_BANNED}
 
+# Custom Product Pages a hand-written row may land on ("ppid", optional): {App id: {ppid: (page name, locales)}}.
+# Only pages read back APPROVED and visible in 00_GrowthEngine ops/company/cpp_ppids/<app>.json and answering 200
+# with the ppid on the live App Store page; the row's lang must be one the page was made for. Any other ppid, a
+# ppid on a bundle row or on another App refuses the row (no silent fallback to the default product page).
+MANUAL_PPID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
+MANUAL_PPIDS = {
+    # Mochi: Cute Checklist, "US Cute To-Do List" (T5; cpp_ppids/mochi.json APPROVED, live read back 2026-11-25)
+    "6785004775": {"f3475620-28f9-41bc-8758-e4e7927c187d": ("US Cute To-Do List", frozenset({"en-US"}))},
+}
+
 # App bundle rows (組合包補齊單 ⑤, 00_GrowthEngine reports/outreach_scale/bundle_lines_audit_2026-11-23.md): a row
 # with "bundle" (lumi / lang / travel) promotes one of our App Store bundles. Its id is the bundle draft token
 # bundle_<pack>_tg_<lang>_d<day> (00_GrowthEngine agent/ct_codes.py BUNDLE_DRAFT_RE, kept as written by
@@ -1484,6 +1496,17 @@ def manual_item(row, pairs, names, hold, seen):
         hit = banned.search(text) if banned else None
         if hit:
             problems.append(f"names a feature App {member} no longer has ({hit.group(0)!r})")
+    ppid = row.get("ppid")
+    if "ppid" in row:
+        page = MANUAL_PPIDS.get(app, {}).get(ppid) if isinstance(ppid, str) else None
+        if pack:
+            problems.append("a bundle row takes no ppid: the bundle link has no Custom Product Page")
+        elif not isinstance(ppid, str) or MANUAL_PPID_RE.fullmatch(ppid) is None:
+            problems.append("ppid must be a lowercase Custom Product Page UUID")
+        elif page is None:
+            problems.append(f"ppid {ppid} is not a reviewed Custom Product Page of App {app} (MANUAL_PPIDS)")
+        elif lang not in page[1]:
+            problems.append(f"ppid {ppid} ({page[0]}) is not made for {lang}")
     bundle_url = None
     if pack and lang in OFFICIAL_SOCIAL_LOCALES:
         try:
@@ -1506,6 +1529,8 @@ def manual_item(row, pairs, names, hold, seen):
         item["image_url"] = base["image_url"]
     if pack:
         item["bundle"], item["bundle_url"] = pack, bundle_url
+    if ppid:
+        item["ppid"] = ppid
     for field in ("not_before", "expires"):
         if row.get(field) is not None:
             item[field] = row[field]

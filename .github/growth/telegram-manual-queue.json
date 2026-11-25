@@ -78,17 +78,16 @@
       "bundle": "lumi"
     },
     {
-      "id": "bundle_lumi_tg_ja_d25",
-      "lang": "ja",
-      "app": "6775773117",
-      "text": "「Lumi 知育セット」の4本、保護者ページでできることを並べてみました。\n\nボポモフォ：学んだ注音・最近まちがえた注音の、なぞり書き＋テストのプリント\nレター：その日に練習した文字の「今日のプリント」（PDF）\nさんすうプラネット：解答つき20問プリント\nミッション星：プリントではなく、できた時刻を保護者ダッシュボードに記録\n\n4本は App Store でまとめて購入できます。iPhone・iPad 専用です。",
+      "id": "tg_mochi_us_premium",
+      "lang": "en-US",
+      "app": "6785004775",
+      "text": "Hosting for the holidays? Gifts, groceries and cleaning each want their own list.\n\nMochi is a cute to-do list: tap the circle when it's done. Premium (the full version on Google Play) is a one-time in-app purchase that unlocks unlimited lists and tasks.",
       "review": {
-        "receipt": "00_GrowthEngine reports/outreach_scale/review_squad_c_bundle_social_2026-11-23.md",
-        "reviewed_on": "2026-11-23",
-        "text_sha256": "601972334a1eeb672a9d842735975d450ce6c6d28d11df5d4ea156f9bff7ede1"
+        "receipt": "00_GrowthEngine reports/outreach_scale/drafts/mochi_premium_ct_2026-11-25_review.md",
+        "reviewed_on": "2026-11-25",
+        "text_sha256": "dd8bea80cdfe4ab33a7a82730fc4321bb4f817160a7d251d5dceaeabcfefd56a"
       },
-      "not_before": "2026-11-26",
-      "bundle": "lumi"
+      "not_before": "2026-11-26"
     },
     {
       "id": "bundle_travel_tg_en_d27",
@@ -334,6 +333,19 @@
         "reviewed_on": "2026-11-23",
         "text_sha256": "d0e6b6d55e8497a58897ccf5e0f7d3204a4def1adc228e46750bb1370bcab19a"
       }
+    },
+    {
+      "id": "bundle_lumi_tg_ja_d25",
+      "lang": "ja",
+      "app": "6775773117",
+      "text": "「Lumi 知育セット」の4本、保護者ページでできることを並べてみました。\n\nボポモフォ：学んだ注音・最近まちがえた注音の、なぞり書き＋テストのプリント\nレター：その日に練習した文字の「今日のプリント」（PDF）\nさんすうプラネット：解答つき20問プリント\nミッション星：プリントではなく、できた時刻を保護者ダッシュボードに記録\n\n4本は App Store でまとめて購入できます。iPhone・iPad 専用です。",
+      "review": {
+        "receipt": "00_GrowthEngine reports/outreach_scale/review_squad_c_bundle_social_2026-11-23.md",
+        "reviewed_on": "2026-11-23",
+        "text_sha256": "601972334a1eeb672a9d842735975d450ce6c6d28d11df5d4ea156f9bff7ede1"
+      },
+      "not_before": "2026-11-26",
+      "bundle": "lumi"
     }
   ]
 }

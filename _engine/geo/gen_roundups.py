@@ -212,6 +212,35 @@ def roundup_copy(key, topic):
             f"Yes. {name} is free to start and offers a one-time unlock for "
             "complete content, with no recurring subscription."
         )
+        if key == "mochi":
+            # 只寫 data/mochi_full.json en-US 商店描述查得到的免費版／Premium 內容；購買型別 one-time 依 11-25 本機讀回（NON_CONSUMABLE、0 訂閱）。
+            lead = (
+                f"If you want to try a {topic} app before paying, this guide "
+                f"explains what to check and where {name} fits."
+            )
+            disclosure = (
+                f"We develop {name}. Its free version includes 2 lists with up "
+                "to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app "
+                "purchase, unlocks unlimited lists and tasks, all 101 "
+                "themes and all 11 emoji sets."
+            )
+            fit = (
+                "Free-to-start access lets you try 2 short lists before deciding "
+                "whether unlimited lists and tasks, more themes and more emoji "
+                "sets are worth the Premium purchase."
+            )
+            access = (
+                "Free version: 2 lists with up to 4 tasks each, 5 themes and 1 "
+                "emoji set. Premium, a one-time in-app purchase, unlocks "
+                "unlimited lists and tasks, 101 themes and 11 emoji sets."
+            )
+            faq_q = f"What does the free version of {name} include?"
+            faq_a = (
+                f"{name}'s free version includes 2 lists with up to 4 tasks "
+                "each, 5 themes and 1 emoji set. Premium, a one-time in-app "
+                "purchase, unlocks unlimited lists and tasks, all 101 themes "
+                "and all 11 emoji sets."
+            )
         if key == "tripbeelite":
             lead = (
                 "If you want to plan one complete journey before paying, this "

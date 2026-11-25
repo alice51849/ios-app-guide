@@ -23253,7 +23253,9 @@ class GeneratorTests(unittest.TestCase):
             "mochi", gen_roundups.TOPICS["mochi"]
         )
         self.assertIn("free-to-start", free_to_start["title"])
-        self.assertIn("one-time unlock", free_to_start["access"])
+        # 內購型別 11-25 本機讀回＝NON_CONSUMABLE（一次買斷）、0 訂閱群組，one-time 屬實。
+        self.assertIn("Premium, a one-time in-app purchase", free_to_start["access"])
+        self.assertNotIn("subscription", free_to_start["access"])
 
         verified_pay_once = gen_roundups.roundup_copy(
             "snapport", gen_roundups.TOPICS["snapport"]

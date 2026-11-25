@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-22T23:46:25+0800",
+ "source_generated": "2026-11-25T13:55:47+0800",
  "count": 61,
- "content_sha256": "173d2bf31b8d661d6ecc66bd69620bdefdf39118fcf7261549bd80ac533b0b2d",
+ "content_sha256": "4909b1ef72cb9829df587ea540865b95bb6193b5b6533adf3ca8177741bd3a56",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -263,7 +263,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "EasyAM: Holiday Alarm Clock"
+     "title": "EasyAM: Holiday Alarm Clock",
+     "short_description": "Holiday alarm clock: rings on workdays, skips public holidays and your days off"
     },
     "zh-TW": {
      "title": "EasyAM: 國定假日、連假不響的智慧鬧鐘"

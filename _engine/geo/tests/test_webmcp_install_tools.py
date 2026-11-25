@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime as dt
 import json
 from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
@@ -69,6 +70,9 @@ class WebMcpInstallToolsTests(unittest.TestCase):
             (pages / ".appstore_storefront_state.json").write_text(
                 json.dumps(
                     {
+                        "checked_at": dt.datetime.now(
+                            dt.timezone.utc
+                        ).isoformat(),
                         "countries": {
                             "us": [app_id],
                             "fr": [app_id],
@@ -79,6 +83,9 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                                     "price": "0",
                                     "currency": "USD",
                                     "formatted_price": "Free",
+                                    "price_readback": "0",
+                                    "currency_readback": "USD",
+                                    "zero_since": "2026-01-01T00:00:00Z",
                                     "rating_value": 5.0,
                                     "rating_count": 1,
                                 }
@@ -88,6 +95,9 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                                     "price": "0",
                                     "currency": "EUR",
                                     "formatted_price": "Free",
+                                    "price_readback": "0",
+                                    "currency_readback": "EUR",
+                                    "zero_since": "2026-01-01T00:00:00Z",
                                 }
                             },
                         },

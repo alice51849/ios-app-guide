@@ -282,10 +282,14 @@ jobs:
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           cd _engine/geo
+          # 停新增網址擋下的新答案頁只印 FROZEN 行、不進 new_url_freeze.json：
+          # tee 進 $RUNNER_TEMP 給「Record blocked new-URL count」數；pipefail 保持
+          # python 失敗即步驟失敗的原語意。
+          set -o pipefail
           # The strict outreach gate runs in this same workflow, so a bounded
           # batch can never commit the first generation for an App with more
           # missing questions than the limit.
-          python3 aeo_answers.py --cached-live
+          python3 aeo_answers.py --cached-live | tee -a "$RUNNER_TEMP/frozen_answers.log"
           # Category questions now owned by the free sibling are re-rendered
           # from the free key so the free door gets its own honest answer.
           python3 reclaim_free_first_answers.py
@@ -293,8 +297,10 @@ jobs:
       - name: Refresh AI indexes + hubs
         run: |
           cd _engine/geo
+          # 同上：aeo_answers／aeo_pages 擋下的新頁輸出 tee 給計數步驟；pipefail 保持失敗語意。
+          set -o pipefail
           python3 gen_roundups.py
-          python3 aeo_pages.py --cached-live
+          python3 aeo_pages.py --cached-live | tee -a "$RUNNER_TEMP/frozen_answers.log"
           python3 gen_cost_compare.py
           python3 gen_calculator.py
           python3 gen_data_hub.py
@@ -337,7 +343,7 @@ jobs:
           python3 prioritize_trip_planet_resources.py
           python3 gen_hubs.py
           python3 gen_app_catalog.py
-          python3 aeo_answers.py --cached-live --limit 0
+          python3 aeo_answers.py --cached-live --limit 0 | tee -a "$RUNNER_TEMP/frozen_answers.log"
           python3 reconcile_answer_semantics.py --repair
           python3 family_outing_weather_planner.py
           python3 fix_en_hreflang.py
@@ -621,6 +627,20 @@ jobs:
         run: |
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
+      - name: Record blocked new-URL count (numbers only)
+        # K1 名額轉移讀「被擋新網址數」：new_url_freeze.py 的計數檔在 .growth-runtime（不進
+        # 倉儲），加上答案頁／比較頁源頭擋下的 FROZEN 輸出（$RUNNER_TEMP/frozen_answers.log），
+        # 濃縮成只含日期與數字的 .github/growth/new_url_freeze_count.json，由下方在地化提交的
+        # git add -A 帶上（.github/ 不進 Pages 成品）。放在 verified_tree prepare 之前，封存的樹
+        # 已含此檔。測試紅或落檔失敗都只警告、絕不讓這步失敗。
+        run: |
+          if python3 .github/scripts/test_new_url_freeze_count.py -q; then
+            python3 .github/scripts/new_url_freeze_count.py \
+              --frozen-log "$RUNNER_TEMP/frozen_answers.log" \
+              || echo "::warning title=被擋新網址數未落檔::new_url_freeze_count.py 失敗；照常發布"
+          else
+            echo "::warning title=被擋新網址數未落檔::test_new_url_freeze_count.py 未通過，本場不落檔；照常發布"
+          fi
       - name: Verify localized output before commit
         run: |
           python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog

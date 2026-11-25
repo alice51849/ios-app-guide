@@ -315,6 +315,7 @@ class Top5Test(unittest.TestCase):
     def test_make_builds_the_list_plan_and_its_caption_passes_the_gate(self):
         d = data(("mochi", "zh-Hant"))
         with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(S, "TOP5_HOLD", False), \
                 mock.patch.object(S, "compose_text_card", side_effect=lambda lines, clip, out, badge=None, footer=False: Path(out)), \
                 mock.patch.object(S.volume_ramp, "room", return_value=(1, 0, 1)):
             plan = S.make(tmp, dt.date(2026, 10, 23), 7, data=d, posts=[],
@@ -338,6 +339,22 @@ class Top5Test(unittest.TestCase):
         self.assertIn("TimeTree", plan["caption"])
         self.assertEqual(S.qa(plan, online=False), [])
         self.assertTrue(S.qa(dict(plan, listed=[]), online=False))         # without them the gate refuses it
+
+    def test_the_11_25_hold_keeps_the_list_carousel_off_even_when_it_is_due(self):
+        d = data(("mochi", "zh-Hant"))
+        asked = []
+        def fetcher(url):
+            asked.append(url)
+            return compare_page().encode() if "compare" in url else shot_png()
+        self.assertTrue(S.TOP5_HOLD)
+        self.assertTrue(S.top5_due([], dt.date(2026, 10, 23)))
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(S, "shot_urls", return_value=["https://x/1.jpg", "https://x/2.jpg"]), \
+                mock.patch.object(S, "compose", side_effect=lambda b, h, c, out: Path(out)), \
+                mock.patch.object(S.volume_ramp, "room", return_value=(1, 0, 1)):
+            plan = S.make(tmp, dt.date(2026, 10, 23), 7, data=d, posts=[], fetcher=fetcher)
+        self.assertNotIn("/top5/", plan["key"])
+        self.assertFalse([u for u in asked if "compare" in u])               # the list page is not even fetched
 
     def test_no_comparison_page_falls_back_to_the_screenshot_carousel(self):
         d = data(("mochi", "zh-Hant"))

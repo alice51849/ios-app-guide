@@ -218,6 +218,10 @@ def caption(clip, variant):
 # as the fifth card with its real search position. No prices, no "best", no links to the other apps.
 # The first carousel after the 10-22 restore uses this format, then one a week (TOP5_EVERY_DAYS).
 TOP5_EVERY_DAYS = 7
+# 2026-11-25 hold (coordinator ruling 1230, 00_GrowthEngine ops/handoff/support_push/ios-app-guide/top5_hold_1125):
+# the weekly list carousel stays off until it reads only natively reviewed queue cards and shows no other
+# developers' ratings; the slot goes to the queue, then the screenshot carousel.
+TOP5_HOLD = True
 TOP5_MIN_OTHERS = 3
 COMPARE_ROOT = "https://open.cait518.cc"
 COMPARE_SUFFIX = {"en": "", "zh-Hant": ".zh-Hant", "ja": ".ja", "ko": ".ko"}
@@ -496,7 +500,7 @@ def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
     if left is not None and left <= 0:
         print(f"feed: {done} of today's {allowed} carousels already out (volume-ramp.json); nothing to make")
         return None
-    if top5_due(posts, day):
+    if not TOP5_HOLD and top5_due(posts, day):
         plan = make_top5(out_dir, day, slot, data, posts,
                          page_fetcher=lambda url: fetcher(url).decode("utf-8", "replace"))
         if plan:

@@ -1327,6 +1327,14 @@ LEGACY_BEST_RETITLES = {
         "how to choose a check a qr code link before opening it app": "How to choose a QR code scanner for iPhone that acts right after the scan",
         "how to check a qr code link before opening it": "How to look back at a QR code link on iPhone after the scan opens it",
     },
+    # 11-25 小組 D（裁定 2026-11-25_1507 第 3 條）：捷運時間助手 iOS 線上為付費，
+    # registry keywords 衍生的 "... app for iphone free" 四頁網址不變，顯示文字不寫 free、不寫價格。
+    "metrotimehelper": {
+        "taipei mrt when to leave app for iphone free": "taipei mrt when to leave app for iphone with no subscription",
+        "taipei mrt transfer time planner app for iphone free": "taipei mrt transfer time planner app for iphone with no subscription",
+        "taipei metro last train time app for iphone free": "taipei metro last train time app for iphone with no subscription",
+        "taipei mrt trip time estimate app for iphone free": "taipei mrt trip time estimate app for iphone with no subscription",
+    },
 }
 _DISPLAY_QUESTIONS = {
     legacy.lower(): shown

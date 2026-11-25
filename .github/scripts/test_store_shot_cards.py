@@ -223,6 +223,58 @@ class PostTest(unittest.TestCase):
                 S.post_instagram(linked, "https://raw.githubusercontent.com/o/r/feed-cards/d/")
         self.assertEqual(calls, [], "nothing is uploaded, not even the cards")
 
+    def test_cards_must_be_served_before_instagram_is_asked(self):
+        # 2026-11-25 run 45568746526: HTTP 400 / 2207052 while the branch URL still answered a text 404.
+        import tempfile
+        folder = Path(tempfile.mkdtemp())
+        (folder / "01.jpg").write_bytes(b"card1")
+        (folder / "02.jpg").write_bytes(b"card2")
+
+        class R(io.BytesIO):
+            def __init__(self, body, status=200, ctype="image/jpeg"):
+                super().__init__(body)
+                self.status, self.headers = status, {"Content-Type": ctype}
+
+        answers = {"01.jpg": [R(b"404: Not Found", 200, "text/plain"), R(b"card1")], "02.jpg": [R(b"old"), R(b"card2")]}
+        opener = lambda url: answers[url.rsplit("/", 1)[-1]].pop(0)
+        with mock.patch.object(S.time, "sleep") as slept, mock.patch("sys.stdout"):
+            S.wait_public("https://raw.githubusercontent.com/o/r/sha/d/", folder, ["01.jpg", "02.jpg"], opener=opener)
+        self.assertEqual(slept.call_count, 1)
+        never = lambda url: R(b"404: Not Found", 200, "text/plain")
+        with mock.patch.object(S.time, "sleep"), mock.patch("sys.stdout"), self.assertRaises(RuntimeError):
+            S.wait_public("u", folder, ["01.jpg"], timeout=0, opener=never)
+        calls = []
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(S.clip_posts, "_post", side_effect=lambda *a, **k: calls.append(a)), \
+                mock.patch.object(S.clip_posts, "_get", return_value={"user_id": "u"}), \
+                mock.patch.object(S, "wait_public", side_effect=RuntimeError("not served")):
+            with self.assertRaises(RuntimeError):
+                S.post_instagram(self.PLAN, "u", folder=folder)
+        self.assertEqual(calls, [], "nothing reaches Instagram while a card is not served")
+
+    def test_a_card_instagram_could_not_fetch_is_asked_again_other_errors_are_not(self):
+        fetch_fail = RuntimeError('HTTP 400: {"error":{"message":"Only photo or video can be accepted as media type.",'
+                                  '"code":9004,"error_subcode":2207052}}')
+        seq = [fetch_fail, {"id": "c1"}]
+
+        def flaky(url, fields, timeout=60):
+            v = seq.pop(0)
+            if isinstance(v, Exception):
+                raise v
+            return v
+
+        with mock.patch.object(S.clip_posts, "_post", side_effect=flaky), mock.patch.object(S.time, "sleep") as slept, \
+                mock.patch("sys.stdout"):
+            self.assertEqual(S._child("u", {"image_url": "b/01.jpg"}), "c1")
+        self.assertEqual(slept.call_args_list[0].args, (S.FETCH_RETRY[0],))
+        with mock.patch.object(S.clip_posts, "_post", side_effect=[fetch_fail] * 3), mock.patch.object(S.time, "sleep"), \
+                mock.patch("sys.stdout"), self.assertRaises(RuntimeError):
+            S._child("u", {"image_url": "b/01.jpg"})
+        with mock.patch.object(S.clip_posts, "_post", side_effect=[RuntimeError("HTTP 400: bad token")]) as once, \
+                mock.patch.object(S.time, "sleep"), self.assertRaises(RuntimeError):
+            S._child("u", {"image_url": "b/01.jpg"})
+        self.assertEqual(once.call_count, 1)
+        self.assertFalse(S.volume_ramp.is_throttle_error(fetch_fail), "a fetch failure is not a slow-down answer")
+
     def test_main_posts_records_and_throttles_on_a_slow_down_answer(self):
         # The real channel rotation can put Instagram in its holdout week (11-02..11-09 sat it out and main()
         # returned 0 without posting); this test is about posting and throttling, so isolate it from the calendar.

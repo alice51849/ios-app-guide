@@ -98,14 +98,15 @@ jobs:
           git add "$dir"
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "feed cards $dir"
           git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" feed-cards:feed-cards
-          echo "url=https://raw.githubusercontent.com/${{ github.repository }}/feed-cards/$dir" >> "$GITHUB_OUTPUT"
+          # The commit, not the branch: a branch URL can still resolve to the previous orphan commit for a while
+          # after this force-push (2026-11-25 HTTP 400 / 2207052); a commit URL has nothing to resolve.
+          echo "url=https://raw.githubusercontent.com/${{ github.repository }}/$(git rev-parse HEAD)/$dir" >> "$GITHUB_OUTPUT"
       - name: Post the carousel to Instagram
         if: steps.cards.outputs.made == 'true' && inputs.dry_run != true
         env:
           GITHUB_TOKEN: ${{ github.token }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: |
-          sleep 20  # let raw.githubusercontent.com serve the new files
           python3 .github/scripts/store_shot_cards.py post --dir "$RUNNER_TEMP/feed-cards" --base-url "${{ steps.card.outputs.url }}"
       - name: Show the plan (dry run)
         if: steps.cards.outputs.made == 'true' && inputs.dry_run == true

@@ -601,13 +601,68 @@ def checked_caption(plan):
                        label=f"feed {plan['key']}")
 
 
-def post_instagram(plan, base_url, wait=PAUSE, tries=40):
-    """Carousel container from the published card URLs, published; {"id", "link"} or None without a token."""
+# 2026-11-25 (00_GrowthEngine ops/handoff/support_push/ios-app-guide/ig_feed_400_fix_1125): run 45568746526 got
+# HTTP 400 / 9004 / 2207052 "Only photo or video can be accepted" on the first card while the file was fine
+# (200, image/jpeg, 1080x1350 baseline). The card URL named the feed-cards branch, which every run force-pushes
+# as a new orphan commit, and Instagram was asked 20 s after the push: a branch URL can still resolve to the
+# previous commit (no such folder -> a text 404), which Instagram reads as "not a photo". The workflow now hands
+# a commit URL (nothing to resolve), every card is checked to serve the exact drawn bytes before Instagram is
+# asked, and a "could not fetch" answer for one card is retried before the run gives up.
+PUBLIC_WAIT = 240           # seconds the cards may take to show at their public URL
+PUBLIC_STEP = 15
+FETCH_RETRY = (30, 90)      # pauses before asking Instagram again for a card it could not fetch
+FETCH_FAILED = ("2207052", "\"code\":9004", "Only photo or video", "Media download has failed")
+
+
+def wait_public(base_url, folder, names, timeout=PUBLIC_WAIT, step=PUBLIC_STEP, opener=None):
+    """Block until every card URL answers 200 with an image and the exact bytes drawn in `folder`; raise
+    RuntimeError naming the cards that never did (nothing is sent to Instagram then)."""
+    opener = opener or (lambda url: urllib.request.urlopen(
+        urllib.request.Request(url, headers={"User-Agent": "lumi-clip-poster/1.0", "Cache-Control": "no-cache"}),
+        timeout=30))
+    want = {n: hashlib.sha256((Path(folder) / n).read_bytes()).hexdigest() for n in names}
+    deadline = time.monotonic() + timeout
+    while True:
+        bad = []
+        for name in names:
+            try:
+                with opener(f"{base_url.rstrip('/')}/{name}") as r:
+                    ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip()
+                    ok = r.status == 200 and ctype.startswith("image/") and hashlib.sha256(r.read()).hexdigest() == want[name]
+            except Exception:
+                ok = False
+            if not ok:
+                bad.append(name)
+        if not bad:
+            return
+        if time.monotonic() >= deadline:
+            raise RuntimeError(f"feed: cards not served at {base_url}: {', '.join(bad)}")
+        print(f"feed: waiting for {', '.join(bad)} at the public URL")
+        time.sleep(step)
+
+
+def _child(user, fields):
+    """One carousel item; an Instagram "could not fetch the image" answer is asked again (FETCH_RETRY)."""
+    for pause in FETCH_RETRY + (None,):
+        try:
+            return clip_posts._post(f"{GRAPH}/{user}/media", fields)["id"]
+        except RuntimeError as exc:
+            if pause is None or not any(m in str(exc) for m in FETCH_FAILED):
+                raise
+            print(f"::warning::feed: Instagram could not fetch {fields['image_url'].rsplit('/', 1)[-1]}; asking again in {pause}s")
+            time.sleep(pause)
+
+
+def post_instagram(plan, base_url, wait=PAUSE, tries=40, folder=None):
+    """Carousel container from the published card URLs, published; {"id", "link"} or None without a token.
+    With `folder` (the drawn cards), every URL must serve those exact bytes before Instagram is asked."""
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
     if not token:
         print("feed: IG_ACCESS_TOKEN not set, carousel skipped")
         return None
     caption = checked_caption(plan)   # before any upload: a caption that cannot go out stops the whole carousel
+    if folder is not None:
+        wait_public(base_url, folder, plan["cards"])
     me = clip_posts._get(f"{GRAPH}/me?fields=user_id,username&access_token={token}")
     user = me.get("user_id") or me.get("id")
     children = []
@@ -615,7 +670,7 @@ def post_instagram(plan, base_url, wait=PAUSE, tries=40):
         fields = {"image_url": f"{base_url.rstrip('/')}/{name}", "is_carousel_item": "true", "access_token": token}
         if i == 0 and plan.get("alt"):
             fields["alt_text"] = plan["alt"][:1000]
-        children.append(clip_posts._post(f"{GRAPH}/{user}/media", fields)["id"])
+        children.append(_child(user, fields))
         time.sleep(min(wait, 2))
     container = clip_posts._post(f"{GRAPH}/{user}/media", {
         "media_type": "CAROUSEL", "children": ",".join(children), "caption": caption,
@@ -682,7 +737,7 @@ def main(argv=None):
     if CR.paused_notice("instagram"):  # channel rotation holdout week: no Instagram feed post, green
         return 0
     try:
-        posted = post_instagram(plan, args.base_url)
+        posted = post_instagram(plan, args.base_url, folder=args.dir)
     except Exception as exc:
         volume_ramp.handle_error(CHANNEL, exc, day=day)
         raise

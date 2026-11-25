@@ -48,7 +48,6 @@ PROFILES: dict[str, dict] = {
             "post.yml": 24,
             "multi.yml": 24,
             "nostr.yml": 24,
-            "devto.yml": 30,
             "frontpage.yml": 30,
             "standard_site.yml": 30,
             "passive_appviews.yml": 30,

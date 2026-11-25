@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import datetime as dt
 import json
 import os
 from pathlib import Path
@@ -28,6 +29,16 @@ PROVIDER_TOKEN_FILES = (
     Path.home() / ".growth-private" / "app_store_provider_token",
 )
 PROMOTIONAL_RATING_MIN_VALUE = 4.0
+# Price facts are only printed from a snapshot whose own checked_at is this
+# recent, and only for records whose price was confirmed by a second live
+# lookup (``price_readback``/``currency_readback``) in the same refresh.  A
+# zero price additionally needs readback-confirmed zero for at least
+# ZERO_CONFIRM_MIN_GAP across refreshes (``zero_since``) and is never printed
+# once the listing was seen paid (payload ``paid_seen``), so flaky or
+# persistent zero readings can never republish "Free" on a paid listing.
+PRICE_READBACK_MAX_AGE = dt.timedelta(hours=36)
+ZERO_CONFIRM_MIN_GAP = dt.timedelta(hours=12)
+PRICE_READBACK_MAX_FUTURE_SKEW = dt.timedelta(minutes=10)
 PROMOTIONAL_RATING_MIN_COUNT = 2
 LOCALE_STOREFRONTS = json.loads(
     Path(__file__).with_name("locale_storefronts.json").read_text(encoding="utf-8")
@@ -639,18 +650,152 @@ def load_storefront_availability(pages_dir) -> dict[str, frozenset[str]]:
     }
 
 
+def _snapshot_checked_at(payload: dict[str, object]) -> dt.datetime | None:
+    value = payload.get("checked_at")
+    if not isinstance(value, str):
+        return None
+    try:
+        checked = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if checked.tzinfo is None:
+        return None
+    return checked
+
+
+def snapshot_prices_fresh(
+    payload: dict[str, object],
+    now: dt.datetime | None = None,
+) -> bool:
+    """Whether the snapshot's own checked_at is recent enough to print prices."""
+    checked = _snapshot_checked_at(payload)
+    if checked is None:
+        return False
+    if now is None:
+        now = dt.datetime.now(dt.timezone.utc)
+    elif now.tzinfo is None:
+        now = now.replace(tzinfo=dt.timezone.utc)
+    age = now - checked
+    return -PRICE_READBACK_MAX_FUTURE_SKEW <= age <= PRICE_READBACK_MAX_AGE
+
+
+def _is_zero_price(value: object) -> bool:
+    return (
+        isinstance(value, str)
+        and PRICE_RE.fullmatch(value) is not None
+        and float(value) == 0
+    )
+
+
+def _parse_utc(value: object) -> dt.datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo is not None else None
+
+
+def snapshot_paid_seen(payload: dict[str, object]) -> dict[str, set[str]]:
+    """Listings ever recorded with a paid price, per storefront (sticky).
+
+    Reads the payload's ``paid_seen`` map plus any positive price still in
+    ``details`` (covers snapshots written before the map existed).
+    """
+    seen: dict[str, set[str]] = {}
+    if not isinstance(payload, dict):
+        return seen
+    stored = payload.get("paid_seen")
+    if isinstance(stored, dict):
+        for country, app_ids in stored.items():
+            if isinstance(country, str) and isinstance(app_ids, list):
+                seen.setdefault(country, set()).update(
+                    str(app_id) for app_id in app_ids if str(app_id).isdigit()
+                )
+    details = payload.get("details")
+    if isinstance(details, dict):
+        for country, app_details in details.items():
+            if not isinstance(country, str) or not isinstance(app_details, dict):
+                continue
+            for app_id, detail in app_details.items():
+                if not str(app_id).isdigit() or not isinstance(detail, dict):
+                    continue
+                for field in ("price", "price_readback"):
+                    value = detail.get(field)
+                    if (
+                        isinstance(value, str)
+                        and PRICE_RE.fullmatch(value) is not None
+                        and float(value) > 0
+                    ):
+                        seen.setdefault(country, set()).add(str(app_id))
+    return seen
+
+
+def price_readback_confirmed(
+    detail: dict[str, object],
+    *,
+    checked_at: dt.datetime | None = None,
+    paid_seen: bool = False,
+) -> bool:
+    """General rule: print a price only when a live readback agrees with it.
+
+    The readback must match both price and currency.  A zero price ("Free")
+    additionally needs readback-confirmed zero since at least
+    ``ZERO_CONFIRM_MIN_GAP`` before this snapshot (``zero_since``), and is
+    never printed for a listing once seen paid (in any storefront): only a
+    person editing the snapshot can turn a once-paid listing "Free".  Applies to every app alike.
+    """
+    price = detail.get("price")
+    readback = detail.get("price_readback")
+    if (
+        not isinstance(price, str)
+        or not isinstance(readback, str)
+        or PRICE_RE.fullmatch(readback) is None
+        or readback != price
+        or detail.get("currency_readback") != detail.get("currency")
+    ):
+        return False
+    if _is_zero_price(price):
+        if paid_seen or checked_at is None:
+            return False
+        zero_since = _parse_utc(detail.get("zero_since"))
+        return (
+            zero_since is not None
+            and checked_at - zero_since >= ZERO_CONFIRM_MIN_GAP
+        )
+    return True
+
+
 def load_storefront_details(
     pages_dir,
+    *,
+    verified: bool = True,
+    now: dt.datetime | None = None,
 ) -> dict[str, dict[str, dict[str, object]]]:
-    """Read validated public price and rating facts from the Apple snapshot."""
+    """Read validated public price and rating facts from the Apple snapshot.
+
+    With ``verified`` (the default for every page generator) a stale snapshot
+    yields no facts at all, and a record whose price was not confirmed by a
+    live readback is dropped, so callers print no price for it.  Only the
+    snapshot refresher reads ``verified=False`` raw records.
+    """
     path = Path(pages_dir) / STATE_FILE
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, TypeError, ValueError, json.JSONDecodeError):
         return {}
+    if not isinstance(payload, dict):
+        return {}
     details = payload.get("details")
     if not isinstance(details, dict):
         return {}
+    if verified and not snapshot_prices_fresh(payload, now):
+        return {}
+    checked_at = _snapshot_checked_at(payload)
+    # A listing seen paid in any storefront is never printed "Free" anywhere:
+    # one price tier per app, so a lone zero is far likelier a misread.
+    paid_anywhere = set().union(*snapshot_paid_seen(payload).values())
     result: dict[str, dict[str, dict[str, object]]] = {}
     for country, app_details in details.items():
         if (
@@ -675,11 +820,26 @@ def load_storefront_details(
                 or len(formatted_price) > 64
             ):
                 continue
+            if verified and not price_readback_confirmed(
+                detail,
+                checked_at=checked_at,
+                paid_seen=str(app_id) in paid_anywhere,
+            ):
+                continue
             record: dict[str, object] = {
                 "price": price,
                 "currency": currency,
                 "formatted_price": formatted_price.strip(),
             }
+            if not verified:
+                value = detail.get("price_readback")
+                if isinstance(value, str) and PRICE_RE.fullmatch(value):
+                    record["price_readback"] = value
+                value = detail.get("currency_readback")
+                if isinstance(value, str) and CURRENCY_RE.fullmatch(value):
+                    record["currency_readback"] = value
+                if _parse_utc(detail.get("zero_since")) is not None:
+                    record["zero_since"] = detail["zero_since"]
             rating_value = detail.get("rating_value")
             rating_count = detail.get("rating_count")
             if (

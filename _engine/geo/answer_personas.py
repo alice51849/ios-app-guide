@@ -914,7 +914,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "query": "best simple to do list app iphone no subscription",
             "triggers": ["simple to do list", "simple todo", "minimalist to do", "for minimalists", "no project management"],
             "persona": "minimalists",
-            "lead": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — Mochi is free to start, and its Premium upgrade is a one-time in-app purchase.",
+            "lead": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery.",
             "paras": [
                 "A minimalist checklist should let you jot a task, give it an emoji, set a reminder and tap the circle when it's done — nothing more. Mochi's App Store listing describes exactly that kind of simple checklist, with a Home Screen widget and Apple Watch support.",
                 "The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",

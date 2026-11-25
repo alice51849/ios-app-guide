@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime as dt
 import html
 import json
 import re
@@ -85,11 +86,16 @@ def _state(
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
+        # Live readback confirmed the zero price in this and the prior run.
+        "price_readback": "0",
+        "currency_readback": "USD",
+        "zero_since": "2026-01-01T00:00:00Z",
     }
     if include_rating:
         detail.update({"rating_value": 4.8, "rating_count": 12})
     return {
         "version": 2,
+        "checked_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "countries": {"us": [app_id], "bd": []},
         "details": {
             "us": {app_id: detail} if include_detail else {},

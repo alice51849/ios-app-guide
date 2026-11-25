@@ -18,6 +18,9 @@ import countdown_cards as cd  # noqa: E402
 import store_shot_cards as S  # noqa: E402
 import volume_ramp as R  # noqa: E402
 
+REAL_HOLD = S.SHOT_REVIEWED
+S.SHOT_REVIEWED = Path(__file__).resolve().parent / "no-such-hold-list.json"  # the 11-25 hold has its own tests below
+
 
 TEXT = {"zh-Hant": ("待辦清單也可以這麼可愛", "每天打勾更開心", "可愛待辦清單"),
         "ja": ("ToDoリストがこんなにかわいい", "毎日チェックが楽しい", "かわいいToDo"),
@@ -376,6 +379,58 @@ class Top5Test(unittest.TestCase):
             out = S.compose_text_card(["8", "mochi name", "Guan Feng Lai"], clip("mochi", "zh-Hant"),
                                       Path(tmp) / "c.jpg", badge="我們做的 App")
             self.assertGreater(out.stat().st_size, 10_000)
+
+
+class ShotFallbackHoldTest(unittest.TestCase):
+    """2026-11-25 hold: the screenshot carousel only for a natively reviewed (pair, variant, exact text)."""
+
+    def test_only_a_reviewed_text_is_picked_and_the_rest_stays_empty(self):
+        d = data(("mochi", "zh-Hant"), ("cyca", "ja"))
+        day = dt.date(2026, 10, 17)
+        with tempfile.TemporaryDirectory() as tmp:
+            hold = Path(tmp) / "hold.json"
+            hold.write_text(json.dumps({"pass": []}), encoding="utf-8")
+            with mock.patch.object(S, "SHOT_REVIEWED", hold):
+                self.assertEqual(S.pick(d, [], day, 7), (None, None))          # nothing reviewed: the slot stays empty
+                c = d["clips"]["cyca/ja"]
+                v = S.SC.choose(c, S.CHANNEL, day)
+                hold.write_text(json.dumps({"pass": [{"key": "feed/cyca/ja", "variant": v["id"],
+                                                      "text_sha": S.shot_text_sha(c, v)}]}), encoding="utf-8")
+                self.assertEqual(S.pick(d, [], day, 7)[0], "feed/cyca/ja")      # the unreviewed mochi is skipped
+                hold.write_text(json.dumps({"pass": [{"key": "feed/cyca/ja", "variant": v["id"],
+                                                      "text_sha": "0" * 16}]}), encoding="utf-8")
+                self.assertEqual(S.pick(d, [], day, 7), (None, None))          # the text changed since the review
+                hold.write_text("not json", encoding="utf-8")
+                self.assertEqual(S.pick(d, [], day, 7), (None, None))          # an unreadable list holds everything
+
+    def test_changed_store_screenshots_leave_the_slot_empty(self):
+        d = data(("mochi", "zh-Hant"))
+        day = dt.date(2026, 10, 17)
+        c = d["clips"]["mochi/zh-Hant"]
+        v = S.SC.choose(c, S.CHANNEL, day)
+        urls = ["https://x/1.jpg", "https://x/2.jpg"]
+        with tempfile.TemporaryDirectory() as tmp:
+            hold = Path(tmp) / "hold.json"
+            entry = {"key": "feed/mochi/zh-Hant", "variant": v["id"], "text_sha": S.shot_text_sha(c, v),
+                     "shots_sha": S.shots_sha(urls)}
+            hold.write_text(json.dumps({"pass": [entry]}), encoding="utf-8")
+            with mock.patch.object(S, "SHOT_REVIEWED", hold), \
+                    mock.patch.object(S, "compose", side_effect=lambda b, h, cl, out: Path(out)), \
+                    mock.patch.object(S.volume_ramp, "room", return_value=(1, 0, 1)), \
+                    mock.patch.object(S, "make_queued", return_value=None), mock.patch("sys.stdout"):
+                with mock.patch.object(S, "shot_urls", return_value=urls):
+                    plan = S.make(Path(tmp) / "a", day, 7, data=d, posts=[], fetcher=lambda u: shot_png())
+                self.assertEqual(plan["key"], "feed/mochi/zh-Hant")                # the reviewed screenshots: goes out
+                with mock.patch.object(S, "shot_urls", return_value=urls[::-1]):
+                    self.assertIsNone(S.make(Path(tmp) / "b", day, 7, data=d, posts=[], fetcher=lambda u: shot_png()))
+
+    def test_the_committed_hold_list_is_in_place_and_well_formed(self):
+        doc = json.loads(REAL_HOLD.read_text(encoding="utf-8"))
+        self.assertTrue(doc["pass"])
+        for e in doc["pass"]:
+            self.assertRegex(e["key"], r"^feed/[^/]+/[^/]+$")
+            self.assertRegex(e["text_sha"], r"^[0-9a-f]{16}$")
+            self.assertRegex(e["shots_sha"], r"^[0-9a-f]{16}$")
 
 
 if __name__ == "__main__":

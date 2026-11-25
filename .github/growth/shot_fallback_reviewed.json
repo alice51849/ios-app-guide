@@ -1,0 +1,40 @@
+{
+ "note": "Screenshot carousel fallback hold (00_GrowthEngine ops/handoff/support_push/ios-app-guide/screenshot_fallback_hold_1125). Only these exact texts may go out; receipts: 00 reports/outreach_scale/carousel_review_audit_2026-11-25.md section 截圖輪播退路.",
+ "pass": [
+  {
+   "key": "feed/claudeusagemini/zh-Hant",
+   "variant": "b",
+   "text_sha": "d2d0fad285e4ca29",
+   "review": "2026-11-25 native opus review PASS; Play page read back 200",
+   "shots_sha": "74548b19ea61527c"
+  },
+  {
+   "key": "feed/maskmyfile/en",
+   "variant": "b",
+   "text_sha": "5c04fc79c72eebb2",
+   "review": "2026-11-25 native opus review PASS; Play page read back 200",
+   "shots_sha": "8b34a0052e2bc3f0"
+  },
+  {
+   "key": "feed/maskmyfile/ja",
+   "variant": "c",
+   "text_sha": "b6dab79d4b21a760",
+   "review": "2026-11-25 native opus review PASS; Play page read back 200",
+   "shots_sha": "8ef2959649a4071b"
+  },
+  {
+   "key": "feed/lumiweather/en",
+   "variant": "a",
+   "text_sha": "bccc1268f778e78a",
+   "review": "2026-11-25 native opus review PASS; Play page read back 200",
+   "shots_sha": "aa2a475da5a476aa"
+  },
+  {
+   "key": "feed/lumiletters/en",
+   "variant": "b",
+   "text_sha": "3f74bdb81cac1072",
+   "review": "2026-11-25 native opus review PASS; Play page read back 200",
+   "shots_sha": "bf21d54cf4484c88"
+  }
+ ]
+}

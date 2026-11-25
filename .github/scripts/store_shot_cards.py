@@ -28,6 +28,7 @@ link is the hub ig_bio_hub.py builds, ig_bio.py); the drawn cards carry no URL e
 """
 import argparse
 import datetime as dt
+import hashlib
 import io
 import json
 import os
@@ -96,6 +97,49 @@ def recent(posts, day, days, prefix=KEY_PREFIX):
     return apps, keys
 
 
+# 2026-11-25 hold (coordinator ruling 1230, 00_GrowthEngine ops/handoff/support_push/ios-app-guide/
+# screenshot_fallback_hold_1125): the screenshot carousel goes out only when this exact text (pair, variant, card
+# lines, caption, alt) has a native review PASS on file; anything else is skipped and the slot stays empty.
+SHOT_REVIEWED = HERE.parent / "growth" / "shot_fallback_reviewed.json"
+
+
+def shot_text_sha(clip, variant):
+    lines = [card_lines(clip, variant, i) for i in range(CARDS_MAX)]
+    blob = json.dumps([lines, caption(clip, variant), SC.alt_text(clip, variant)], ensure_ascii=False)
+    return hashlib.sha256(blob.encode("utf-8")).hexdigest()[:16]
+
+
+def reviewed(key, clip, day, path=None):
+    """True when no hold list is in place, else only for a (key, variant, text digest) the list passes."""
+    p = Path(path or SHOT_REVIEWED)
+    if not p.exists():
+        return True
+    try:
+        passed = json.loads(p.read_text(encoding="utf-8")).get("pass") or []
+    except (OSError, ValueError):
+        return False
+    variant = SC.choose(clip, CHANNEL, day)
+    sha = shot_text_sha(clip, variant)
+    return any(e.get("key") == key and e.get("variant") == variant["id"] and e.get("text_sha") == sha for e in passed)
+
+
+def shots_sha(urls):
+    return hashlib.sha256("\n".join(urls).encode("utf-8")).hexdigest()[:16]
+
+
+def shots_reviewed(key, variant_id, urls, path=None):
+    """With the hold list in place, the live store screenshots must be the ones the reviewer saw (same list, order)."""
+    p = Path(path or SHOT_REVIEWED)
+    if not p.exists():
+        return True
+    try:
+        passed = json.loads(p.read_text(encoding="utf-8")).get("pass") or []
+    except (OSError, ValueError):
+        return False
+    sha = shots_sha(urls)
+    return any(e.get("key") == key and e.get("variant") == variant_id and e.get("shots_sha") == sha for e in passed)
+
+
 def pick(data, posts, day, slot):
     """(key, clip) for this slot: the first app in planner order with a clip in one of the slot's locales,
     not featured in the feed this week, this pair not within 60 days. None when nothing fits."""
@@ -110,7 +154,7 @@ def pick(data, posts, day, slot):
         for locale in locales:
             clip = clips.get(f"{app}/{locale}")
             key = f"{KEY_PREFIX}{app}/{locale}"
-            if clip and clip.get("store_url") and key not in old_keys:
+            if clip and clip.get("store_url") and key not in old_keys and reviewed(key, clip, day):
                 return key, clip
     return None, None
 
@@ -517,6 +561,9 @@ def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
         return None
     variant = SC.choose(clip, CHANNEL, day)
     urls = shot_urls(clip, clip["locale"])
+    if not shots_reviewed(key, variant["id"], urls):
+        print(f"feed: {key} store screenshots changed since the native review; the slot stays empty")
+        return None
     if len(urls) < CARDS_MIN:
         print(f"feed: {key} has {len(urls)} store screenshots in {STOREFRONT.get(clip['locale'], 'us')}; need {CARDS_MIN}")
         return None

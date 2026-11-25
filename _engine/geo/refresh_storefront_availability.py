@@ -20,6 +20,7 @@ from app_store_storefronts import (  # noqa: E402
     STATE_FILE,
     load_storefront_availability,
     load_storefront_details,
+    snapshot_paid_seen,
 )
 from appstore_live import _lookup_country_records, live_app_keys  # noqa: E402
 from family_travel_dataset import write_text_if_changed  # noqa: E402
@@ -116,6 +117,21 @@ def _public_detail(item: dict[str, object]) -> dict[str, object] | None:
     return detail
 
 
+def _retained_details(
+    previous_details: dict[str, dict[str, dict[str, object]]],
+    country: str,
+) -> dict[str, dict[str, object]]:
+    """Carry cached facts over without any live readback: not printable."""
+    retained: dict[str, dict[str, object]] = {}
+    for app_id, detail in previous_details.get(country, {}).items():
+        record = dict(detail)
+        record.pop("price_readback", None)
+        record.pop("currency_readback", None)
+        record.pop("zero_since", None)
+        retained[app_id] = record
+    return retained
+
+
 def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
     pages = Path(pages)
     path = pages / STATE_FILE
@@ -127,9 +143,13 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
         return load_storefront_availability(pages)
 
     previous = load_storefront_availability(pages)
-    previous_details = load_storefront_details(pages)
+    paid_seen = snapshot_paid_seen(previous_payload)
+    # Raw records: the refresher needs last run's prices even when they are
+    # no longer printable, to carry them over and to confirm zero prices.
+    previous_details = load_storefront_details(pages, verified=False)
     countries: dict[str, list[str]] = {}
     details: dict[str, dict[str, dict[str, object]]] = {}
+    fresh_countries: list[str] = []
     refreshed = 0
     for country in sorted(AVAILABILITY_STOREFRONTS):
         try:
@@ -139,13 +159,13 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
                 print(f"{country}: unavailable ({error})")
                 continue
             observed = set(previous[country])
-            country_details = dict(previous_details.get(country, {}))
+            country_details = _retained_details(previous_details, country)
             print(f"{country}: retained cached snapshot ({error})")
         else:
             observed = set(records)
             if not observed and previous.get(country):
                 observed = set(previous[country])
-                country_details = dict(previous_details.get(country, {}))
+                country_details = _retained_details(previous_details, country)
                 print(f"{country}: retained non-empty snapshot after zero result")
             else:
                 country_details = {}
@@ -153,6 +173,7 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
                     detail = _public_detail(item)
                     if detail is not None:
                         country_details[app_id] = detail
+                fresh_countries.append(country)
                 refreshed += 1
         countries[country] = sorted(observed & app_ids)
         details[country] = {
@@ -163,15 +184,65 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
 
     if not countries:
         raise RuntimeError("No App Store storefront snapshots are available")
+    checked_at = now.isoformat().replace("+00:00", "Z")
+    # Live readback: a second lookup pass, after the whole first sweep, must
+    # report the same price before generators may print it.  Countries whose
+    # readback fails keep no readback, so their prices are not printed.
+    for country in fresh_countries:
+        try:
+            readback_records = _lookup_country_records(app_ids, country)
+        except Exception as error:
+            print(f"{country}: price readback unavailable ({error})")
+            continue
+        for app_id, detail in details[country].items():
+            item = readback_records.get(app_id)
+            readback = None if item is None else _public_detail(item)
+            if readback is not None:
+                detail["price_readback"] = readback["price"]
+                detail["currency_readback"] = readback["currency"]
+            if (
+                readback is not None
+                and readback["price"] == detail["price"]
+                and readback["currency"] == detail["currency"]
+                and float(detail["price"]) == 0
+            ):
+                # Keep the earliest readback-confirmed zero; any break in the
+                # chain (paid, missing, unconfirmed) restarts the clock.
+                previous_detail = previous_details.get(country, {}).get(
+                    app_id, {}
+                )
+                previous_confirmed_zero = (
+                    previous_detail.get("price") == detail["price"]
+                    and previous_detail.get("price_readback") == detail["price"]
+                    and isinstance(previous_detail.get("zero_since"), str)
+                )
+                detail["zero_since"] = (
+                    previous_detail["zero_since"]
+                    if previous_confirmed_zero
+                    else checked_at
+                )
+    # Sticky paid history: carried over even when a storefront or an app is
+    # missing from this refresh, so it can only grow.
+    for country, app_details in details.items():
+        for app_id, detail in app_details.items():
+            for field in ("price", "price_readback"):
+                value = detail.get(field)
+                if isinstance(value, str) and float(value) > 0:
+                    paid_seen.setdefault(country, set()).add(app_id)
     payload = {
         "version": 2,
         "source": "Apple iTunes Lookup API",
-        "checked_at": now.isoformat().replace("+00:00", "Z"),
+        "checked_at": checked_at,
         "app_count": len(app_ids),
         "app_ids": sorted(app_ids),
         "storefronts": sorted(AVAILABILITY_STOREFRONTS),
         "countries": countries,
         "details": details,
+        "paid_seen": {
+            country: sorted(seen_ids)
+            for country, seen_ids in sorted(paid_seen.items())
+            if seen_ids
+        },
     }
     write_text_if_changed(
         path,

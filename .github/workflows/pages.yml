@@ -265,6 +265,11 @@ jobs:
             -s _engine/geo/tests -p test_result_image_index.py -q
           python3 _engine/geo/result_image_index.py --pages .
           python3 _engine/geo/result_image_index.py --pages . --check
+      - name: K9 first-screen fixes and shared batch ct on the top-50 pages
+        # 00_GrowthEngine geo/k9_first_screen.py（鏡像 _engine/geo）：清單 50 頁的首屏修錯與共用批次 ct
+        # k9top50_1121（reports/yi_review/log.md 2026-11-20 件 B K9）。只改部署產物、跳過按位元組釘選的頁、
+        # 失敗不擋部署；要在點擊計數之前，計數才在點擊當下讀到新 ct。
+        run: python3 _engine/geo/k9_first_screen.py apply --pages .
       - name: Add the anonymous download-click counter
         # 與支援站同一塊匿名點擊計數（00_GrowthEngine geo/click_beacon.py，鏡像在
         # _engine/geo）：點 App Store／Google Play 連結時用 sendBeacon 送 {p,a,ct,s}

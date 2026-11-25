@@ -1503,11 +1503,16 @@ class GeneratorTests(unittest.TestCase):
             (pages / app_store_storefronts.STATE_FILE).write_text(
                 json.dumps(
                     {
+                        "checked_at": dt.datetime.now(
+                            dt.timezone.utc
+                        ).isoformat(),
                         "countries": {"jp": ["6773017109"]},
                         "details": {
                             "jp": {
                                 "6773017109": {
                                     "price": "600",
+                                    "price_readback": "600",
+                                    "currency_readback": "JPY",
                                     "currency": "JPY",
                                     "formatted_price": "¥600",
                                     "rating_value": 4.9,
@@ -26054,13 +26059,15 @@ class GeneratorTests(unittest.TestCase):
                 "formatted_price": "免費",
                 "rating_value": 5.0,
                 "rating_count": 3,
+                "price_readback": "0",
+                "currency_readback": "TWD",
+                "zero_since": payload["checked_at"],
             },
             payload["details"]["tw"][str(app_id)],
         )
-        self.assertEqual(
-            payload["details"]["tw"],
-            loaded_details["tw"],
-        )
+        # A zero price is printable only once readback-confirmed zero for
+        # 12 hours across refreshes; on a first run no price is printed.
+        self.assertEqual({}, loaded_details["tw"])
 
     def test_storefront_snapshot_invalidates_fresh_cache_after_app_launch(self):
         existing_id = str(APPSTORE["lumibopomofo"])
@@ -26115,7 +26122,9 @@ class GeneratorTests(unittest.TestCase):
                 snapshot = refresh_storefront_availability.refresh(directory)
             payload = json.loads(state.read_text(encoding="utf-8"))
 
-        lookup.assert_called_once_with({existing_id, launched_id}, "us")
+        # One availability lookup plus one live price readback pass.
+        self.assertEqual(2, lookup.call_count)
+        lookup.assert_called_with({existing_id, launched_id}, "us")
         self.assertEqual(
             frozenset({existing_id, launched_id}),
             snapshot["us"],
@@ -27797,11 +27806,17 @@ class GeneratorTests(unittest.TestCase):
             (pages / app_store_storefronts.STATE_FILE).write_text(
                 json.dumps(
                     {
+                        "checked_at": dt.datetime.now(
+                            dt.timezone.utc
+                        ).isoformat(),
                         "countries": {"de": ["6773017109"]},
                         "details": {
                             "de": {
                                 "6773017109": {
                                     "price": "0",
+                                    "price_readback": "0",
+                                    "currency_readback": "EUR",
+                                    "zero_since": "2026-01-01T00:00:00Z",
                                     "currency": "EUR",
                                     "formatted_price": "Free",
                                     "rating_value": 4.9,

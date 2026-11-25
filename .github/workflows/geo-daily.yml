@@ -635,9 +635,12 @@ jobs:
         # 已含此檔。測試紅或落檔失敗都只警告、絕不讓這步失敗。
         run: |
           if python3 .github/scripts/test_new_url_freeze_count.py -q; then
-            python3 .github/scripts/new_url_freeze_count.py \
-              --frozen-log "$RUNNER_TEMP/frozen_answers.log" \
-              || echo "::warning title=被擋新網址數未落檔::new_url_freeze_count.py 失敗；照常發布"
+            # 用 if 明寫警告分支；test_geo_daily_fail_fast 的契約禁止整份工作流程出現
+            # 「兩條直線接 echo／true」的吞錯寫法（連註解裡的字樣也會被掃到）。
+            if ! python3 .github/scripts/new_url_freeze_count.py \
+              --frozen-log "$RUNNER_TEMP/frozen_answers.log"; then
+              echo "::warning title=被擋新網址數未落檔::new_url_freeze_count.py 失敗；照常發布"
+            fi
           else
             echo "::warning title=被擋新網址數未落檔::test_new_url_freeze_count.py 未通過，本場不落檔；照常發布"
           fi

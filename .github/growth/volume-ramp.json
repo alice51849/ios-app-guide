@@ -22,8 +22,7 @@
         3,
         4,
         5,
-        6,
-        10
+        6
       ],
       "slots": [
         1,
@@ -43,6 +42,7 @@
       "events": [],
       "maintenance_note": "2026-10-20 maintenance (10 measurement dept): reels ~1 view each (reports/exposure/channel_views.json), stages [3,4,5,6] -> [1], no climb; capacity moved to Bluesky / YouTube Shorts quality",
       "restore_note": "2026-10-22 業主「所有社群跟影片…全部啟動」：回到安全上限爬坡（每 3 天升一階，平台限流仍自動退階）；Reels 1 → 3→4→5→6（帳號每天總量 ≤10 含輪播與卡片）",
+      "backoff_note": "2026-11-24 統籌裁定（11-23 23:07 第三節，6.1 限流退一級 7 天）：Reels 每天 10 -> 6（stages 拿掉 10，只用 slots 前 6 格 1/9/15/12/22/18＝11-18 前原樣；0/4/14/20 四格保留但不排片）。查因 00_GrowthEngine reports/outreach_scale/ig_reach_drop_2026-11-24.md：11-19 起每支觀看約減半、舊格也跌。12-01 判讀：要再放量照 2.6 送審，不自動爬回。",
       "expand_note": "2026-11-18 外宣十倍令（業主「外宣曝光今天就要達到十倍以上的量」；先換內容再加量）：Reels 6 -> 10 格一天；帳號實際 8 -> 13～15 則（Reels 10＋可愛待辦清單加開 1＋輪播 2＋卡片 0～2，約 x1.6～1.9）；volume_ramp ACCOUNT_DAILY_MAX 10 -> 15 封頂（Instagram API 50／24h）。新格 20 / 0 / 14 英文打頭（美英澳主力線）、4 亞洲午間。英文歷史觀看 09 時最好、美國時段較差，這是押注：11-25 逐格比英文每則觀看，美國格（0/14/15/18/20/22）7 日中位低於 09 格一半就把該格退回（stages 最後一階改回 6）。平台說慢下來照舊自動退一階並鎖 7 天。"
     },
     "instagram_feed": {

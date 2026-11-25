@@ -119,6 +119,21 @@ jobs:
         with:
           path: .growth-runtime/live-app-manifest.json
           key: live-availability-v2-${{ hashFiles('_engine/geo/live_app_manifest.json', '_engine/social/videogen/registry*.json', '_engine/social/videogen/registry.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Commit re-fetched storefront snapshot alone (own checks only)
+        # 11-25 裁定 2307 一：路由或衍生檔測試紅燈時整場不提交，剛重抓、讀回確認的
+        # zero_since 也跟著丟，新變成 0 元的款每輪重算 12 小時、永遠到不了第二次確認。
+        # 這步只在快照自己的檢查（test_storefront_price_readback.py＋
+        # check_storefront_snapshot.py）全綠時，單獨提交並推送 .appstore_storefront_state.json；
+        # 路由與其他衍生檔照舊要全套測試綠才由後面兩個提交步提交（不放寬）。提交只在暫存
+        # worktree（以最新 origin/main 為底）做，本地 HEAD／索引／工作樹都不動：推成功後後面
+        # merge 帶回相同內容；紅燈或推不上去只出 ::warning，行為與沒有這步時完全一樣，
+        # 不讓整場失敗；訊息帶 [skip ci]，推送本身不另觸發 Pages 部署。
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! python3 _engine/geo/commit_storefront_snapshot.py --root "$GITHUB_WORKSPACE"; then
+            echo "::warning title=快照單獨提交沒跑完::commit_storefront_snapshot.py 異常結束；照常往下跑"
+          fi
       - name: Materialize newly live app surfaces
         run: |
           python3 _engine/geo/public_origin_audit.py \

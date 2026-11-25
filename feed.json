@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-25",
- "generated_at": "2026-11-25T02:04:44Z",
+ "generated_at": "2026-11-25T05:04:44Z",
  "items": {
   "bluesky": [
    {
@@ -268,26 +268,136 @@
    },
    {
     "kind": "card",
-    "key": "carousel/duowallpaperstudio-ja-pairs-20261030",
-    "locale": "ja",
-    "app": "duowallpaperstudio",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/01.jpg",
+    "key": "carousel/claudeusagemini-en-pain-20261022",
+    "locale": "en",
+    "app": "claudeusagemini",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/01.jpg",
     "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/04.jpg"
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/claudeusagemini-en-pain-20261022/05.jpg"
     ],
-    "caption": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに\n\n閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。\nApp Storeで「折りたたみ壁紙」を検索",
-    "title": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに",
-    "alt": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに | 閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。 | 14スタイル・300組以上 | 写真からペア作成 | 折りたたみ壁紙 - 外画面と内画面 | App Storeで「折りたたみ壁紙」を検索",
-    "name": "折りたたみ壁紙 - 外画面と内画面",
-    "hook": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに",
-    "tags": [],
+    "caption": "AI limit hit mid-task again?\n\nClaude, Codex, Copilot & Gemini\nSearch “UsageNow” on the App Store\n\n#AIUsageTracker #Developer #Coding",
+    "title": "AI limit hit mid-task again?",
+    "alt": "AI limit hit mid-task again? | Claude, Codex, Copilot & Gemini | What's left & when it resets | UsageNow: AI Usage Tracker / Claude, Codex & Copilot Limits / Search “UsageNow” on the App Store",
+    "name": "UsageNow: AI Usage Tracker",
+    "hook": "AI limit hit mid-task again?",
+    "tags": [
+     "#AIUsageTracker",
+     "#Developer",
+     "#Coding"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+   },
+   {
+    "kind": "card",
+    "key": "carousel/lumiweather-en-pain-20261022",
+    "locale": "en",
+    "app": "lumiweather",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-en-pain-20261022/05.jpg"
+    ],
+    "caption": "Need sunscreen today?\n\nIt tells you what to wear\nSearch “Lumi Weather” on the App Store\n\n#WhatToWear #Forecast #Rain",
+    "title": "Need sunscreen today?",
+    "alt": "Need sunscreen today? | It tells you what to wear | Good day out? See exactly why | Lumi Weather: What to Wear / Outing Score, Umbrella & UV / Search “Lumi Weather” on the App Store",
+    "name": "Lumi Weather: What to Wear",
+    "hook": "Need sunscreen today?",
+    "tags": [
+     "#WhatToWear",
+     "#Forecast",
+     "#Rain"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
+   },
+   {
+    "kind": "card",
+    "key": "carousel/notesstudio100-en-pain-20261022",
+    "locale": "en",
+    "app": "notesstudio100",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/notesstudio100-en-pain-20261022/05.jpg"
+    ],
+    "caption": "Handwritten notes, 100 notebook styles\n\nEvery notebook, its own look\nSearch “100 Notes Studio” on the App Store\n\n#PenPaper #Notebook #Journal",
+    "title": "Handwritten notes, 100 notebook styles",
+    "alt": "Handwritten notes, 100 notebook styles | Every notebook, its own look | Audio saved to the page | Review with flashcards | 100 Notes Studio: Pen & Paper / Note Taking, Handwriting & PDF / Search “100 Notes Studio” on the App Store",
+    "name": "100 Notes Studio: Pen & Paper",
+    "hook": "Handwritten notes, 100 notebook styles",
+    "tags": [
+     "#PenPaper",
+     "#Notebook",
+     "#Journal"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100"
+   },
+   {
+    "kind": "card",
+    "key": "carousel/moneytag-ja-pain-20261022",
+    "locale": "ja",
+    "app": "moneytag",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-ja-pain-20261022/05.jpg"
+    ],
+    "caption": "その副業、ほんとに黒字？\n\nタグひとつで全プロジェクトを集計\nApp Store で「MoneyTag」を検索\n\n#MoneyTag",
+    "title": "その副業、ほんとに黒字？",
+    "alt": "その副業、ほんとに黒字？ | タグひとつで全プロジェクトを集計 | 毎月の収支が ひと目でわかる | PDF・CSVで書き出し | MoneyTag: 収入と支出 / プロジェクト · タグ · レポート / App Store で「MoneyTag」を検索",
+    "name": "MoneyTag: 収入と支出",
+    "hook": "その副業、ほんとに黒字？",
+    "tags": [
+     "#MoneyTag"
+    ],
     "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
-    "format": "pairs",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+    "store": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
+   },
+   {
+    "kind": "card",
+    "key": "carousel/photocream-en-pain-20261022",
+    "locale": "en",
+    "app": "photocream",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/photocream-en-pain-20261022/05.jpg"
+    ],
+    "caption": "Your selfie, but make it film\n\n100+ film looks\nSearch “PhotoCream Pro” on the App Store\n\n#FilmFilters #Retro #Grain",
+    "title": "Your selfie, but make it film",
+    "alt": "Your selfie, but make it film | 100+ film looks | Real grain & halation | Natural beauty & reshape | PhotoCream Pro: Film Filters / Vintage Camera & Photo Editor / Search “PhotoCream Pro” on the App Store",
+    "name": "PhotoCream Pro: Film Filters",
+    "hook": "Your selfie, but make it film",
+    "tags": [
+     "#FilmFilters",
+     "#Retro",
+     "#Grain"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream"
    },
    {
     "kind": "card",
@@ -315,31 +425,6 @@
     "store": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8",
     "format": "pain",
     "play": "https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/studydown-ja-pain-20261022",
-    "locale": "ja",
-    "app": "studydown",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "スマホを持つと タイマーが止まる\n\nスタートして 伏せるだけ\nApp Store で「Studydown」を検索\n\n#Studydown",
-    "title": "スマホを持つと タイマーが止まる",
-    "alt": "スマホを持つと タイマーが止まる | スタートして 伏せるだけ | 今週の積み上げが ひと目で | 締め切りまで あと何日？ | Studydown：伏せて時間記録 / 机に伏せるだけ / App Store で「Studydown」を検索",
-    "name": "Studydown：伏せて時間記録",
-    "hook": "スマホを持つと タイマーが止まる",
-    "tags": [
-     "#Studydown"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown"
    },
    {
     "kind": "card",
@@ -420,29 +505,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/tripbeelite-ja-pain-20261022",
-    "locale": "ja",
-    "app": "tripbeelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "旅行の幹事、 今回もあなた？\n\n旅のしおりが タイムラインに\nApp Store で「TripBee Lite」を検索",
-    "title": "旅行の幹事、 今回もあなた？",
-    "alt": "旅行の幹事、 今回もあなた？ | 旅のしおりが タイムラインに | リマインダーは 現地時間で | 旅のしおり・日ごとのスケジュール | TripBee Lite：旅程プラン / 旅のしおり・日ごとのスケジュール / App Store で「TripBee Lite」を検索",
-    "name": "TripBee Lite：旅程プラン",
-    "hook": "旅行の幹事、 今回もあなた？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite"
-   },
-   {
-    "kind": "card",
     "key": "carousel/tripbee-en-pain-20261022",
     "locale": "en",
     "app": "tripbee",
@@ -493,83 +555,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/tripbeelite-en-pain-20261022",
-    "locale": "en",
-    "app": "tripbeelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/05.jpg"
-    ],
-    "caption": "POV: you're the planner friend\n\nEvery day on one timeline\nSearch “TripBee Lite” on the App Store\n\n#TripPlanner #Agenda #Holiday",
-    "title": "POV: you're the planner friend",
-    "alt": "POV: you're the planner friend | Every day on one timeline | Reminders in local time | Trip Planner | TripBee Lite: Trip Planner / Vacation & Travel Itinerary / Search “TripBee Lite” on the App Store",
-    "name": "TripBee Lite: Trip Planner",
-    "hook": "POV: you're the planner friend",
-    "tags": [
-     "#TripPlanner",
-     "#Agenda",
-     "#Holiday"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/unblurry-ja-pain-20261022",
-    "locale": "ja",
-    "app": "unblurry",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "ぼやけた写真を くっきり補正\n\nぼやけた1枚を 選んで\nApp Store で「Unblurry Pro」を検索",
-    "title": "ぼやけた写真を くっきり補正",
-    "alt": "ぼやけた写真を くっきり補正 | ぼやけた1枚を 選んで | AIが端末内で補正 | 長押しで 元画像を確認 | Unblurry Pro：写真高画質化 / 古い写真の復元・ぼやけ補正 / App Store で「Unblurry Pro」を検索",
-    "name": "Unblurry Pro：写真高画質化",
-    "hook": "ぼやけた写真を くっきり補正",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripplanet-en-pain-20261022",
-    "locale": "en",
-    "app": "tripplanet",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/05.jpg"
-    ],
-    "caption": "“Are we there yet?” Make it a quest\n\nFlight-day missions in one tap\nSearch “Trip Planet” on the App Store\n\n#KidsQuest #Vacation #Airplane",
-    "title": "“Are we there yet?” Make it a quest",
-    "alt": "“Are we there yet?” Make it a quest | Flight-day missions in one tap | Mom & Dad plan together | Tiny missions, big smiles | Trip Planet: Kids Quest / Family Travel Missions & Games / Search “Trip Planet” on the App Store",
-    "name": "Trip Planet: Kids Quest",
-    "hook": "“Are we there yet?” Make it a quest",
-    "tags": [
-     "#KidsQuest",
-     "#Vacation",
-     "#Airplane"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
-   },
-   {
-    "kind": "card",
     "key": "carousel/wifiaid-ja-pain-20261022",
     "locale": "ja",
     "app": "wifiaid",
@@ -590,108 +575,6 @@
     "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
     "format": "pain",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/unblurry-en-pain-20261022",
-    "locale": "en",
-    "app": "unblurry",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Blurry photo? Make it crystal clear\n\nPick a blurry shot\nSearch “Unblurry Pro” on the App Store\n\n#UnblurHD #Enhancer #Image",
-    "title": "Blurry photo? Make it crystal clear",
-    "alt": "Blurry photo? Make it crystal clear | Pick a blurry shot | AI fixes it on-device | Hold to see the before | Unblurry Pro: Unblur & HD / Restore Old Photos Offline / Search “Unblurry Pro” on the App Store",
-    "name": "Unblurry Pro: Unblur & HD",
-    "hook": "Blurry photo? Make it crystal clear",
-    "tags": [
-     "#UnblurHD",
-     "#Enhancer",
-     "#Image"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaidlite-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wifiaidlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "またネットが 遅い？\n\nWi-Fi？DNS？それとも回線？\nApp Store で「WiFi Aid Lite」を検索\n\n#WiFiAidLite",
-    "title": "またネットが 遅い？",
-    "alt": "またネットが 遅い？ | Wi-Fi？DNS？それとも回線？ | サイト側の問題？ | 次の一手も分かる | WiFi Aid Lite / ネットがつながらない原因を特定 / App Store で「WiFi Aid Lite」を検索",
-    "name": "WiFi Aid Lite",
-    "hook": "またネットが 遅い？",
-    "tags": [
-     "#WiFiAidLite"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaid-en-pain-20261022",
-    "locale": "en",
-    "app": "wifiaid",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Wi-Fi acting up? See the evidence\n\nOne tap to check\nSearch “WiFi Aid” on the App Store\n\n#FindWiFiProblems #Latency #Jitter",
-    "title": "Wi-Fi acting up? See the evidence",
-    "alt": "Wi-Fi acting up? See the evidence | One tap to check | Delay and stability, too | Flaky Wi-Fi? Deep Check | WiFi Aid: Find WiFi Problems / Router, Mesh & DNS Diagnostics / Search “WiFi Aid” on the App Store",
-    "name": "WiFi Aid: Find WiFi Problems",
-    "hook": "Wi-Fi acting up? See the evidence",
-    "tags": [
-     "#FindWiFiProblems",
-     "#Latency",
-     "#Jitter"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmate-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wordmate",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "アプリを開かずに 単語学習\n\nApple Watchでも\nApp Store で「Wordmate」を検索",
-    "title": "アプリを開かずに 単語学習",
-    "alt": "アプリを開かずに 単語学習 | Apple Watchでも | 連続記録をキープ | 44言語から選べる | Wordmate：44言語の単語学習 / 単語ウィジェットと暗記カード / App Store で「Wordmate」を検索",
-    "name": "Wordmate：44言語の単語学習",
-    "hook": "アプリを開かずに 単語学習",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate"
    },
    {
     "kind": "card",
@@ -722,106 +605,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/wordmatelite-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wordmatelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "1日たった 5単語\n\n1分で完了\nApp Store で「Wordmate Lite 1日5単語」を検索",
-    "title": "1日たった 5単語",
-    "alt": "1日たった 5単語 | 1分で完了 | 連続記録が伸びる | 44言語から選べる | Wordmate Lite 1日5単語 / 毎日1分、44言語の語彙トレーニング / App Store で「Wordmate Lite 1日5単語」を検索",
-    "name": "Wordmate Lite 1日5単語",
-    "hook": "1日たった 5単語",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmate-en-pain-20261022",
-    "locale": "en",
-    "app": "wordmate",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Learn words without opening the app\n\nOr right on your wrist\nSearch “Wordmate” on the App Store\n\n#Learn44Languages #Italian #Chinese",
-    "title": "Learn words without opening the app",
-    "alt": "Learn words without opening the app | Or right on your wrist | Keep your streak going | Pick from 44 languages | Wordmate: Learn 44 Languages / Vocabulary Flashcards & Widget / Search “Wordmate” on the App Store",
-    "name": "Wordmate: Learn 44 Languages",
-    "hook": "Learn words without opening the app",
-    "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/zipbox-ja-pain-20261022",
-    "locale": "ja",
-    "app": "zipbox",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "ZIPの中の 1つだけ欲しい？\n\n中身を見て それだけ取り出す\nApp Store で「Zipbox 解凍」を検索",
-    "title": "ZIPの中の 1つだけ欲しい？",
-    "alt": "ZIPの中の 1つだけ欲しい？ | 中身を見て それだけ取り出す | 暗号化ZIPも 作れる | ZIP・RAR・7zなど 13形式に対応 | Zipbox 解凍：ZIP RAR 7z対応 / 圧縮・解凍ツール パスワード対応 / App Store で「Zipbox 解凍」を検索",
-    "name": "Zipbox 解凍：ZIP RAR 7z対応",
-    "hook": "ZIPの中の 1つだけ欲しい？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmatelite-en-pain-20261022",
-    "locale": "en",
-    "app": "wordmatelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/05.jpg"
-    ],
-    "caption": "5 words a day. That's it.\n\nDone in one minute\nSearch “Wordmate Lite” on the App Store\n\n#Vocabulary #Spanish #French",
-    "title": "5 words a day. That's it.",
-    "alt": "5 words a day. That's it. | Done in one minute | Watch your streak grow | Pick from 44 languages | Wordmate Lite: Vocabulary / Learn 5 words a day, offline / Search “Wordmate Lite” on the App Store",
-    "name": "Wordmate Lite: Vocabulary",
-    "hook": "5 words a day. That's it.",
-    "tags": [
-     "#Vocabulary",
-     "#Spanish",
-     "#French"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite"
-   },
-   {
-    "kind": "card",
     "key": "carousel/zipbox-en-pain-20261022",
     "locale": "en",
     "app": "zipbox",
@@ -846,34 +629,6 @@
     "store": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8",
     "format": "pain",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/kumo-en-pain-20261113",
-    "locale": "en",
-    "app": "kumo",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/05.jpg"
-    ],
-    "caption": "The scale jumps around every day?\n\nAbout 10 seconds a day, your last weight filled in\nSearch “Kumo weight tracker” on the App Store\n\n#weighttracker #weightlog #habittracker",
-    "title": "The scale jumps around every day?",
-    "alt": "The scale jumps around every day? | About 10 seconds a day, your last weight filled in | A calm 7-day average line, not daily jumps | \"Didn't weigh today\" still keeps your streak | Kumo: Weight & GLP-1 Tracker / Shot Log, Fasting & Cute Cloud / Search “Kumo weight tracker” on the App Store",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "hook": "The scale jumps around every day?",
-    "tags": [
-     "#weighttracker",
-     "#weightlog",
-     "#habittracker"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "launched": "2026-11-11",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
    }
   ],
   "mastodon": [
@@ -1788,95 +1543,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/duowallpaperstudio-ja-pairs-20261030",
-    "locale": "ja",
-    "app": "duowallpaperstudio",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/05.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/main/.github/growth/duo-pair-cards/06.jpg"
-    ],
-    "caption": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに\n\n閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。\n✓ 14スタイル・300組以上\n✓ 写真からペア作成\n\nApp Storeで「折りたたみ壁紙」を検索",
-    "title": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに",
-    "alt": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに | 閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。 | 14スタイル・300組以上 | 写真からペア作成 | 折りたたみ壁紙 - 外画面と内画面 | App Storeで「折りたたみ壁紙」を検索",
-    "name": "折りたたみ壁紙 - 外画面と内画面",
-    "hook": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
-    "format": "pairs",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
-    "pinterest": {
-     "description": "折りたたみ壁紙、閉じればアップ・開けば全景のペアに\n\n閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。\n✓ 14スタイル・300組以上\n✓ 写真からペア作成\n\nApp Storeで「折りたたみ壁紙」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
-     "link": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/stayclock-ko-pain-20261022",
-    "locale": "ko",
-    "app": "stayclock",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "충전 중인 폰, 협탁 시계로\n\n큼직한 시간과 월간 캘린더\n✓ 플립 스타일 페이스까지\n✓ 스탠바이에서도 같은 페이스\n\nApp Store에서 ‘Stay Clock’ 검색\n\n#StayClock",
-    "title": "충전 중인 폰, 협탁 시계로",
-    "alt": "충전 중인 폰, 협탁 시계로 | 큼직한 시간과 월간 캘린더 | 플립 스타일 페이스까지 | 스탠바이에서도 같은 페이스 | Stay Clock: 플립 탁상시계 / 항상 켜지는 시계와 캘린더 / App Store에서 ‘Stay Clock’ 검색",
-    "name": "Stay Clock: 플립 탁상시계",
-    "hook": "충전 중인 폰, 협탁 시계로",
-    "tags": [
-     "#StayClock"
-    ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
-    "pinterest": {
-     "description": "충전 중인 폰, 협탁 시계로\n\n큼직한 시간과 월간 캘린더\n✓ 플립 스타일 페이스까지\n✓ 스탠바이에서도 같은 페이스\n\nApp Store에서 ‘Stay Clock’ 검색\n\n#StayClock\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
-     "link": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/snapportlite-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "snapportlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/snapportlite-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/snapportlite-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/snapportlite-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/snapportlite-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/snapportlite-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/snapportlite-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "要拍證件照？ 在家自己拍\n\n內建 35 種 尺寸範本\n✓ 背景換成 乾淨純色\n✓ 照片只留在 你的 iPhone\n\nApp Store 搜尋「Snapport Lite」\n\n#SnapportLite",
-    "title": "要拍證件照？ 在家自己拍",
-    "alt": "要拍證件照？ 在家自己拍 | 內建 35 種 尺寸範本 | 背景換成 乾淨純色 | 照片只留在 你的 iPhone | Snapport Lite：在家拍證件照 / 人像照精準裁成指定尺寸 / App Store 搜尋「Snapport Lite」",
-    "name": "Snapport Lite：在家拍證件照",
-    "hook": "要拍證件照？ 在家自己拍",
-    "tags": [
-     "#SnapportLite"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
-    "pinterest": {
-     "description": "要拍證件照？ 在家自己拍\n\n內建 35 種 尺寸範本\n✓ 背景換成 乾淨純色\n✓ 照片只留在 你的 iPhone\n\nApp Store 搜尋「Snapport Lite」\n\n#SnapportLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
-     "link": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
     "key": "carousel/sononote-en-pain-20261022",
     "locale": "en",
     "app": "sononote",
@@ -1907,96 +1573,6 @@
     "pinterest": {
      "description": "Hit stop. Your note is done.\n\nTranscribed and tidied up\n✓ A summary and the key points\n✓ Action items, ready to check\n\nSearch “Sono Note” on the App Store\n\n#VoiceToTextNotes #Transcription #Speech #Audio #Dictation\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote",
      "link": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/studydown-ja-pain-20261022",
-    "locale": "ja",
-    "app": "studydown",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "スマホを持つと タイマーが止まる\n\nスタートして 伏せるだけ\n✓ 今週の積み上げが ひと目で\n✓ 締め切りまで あと何日？\n\nApp Store で「Studydown」を検索\n\n#Studydown",
-    "title": "スマホを持つと タイマーが止まる",
-    "alt": "スマホを持つと タイマーが止まる | スタートして 伏せるだけ | 今週の積み上げが ひと目で | 締め切りまで あと何日？ | Studydown：伏せて時間記録 / 机に伏せるだけ / App Store で「Studydown」を検索",
-    "name": "Studydown：伏せて時間記録",
-    "hook": "スマホを持つと タイマーが止まる",
-    "tags": [
-     "#Studydown"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "pinterest": {
-     "description": "スマホを持つと タイマーが止まる\n\nスタートして 伏せるだけ\n✓ 今週の積み上げが ひと目で\n✓ 締め切りまで あと何日？\n\nApp Store で「Studydown」を検索\n\n#Studydown\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-     "link": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/studydown-ko-pain-20261022",
-    "locale": "ko",
-    "app": "studydown",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "폰을 들면 타이머가 멈춰요\n\n시작 누르고 엎어 두세요\n✓ 이번 주 기록이 한눈에\n✓ 마감일까지 D-day 확인\n\nApp Store에서 ‘Studydown’ 검색\n\n#Studydown",
-    "title": "폰을 들면 타이머가 멈춰요",
-    "alt": "폰을 들면 타이머가 멈춰요 | 시작 누르고 엎어 두세요 | 이번 주 기록이 한눈에 | 마감일까지 D-day 확인 | Studydown: 집중 타이머 / 책상에 엎어 두세요 / App Store에서 ‘Studydown’ 검색",
-    "name": "Studydown: 집중 타이머",
-    "hook": "폰을 들면 타이머가 멈춰요",
-    "tags": [
-     "#Studydown"
-    ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "pinterest": {
-     "description": "폰을 들면 타이머가 멈춰요\n\n시작 누르고 엎어 두세요\n✓ 이번 주 기록이 한눈에\n✓ 마감일까지 D-day 확인\n\nApp Store에서 ‘Studydown’ 검색\n\n#Studydown\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-     "link": "https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/sononote-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "sononote",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/sononote-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "錄音一停 筆記馬上好\n\n自動轉文字 再整理乾淨\n✓ 摘要和重點 一次給你\n✓ 待辦事項 直接幫你列好\n\nApp Store 搜尋「Sono Note」\n\n#SonoNote",
-    "title": "錄音一停 筆記馬上好",
-    "alt": "錄音一停 筆記馬上好 | 自動轉文字 再整理乾淨 | 摘要和重點 一次給你 | 待辦事項 直接幫你列好 | Sono Note：錄音轉文字 / 語音轉文字・錄音筆記 / App Store 搜尋「Sono Note」",
-    "name": "Sono Note：錄音轉文字",
-    "hook": "錄音一停 筆記馬上好",
-    "tags": [
-     "#SonoNote"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote",
-    "pinterest": {
-     "description": "錄音一停 筆記馬上好\n\n自動轉文字 再整理乾淨\n✓ 摘要和重點 一次給你\n✓ 待辦事項 直接幫你列好\n\nApp Store 搜尋「Sono Note」\n\n#SonoNote\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice&referrer=utm_source%3Dsocial%26utm_campaign%3Dsononote",
-     "link": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -2035,92 +1611,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/tripbee-ja-pain-20261022",
-    "locale": "ja",
-    "app": "tripbee",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "旅の予定、まだ スクショ？\n\nAppleマップを ワンタップで\n✓ オフラインでも 旅の計画ができる\n✓ 旅行プランナー\n\nApp Store で「TripBee」を検索",
-    "title": "旅の予定、まだ スクショ？",
-    "alt": "旅の予定、まだ スクショ？ | Appleマップを ワンタップで | オフラインでも 旅の計画ができる | 旅行プランナー | TripBee: 旅行プランナー / 家族や友達と共同編集・持ち物リスト / App Store で「TripBee」を検索",
-    "name": "TripBee: 旅行プランナー",
-    "hook": "旅の予定、まだ スクショ？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
-    "pinterest": {
-     "description": "旅の予定、まだ スクショ？\n\nAppleマップを ワンタップで\n✓ オフラインでも 旅の計画ができる\n✓ 旅行プランナー\n\nApp Store で「TripBee」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
-     "link": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbee-ko-pain-20261022",
-    "locale": "ko",
-    "app": "tripbee",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "여행 일정, 아직도 캡처로?\n\nApple 지도 원탭 길찾기\n✓ 오프라인에서도 여행 계획 가능\n✓ 여행 플래너\n\nApp Store에서 ‘TripBee’ 검색",
-    "title": "여행 일정, 아직도 캡처로?",
-    "alt": "여행 일정, 아직도 캡처로? | Apple 지도 원탭 길찾기 | 오프라인에서도 여행 계획 가능 | 여행 플래너 | TripBee: 여행 플래너 / 가족·친구와 공동 편집, 준비물 체크 / App Store에서 ‘TripBee’ 검색",
-    "name": "TripBee: 여행 플래너",
-    "hook": "여행 일정, 아직도 캡처로?",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
-    "pinterest": {
-     "description": "여행 일정, 아직도 캡처로?\n\nApple 지도 원탭 길찾기\n✓ 오프라인에서도 여행 계획 가능\n✓ 여행 플래너\n\nApp Store에서 ‘TripBee’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
-     "link": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/stayclock-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "stayclock",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/stayclock-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "手機在充電？ 讓它變床頭鐘\n\n大字時間 配上整月行事曆\n✓ 翻頁錶面 還有更多\n✓ StandBy 也是 同一款錶面\n\nApp Store 搜尋「Stay Clock」\n\n#StayClock",
-    "title": "手機在充電？ 讓它變床頭鐘",
-    "alt": "手機在充電？ 讓它變床頭鐘 | 大字時間 配上整月行事曆 | 翻頁錶面 還有更多 | StandBy 也是 同一款錶面 | Stay Clock:翻頁桌鐘 / 全天顯示時間與行事曆 / App Store 搜尋「Stay Clock」",
-    "name": "Stay Clock:翻頁桌鐘",
-    "hook": "手機在充電？ 讓它變床頭鐘",
-    "tags": [
-     "#StayClock"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
-    "pinterest": {
-     "description": "手機在充電？ 讓它變床頭鐘\n\n大字時間 配上整月行事曆\n✓ 翻頁錶面 還有更多\n✓ StandBy 也是 同一款錶面\n\nApp Store 搜尋「Stay Clock」\n\n#StayClock\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
-     "link": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
     "key": "carousel/studydown-en-pain-20261022",
     "locale": "en",
     "app": "studydown",
@@ -2151,658 +1641,6 @@
     "pinterest": {
      "description": "Pick up your phone, the timer pauses\n\nTap start, then flip it face down\n✓ See your week add up\n✓ Count down to your deadlines\n\nSearch “Studydown” on the App Store\n\n#FaceDownTimer #Study #Focus #Flip #Productivity\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
      "link": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbeelite-ja-pain-20261022",
-    "locale": "ja",
-    "app": "tripbeelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "旅行の幹事、 今回もあなた？\n\n旅のしおりが タイムラインに\n✓ リマインダーは 現地時間で\n✓ 旅のしおり・日ごとのスケジュール\n\nApp Store で「TripBee Lite」を検索",
-    "title": "旅行の幹事、 今回もあなた？",
-    "alt": "旅行の幹事、 今回もあなた？ | 旅のしおりが タイムラインに | リマインダーは 現地時間で | 旅のしおり・日ごとのスケジュール | TripBee Lite：旅程プラン / 旅のしおり・日ごとのスケジュール / App Store で「TripBee Lite」を検索",
-    "name": "TripBee Lite：旅程プラン",
-    "hook": "旅行の幹事、 今回もあなた？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-    "pinterest": {
-     "description": "旅行の幹事、 今回もあなた？\n\n旅のしおりが タイムラインに\n✓ リマインダーは 現地時間で\n✓ 旅のしおり・日ごとのスケジュール\n\nApp Store で「TripBee Lite」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-     "link": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbeelite-ko-pain-20261022",
-    "locale": "ko",
-    "app": "tripbeelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "여행 계획은 이번에도 나?\n\n매일 일정을 타임라인 하나로\n✓ 알림은 현지 시간 기준\n✓ 날짜별 일정표·항공권·숙소 알림\n\nApp Store에서 ‘TripBee Lite’ 검색",
-    "title": "여행 계획은 이번에도 나?",
-    "alt": "여행 계획은 이번에도 나? | 매일 일정을 타임라인 하나로 | 알림은 현지 시간 기준 | 날짜별 일정표·항공권·숙소 알림 | TripBee Lite: 여행 플래너 / 날짜별 일정표·항공권·숙소 알림 / App Store에서 ‘TripBee Lite’ 검색",
-    "name": "TripBee Lite: 여행 플래너",
-    "hook": "여행 계획은 이번에도 나?",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-    "pinterest": {
-     "description": "여행 계획은 이번에도 나?\n\n매일 일정을 타임라인 하나로\n✓ 알림은 현지 시간 기준\n✓ 날짜별 일정표·항공권·숙소 알림\n\nApp Store에서 ‘TripBee Lite’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-     "link": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/studydown-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "studydown",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/studydown-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "手機一拿起來 計時就暫停\n\n按開始，手機翻面放桌上\n✓ 本週累積 一眼看清\n✓ 期限倒數 清清楚楚\n\nApp Store 搜尋「Studydown」\n\n#Studydown",
-    "title": "手機一拿起來 計時就暫停",
-    "alt": "手機一拿起來 計時就暫停 | 按開始，手機翻面放桌上 | 本週累積 一眼看清 | 期限倒數 清清楚楚 | Studydown：翻面專注計時 / 螢幕朝下蓋著放 / App Store 搜尋「Studydown」",
-    "name": "Studydown：翻面專注計時",
-    "hook": "手機一拿起來 計時就暫停",
-    "tags": [
-     "#Studydown"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-    "pinterest": {
-     "description": "手機一拿起來 計時就暫停\n\n按開始，手機翻面放桌上\n✓ 本週累積 一眼看清\n✓ 期限倒數 清清楚楚\n\nApp Store 搜尋「Studydown」\n\n#Studydown\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Studydown&referrer=utm_source%3Dsocial%26utm_campaign%3Dstudydown",
-     "link": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbee-en-pain-20261022",
-    "locale": "en",
-    "app": "tripbee",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbee-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Trip plans buried in screenshots?\n\nOpen in Maps in one tap\n✓ Plan every trip, even offline\n✓ Trip Planner\n\nSearch “TripBee Pro” on the App Store\n\n#TripPlanner #Family #Friends #Shared #Notes",
-    "title": "Trip plans buried in screenshots?",
-    "alt": "Trip plans buried in screenshots? | Open in Maps in one tap | Plan every trip, even offline | Trip Planner | TripBee Pro: Trip Planner / Group Travel & Packing List / Search “TripBee Pro” on the App Store",
-    "name": "TripBee Pro: Trip Planner",
-    "hook": "Trip plans buried in screenshots?",
-    "tags": [
-     "#TripPlanner",
-     "#Family",
-     "#Friends",
-     "#Shared",
-     "#Notes"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
-    "pinterest": {
-     "description": "Trip plans buried in screenshots?\n\nOpen in Maps in one tap\n✓ Plan every trip, even offline\n✓ Trip Planner\n\nSearch “TripBee Pro” on the App Store\n\n#TripPlanner #Family #Friends #Shared #Notes\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
-     "link": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripplanet-ja-pain-20261022",
-    "locale": "ja",
-    "app": "tripplanet",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "「まだ着かないの？」 が冒険に変わる\n\n移動日のミッションも ワンタップで\n✓ パパもママも 一緒に計画\n✓ 小さなミッション 大きな笑顔\n\nApp Store で「Trip Planet 子ども旅行ゲーム」を検索",
-    "title": "「まだ着かないの？」 が冒険に変わる",
-    "alt": "「まだ着かないの？」 が冒険に変わる | 移動日のミッションも ワンタップで | パパもママも 一緒に計画 | 小さなミッション 大きな笑顔 | Trip Planet 子ども旅行ゲーム / 子連れ旅のミッション＆スタンプ / App Store で「Trip Planet 子ども旅行ゲーム」を検索",
-    "name": "Trip Planet 子ども旅行ゲーム",
-    "hook": "「まだ着かないの？」 が冒険に変わる",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "pinterest": {
-     "description": "「まだ着かないの？」 が冒険に変わる\n\n移動日のミッションも ワンタップで\n✓ パパもママも 一緒に計画\n✓ 小さなミッション 大きな笑顔\n\nApp Store で「Trip Planet 子ども旅行ゲーム」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-     "link": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripplanet-ko-pain-20261022",
-    "locale": "ko",
-    "app": "tripplanet",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "“아직 멀었어?” 여행을 모험으로\n\n비행기 타는 날 미션 원탭으로 추가\n✓ 엄마 아빠 함께 계획해요\n✓ 작은 미션, 큰 웃음\n\nApp Store에서 ‘Trip Planet 아이 여행 게임’ 검색",
-    "title": "“아직 멀었어?” 여행을 모험으로",
-    "alt": "“아직 멀었어?” 여행을 모험으로 | 비행기 타는 날 미션 원탭으로 추가 | 엄마 아빠 함께 계획해요 | 작은 미션, 큰 웃음 | Trip Planet 아이 여행 게임 / 비행기·나들이 미션 도장 모으기 / App Store에서 ‘Trip Planet 아이 여행 게임’ 검색",
-    "name": "Trip Planet 아이 여행 게임",
-    "hook": "“아직 멀었어?” 여행을 모험으로",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "pinterest": {
-     "description": "“아직 멀었어?” 여행을 모험으로\n\n비행기 타는 날 미션 원탭으로 추가\n✓ 엄마 아빠 함께 계획해요\n✓ 작은 미션, 큰 웃음\n\nApp Store에서 ‘Trip Planet 아이 여행 게임’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-     "link": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbeelite-en-pain-20261022",
-    "locale": "en",
-    "app": "tripbeelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-en-pain-20261022/05.jpg"
-    ],
-    "caption": "POV: you're the planner friend\n\nEvery day on one timeline\n✓ Reminders in local time\n✓ Trip Planner\n\nSearch “TripBee Lite” on the App Store\n\n#TripPlanner #Agenda #Holiday #Schedule #Timeline",
-    "title": "POV: you're the planner friend",
-    "alt": "POV: you're the planner friend | Every day on one timeline | Reminders in local time | Trip Planner | TripBee Lite: Trip Planner / Vacation & Travel Itinerary / Search “TripBee Lite” on the App Store",
-    "name": "TripBee Lite: Trip Planner",
-    "hook": "POV: you're the planner friend",
-    "tags": [
-     "#TripPlanner",
-     "#Agenda",
-     "#Holiday",
-     "#Schedule",
-     "#Timeline"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-    "pinterest": {
-     "description": "POV: you're the planner friend\n\nEvery day on one timeline\n✓ Reminders in local time\n✓ Trip Planner\n\nSearch “TripBee Lite” on the App Store\n\n#TripPlanner #Agenda #Holiday #Schedule #Timeline\n\nGet it on the App Store: https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-     "link": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/unblurry-ja-pain-20261022",
-    "locale": "ja",
-    "app": "unblurry",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "ぼやけた写真を くっきり補正\n\nぼやけた1枚を 選んで\n✓ AIが端末内で補正\n✓ 長押しで 元画像を確認\n\nApp Store で「Unblurry Pro」を検索",
-    "title": "ぼやけた写真を くっきり補正",
-    "alt": "ぼやけた写真を くっきり補正 | ぼやけた1枚を 選んで | AIが端末内で補正 | 長押しで 元画像を確認 | Unblurry Pro：写真高画質化 / 古い写真の復元・ぼやけ補正 / App Store で「Unblurry Pro」を検索",
-    "name": "Unblurry Pro：写真高画質化",
-    "hook": "ぼやけた写真を くっきり補正",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-    "pinterest": {
-     "description": "ぼやけた写真を くっきり補正\n\nぼやけた1枚を 選んで\n✓ AIが端末内で補正\n✓ 長押しで 元画像を確認\n\nApp Store で「Unblurry Pro」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-     "link": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/unblurry-ko-pain-20261022",
-    "locale": "ko",
-    "app": "unblurry",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "흐릿한 사진? 또렷하게 바꿔요\n\n흐린 사진을 골라요\n✓ AI가 기기 안에서 보정\n✓ 길게 눌러 원본 확인\n\nApp Store에서 ‘Unblurry Pro’ 검색",
-    "title": "흐릿한 사진? 또렷하게 바꿔요",
-    "alt": "흐릿한 사진? 또렷하게 바꿔요 | 흐린 사진을 골라요 | AI가 기기 안에서 보정 | 길게 눌러 원본 확인 | Unblurry Pro: 사진 선명하게 / 오래된 사진 복원·사진 화질 개선 / App Store에서 ‘Unblurry Pro’ 검색",
-    "name": "Unblurry Pro: 사진 선명하게",
-    "hook": "흐릿한 사진? 또렷하게 바꿔요",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-    "pinterest": {
-     "description": "흐릿한 사진? 또렷하게 바꿔요\n\n흐린 사진을 골라요\n✓ AI가 기기 안에서 보정\n✓ 길게 눌러 원본 확인\n\nApp Store에서 ‘Unblurry Pro’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-     "link": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripbeelite-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "tripbeelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeelite-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "每次出遊都是你 排行程？\n\n整趟行程 一條時間軸\n✓ 提醒跟著 當地時間走\n✓ 出國自由行・每日行程表\n\nApp Store 搜尋「TripBee Lite」",
-    "title": "每次出遊都是你 排行程？",
-    "alt": "每次出遊都是你 排行程？ | 整趟行程 一條時間軸 | 提醒跟著 當地時間走 | 出國自由行・每日行程表 | TripBee Lite：旅程規劃 / 出國自由行・每日行程表 / App Store 搜尋「TripBee Lite」",
-    "name": "TripBee Lite：旅程規劃",
-    "hook": "每次出遊都是你 排行程？",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-    "pinterest": {
-     "description": "每次出遊都是你 排行程？\n\n整趟行程 一條時間軸\n✓ 提醒跟著 當地時間走\n✓ 出國自由行・每日行程表\n\nApp Store 搜尋「TripBee Lite」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
-     "link": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripplanet-en-pain-20261022",
-    "locale": "en",
-    "app": "tripplanet",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-en-pain-20261022/05.jpg"
-    ],
-    "caption": "“Are we there yet?” Make it a quest\n\nFlight-day missions in one tap\n✓ Mom & Dad plan together\n✓ Tiny missions, big smiles\n\nSearch “Trip Planet” on the App Store\n\n#KidsQuest #Vacation #Airplane #Flight #Road",
-    "title": "“Are we there yet?” Make it a quest",
-    "alt": "“Are we there yet?” Make it a quest | Flight-day missions in one tap | Mom & Dad plan together | Tiny missions, big smiles | Trip Planet: Kids Quest / Family Travel Missions & Games / Search “Trip Planet” on the App Store",
-    "name": "Trip Planet: Kids Quest",
-    "hook": "“Are we there yet?” Make it a quest",
-    "tags": [
-     "#KidsQuest",
-     "#Vacation",
-     "#Airplane",
-     "#Flight",
-     "#Road"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "pinterest": {
-     "description": "“Are we there yet?” Make it a quest\n\nFlight-day missions in one tap\n✓ Mom & Dad plan together\n✓ Tiny missions, big smiles\n\nSearch “Trip Planet” on the App Store\n\n#KidsQuest #Vacation #Airplane #Flight #Road\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-     "link": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaid-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wifiaid",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "ネット不調？ 勘より証拠\n\nワンタップで診断\n✓ 遅延も安定性も\n✓ 不安定なら 詳細チェック\n\nApp Store で「WiFi Aid」を検索",
-    "title": "ネット不調？ 勘より証拠",
-    "alt": "ネット不調？ 勘より証拠 | ワンタップで診断 | 遅延も安定性も | 不安定なら 詳細チェック | WiFi Aid：ネット不調の原因を特定 / ルーター・メッシュ・DNS診断 / App Store で「WiFi Aid」を検索",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "hook": "ネット不調？ 勘より証拠",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-    "pinterest": {
-     "description": "ネット不調？ 勘より証拠\n\nワンタップで診断\n✓ 遅延も安定性も\n✓ 不安定なら 詳細チェック\n\nApp Store で「WiFi Aid」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-     "link": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaid-ko-pain-20261022",
-    "locale": "ko",
-    "app": "wifiaid",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "와이파이 문제? 감 말고 증거로\n\n탭 한 번으로 검사\n✓ 지연과 안정성까지\n✓ 자꾸 끊기면? 정밀 검사\n\nApp Store에서 ‘WiFi Aid’ 검색",
-    "title": "와이파이 문제? 감 말고 증거로",
-    "alt": "와이파이 문제? 감 말고 증거로 | 탭 한 번으로 검사 | 지연과 안정성까지 | 자꾸 끊기면? 정밀 검사 | WiFi Aid：네트워크 문제 진단 / 공유기·메시·DNS 네트워크 진단 / App Store에서 ‘WiFi Aid’ 검색",
-    "name": "WiFi Aid：네트워크 문제 진단",
-    "hook": "와이파이 문제? 감 말고 증거로",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-    "pinterest": {
-     "description": "와이파이 문제? 감 말고 증거로\n\n탭 한 번으로 검사\n✓ 지연과 안정성까지\n✓ 자꾸 끊기면? 정밀 검사\n\nApp Store에서 ‘WiFi Aid’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-     "link": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/tripplanet-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "tripplanet",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripplanet-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "「到了沒？」 讓旅途變冒險\n\n搭機任務包 一鍵加入\n✓ 爸媽各用手機 一起規劃\n✓ 小小任務 換來大大笑容\n\nApp Store 搜尋「Trip Planet 親子旅行遊戲」",
-    "title": "「到了沒？」 讓旅途變冒險",
-    "alt": "「到了沒？」 讓旅途變冒險 | 搭機任務包 一鍵加入 | 爸媽各用手機 一起規劃 | 小小任務 換來大大笑容 | Trip Planet 親子旅行遊戲 / 帶小孩出國搭飛機・任務集章獎勵 / App Store 搜尋「Trip Planet 親子旅行遊戲」",
-    "name": "Trip Planet 親子旅行遊戲",
-    "hook": "「到了沒？」 讓旅途變冒險",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "pinterest": {
-     "description": "「到了沒？」 讓旅途變冒險\n\n搭機任務包 一鍵加入\n✓ 爸媽各用手機 一起規劃\n✓ 小小任務 換來大大笑容\n\nApp Store 搜尋「Trip Planet 親子旅行遊戲」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-     "link": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/unblurry-en-pain-20261022",
-    "locale": "en",
-    "app": "unblurry",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Blurry photo? Make it crystal clear\n\nPick a blurry shot\n✓ AI fixes it on-device\n✓ Hold to see the before\n\nSearch “Unblurry Pro” on the App Store\n\n#UnblurHD #Enhancer #Image #Picture #Sharpen",
-    "title": "Blurry photo? Make it crystal clear",
-    "alt": "Blurry photo? Make it crystal clear | Pick a blurry shot | AI fixes it on-device | Hold to see the before | Unblurry Pro: Unblur & HD / Restore Old Photos Offline / Search “Unblurry Pro” on the App Store",
-    "name": "Unblurry Pro: Unblur & HD",
-    "hook": "Blurry photo? Make it crystal clear",
-    "tags": [
-     "#UnblurHD",
-     "#Enhancer",
-     "#Image",
-     "#Picture",
-     "#Sharpen"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-    "pinterest": {
-     "description": "Blurry photo? Make it crystal clear\n\nPick a blurry shot\n✓ AI fixes it on-device\n✓ Hold to see the before\n\nSearch “Unblurry Pro” on the App Store\n\n#UnblurHD #Enhancer #Image #Picture #Sharpen\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-     "link": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaidlite-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wifiaidlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "またネットが 遅い？\n\nWi-Fi？DNS？それとも回線？\n✓ サイト側の問題？\n✓ 次の一手も分かる\n\nApp Store で「WiFi Aid Lite」を検索\n\n#WiFiAidLite",
-    "title": "またネットが 遅い？",
-    "alt": "またネットが 遅い？ | Wi-Fi？DNS？それとも回線？ | サイト側の問題？ | 次の一手も分かる | WiFi Aid Lite / ネットがつながらない原因を特定 / App Store で「WiFi Aid Lite」を検索",
-    "name": "WiFi Aid Lite",
-    "hook": "またネットが 遅い？",
-    "tags": [
-     "#WiFiAidLite"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "pinterest": {
-     "description": "またネットが 遅い？\n\nWi-Fi？DNS？それとも回線？\n✓ サイト側の問題？\n✓ 次の一手も分かる\n\nApp Store で「WiFi Aid Lite」を検索\n\n#WiFiAidLite\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-     "link": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaidlite-ko-pain-20261022",
-    "locale": "ko",
-    "app": "wifiaidlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "또 인터넷이 느려졌어?\n\n와이파이? DNS? 아니면 인터넷?\n✓ 아니면 그 사이트만?\n✓ 다음 할 일까지\n\nApp Store에서 ‘WiFi Aid Lite’ 검색\n\n#WiFiAidLite",
-    "title": "또 인터넷이 느려졌어?",
-    "alt": "또 인터넷이 느려졌어? | 와이파이? DNS? 아니면 인터넷? | 아니면 그 사이트만? | 다음 할 일까지 | WiFi Aid Lite / 인터넷 안될 때 원인 찾기 / App Store에서 ‘WiFi Aid Lite’ 검색",
-    "name": "WiFi Aid Lite",
-    "hook": "또 인터넷이 느려졌어?",
-    "tags": [
-     "#WiFiAidLite"
-    ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "pinterest": {
-     "description": "또 인터넷이 느려졌어?\n\n와이파이? DNS? 아니면 인터넷?\n✓ 아니면 그 사이트만?\n✓ 다음 할 일까지\n\nApp Store에서 ‘WiFi Aid Lite’ 검색\n\n#WiFiAidLite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-     "link": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/unblurry-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "unblurry",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/unblurry-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "照片拍糊了？ 秒變清晰\n\n挑一張模糊照片\n✓ AI 修復 全在手機完成\n✓ 按住看原圖\n\nApp Store 搜尋「Unblurry Pro」",
-    "title": "照片拍糊了？ 秒變清晰",
-    "alt": "照片拍糊了？ 秒變清晰 | 挑一張模糊照片 | AI 修復 全在手機完成 | 按住看原圖 | Unblurry Pro：照片變清晰 / 老照片修復・翻新舊相片 / App Store 搜尋「Unblurry Pro」",
-    "name": "Unblurry Pro：照片變清晰",
-    "hook": "照片拍糊了？ 秒變清晰",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-    "pinterest": {
-     "description": "照片拍糊了？ 秒變清晰\n\n挑一張模糊照片\n✓ AI 修復 全在手機完成\n✓ 按住看原圖\n\nApp Store 搜尋「Unblurry Pro」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-     "link": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaid-en-pain-20261022",
-    "locale": "en",
-    "app": "wifiaid",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Wi-Fi acting up? See the evidence\n\nOne tap to check\n✓ Delay and stability, too\n✓ Flaky Wi-Fi? Deep Check\n\nSearch “WiFi Aid” on the App Store\n\n#FindWiFiProblems #Latency #Jitter #Ipv6 #Ipv4",
-    "title": "Wi-Fi acting up? See the evidence",
-    "alt": "Wi-Fi acting up? See the evidence | One tap to check | Delay and stability, too | Flaky Wi-Fi? Deep Check | WiFi Aid: Find WiFi Problems / Router, Mesh & DNS Diagnostics / Search “WiFi Aid” on the App Store",
-    "name": "WiFi Aid: Find WiFi Problems",
-    "hook": "Wi-Fi acting up? See the evidence",
-    "tags": [
-     "#FindWiFiProblems",
-     "#Latency",
-     "#Jitter",
-     "#Ipv6",
-     "#Ipv4"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-    "pinterest": {
-     "description": "Wi-Fi acting up? See the evidence\n\nOne tap to check\n✓ Delay and stability, too\n✓ Flaky Wi-Fi? Deep Check\n\nSearch “WiFi Aid” on the App Store\n\n#FindWiFiProblems #Latency #Jitter #Ipv6 #Ipv4\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-     "link": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmate-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wordmate",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "アプリを開かずに 単語学習\n\nApple Watchでも\n✓ 連続記録をキープ\n✓ 44言語から選べる\n\nApp Store で「Wordmate」を検索",
-    "title": "アプリを開かずに 単語学習",
-    "alt": "アプリを開かずに 単語学習 | Apple Watchでも | 連続記録をキープ | 44言語から選べる | Wordmate：44言語の単語学習 / 単語ウィジェットと暗記カード / App Store で「Wordmate」を検索",
-    "name": "Wordmate：44言語の単語学習",
-    "hook": "アプリを開かずに 単語学習",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-    "pinterest": {
-     "description": "アプリを開かずに 単語学習\n\nApple Watchでも\n✓ 連続記録をキープ\n✓ 44言語から選べる\n\nApp Store で「Wordmate」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-     "link": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmate-ko-pain-20261022",
-    "locale": "ko",
-    "app": "wordmate",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "앱을 열지 않고 단어 공부\n\n손목에서도 단어 공부\n✓ 연속 학습 이어가기\n✓ 44개 언어 중 선택\n\nApp Store에서 ‘Wordmate’ 검색",
-    "title": "앱을 열지 않고 단어 공부",
-    "alt": "앱을 열지 않고 단어 공부 | 손목에서도 단어 공부 | 연속 학습 이어가기 | 44개 언어 중 선택 | Wordmate: 44개 언어 단어 학습 / 단어 위젯・단어장 복습 / App Store에서 ‘Wordmate’ 검색",
-    "name": "Wordmate: 44개 언어 단어 학습",
-    "hook": "앱을 열지 않고 단어 공부",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-    "pinterest": {
-     "description": "앱을 열지 않고 단어 공부\n\n손목에서도 단어 공부\n✓ 연속 학습 이어가기\n✓ 44개 언어 중 선택\n\nApp Store에서 ‘Wordmate’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-     "link": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaid-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "wifiaid",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaid-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "網路問題別再猜 直接看證據\n\n一鍵完成檢查\n✓ 連延遲和穩定度都看\n✓ 時好時壞？深度檢查\n\nApp Store 搜尋「WiFi Aid」",
-    "title": "網路問題別再猜 直接看證據",
-    "alt": "網路問題別再猜 直接看證據 | 一鍵完成檢查 | 連延遲和穩定度都看 | 時好時壞？深度檢查 | WiFi Aid：找出網路問題·診斷 / 分享器・路由器・Mesh・DNS / App Store 搜尋「WiFi Aid」",
-    "name": "WiFi Aid：找出網路問題·診斷",
-    "hook": "網路問題別再猜 直接看證據",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-    "pinterest": {
-     "description": "網路問題別再猜 直接看證據\n\n一鍵完成檢查\n✓ 連延遲和穩定度都看\n✓ 時好時壞？深度檢查\n\nApp Store 搜尋「WiFi Aid」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-     "link": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -2841,272 +1679,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/wordmatelite-ja-pain-20261022",
-    "locale": "ja",
-    "app": "wordmatelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "1日たった 5単語\n\n1分で完了\n✓ 連続記録が伸びる\n✓ 44言語から選べる\n\nApp Store で「Wordmate Lite 1日5単語」を検索",
-    "title": "1日たった 5単語",
-    "alt": "1日たった 5単語 | 1分で完了 | 連続記録が伸びる | 44言語から選べる | Wordmate Lite 1日5単語 / 毎日1分、44言語の語彙トレーニング / App Store で「Wordmate Lite 1日5単語」を検索",
-    "name": "Wordmate Lite 1日5単語",
-    "hook": "1日たった 5単語",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-    "pinterest": {
-     "description": "1日たった 5単語\n\n1分で完了\n✓ 連続記録が伸びる\n✓ 44言語から選べる\n\nApp Store で「Wordmate Lite 1日5単語」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-     "link": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmatelite-ko-pain-20261022",
-    "locale": "ko",
-    "app": "wordmatelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "하루에 딱 5단어\n\n1분이면 끝\n✓ 연속 기록이 쌓인다\n✓ 44개 언어 중 선택\n\nApp Store에서 ‘Wordmate Lite 하루 5단어’ 검색",
-    "title": "하루에 딱 5단어",
-    "alt": "하루에 딱 5단어 | 1분이면 끝 | 연속 기록이 쌓인다 | 44개 언어 중 선택 | Wordmate Lite 하루 5단어 / 44개 언어, 1분이면 끝나는 어휘 / App Store에서 ‘Wordmate Lite 하루 5단어’ 검색",
-    "name": "Wordmate Lite 하루 5단어",
-    "hook": "하루에 딱 5단어",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-    "pinterest": {
-     "description": "하루에 딱 5단어\n\n1분이면 끝\n✓ 연속 기록이 쌓인다\n✓ 44개 언어 중 선택\n\nApp Store에서 ‘Wordmate Lite 하루 5단어’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-     "link": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wifiaidlite-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wifiaidlite-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "網路又卡了？\n\nWi-Fi、DNS 還是網際網路？\n✓ 還是網站本身？\n✓ 還告訴你下一步\n\nApp Store 搜尋「WiFi Aid Lite」\n\n#WiFiAidLite",
-    "title": "網路又卡了？",
-    "alt": "網路又卡了？ | Wi-Fi、DNS 還是網際網路？ | 還是網站本身？ | 還告訴你下一步 | WiFi Aid Lite / 無法上網？一鍵找出原因 / App Store 搜尋「WiFi Aid Lite」",
-    "name": "WiFi Aid Lite",
-    "hook": "網路又卡了？",
-    "tags": [
-     "#WiFiAidLite"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "pinterest": {
-     "description": "網路又卡了？\n\nWi-Fi、DNS 還是網際網路？\n✓ 還是網站本身？\n✓ 還告訴你下一步\n\nApp Store 搜尋「WiFi Aid Lite」\n\n#WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-     "link": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmate-en-pain-20261022",
-    "locale": "en",
-    "app": "wordmate",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Learn words without opening the app\n\nOr right on your wrist\n✓ Keep your streak going\n✓ Pick from 44 languages\n\nSearch “Wordmate” on the App Store\n\n#Learn44Languages #Italian #Chinese #Portuguese #Russian",
-    "title": "Learn words without opening the app",
-    "alt": "Learn words without opening the app | Or right on your wrist | Keep your streak going | Pick from 44 languages | Wordmate: Learn 44 Languages / Vocabulary Flashcards & Widget / Search “Wordmate” on the App Store",
-    "name": "Wordmate: Learn 44 Languages",
-    "hook": "Learn words without opening the app",
-    "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese",
-     "#Portuguese",
-     "#Russian"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-    "pinterest": {
-     "description": "Learn words without opening the app\n\nOr right on your wrist\n✓ Keep your streak going\n✓ Pick from 44 languages\n\nSearch “Wordmate” on the App Store\n\n#Learn44Languages #Italian #Chinese #Portuguese #Russian\n\nGet it on the App Store: https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-     "link": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/zipbox-ja-pain-20261022",
-    "locale": "ja",
-    "app": "zipbox",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "ZIPの中の 1つだけ欲しい？\n\n中身を見て それだけ取り出す\n✓ 暗号化ZIPも 作れる\n✓ ZIP・RAR・7zなど 13形式に対応\n\nApp Store で「Zipbox 解凍」を検索",
-    "title": "ZIPの中の 1つだけ欲しい？",
-    "alt": "ZIPの中の 1つだけ欲しい？ | 中身を見て それだけ取り出す | 暗号化ZIPも 作れる | ZIP・RAR・7zなど 13形式に対応 | Zipbox 解凍：ZIP RAR 7z対応 / 圧縮・解凍ツール パスワード対応 / App Store で「Zipbox 解凍」を検索",
-    "name": "Zipbox 解凍：ZIP RAR 7z対応",
-    "hook": "ZIPの中の 1つだけ欲しい？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-    "pinterest": {
-     "description": "ZIPの中の 1つだけ欲しい？\n\n中身を見て それだけ取り出す\n✓ 暗号化ZIPも 作れる\n✓ ZIP・RAR・7zなど 13形式に対応\n\nApp Store で「Zipbox 解凍」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-     "link": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/zipbox-ko-pain-20261022",
-    "locale": "ko",
-    "app": "zipbox",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "압축 파일 속 딱 하나만 필요해?\n\n풀기 전에 미리 보고 그것만 꺼내기\n✓ 암호화 압축도 가능\n✓ ZIP·RAR·7z 등 13가지 형식\n\nApp Store에서 ‘Zipbox 압축풀기’ 검색",
-    "title": "압축 파일 속 딱 하나만 필요해?",
-    "alt": "압축 파일 속 딱 하나만 필요해? | 풀기 전에 미리 보고 그것만 꺼내기 | 암호화 압축도 가능 | ZIP·RAR·7z 등 13가지 형식 | Zipbox 압축풀기: ZIP RAR 7z / 압축 해제·압축파일 열기 / App Store에서 ‘Zipbox 압축풀기’ 검색",
-    "name": "Zipbox 압축풀기: ZIP RAR 7z",
-    "hook": "압축 파일 속 딱 하나만 필요해?",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-    "pinterest": {
-     "description": "압축 파일 속 딱 하나만 필요해?\n\n풀기 전에 미리 보고 그것만 꺼내기\n✓ 암호화 압축도 가능\n✓ ZIP·RAR·7z 등 13가지 형식\n\nApp Store에서 ‘Zipbox 압축풀기’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-     "link": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmate-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "wordmate",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmate-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "不用打開 App 也能背單字\n\n手腕上也能背\n✓ 連續學習不中斷\n✓ 44 種語言任選\n\nApp Store 搜尋「Wordmate」",
-    "title": "不用打開 App 也能背單字",
-    "alt": "不用打開 App 也能背單字 | 手腕上也能背 | 連續學習不中斷 | 44 種語言任選 | Wordmate：44 種語言背單字 / 單字卡・複習・單字小工具 / App Store 搜尋「Wordmate」",
-    "name": "Wordmate：44 種語言背單字",
-    "hook": "不用打開 App 也能背單字",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-    "pinterest": {
-     "description": "不用打開 App 也能背單字\n\n手腕上也能背\n✓ 連續學習不中斷\n✓ 44 種語言任選\n\nApp Store 搜尋「Wordmate」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-     "link": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmatelite-en-pain-20261022",
-    "locale": "en",
-    "app": "wordmatelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-en-pain-20261022/05.jpg"
-    ],
-    "caption": "5 words a day. That's it.\n\nDone in one minute\n✓ Watch your streak grow\n✓ Pick from 44 languages\n\nSearch “Wordmate Lite” on the App Store\n\n#Vocabulary #Spanish #French #Japanese #Korean",
-    "title": "5 words a day. That's it.",
-    "alt": "5 words a day. That's it. | Done in one minute | Watch your streak grow | Pick from 44 languages | Wordmate Lite: Vocabulary / Learn 5 words a day, offline / Search “Wordmate Lite” on the App Store",
-    "name": "Wordmate Lite: Vocabulary",
-    "hook": "5 words a day. That's it.",
-    "tags": [
-     "#Vocabulary",
-     "#Spanish",
-     "#French",
-     "#Japanese",
-     "#Korean"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-    "pinterest": {
-     "description": "5 words a day. That's it.\n\nDone in one minute\n✓ Watch your streak grow\n✓ Pick from 44 languages\n\nSearch “Wordmate Lite” on the App Store\n\n#Vocabulary #Spanish #French #Japanese #Korean\n\nGet it on the App Store: https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-     "link": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/wordmatelite-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "wordmatelite",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/wordmatelite-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "每天只背 5 個單字\n\n一分鐘就練完\n✓ 連續天數往上加\n✓ 44 種語言任選\n\nApp Store 搜尋「Wordmate Lite 每天五個單字」",
-    "title": "每天只背 5 個單字",
-    "alt": "每天只背 5 個單字 | 一分鐘就練完 | 連續天數往上加 | 44 種語言任選 | Wordmate Lite 每天五個單字 / 44 種語言，一分鐘的字彙習慣 / App Store 搜尋「Wordmate Lite 每天五個單字」",
-    "name": "Wordmate Lite 每天五個單字",
-    "hook": "每天只背 5 個單字",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-    "pinterest": {
-     "description": "每天只背 5 個單字\n\n一分鐘就練完\n✓ 連續天數往上加\n✓ 44 種語言任選\n\nApp Store 搜尋「Wordmate Lite 每天五個單字」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-     "link": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
     "key": "carousel/zipbox-en-pain-20261022",
     "locale": "en",
     "app": "zipbox",
@@ -3137,96 +1709,6 @@
     "pinterest": {
      "description": "Need one file from a ZIP?\n\nPeek inside, take only that one\n✓ Create encrypted ZIP or 7z\n✓ ZIP, RAR, 7z…13 formats\n\nSearch “Zipbox” on the App Store\n\n#UnzipRARZIP7z #Decompress #Unpack #Unrar #Gzip\n\nGet it on the App Store: https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
      "link": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/zipbox-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "zipbox",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/zipbox-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "壓縮檔裡 只要一個檔？\n\n先看裡面有什麼 只取那一個\n✓ 也能壓縮成 加密 ZIP\n✓ ZIP、RAR、7z…支援 13 種格式\n\nApp Store 搜尋「Zipbox 解壓縮」",
-    "title": "壓縮檔裡 只要一個檔？",
-    "alt": "壓縮檔裡 只要一個檔？ | 先看裡面有什麼 只取那一個 | 也能壓縮成 加密 ZIP | ZIP、RAR、7z…支援 13 種格式 | Zipbox 解壓縮：RAR ZIP 7z / 開啟壓縮檔・預覽・加密壓縮 / App Store 搜尋「Zipbox 解壓縮」",
-    "name": "Zipbox 解壓縮：RAR ZIP 7z",
-    "hook": "壓縮檔裡 只要一個檔？",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-    "pinterest": {
-     "description": "壓縮檔裡 只要一個檔？\n\n先看裡面有什麼 只取那一個\n✓ 也能壓縮成 加密 ZIP\n✓ ZIP、RAR、7z…支援 13 種格式\n\nApp Store 搜尋「Zipbox 解壓縮」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
-     "link": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/kumo-zh-Hant-pain-20261113",
-    "locale": "zh-Hant",
-    "app": "kumo",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-zh-Hant-pain-20261113/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-zh-Hant-pain-20261113/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-zh-Hant-pain-20261113/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-zh-Hant-pain-20261113/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-zh-Hant-pain-20261113/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-zh-Hant-pain-20261113/05.jpg"
-    ],
-    "caption": "體重一天高一天低，還沒看到進步就想放棄？\n\n每天 10 秒記好，自動帶入上次數值\n✓ 7 日平均線看整體方向，不被單日起伏影響心情\n✓ 「今天沒量」也算有來，連續天數不中斷\n\nApp Store 搜尋「Kumo 體重紀錄」",
-    "title": "體重一天高一天低，還沒看到進步就想放棄？",
-    "alt": "體重一天高一天低，還沒看到進步就想放棄？ | 每天 10 秒記好，自動帶入上次數值 | 7 日平均線看整體方向，不被單日起伏影響心情 | 「今天沒量」也算有來，連續天數不中斷 | Kumo 體重紀錄・減重日記・GLP-1 注射追蹤 / 168斷食・喝水蛋白質・腰圍體脂・打針提醒・可愛雲朵 / App Store 搜尋「Kumo 體重紀錄」",
-    "name": "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤",
-    "hook": "體重一天高一天低，還沒看到進步就想放棄？",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "launched": "2026-11-11",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
-    "pinterest": {
-     "description": "體重一天高一天低，還沒看到進步就想放棄？\n\n每天 10 秒記好，自動帶入上次數值\n✓ 7 日平均線看整體方向，不被單日起伏影響心情\n✓ 「今天沒量」也算有來，連續天數不中斷\n\nApp Store 搜尋「Kumo 體重紀錄」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
-     "link": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/kumo-en-pain-20261113",
-    "locale": "en",
-    "app": "kumo",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/kumo-en-pain-20261113/05.jpg"
-    ],
-    "caption": "The scale jumps around every day?\n\nAbout 10 seconds a day, your last weight filled in\n✓ A calm 7-day average line, not daily jumps\n✓ \"Didn't weigh today\" still keeps your streak\n\nSearch “Kumo weight tracker” on the App Store\n\n#weighttracker #weightlog #habittracker",
-    "title": "The scale jumps around every day?",
-    "alt": "The scale jumps around every day? | About 10 seconds a day, your last weight filled in | A calm 7-day average line, not daily jumps | \"Didn't weigh today\" still keeps your streak | Kumo: Weight & GLP-1 Tracker / Shot Log, Fasting & Cute Cloud / Search “Kumo weight tracker” on the App Store",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "hook": "The scale jumps around every day?",
-    "tags": [
-     "#weighttracker",
-     "#weightlog",
-     "#habittracker"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "launched": "2026-11-11",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
-    "pinterest": {
-     "description": "The scale jumps around every day?\n\nAbout 10 seconds a day, your last weight filled in\n✓ A calm 7-day average line, not daily jumps\n✓ \"Didn't weigh today\" still keeps your streak\n\nSearch “Kumo weight tracker” on the App Store\n\n#weighttracker #weightlog #habittracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
-     "link": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8"
     }
    }
   ],

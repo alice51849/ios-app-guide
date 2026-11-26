@@ -15,7 +15,7 @@ Pensata per la metropolitana di Taipei, a Taiwan: dimmi a che ora devi arrivare 
 
 - Altro
 - Scaricamento a pagamento
-- App Store · Gratis
+- App Store · 2,99 €
 
 [Scarica Taipei: Assistente Orari Metro sull'App Store](https://apps.apple.com/it/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

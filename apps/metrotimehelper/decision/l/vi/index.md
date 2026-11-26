@@ -15,7 +15,7 @@ Trợ lý giờ xuất phát dành cho tàu điện MRT Đài Bắc, Đài Loan.
 
 - Khác
 - Tải xuống trả phí
-- App Store · Miễn phí
+- App Store · 99.000đ
 
 [Tải Trợ lý giờ MRT Đài Bắc trên App Store](https://apps.apple.com/vn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

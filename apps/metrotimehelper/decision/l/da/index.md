@@ -15,7 +15,7 @@ Din hjælper til metroen i Taipei, Taiwan: Sig, hvornår du skal være fremme, s
 
 - Mere
 - Betalt download
-- App Store · Gratis
+- App Store · 29,00 kr
 
 [Hent Taipei: Tidshjælp til metroen i App Store](https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

@@ -15,7 +15,7 @@ Taiwanin Taipein metroon tehty lähtöaikatyökalu: kerro, milloin sinun pitää
 
 - Lisää
 - Maksullinen lataus
-- App Store · Ilmainen
+- App Store · 2,99 €
 
 [Lataa Taipei: Metron aika-apuri App Storesta](https://apps.apple.com/fi/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - Ещё
 - Платное скачивание
-- App Store · Бесплатно
+- App Store · 249,00 ₽
 
 [Установить Тайбэй: помощник по метро в App Store](https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

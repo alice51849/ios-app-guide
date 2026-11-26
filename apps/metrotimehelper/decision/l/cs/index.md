@@ -15,7 +15,7 @@ Pomocník pro metro v Tchaj-peji na Tchaj-wanu: zadejte, kdy potřebujete být n
 
 - Více
 - Placené stažení
-- App Store · Zdarma
+- App Store · 79,00 Kč
 
 [Stáhněte si Tchaj-pej: metro včas v App Storu](https://apps.apple.com/cz/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

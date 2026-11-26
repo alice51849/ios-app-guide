@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - Περισσότερα
 - Λήψη με χρέωση
-- App Store · Δωρεάν
+- App Store · 2,99 €
 
 [Αποκτήστε το Μετρό στην Ώρα – Ταϊπέι από το App Store](https://apps.apple.com/gr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

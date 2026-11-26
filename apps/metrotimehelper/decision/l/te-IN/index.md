@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - ఇంకా
 - చెల్లింపు డౌన్లోడ్
-- App Store · ఉచితం
+- App Store · ₹ 299
 
 [App Store నుంచి Taipei MRT సమయ సహాయకారి పొందండి](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

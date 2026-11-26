@@ -15,7 +15,7 @@ L'assistent per saber quan sortir amb el metro de Taipei, a Taiwan: digues a qui
 
 - Més
 - Descàrrega de pagament
-- App Store · Gratis
+- App Store · 2,99 €
 
 [Descarrega Taipei · Assistent del Metro a l’App Store](https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

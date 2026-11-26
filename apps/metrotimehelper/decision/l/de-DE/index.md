@@ -15,7 +15,7 @@ Dein Abfahrtshelfer für die Metro in Taipeh, Taiwan: Sag der App, wann du ankom
 
 - Mehr
 - Kostenpflichtiger Download
-- App Store · Kostenlos
+- App Store · 2,99 €
 
 [Metro-Zeithelfer Taipeh im App Store laden](https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

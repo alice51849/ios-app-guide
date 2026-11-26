@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-25",
-  "content_digest": "355c0900b934828647275e662672e269d20dc38ee0964018f4502c36c51da75a",
+  "date_modified": "2026-11-26",
+  "content_digest": "a680ca7a645055a25fb340101aa71e2d481af1975b14fb54c4de8c25af664930",
   "locale": "en-AU",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -331,7 +331,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/dailymate.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "19.99",
+        "currency": "AUD",
+        "formatted_price": "$19.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6790418321"
+      }
     },
     {
       "key": "dailymatelite",
@@ -509,7 +515,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/gmoney.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "7.99",
+        "currency": "AUD",
+        "formatted_price": "$7.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6755782939"
+      }
     },
     {
       "key": "gmoneylite",
@@ -581,7 +593,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/gbago.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "4.99",
+        "currency": "AUD",
+        "formatted_price": "$4.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6804564400"
+      }
     },
     {
       "key": "hourstaglite",
@@ -655,7 +673,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/hourstag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "7.99",
+        "currency": "AUD",
+        "formatted_price": "$7.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6754218117"
+      }
     },
     {
       "key": "jellyday",
@@ -873,7 +897,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/lumibopomofopro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "14.99",
+        "currency": "AUD",
+        "formatted_price": "$14.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6775773117"
+      }
     },
     {
       "key": "lumiletters",
@@ -944,7 +974,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/lumiletterspro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "14.99",
+        "currency": "AUD",
+        "formatted_price": "$14.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6778491147"
+      }
     },
     {
       "key": "lumimath",
@@ -1014,7 +1050,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/lumimathpro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "14.99",
+        "currency": "AUD",
+        "formatted_price": "$14.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6776958488"
+      }
     },
     {
       "key": "lumimission",
@@ -1087,7 +1129,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/lumimissionpro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "AUD",
+        "formatted_price": "$9.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6779745474"
+      }
     },
     {
       "key": "lumiweather",
@@ -1195,7 +1243,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/foldparty.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "AUD",
+        "formatted_price": "$9.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6829184924"
+      }
     },
     {
       "key": "metrotimehelper",
@@ -1231,7 +1285,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/metrotimehelper.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "4.99",
+        "currency": "AUD",
+        "formatted_price": "$4.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6819061896"
+      }
     },
     {
       "key": "mochi",
@@ -1666,7 +1726,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/snapport.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "AUD",
+        "formatted_price": "$9.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6780575828"
+      }
     },
     {
       "key": "snapportlite",
@@ -1951,7 +2017,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/tripbee.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "AUD",
+        "formatted_price": "$9.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6787754435"
+      }
     },
     {
       "key": "unblurry",
@@ -2058,7 +2130,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/wifiaid.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "AUD",
+        "formatted_price": "$9.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6790467886"
+      }
     },
     {
       "key": "wifiaidlite",
@@ -2166,7 +2244,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/wordmate.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "14.99",
+        "currency": "AUD",
+        "formatted_price": "$14.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6789917808"
+      }
     },
     {
       "key": "zipbox",
@@ -2204,7 +2288,13 @@
       },
       "app_store_url": "https://apps.apple.com/au/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/zipbox.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "7.99",
+        "currency": "AUD",
+        "formatted_price": "$7.99",
+        "storefront_url": "https://apps.apple.com/au/app/id6806776579"
+      }
     }
   ]
 }

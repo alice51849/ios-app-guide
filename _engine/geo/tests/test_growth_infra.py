@@ -20353,6 +20353,12 @@ class GeneratorTests(unittest.TestCase):
                 json.dumps(
                     {
                         "version": 2,
+                        # 價格通則：快照要有新鮮的 checked_at，付費價要有相符的
+                        # 線上讀回才可印（app_store_storefronts.price_readback_confirmed）。
+                        "checked_at": dt.datetime.now(dt.timezone.utc)
+                        .replace(microsecond=0)
+                        .isoformat()
+                        .replace("+00:00", "Z"),
                         "countries": {
                             "us": ["6780575828", "6789917808"],
                         },
@@ -20362,6 +20368,8 @@ class GeneratorTests(unittest.TestCase):
                                     "price": "8.99",
                                     "currency": "USD",
                                     "formatted_price": "$8.99",
+                                    "price_readback": "8.99",
+                                    "currency_readback": "USD",
                                     "rating_value": 5.0,
                                     "rating_count": 2,
                                 },

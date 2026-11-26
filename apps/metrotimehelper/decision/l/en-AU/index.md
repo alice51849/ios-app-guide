@@ -11,11 +11,11 @@ publisher: "Lumi Studio"
 
 # taipei mrt app that tells me what time to leave to arrive on time
 
-Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station. Free to start · One-time unlock · No subscription.
+Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station. Unofficial app · No subscription · No in-app purchases.
 
 - More
 - Paid download
-- App Store · Free
+- App Store · $4.99
 
 [Get Metro Time Helper on the App Store →](https://apps.apple.com/au/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

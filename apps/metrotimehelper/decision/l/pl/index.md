@@ -15,7 +15,7 @@ Podaj, na którą musisz być na miejscu, a aplikacja powie ci, kiedy najpóźni
 
 - Więcej
 - Płatne do pobrania
-- App Store · Bezpłatnie
+- App Store · 14,99 zł
 
 [Pobierz Tajpej: metro na czas z App Store](https://apps.apple.com/pl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

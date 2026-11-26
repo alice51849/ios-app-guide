@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - עוד
 - הורדה בתשלום
-- App Store · בחינם
+- App Store · ₪9.90
 
 [הורידו את עוזר זמני המטרו: טאיפיי מה-App Store](https://apps.apple.com/il/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

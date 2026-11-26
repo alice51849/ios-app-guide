@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-11-24",
+  "dateModified": "2026-11-26",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,9 +10,9 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "9e3d0204c8d7a76c11a44eb0a488112297abf89af9d92811316bcf9b021f8c66",
-  "content_digest": "8b7bb50a816425f3f77990ac01b8aca41cb0b2ee7a1153c30ebe5eea1f139f3f",
-  "generation_digest": "0ce8730660faa06ad86b9d0593f45bd7592c624bb3db523a584dae03b3c20945",
+  "source_sha256": "727639ca8132732cdc938b35efd2ef1153b00124bda493424e8d348ae49fd64b",
+  "content_digest": "c78887989fbfdb77f13fb0a8f575f079d483d4c8cafa60104efde276e2a417b9",
+  "generation_digest": "afef51aa462b97e357640536e5c67a4728caa640ce2a463fd32b353d17764a8c",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 61,
   "locale_count": 50,
@@ -22,8 +22,8 @@
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "74ede6f79253111bae3f0692d7ba132dc6cd4fc0efe28eae76944dbf25c425b7",
-      "dateModified": "2026-11-24"
+      "sha256": "1120497eb3a610885a14e63c4dd1048e6a9d759bb75ca9b3bd004b1e64db60de",
+      "dateModified": "2026-11-26"
     },
     {
       "locale": "ar-SA",
@@ -70,26 +70,26 @@
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "2bdf86e8aa78cbad04853f993ae7208fd3293078f3611104af20f2313c08ac19",
-      "dateModified": "2026-11-24"
+      "sha256": "8a30adca5151cffce5d566c79524ccd8f5e541ada199388c8eb47c7e081af473",
+      "dateModified": "2026-11-26"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "8b97841548a10f25e7a07f68293647a0d65a44086322f692b80b54c18c8de29a",
-      "dateModified": "2026-11-24"
+      "sha256": "5dbc659a2ab407e56bf7cec06d8288aa7719a484cf21c7541d7b589bdf979b6f",
+      "dateModified": "2026-11-26"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "50c6cc2f6b57e8b87b252aedd0794bf29beef34123ba5100a710793972119969",
-      "dateModified": "2026-11-24"
+      "sha256": "37956a7a56a7d5d2553b5a486e5a2b49b5d3e390b0b6ed30c9afbabd0af8dede",
+      "dateModified": "2026-11-26"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "a3ffbf5ea861a59e6eb06623de708848bd6d5e693dc8055f48f9a8b10fb14aba",
-      "dateModified": "2026-11-24"
+      "sha256": "b002bf0e11f6e905eac3fb6b71ae68acb3b1361f81ba6972fa4e38916b75594f",
+      "dateModified": "2026-11-26"
     },
     {
       "locale": "es-ES",
@@ -6106,7 +6106,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html",
       "app_store_url": "https://apps.apple.com/au/app/id6819061896?pt=118326163&ct=iag_visual_en_au&mt=8",
-      "sha256": "f06068d8444003a6bfec3f3408d4e9586f9a6f95f3b902289c838461ea0e3054"
+      "sha256": "4f5d5ca6e32ef0a60580bda1f032c1fb658b52ee512680628fe0bbb1f7ebcd9d"
     },
     {
       "locale": "en-AU",
@@ -6716,7 +6716,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=iag_visual_en_ca&mt=8",
-      "sha256": "26ab6c2e5a0aa53ca02fb9e9c24ee79d0980a5b06352a2dfe14d92abf9c91652"
+      "sha256": "bed508432516700557b04b8c213971d3c737081c01d7da961f31bfa2ff651a76"
     },
     {
       "locale": "en-CA",
@@ -7326,7 +7326,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6819061896?pt=118326163&ct=iag_visual_en_gb&mt=8",
-      "sha256": "90ea7c8d0505bde138eb0bf1bbffd230e17a1dc660395e67246ac9cf051e7c1f"
+      "sha256": "fc8387e28e8d05f4289804b62018d9c343fe4771231ce1ba0506cde501cc6ad6"
     },
     {
       "locale": "en-GB",
@@ -7936,7 +7936,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html",
       "app_store_url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=iag_visual_en_us&mt=8",
-      "sha256": "d78c9904ecb515abb07d825602905bce284e78865cc51f66b4827c6479b06bdc"
+      "sha256": "32fcdb7eb22204c59215742b1b0462bd85a44eedcc803c32c74b333cd2020f5f"
     },
     {
       "locale": "en-US",

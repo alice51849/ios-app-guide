@@ -15,7 +15,7 @@ Tidshjälpen för metron i Taipei, Taiwan: säg när du måste vara framme, så 
 
 - Mer
 - Betald nedladdning
-- App Store · Gratis
+- App Store · 39,00 kr
 
 [Hämta Taipei: Tidshjälp för metron i App Store](https://apps.apple.com/se/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

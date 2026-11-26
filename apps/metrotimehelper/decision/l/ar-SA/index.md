@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - المزيد
 - تحميل مدفوع
-- App Store · مجاني
+- App Store · SAR 12.99
 
 [احصل على مساعد وقت المترو: تايبيه من App Store](https://apps.apple.com/sa/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

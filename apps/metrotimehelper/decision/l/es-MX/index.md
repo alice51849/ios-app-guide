@@ -15,7 +15,7 @@ Hora de Metro es la herramienta para saber a qué hora salir en el metro de Taip
 
 - Más
 - Descarga de pago
-- App Store · Gratis
+- App Store · $69.00
 
 [Consigue Hora de Metro en Taipei en el App Store](https://apps.apple.com/mx/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

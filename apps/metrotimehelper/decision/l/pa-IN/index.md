@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - ਹੋਰ
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
-- App Store · ਮੁਫ਼ਤ
+- App Store · ₹ 299
 
 [App Store ਤੋਂ ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ: Taipei MRT ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

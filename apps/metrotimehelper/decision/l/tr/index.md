@@ -15,7 +15,7 @@ Tayvan'da Taipei metrosu için yola çıkış saati asistanı: Ne zaman varman g
 
 - Daha fazla
 - Ücretli indirme
-- App Store · Ücretsiz
+- App Store · ₺149,99
 
 [Metro Saat Yardımcısı: Taipei uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

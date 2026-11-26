@@ -15,7 +15,7 @@ Aplikacija za metro v Tajpeju na Tajvanu: vpišite, kdaj morate biti na cilju, i
 
 - Več
 - Plačljiv prenos
-- App Store · Brezplačno
+- App Store · 2,99 €
 
 [Prenesite Tajpej: metro pravočasno iz trgovine App Store](https://apps.apple.com/si/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

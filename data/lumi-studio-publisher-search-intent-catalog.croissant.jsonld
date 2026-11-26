@@ -261,9 +261,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "3245357 B",
+      "contentSize": "3245377 B",
       "encodingFormat": "text/csv",
-      "sha256": "d09045d51de6de49ee458d79da4d92dd1fc3cec2b23e97d6eaee768ebdaaea66"
+      "sha256": "1d86ed04099e320e2859433a0307c5387cf27c8c4cb74b914594b5e61886592f"
     },
     {
       "@type": "cr:FileObject",
@@ -271,9 +271,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 3,050 records serialized as newline-delimited JSON.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "4516154 B",
+      "contentSize": "4516174 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "f83d054d0e1cadd6ace9330f8dd365d242c7776d59fced3c53660e3fe35391f7"
+      "sha256": "fb22f179c2db7aebee41755771331109f5556fbc25ed53db3f4b5139965f05ec"
     },
     {
       "@type": "cr:FileObject",
@@ -281,9 +281,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 3,050 records.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "5025583 B",
+      "contentSize": "5025603 B",
       "encodingFormat": "application/json",
-      "sha256": "9e3d0204c8d7a76c11a44eb0a488112297abf89af9d92811316bcf9b021f8c66"
+      "sha256": "727639ca8132732cdc938b35efd2ef1153b00124bda493424e8d348ae49fd64b"
     }
   ],
   "recordSet": [

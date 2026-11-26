@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - مزید
 - ادا شدہ ڈاؤن لوڈ
-- App Store · مفت
+- App Store · Rs 900.00
 
 [App Store سے میٹرو وقت مددگار: تائپے حاصل کریں](https://apps.apple.com/pk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

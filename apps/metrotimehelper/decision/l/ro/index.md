@@ -15,7 +15,7 @@ Metrou la Timp îți spune când să pleci ca să prinzi metroul din Taipei, Tai
 
 - Mai mult
 - Descărcare plătită
-- App Store · Gratuit
+- App Store · 14,99 lei
 
 [Descarcă Metrou la Timp: Taipei din App Store](https://apps.apple.com/ro/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

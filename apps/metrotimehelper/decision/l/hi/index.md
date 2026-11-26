@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - और अधिक
 - भुगतान किया गया डाउनलोड
-- App Store · मुफ़्त
+- App Store · ₹ 299
 
 [App Store पर मेट्रो समय सहायक: Taipei MRT पाएँ](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

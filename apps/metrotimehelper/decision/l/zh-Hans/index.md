@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - 更多
 - 付费下载
-- App Store · 免费
+- App Store · ¥22.00
 
 [在 App Store 获取 捷运时间助手：台北地铁换乘](https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

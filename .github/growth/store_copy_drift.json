@@ -180,15 +180,15 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "2.0.1",
+     "live_updated": "2026-11-25",
+     "live_version": "2.0.2",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "2.0.1",
+     "live_updated": "2026-11-25",
+     "live_version": "2.0.2",
      "same": true
     },
     "es-ES": {
@@ -201,8 +201,8 @@
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "2.0.1",
+     "live_updated": "2026-11-25",
+     "live_version": "2.0.2",
      "same": true
     },
     "ja": {
@@ -215,8 +215,8 @@
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "2.0.1",
+     "live_updated": "2026-11-25",
+     "live_version": "2.0.2",
      "same": true
     },
     "pt-BR": {
@@ -236,8 +236,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "2.0.1",
+     "live_updated": "2026-11-25",
+     "live_version": "2.0.2",
      "same": true
     }
    },
@@ -1741,15 +1741,15 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.10",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.10",
      "same": true
     },
     "es-ES": {
@@ -1762,8 +1762,8 @@
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.10",
      "same": true
     },
     "ja": {
@@ -1776,8 +1776,8 @@
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.10",
      "same": true
     },
     "pt-BR": {
@@ -1797,8 +1797,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.10",
      "same": true
     }
    },
@@ -2063,15 +2063,15 @@
     "Lumi レター Lite",
     "Lumi 레터 Lite"
    ],
-   "live_updated": "2026-11-14",
-   "live_version": "1.1.11",
+   "live_updated": "2026-11-26",
+   "live_version": "1.1.12",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
-     "same": true
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
+     "same": false
     },
     "en-GB": {
      "added": [],
@@ -2083,37 +2083,37 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
-     "same": true
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
+     "same": false
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
-     "same": true
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
+     "same": false
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
-     "same": true
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
+     "same": false
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
-     "same": true
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
+     "same": false
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
-     "same": true
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
+     "same": false
     },
     "pt-BR": {
      "added": [],
@@ -2130,7 +2130,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumiletterspro": {
    "blocked_terms": [],
@@ -2396,14 +2396,14 @@
     "Lumi 任務星球",
     "Lumi 미션 별"
    ],
-   "live_updated": "2026-11-16",
-   "live_version": "1.4.11",
+   "live_updated": "2026-11-26",
+   "live_version": "1.4.12",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "en-GB": {
@@ -2416,36 +2416,36 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "pt-BR": {
@@ -2458,8 +2458,8 @@
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "zh-Hant": {
@@ -4206,15 +4206,11 @@
      "same": true
     },
     "en-US": {
-     "added": [
-      "Try it, then choose"
-     ],
-     "dropped": [
-      "Free version and Pro"
-     ],
-     "live_updated": "2026-11-23",
-     "live_version": "1.0.6",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.7",
+     "same": true
     },
     "es-ES": {
      "added": [],
@@ -4231,15 +4227,11 @@
      "same": true
     },
     "ja": {
-     "added": [
-      "無料版は最大3項目、累計5分の体験枠をご用意しています。毎日のリセットはありません。すでに開始したセッションの記録は、途中で切り捨てずに保存します。Pro を一度購入すると、項目数と記録時間の制限解除、詳しい統計、目標、締め切り、ウィジェット、Apple Watch、バックアップが使えます。サブスクリプションはありません。"
-     ],
-     "dropped": [
-      "無料版では最大3項目、累計5分まで記録できます。毎日のリセットはありません。すでに開始したセッションの記録は、途中で切り捨てずに保存します。Pro を一度購入すると、項目数と記録時間の制限解除、詳しい統計、目標、締め切り、ウィジェット、Apple Watch、バックアップが使えます。サブスクリプションはありません。"
-     ],
-     "live_updated": "2026-11-23",
-     "live_version": "1.0.6",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.7",
+     "same": true
     },
     "ko": {
      "added": [],
@@ -4249,15 +4241,11 @@
      "same": true
     },
     "pt-BR": {
-     "added": [
-      "Experimente até 3 atividades com uma cota acumulada de 5 minutos, sem renovação diária. Uma sessão já iniciada é preservada por inteiro. Com uma única compra, o Pro libera atividades e registros ilimitados, estatísticas avançadas, metas, prazos, widgets, Apple Watch e backups. Sem assinatura."
-     ],
-     "dropped": [
-      "A versão gratuita inclui até 3 atividades com uma cota acumulada de 5 minutos, sem renovação diária. Uma sessão já iniciada é preservada por inteiro. Com uma única compra, o Pro libera atividades e registros ilimitados, estatísticas avançadas, metas, prazos, widgets, Apple Watch e backups. Sem assinatura."
-     ],
-     "live_updated": "2026-11-23",
-     "live_version": "1.0.6",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.7",
+     "same": true
     },
     "zh-Hans": {
      "added": [],
@@ -4274,7 +4262,7 @@
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "tripbee": {
    "blocked_terms": [],
@@ -5144,6 +5132,6 @@
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-25T18:49:26Z",
+ "generated_at": "2026-11-26T05:37:40Z",
  "schema": "growth.store-copy-drift/v1"
 }

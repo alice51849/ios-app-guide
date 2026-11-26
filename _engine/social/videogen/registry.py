@@ -570,8 +570,8 @@ def _load_app_dirs():
 def _current_home_path(value):
     """Re-point a stale ``~/NN_AppName/...`` path to the folder that carries the app's name today.
 
-    The ``NN_`` prefix of an app folder shifts whenever an app is retired (Zodira and Zafe,
-    2026-10) while registry_auto.json is written once per new app, so ``~/45_MoneyTag/...``
+    The ``NN_`` prefix of an app folder shifts whenever an app is retired (two apps were
+    retired in 2026-10) while registry_auto.json is written once per new app, so ``~/45_MoneyTag/...``
     kept pointing at a folder that no longer exists.  A value whose folder still exists, a
     path outside the numbered folders and any lookup problem come back exactly as written."""
     app_dirs = _APP_DIRS

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """The Threads account cap (threads_cap.py): at most 3 top-level posts in 24 hours on @hourstag.app, every
 pipeline included, checked right before each top-level publish. Replies are never held. HTTP is mocked."""
+import os as _os_reserved
+_os_reserved.environ["THREADS_RESERVED_WINDOWS"] = "off"  # reserved windows are tested with an explicit clock below
 import io
 import json
 import os
@@ -389,7 +391,7 @@ class FullSlotRetryTest(unittest.TestCase):
         return action, outputs, body, out.getvalue()
 
     def test_full_at_the_slot_is_not_done_and_retries_inside_the_grace(self):
-        for slot, now in ((self.at(14, 3), self.at(14, 3, 2)), (self.at(12, 13), self.at(12, 13, 4))):
+        for slot, now in ((self.at(14, 3), self.at(14, 3, 2)),):
             action, outputs, receipt, printed = self.run_full(slot, now)
             self.assertEqual(threads_cap.RETRY, action)
             self.assertEqual({"retry": "true", "capskip": "false"}, outputs)
@@ -401,9 +403,11 @@ class FullSlotRetryTest(unittest.TestCase):
         self.assertEqual(self.at(12, 14, 47), threads_cap.next_backup(self.at(12, 13, 4)))
 
     def test_after_the_last_retry_inside_the_grace_the_slot_is_a_cap_skip_with_a_receipt(self):
-        # 03:47 backup for 03:00 (next backup 11:47 > 05:00) and 14:47 for 13:00 (next 17:47 > 15:00).
-        for slot, now in ((self.at(14, 3), self.at(14, 3, 48)), (self.at(12, 13), self.at(12, 14, 48)),
-                          (self.at(12, 13), self.at(12, 15, 30))):
+        # 03:47 backup for 03:00 (next backup 11:47 > 05:00). 13:00 is cut at 14:30 (SLOT_CUTOFF_UTC, 11-27):
+        # the 14:47 backup is past it, so a full 13:00 slot is a cap skip at once and never runs into the
+        # 15 UTC slot of threads-autopilot (11-26 it posted at 15:01:47 and took that slot's share).
+        for slot, now in ((self.at(14, 3), self.at(14, 3, 48)), (self.at(12, 13), self.at(12, 13, 4)),
+                          (self.at(12, 13), self.at(12, 14, 48)), (self.at(12, 13), self.at(12, 15, 30))):
             action, outputs, receipt, printed = self.run_full(slot, now)
             self.assertEqual(threads_cap.SKIP, action)
             self.assertEqual({"retry": "false", "capskip": "true"}, outputs)
@@ -445,6 +449,52 @@ class FullSlotRetryTest(unittest.TestCase):
         with mock.patch("sys.stdout", new_callable=io.StringIO):
             self.assertEqual(threads_cap.FULL, threads_cap.account_status("tok", opener=fake))
             self.assertEqual(threads_cap.ROOM, threads_cap.account_status("tok", opener=FakeGraph(2)))
+
+
+class SlotSharesTest(unittest.TestCase):
+    """Per-slot shares (coordinator 2026-11-27, option 乙): the cap stays 3 in 24 hours; a retry grace never
+    runs into the next slot's share."""
+
+    UTC = __import__("datetime").timezone.utc
+
+    def at(self, hour, minute=0, second=0):
+        import datetime as dt
+        return dt.datetime(2026, 11, 26, hour, minute, second, tzinfo=self.UTC)
+
+    def test_the_13_slot_grace_ends_at_14_30_and_the_03_slot_keeps_its_two_hours(self):
+        self.assertEqual(self.at(14, 30), threads_cap.slot_deadline(self.at(13)))
+        self.assertEqual(self.at(5, 0), threads_cap.slot_deadline(self.at(3)))
+        self.assertEqual(self.at(3, 40), threads_cap.slot_deadline(self.at(1)))
+
+    def test_reserved_window_is_threads_autopilots_15_utc_slot(self):
+        with mock.patch.dict(os.environ, {"THREADS_RESERVED_WINDOWS": "on"}):
+            for clock in (self.at(14, 30), self.at(15, 1, 47), self.at(16, 38), self.at(17, 59, 59)):
+                self.assertTrue(threads_cap.in_reserved(clock), clock)
+            for clock in (self.at(14, 29, 59), self.at(18, 0), self.at(3, 0), self.at(13, 11), self.at(1, 40)):
+                self.assertFalse(threads_cap.in_reserved(clock), clock)
+
+    def test_reserved_window_is_on_unless_a_test_turns_it_off(self):
+        env = {k: v for k, v in os.environ.items() if k != "THREADS_RESERVED_WINDOWS"}
+        with mock.patch.dict(os.environ, env, clear=True):
+            self.assertTrue(threads_cap.in_reserved(self.at(15, 30)))
+        with mock.patch.dict(os.environ, {"THREADS_RESERVED_WINDOWS": "off"}):
+            self.assertFalse(threads_cap.in_reserved(self.at(15, 30)))
+
+    def test_inside_the_reserved_window_no_guide_post_and_no_count_read(self):
+        fake = FakeGraph(0)
+        with mock.patch.dict(os.environ, {"THREADS_RESERVED_WINDOWS": "on"}), \
+                mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertEqual(threads_cap.FULL, threads_cap.account_status("tok", opener=fake, now=self.at(15, 1, 47)))
+        self.assertEqual([], fake.limit_calls)
+        self.assertIn("threads-autopilot", out.getvalue())
+        self.assertNotIn("::error::", out.getvalue())
+
+    def test_outside_the_reserved_window_the_count_still_decides(self):
+        with mock.patch.dict(os.environ, {"THREADS_RESERVED_WINDOWS": "on"}), \
+                mock.patch("sys.stdout", new_callable=io.StringIO):
+            self.assertEqual(threads_cap.ROOM, threads_cap.account_status("tok", opener=FakeGraph(2), now=self.at(13, 11)))
+            self.assertEqual(threads_cap.FULL, threads_cap.account_status("tok", opener=FakeGraph(3), now=self.at(13, 11)))
+            self.assertEqual(threads_cap.ROOM, threads_cap.account_status("tok", opener=FakeGraph(2), now=self.at(18, 0)))
 
 
 if __name__ == "__main__":

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Threads topic tag (threads_topics.py), the review line of the link reply, and the Mochi trial status record."""
+import os as _os_reserved
+_os_reserved.environ["THREADS_RESERVED_WINDOWS"] = "off"  # threads_cap.RESERVED_UTC depends on the hour; these cases do not
 import datetime as dt
 import io
 import json

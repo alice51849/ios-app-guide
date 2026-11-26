@@ -23,7 +23,9 @@ name: Threads posts
 # the account's top-level posts (threads-autopilot's included): 3 or more is
 # a skip (green, the ⏸ line); a count that cannot be read posts nothing.
 # A slot whose room check finds the account full stays open for 2 hours (threads_cap.py full): the next
-# clip-backup.yml run (03:47 for 03:00, 14:47 for 13:00) tries again; only then is it a recorded cap skip.
+# clip-backup.yml run (03:47 for 03:00) tries again; only then is it a recorded cap skip. The 13:00 slot's grace
+# ends at 14:30 (threads_cap.SLOT_CUTOFF_UTC, 2026-11-27) and 14:30-18:00 UTC belongs to threads-autopilot's 15 UTC
+# slot (threads_cap.RESERVED_UTC): a full 13:00 slot is a cap skip instead of taking that slot's share.
 # run-name records the slot so social_slot_gate.py can read it back.
 run-name: >-
   ${{ github.event_name == 'workflow_dispatch'

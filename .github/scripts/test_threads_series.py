@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Tests for threads_series.py (Threads evening slot: BM-11 / BM-17 / BM-22)."""
+import os as _os_reserved
+_os_reserved.environ["THREADS_RESERVED_WINDOWS"] = "off"  # threads_cap.RESERVED_UTC depends on the hour; these cases do not
 import copy
 import datetime as dt
 import io

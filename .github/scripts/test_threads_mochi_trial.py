@@ -3,6 +3,8 @@
 entry, posted in the day's first slot with room; after the last date, each day owes the next entry of the file's
 daily_after_end list (without that list, the usual logic runs again); the entry's link reply carries the App Store
 link with its own ct; the account cap and the link checks still hold it."""
+import os as _os_reserved
+_os_reserved.environ["THREADS_RESERVED_WINDOWS"] = "off"  # threads_cap.RESERVED_UTC depends on the hour; these cases do not
 import datetime as dt
 import io
 import json

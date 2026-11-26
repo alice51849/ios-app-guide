@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Tests for clip_posts.py (no network)."""
+import os as _os_reserved
+_os_reserved.environ["THREADS_RESERVED_WINDOWS"] = "off"  # threads_cap.RESERVED_UTC depends on the hour; these cases do not
 import datetime as dt
 import io
 import json

@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """Regression tests for the social posting automations."""
 
+import os as _os_reserved
+_os_reserved.environ["THREADS_RESERVED_WINDOWS"] = "off"  # threads_cap.RESERVED_UTC depends on the hour; these cases do not
 import base64
 import contextlib
 import datetime as dt

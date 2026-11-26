@@ -38,6 +38,18 @@ RETRY, SKIP = "retry", "skip"
 RETRY_GRACE = dt.timedelta(hours=2)
 OPEN_STEP = "Threads cap full: slot left open for a retry"
 SLOT_FIRE_MINUTE = {1: 40, 3: 0, 13: 0}  # threads-post.yml crons
+# Per-slot shares (coordinator ruling 2026-11-27 00:5x Taipei, option 乙): the 3-in-24-hours cap is unchanged,
+# but a slot's retry grace must not run into the next slot's share. 2026-11-26 the 13:00 slot found the account
+# full at 13:11, was retried by the 14:47 backup and posted at 15:01:47, which took the share of
+# threads-autopilot's 15 UTC slot (Taiwan 23:00; its post.yml publishes up to 3 hours after the slot start,
+# cloud_post.THREADS_SLOT_MAX_DELAY_SECONDS), so that slot found 3 posts and skipped twice.
+#   SLOT_CUTOFF_UTC   the latest UTC time of day a slot's retry may still post (same UTC day as the slot).
+#   RESERVED_UTC      [start, end) UTC times of day that belong to threads-autopilot's 15 UTC slot: no Guide
+#                     path publishes a top-level Threads post inside them (account_status answers FULL).
+# The other neighbours do not overlap: 03:00 + 2 hours ends at 05:00, long before 13:00, and the 15 UTC slot
+# ends by 18:00, long before the next day's 01:40 / 03:00.
+SLOT_CUTOFF_UTC = {13: dt.time(14, 30)}
+RESERVED_UTC = ((dt.time(14, 30), dt.time(18, 0)),)
 # clip-backup.yml crons (UTC hour, minute): each one runs threads_backfill.py. test_threads_cap.py keeps them in sync.
 BACKUP_TIMES = ((0, 47), (3, 47), (11, 47), (14, 47), (17, 47), (20, 47))
 BACKUP_MARGIN = dt.timedelta(minutes=5)  # a backup this close sees the deferred run still running and skips it
@@ -64,13 +76,34 @@ def next_backup(now):
     raise AssertionError("no backup time")  # pragma: no cover
 
 
+def slot_deadline(slot):
+    """The end of a slot's retry grace: fire time + RETRY_GRACE, cut at SLOT_CUTOFF_UTC for that slot."""
+    slot = _utc(slot)
+    deadline = slot + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(slot.hour, 0)) + RETRY_GRACE
+    cutoff = SLOT_CUTOFF_UTC.get(slot.hour)
+    if cutoff is not None:
+        deadline = min(deadline, dt.datetime.combine(slot.date(), cutoff, tzinfo=dt.timezone.utc))
+    return deadline
+
+
+def in_reserved(now):
+    """True inside a RESERVED_UTC window (threads-autopilot's 15 UTC slot): no Guide top-level post.
+
+    On by default. Only the unit tests of the publishing paths set THREADS_RESERVED_WINDOWS=off (their
+    module top), so their wall-clock-free cases do not change with the hour they happen to run at."""
+    if os.environ.get("THREADS_RESERVED_WINDOWS", "on").strip().lower() == "off":
+        return False
+    clock = _utc(now).time()
+    return any(start <= clock < end for start, end in RESERVED_UTC)
+
+
 def full_slot_action(slot, now):
     """RETRY or SKIP for a slot (its UTC hour start) that found the account FULL at ``now``.
 
     RETRY only while a backup run that fills this slot (same Taiwan day, threads_backfill.py) still comes before
     the grace ends; otherwise SKIP, so the skip is recorded once instead of the slot staying open forever."""
     slot, now = _utc(slot), _utc(now)
-    deadline = slot + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(slot.hour, 0)) + RETRY_GRACE
+    deadline = slot_deadline(slot)
     if now >= deadline:
         return SKIP
     backup = next_backup(now)
@@ -109,14 +142,14 @@ def full_slot(slot, now, receipt_path="", output_path=""):
     """The room check found the account FULL: leave the slot open (RETRY) or record a cap skip (SKIP)."""
     action = full_slot_action(slot, now)
     if action == RETRY:
-        deadline = _utc(slot) + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(_utc(slot).hour, 0)) + RETRY_GRACE
+        deadline = slot_deadline(slot)
         print(f"⏸ Threads 帳號已滿 {ACCOUNT_DAILY_CAP} 則：這格（{_utc(slot).isoformat()}）不記完成，"
               f"{next_backup(now).strftime('%H:%M')} 世界時的補發再試（寬限到 {deadline.strftime('%H:%M')}）")
     else:
         receipt = skip_receipt(slot, now)
         if receipt_path:
             Path(receipt_path).write_text(json.dumps(receipt, ensure_ascii=False) + "\n", encoding="utf-8")
-        print(f"::notice::Threads 帳號已滿 {ACCOUNT_DAILY_CAP} 則，寬限 2 小時內沒有空位：這格"
+        print(f"::notice::Threads 帳號已滿 {ACCOUNT_DAILY_CAP} 則，寬限內（到 {slot_deadline(slot).strftime('%H:%M')} 世界時）沒有空位：這格"
               f"（{_utc(slot).isoformat()}）記為滿額跳過")
     if output_path:
         with open(output_path, "a", encoding="utf-8") as out:
@@ -151,8 +184,14 @@ def quota_usage(token, user_id=None, opener=None):
     return used
 
 
-def account_status(token, user_id=None, *, label="Threads", opener=None):
-    """ROOM, FULL or UNKNOWN for one top-level post about to go out (see the module docstring)."""
+def account_status(token, user_id=None, *, label="Threads", opener=None, now=None):
+    """ROOM, FULL or UNKNOWN for one top-level post about to go out (see the module docstring).
+
+    Inside RESERVED_UTC (threads-autopilot's 15 UTC slot) the answer is FULL without reading the count."""
+    if in_reserved(now or dt.datetime.now(dt.timezone.utc)):
+        print(f"⏸ 世界時 {RESERVED_UTC[0][0].strftime('%H:%M')}–{RESERVED_UTC[0][1].strftime('%H:%M')} "
+              f"是 threads-autopilot 15 UTC（台北 23:00）那格的額度，指南站不發主貼文（{label}）")
+        return FULL
     try:
         used = quota_usage(token, user_id, opener)
     except QuotaUnknown as error:

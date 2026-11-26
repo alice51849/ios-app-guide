@@ -222,8 +222,8 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "2.0.1",
+     "live_updated": "2026-11-25",
+     "live_version": "2.0.2",
      "same": true
     },
     "zh-Hans": {
@@ -1783,8 +1783,8 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
+     "live_updated": "2026-11-25",
+     "live_version": "1.0.10",
      "same": true
     },
     "zh-Hans": {
@@ -2071,13 +2071,13 @@
      "dropped": [],
      "live_updated": "2026-11-26",
      "live_version": "1.1.12",
-     "same": false
+     "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
      "same": true
     },
     "en-US": {
@@ -2085,52 +2085,52 @@
      "dropped": [],
      "live_updated": "2026-11-26",
      "live_version": "1.1.12",
-     "same": false
+     "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-26",
      "live_version": "1.1.12",
-     "same": false
+     "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-26",
      "live_version": "1.1.12",
-     "same": false
+     "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-26",
      "live_version": "1.1.12",
-     "same": false
+     "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-26",
      "live_version": "1.1.12",
-     "same": false
+     "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.1.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.1.12",
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "lumiletterspro": {
    "blocked_terms": [],
@@ -2144,7 +2144,7 @@
     "Lumi レター Pro",
     "Lumi 레터 Pro"
    ],
-   "live_updated": "2026-11-14",
+   "live_updated": "2026-11-26",
    "live_version": "1.3.10",
    "locales": {
     "de-DE": {
@@ -2152,27 +2152,27 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.3.10",
-     "same": true
+     "same": false
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
      "same": true
     },
     "fr-FR": {
@@ -2180,20 +2180,22 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.3.10",
-     "same": true
+     "same": false
     },
     "ja": {
      "added": [],
-     "dropped": [],
+     "dropped": [
+      "本アプリは App Store の「Lumi 知育セット:英語・算数・習慣・注音」にも入っています。注音、英語フォニックス、算数、毎日の習慣の Lumi 有料版 4 本をまとめて購入できます。"
+     ],
      "live_updated": "2026-11-14",
      "live_version": "1.3.10",
-     "same": true
+     "same": false
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
      "same": true
     },
     "pt-BR": {
@@ -2206,12 +2208,12 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumimath": {
    "blocked_terms": [],
@@ -2227,7 +2229,7 @@
     "Lumi 수학 행성",
     "Lumi數學星球"
    ],
-   "live_updated": "2026-11-16",
+   "live_updated": "2026-11-26",
    "live_version": "1.0.26",
    "locales": {
     "de-DE": {
@@ -2240,22 +2242,22 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "fr-FR": {
@@ -2275,8 +2277,8 @@
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "pt-BR": {
@@ -2289,8 +2291,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     }
    },
@@ -2306,7 +2308,7 @@
     "Lumi 数学星球",
     "Lumi 數學星球"
    ],
-   "live_updated": "2026-11-14",
+   "live_updated": "2026-11-26",
    "live_version": "1.0.19",
    "locales": {
     "de-DE": {
@@ -2314,27 +2316,27 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.19",
-     "same": true
+     "same": false
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
      "same": true
     },
     "fr-FR": {
@@ -2342,20 +2344,22 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.19",
-     "same": true
+     "same": false
     },
     "ja": {
      "added": [],
-     "dropped": [],
+     "dropped": [
+      "本アプリは App Store の「Lumi 知育セット:英語・算数・習慣・注音」にも入っています。注音、英語フォニックス、算数、毎日の習慣の Lumi 有料版 4 本をまとめて購入できます。"
+     ],
      "live_updated": "2026-11-14",
      "live_version": "1.0.19",
-     "same": true
+     "same": false
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
      "same": true
     },
     "pt-BR": {
@@ -2363,17 +2367,17 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.19",
-     "same": true
+     "same": false
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumimission": {
    "blocked_terms": [],
@@ -2409,8 +2413,8 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "en-US": {
@@ -2451,8 +2455,8 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     },
     "zh-Hans": {
@@ -2465,8 +2469,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.4.11",
+     "live_updated": "2026-11-26",
+     "live_version": "1.4.12",
      "same": true
     }
    },
@@ -2490,7 +2494,7 @@
     "Lumi 任務星球 Pro",
     "Lumi 미션 별 Pro"
    ],
-   "live_updated": "2026-11-14",
+   "live_updated": "2026-11-26",
    "live_version": "1.0.17",
    "locales": {
     "de-DE": {
@@ -2498,27 +2502,27 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.17",
-     "same": true
+     "same": false
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
      "same": true
     },
     "fr-FR": {
@@ -2526,20 +2530,22 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.17",
-     "same": true
+     "same": false
     },
     "ja": {
      "added": [],
-     "dropped": [],
+     "dropped": [
+      "本アプリは App Store の「Lumi 知育セット:英語・算数・習慣・注音」にも入っています。注音、英語フォニックス、算数、毎日の習慣の Lumi 有料版 4 本をまとめて購入できます。"
+     ],
      "live_updated": "2026-11-14",
      "live_version": "1.0.17",
-     "same": true
+     "same": false
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
      "same": true
     },
     "pt-BR": {
@@ -2547,24 +2553,24 @@
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.17",
-     "same": true
+     "same": false
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-14",
      "live_version": "1.0.17",
-     "same": true
+     "same": false
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumiweather": {
    "blocked_terms": [],
@@ -5127,11 +5133,11 @@
   "gb"
  ],
  "counts": {
-  "green": 60,
-  "red": 1,
+  "green": 58,
+  "red": 3,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-26T05:37:40Z",
+ "generated_at": "2026-11-26T19:50:28Z",
  "schema": "growth.store-copy-drift/v1"
 }

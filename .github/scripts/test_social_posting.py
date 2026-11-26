@@ -3178,7 +3178,10 @@ class TelegramManualQueueTests(unittest.TestCase):
     def test_the_queue_is_first_in_first_out_and_the_first_row_owns_the_day(self):
         us = self.item()
         ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
-        self.assertIsNone(self.choose([us, ja], 1))     # the first row goes out later today: asia leaves the day to it
+        # the first row goes out later today and owns that slot; the day still has manual room, so asia takes the next
+        self.assertIs(ja, self.choose([us, ja], 1))
+        with mock.patch.object(telegram_post, "MANUAL_DAILY_CAP", 1):
+            self.assertIsNone(self.choose([us, ja], 1))  # one row a day: asia leaves the day to the first row
         self.assertIs(us, self.choose([us, ja], 15))
         self.assertIs(ja, self.choose([ja, us], 1))
         self.assertIs(us, self.choose([ja, us], 15))    # the first row's slot passed unused: the next row goes
@@ -3186,18 +3189,41 @@ class TelegramManualQueueTests(unittest.TestCase):
         self.assertIs(ja, self.choose([us, ja], 1, blocked=(self.APP_A,)))
         self.assertIs(ja, self.choose([dict(us, not_before="2026-11-23"), ja], 1))
         self.assertIs(ja, self.choose([dict(us, expires="2026-11-21"), ja], 1))
-        self.assertIsNone(self.choose([dict(us, not_before="2026-11-23"), ja], 1, day=dt.date(2026, 11, 23)))
+        self.assertIs(ja, self.choose([dict(us, not_before="2026-11-23"), ja], 1, day=dt.date(2026, 11, 23)))
+        with mock.patch.object(telegram_post, "MANUAL_DAILY_CAP", 1):
+            self.assertIsNone(self.choose([dict(us, not_before="2026-11-23"), ja], 1, day=dt.date(2026, 11, 23)))
 
-    def test_at_most_one_hand_written_row_a_utc_day(self):
-        self.assertEqual(1, telegram_post.MANUAL_DAILY_CAP)
-        self.assertEqual(3, len(telegram_post.SLOT_HOURS))
-        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+    def test_a_slot_owned_later_today_is_never_given_twice(self):
         us = self.item()
+        us_b = self.item(row_id="tg_wifiaidlite_us_fixture", app=self.APP_B, text="Another hand-written fixture.")
+        gb = self.item(row_id="tg_onepageppt_gb_fixture", lang="en-GB", text="Hand-written fixture for the UK.")
+        # us owns the americas slot: a second americas row waits a day instead of taking the asia slot
+        self.assertIsNone(self.choose([us, us_b], 1))
+        self.assertIs(us, self.choose([us, us_b], 15))
+        # us owns the App's one post of the day: a row of the same App does not take an earlier slot
+        self.assertIsNone(self.choose([us, gb], 1))
+        self.assertIsNone(self.choose([us, gb], 9))
+        self.assertIs(us, self.choose([us, gb], 15))
+
+    def test_at_most_two_hand_written_rows_a_utc_day(self):
+        self.assertEqual(2, telegram_post.MANUAL_DAILY_CAP)
+        self.assertEqual(3, len(telegram_post.SLOT_HOURS))  # the rotation keeps at least one slot a day
+        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+        gb = self.item(row_id="tg_wifiaidlite_gb_fixture", lang="en-GB", app=self.APP_B, text="A UK fixture by hand.")
+        us = self.item()
+
+        def both(status):
+            first, second = self.sent(ja, hour=1, status=status), self.sent(gb, hour=9, status=status)
+            return {"receipts": {}, "intents": {**first["intents"], **second["intents"]}}
+
         for status in ("reserved", "unknown", "confirmed", "rejected"):
             with self.subTest(status=status):
-                self.assertIsNone(self.choose([ja, us], 15, ledger=self.sent(ja, status=status)))
-        self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja, status="not_sent")))  # nothing went out
-        self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja), day=dt.date(2026, 11, 23)))  # the next day
+                self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja, status=status)))  # one went out
+                self.assertIsNone(self.choose([ja, gb, us], 15, ledger=both(status)))  # two went out: the cap
+        self.assertIs(us, self.choose([ja, gb, us], 15, ledger=both("not_sent")))  # nothing went out
+        self.assertIs(us, self.choose([ja, gb, us], 15, ledger=both("confirmed"), day=dt.date(2026, 11, 23)))  # next day
+        # one row went out and another owns a later slot today: the day is full
+        self.assertIsNone(self.choose([ja, us, gb], 9, ledger=self.sent(ja, status="confirmed")))
         self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja, manual=False, status="not_sent")))
 
     def test_a_row_is_never_sent_twice(self):
@@ -3368,6 +3394,9 @@ class TelegramManualQueueTests(unittest.TestCase):
             plain = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
             self.assertIs(plain, self.choose([en, ja, plain], 1, ledger=self.sent(en, hour=1)))
         self.assertIs(ja, self.choose([ja], 1, ledger=self.sent(en, hour=15), day=dt.date(2026, 11, 23)))
+        # a bundle row owning a later slot today leaves no room for a second bundle row in an earlier one
+        self.assertIsNone(self.choose([en, ja], 1))
+        self.assertIs(en, self.choose([en, ja], 15))
         later = self.load([self.bundle_row(not_before="2026-11-25")])[0][0]
         self.assertIsNone(self.choose([later], 15, day=dt.date(2026, 11, 24)))
         self.assertIs(later, self.choose([later], 15, day=dt.date(2026, 11, 25)))

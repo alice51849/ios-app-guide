@@ -10,6 +10,7 @@ It is strict on purpose and is not part of the posting workflows: there a refuse
 The mechanism itself is tested in test_social_posting.py (TelegramManualQueueTests) and in
 telegram_post.py --self-test, which the posting workflows do run.
 """
+import collections
 import datetime as dt
 import json
 import os
@@ -92,7 +93,7 @@ class ShippedManualQueueTests(unittest.TestCase):
                     self.assertIsNone(telegram_post.MANUAL_BANNED_COPY[item["app"]].search(item["text"]))
         self.assertEqual(SNAPPORT_APPS, set(telegram_post.MANUAL_BANNED_COPY))
 
-    def test_thirty_days_never_exceed_one_row_a_day_and_never_repeat_a_row(self):
+    def test_thirty_days_never_exceed_the_daily_cap_and_never_repeat_a_row(self):
         ledger, sends = {"receipts": {}, "intents": {}}, []
         start = dt.date(2026, 11, 22)
         for offset in range(30):
@@ -112,9 +113,15 @@ class ShippedManualQueueTests(unittest.TestCase):
                     "app_store_id": item["app"], "payload_digest": digest, "timestamp": now.isoformat(),
                     "manual_id": item["manual_id"],
                 }
-                sends.append((slot.date(), item["manual_id"]))
-        days = [day for day, _row in sends]
-        self.assertEqual(len(days), len(set(days)), "more than one hand-written row in a UTC day")
+                sends.append((slot.date(), item["manual_id"], item["app"], hour))
+        per_day = collections.Counter(day for day, _row, _app, _hour in sends)
+        self.assertLessEqual(max(per_day.values()), telegram_post.MANUAL_DAILY_CAP, "over the hand-written daily cap")
+        self.assertLess(telegram_post.MANUAL_DAILY_CAP, len(telegram_post.SLOT_HOURS))  # a rotation slot every day
+        slots = [(day, hour) for day, _row, _app, hour in sends]
+        self.assertEqual(len(slots), len(set(slots)), "two hand-written rows in one slot")
+        app_days = [(day, app) for day, _row, app, _hour in sends]
+        self.assertEqual(len(app_days), len(set(app_days)), "one App twice in a UTC day")
+        sends = [(day, row) for day, row, _app, _hour in sends]
         bundle_days = [day for day, row in sends if row.startswith("bundle_")]
         self.assertEqual(len(bundle_days), len(set(bundle_days)), "more than one bundle row in a UTC day")
         for item in self.items:

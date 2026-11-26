@@ -1332,7 +1332,8 @@ def manual_bundle_link_problems(item, text):
 # Under .github/growth (like threads-queue.json): a push that only adds rows does not start the Pages workflow.
 MANUAL_QUEUE_PATH = REPO_ROOT / ".github" / "growth" / "telegram-manual-queue.json"
 MANUAL_SOURCE = "reviewed_manual_queue"
-MANUAL_DAILY_CAP = 1       # of the three daily slots; the rotation keeps at least two
+MANUAL_DAILY_CAP = 2       # of the three daily slots; the rotation keeps at least one (2026-11-26: 1 -> 2,
+                           # a self-set number, not a platform limit or a throttle step-down)
 MANUAL_MAX_REJECTS = 2     # a row Telegram definitely refused twice is not tried again
 MANUAL_ID_RE = re.compile(r"tg_[a-z0-9]+(?:_[a-z0-9]+){1,4}")
 MANUAL_URL_RE = re.compile(r"https?://|www\.", re.I)
@@ -1675,10 +1676,12 @@ def _manual_bundle_qa_problems(item, post_qa):
 def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa=None):
     """The hand-written row that takes this slot, or None (the automatic rotation posts).
 
-    At most MANUAL_DAILY_CAP rows a UTC day. The queue is first in, first out: the first row in file order that
-    can go out today (inside its dates, never sent, App not blocked today, post_qa clean) owns the day's manual
-    slot, which is the slot of its own language zone; an earlier slot of the day leaves it alone, a later one
-    (the row's slot already passed) moves on to the next row."""
+    At most MANUAL_DAILY_CAP rows a UTC day, never two in one slot. The queue is first in, first out: the first
+    row in file order that can go out today (inside its dates, never sent, App not blocked today, post_qa clean)
+    owns a manual slot of the day, the slot of its own language zone; an earlier slot of the day leaves that
+    slot to it and, while the day still has manual room (rows already taken today plus slots owned later today
+    stay under the cap), goes on down the queue for a row of its own zone; a later slot (the row's slot already
+    passed) moves on to the next row. A row whose zone slot is already owned by an earlier row waits a day."""
     from social_slot_gate import slot_start
 
     if not queue:
@@ -1689,11 +1692,12 @@ def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa
         raise ValueError("candidate selection must use the current authoritative slot")
     zone, day = _zone(scheduled.hour), scheduled.date()
     intents = [intent for intent in ledger["intents"].values() if intent.get("manual_id")]
-    if sum(
+    taken_today = sum(
         intent["status"] in {"reserved", "unknown", "confirmed", "rejected"}
         and _timestamp(intent["slot"]).date() == day
         for intent in intents
-    ) >= MANUAL_DAILY_CAP:
+    )
+    if taken_today >= MANUAL_DAILY_CAP:
         return None
     sent = {
         intent["manual_id"] for intent in intents if intent["status"] in {"reserved", "unknown", "confirmed"}
@@ -1708,9 +1712,10 @@ def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa
         and MANUAL_BUNDLE_ID_RE.fullmatch(str(intent["manual_id"])) is not None
         for intent in intents
     )
+    owned_later, owned_apps, bundles_later = set(), set(), 0  # later slots of today owned by earlier rows
     for item in queue:
         app = str(item["app"])
-        if item.get("bundle") and bundles_today >= MANUAL_BUNDLE_DAILY_CAP:
+        if item.get("bundle") and bundles_today + bundles_later >= MANUAL_BUNDLE_DAILY_CAP:
             continue
         if (
             item["manual_id"] in sent
@@ -1727,10 +1732,16 @@ def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa
                 print(f"::error::Telegram manual {item['manual_id']}: QA refused: {problem}")
             continue
         row_zone = _lang_zone(item["lang"])
+        if row_zone in owned_later or app in owned_apps:
+            continue  # that slot (or that App's one post of the day) already belongs to an earlier row today
         if row_zone == zone:
             return item
         if slot_hour[row_zone] > scheduled.hour:
-            return None  # the day's manual slot belongs to this row, later today
+            owned_later.add(row_zone)  # a manual slot of the day belongs to this row, later today
+            owned_apps.add(app)
+            bundles_later += bool(item.get("bundle"))
+            if taken_today + len(owned_later) >= MANUAL_DAILY_CAP:
+                return None
     return None
 
 
@@ -2204,7 +2215,7 @@ def self_test():
             receipt = self.ledger["receipts"][intent["delivery_id"]]
             self.assertEqual(("tg_fixture_row_one", text), (receipt["manual_id"], intent["text"]))
             validate_ledger(self.ledger)
-            # the day's one hand-written slot is used, and the row itself never goes out again
+            # one of the day's MANUAL_DAILY_CAP hand-written slots is used, and the row itself never goes out again
             self.assertIsNone(choose_manual([row], self.pool(), self.ledger, self.now, qa=lambda _item: []))
             self.ledger["intents"].clear()
             self.assertIsNone(choose_manual([row], self.pool(), self.ledger, self.now, qa=lambda _item: []))

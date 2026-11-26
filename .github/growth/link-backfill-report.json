@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-25T08:44:07Z",
+ "generated": "2026-11-25T19:23:50Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 92,
-  "ok_backfilled_earlier": 133,
+  "ok_reply": 94,
+  "ok_backfilled_earlier": 135,
   "unknown_app": 47,
-  "ok_store_only": 598,
+  "ok_store_only": 596,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18187457788427022",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgKp6HjllGl",
+   "date": "2026-11-25",
+   "app": "duowallpaperstudio",
+   "status": "ok_reply",
+   "text": "Ever set a wallpaper on a foldable, open the phone, and the picture is cut off in an odd spot? Foldable Wallpaper Studio lets you check both",
+   "why": "brand",
+   "ios_id": "6824946559",
+   "locale": "en"
+  },
   {
    "channel": "threads",
    "id": "18118049117466067",
@@ -24,6 +36,18 @@
    "why": "trial",
    "ios_id": "6785004775",
    "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "17940726060408999",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgK1QjzmY31",
+   "date": "2026-11-25",
+   "app": "aim990",
+   "status": "ok_reply",
+   "text": "Aim990 是一款为托业听力与阅读风格备考打造的诊断式教练,不是题库堆砌。每次打开,练习内容都由你自己的作答记录决定。 Aim990：英语弱项教练",
+   "why": "brand",
+   "ios_id": "6784974530",
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -2501,11 +2525,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctejZQgW8K",
    "date": "2026-08-31",
    "app": "gmoneylite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "G+Money Lite: Trip Spending Travel Expenses & Currency Travel money, made simple · Free: rates, budget, summary · 1 trip · 3 expenses · One ",
    "why": "url+brand",
    "ios_id": "6793436548",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18167915491492832",
+   "at": "2026-11-25T19:21:22Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3315,16 +3344,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcte2ILk2Zu",
    "date": "2026-08-31",
    "app": "lumiletters",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Letters Lite: ABC Kids ABC Tracing & Phonics Games A joyful first ABC adventure! Trace letters, hear phonics, play mini-games and build",
    "why": "url+brand",
    "ios_id": "6778748533",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18066069137530455",
-   "at": "2026-11-25T08:41:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3652,11 +3676,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctepD4DyZZ",
    "date": "2026-08-31",
    "app": "hourstag",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "HoursTag: Hours to Buy Budget, Spending & Savings Turn any price into work hours. Set your income, see the real cost in time, and stop impul",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18195242836401179",
+   "at": "2026-11-25T19:21:22Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4320,16 +4349,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctewjDlWtC",
    "date": "2026-08-31",
    "app": "lockhour",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "LockHour Pro: Block Apps App Blocker & Screen Time Lock away distractions. Start a focus session, shield your apps, build streaks and reclai",
    "why": "url+brand",
    "ios_id": "6780107485",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17979947729935953",
-   "at": "2026-11-25T08:41:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

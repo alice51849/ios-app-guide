@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-25T13:55:47+0800",
+ "source_generated": "2026-11-27T01:22:55+0800",
  "count": 61,
- "content_sha256": "4ce8bb5d1187718f0de54a8bd17f55c27c35985640ca35c99392e357bc597dea",
+ "content_sha256": "fcc29337ce9cae4eb76ddcd3ff5e4debdaa54fc2e5c43d65ccac42413f4fd410",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -997,7 +997,7 @@
    "copy": {
     "en-US": {
      "title": "Snapport Lite: Passport Photo",
-     "short_description": "Passport, visa and ID photo maker: 2x2 sizing, white background, print sheets"
+     "short_description": "Passport, visa and ID photo maker: 2x2 sizing, face guide and print sheets"
     },
     "zh-TW": {
      "title": "Snapport Lite：證件照與大頭照",
@@ -1079,7 +1079,7 @@
    "copy": {
     "en-US": {
      "title": "TripBee Pro: Trip Organizer",
-     "short_description": "Trip planner and itinerary organizer with family packing lists and trip sharing"
+     "short_description": "Trip planner & travel itinerary: day-by-day plans, family packing lists"
     },
     "zh-TW": {
      "title": "TripBee Pro：旅遊行程規劃・行程整理管家",

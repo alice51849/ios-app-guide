@@ -1,0 +1,93 @@
+name: IG correction comments
+
+# One correction comment under each of OUR OWN Instagram posts listed in a batch file (ig_correction.py):
+# only texts whose in-locale review passed, no URL, the localized "link in bio" line; the media must be the token
+# owner's and its permalink exactly the listed shortcode; once per post (receipts .github/growth/ig-correction.json),
+# read back by comment id + comments_count. Manual only, never scheduled.
+# Minutes (7.8): ubuntu-latest, checkout + tests ~1 min; apply adds 45 s between comments: 8 comments ~7 min.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check (read only) or apply (post the comments)"
+        type: choice
+        options: [check, apply]
+        default: check
+      batch:
+        description: "batch file under .github/growth/"
+        default: "ig-correction-1126.json"
+      max_new:
+        description: "comments posted in this run"
+        default: "8"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ig-correction
+  cancel-in-progress: false
+
+jobs:
+  correct:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: read     # growth_records.py: is geo-daily running?
+      contents: write   # the receipts are committed
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Read records still waiting on the growth-records-pending branch
+        run: python3 .github/scripts/growth_records.py overlay   # receipts a held push left there count too
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: |
+          python3 .github/scripts/test_download_links.py -q
+          python3 .github/scripts/test_ig_correction.py -q
+      - name: Check / comment
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          BATCH: ${{ inputs.batch }}
+          MAX_NEW: ${{ inputs.max_new }}
+        run: |
+          case "$MODE" in check|apply) ;; *) echo "::error::unknown mode"; exit 2;; esac
+          case "$MAX_NEW" in ''|*[!0-9]*) echo "::error::max_new must be a number"; exit 2;; esac
+          case "$BATCH" in *[!A-Za-z0-9._-]*|'') echo "::error::batch is a file name under .github/growth/"; exit 2;; esac
+          set -o pipefail
+          cd .github/scripts
+          python3 ig_correction.py "$MODE" --batch "../growth/$BATCH" --max-new "$MAX_NEW" | tee "$RUNNER_TEMP/correction.log"
+      - name: Summary
+        if: always()
+        run: |
+          { echo "### IG correction comments"; grep -E '^ig_correction |^  |^CHECK' "$RUNNER_TEMP/correction.log" | head -40; } >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Keep a copy of the receipts (a failed save must not lead to a second comment on rerun)
+        if: always() && inputs.mode == 'apply'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-correction-receipts
+          path: .github/growth/ig-correction.json
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Save the receipts
+        if: always() && inputs.mode == 'apply'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          F=.github/growth/ig-correction.json
+          if [ -z "$(git status --porcelain -- $F)" ]; then echo "nothing new"; exit 0; fi
+          cp -f "$F" "$RUNNER_TEMP/ig-correction.json"
+          for i in 1 2 3; do
+            target="$(python3 .github/scripts/growth_records.py prepare)"
+            cp -f "$RUNNER_TEMP/ig-correction.json" "$F"   # only this workflow writes this file
+            git add "$F"
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Instagram 更正留言紀錄 [skip ci]"
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not save the correction receipts"; exit 1

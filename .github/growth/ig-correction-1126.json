@@ -1,0 +1,143 @@
+{
+ "schema": "lumi.ig_correction/v1",
+ "batch": "ig_correction_1126",
+ "note": "統籌裁定 ops/handoff/rulings/2026-11-26_0100_coordinator.md 第一節：Instagram 刪文跑不起來，改在原貼下留一則更正留言。當地語言原生、不放網址（CLAUDE 6.2）、結尾照 Instagram 慣例到個人檔案連結下載；review.status 必須是 pass 才會發（ig_correction.py 閘門）。media_id 出自指南站 .github/growth/clip-posts.json（依 shortcode 查，11-25 讀）。",
+ "items": [
+  {
+   "card": "countdaysnow-en-pain-20261022",
+   "app": "countdaysnow",
+   "locale": "en",
+   "shortcode": "Dfxiwb0H-lr",
+   "permalink": "https://www.instagram.com/p/Dfxiwb0H-lr/",
+   "media_id": "18137507671738061",
+   "posted_at": "2026-11-15T19:34:38Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 Correction: the dates and countdowns in these screenshots (like Sep 24 \"12 Days\" and Oct 27 \"45 Days\") are sample data from the app's demo screens, not real events or current dates. Sorry for any confusion! In the app, you'll only see the dates you add yourself.\n📲 Download via the link in bio",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "原稿通過；收據 reports/outreach_scale/local_review/ig_correction_1126_en_zh.md"
+   }
+  },
+  {
+   "card": "tripbee-zh-Hant-pain-20261022",
+   "app": "tripbee",
+   "locale": "zh-Hant",
+   "shortcode": "De3me3hFYyh",
+   "permalink": "https://www.instagram.com/p/De3me3hFYyh/",
+   "media_id": "18095495306264824",
+   "posted_at": "2026-10-24T07:31:09Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 更正：貼文截圖裡的行程日期和「還有 37 天」等倒數，是 App 示範畫面的範例資料，不是實際行程，也不是現在的日期，造成誤會很抱歉。實際使用時，看到的是你自己建立的行程。\n📲 請到個人檔案（bio）的連結下載",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "原稿通過；收據 reports/outreach_scale/local_review/ig_correction_1126_en_zh.md"
+   }
+  },
+  {
+   "card": "tripbeecute-zh-Hant-pain-20261105",
+   "app": "tripbeecute",
+   "locale": "zh-Hant",
+   "shortcode": "Dfl8ygmmyAo",
+   "permalink": "https://www.instagram.com/p/Dfl8ygmmyAo/",
+   "media_id": "17912919417305253",
+   "posted_at": "2026-11-11T07:31:12Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 更正：貼文截圖裡「11/7 出發」「出發倒數 9 天」是 App 示範畫面的範例資料，不是實際行程，也不是現在的日期，造成誤會很抱歉。實際使用時，倒數會照你自己排的出發日顯示。\n📲 請到個人檔案（bio）的連結下載",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "原稿通過；收據 reports/outreach_scale/local_review/ig_correction_1126_en_zh.md"
+   }
+  },
+  {
+   "card": "cyca-en-pain-20261022",
+   "app": "cyca",
+   "locale": "en",
+   "shortcode": "Df2sVGun_m8",
+   "permalink": "https://www.instagram.com/p/Df2sVGun_m8/",
+   "media_id": "17973209403194351",
+   "posted_at": "2026-11-17T19:34:24Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 Correction: the dates in these screenshots (like \"Fri, Jul 3 · Today\" and \"Next period · 8 days · Jul 11\") are sample data from the app's demo screens, not real dates or anyone's actual cycle. Sorry for any confusion! In the app, everything you see is based on what you log yourself.\n📲 Download via the link in bio",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "改寫後通過；收據 reports/outreach_scale/local_review/ig_correction_1126_en_zh.md"
+   }
+  },
+  {
+   "card": "easyam-ja-pain-20261022",
+   "app": "easyam",
+   "locale": "ja",
+   "shortcode": "DfjYOClkW8u",
+   "permalink": "https://www.instagram.com/p/DfjYOClkW8u/",
+   "media_id": "17873784429648108",
+   "posted_at": "2026-11-10T07:33:05Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 訂正：投稿の画像にある「今日 11/2」「次のアラーム 11/9（月）7日後」などの日付は、アプリのデモ画面のサンプルで、実際の日付や現在の予定ではありません。紛らわしい表示になってしまい、申し訳ありません。実際のアプリでは、ご自身で設定したアラームが表示されます。\n📲 ダウンロードはプロフィール（bio）のリンクから",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "原稿通過；收據 reports/outreach_scale/local_review/ig_correction_1126_ja_pt.md"
+   }
+  },
+  {
+   "card": "mochi-zh-Hant-pain-20261022",
+   "app": "mochi",
+   "locale": "zh-Hant",
+   "shortcode": "DfHDW1rEcFZ",
+   "permalink": "https://www.instagram.com/p/DfHDW1rEcFZ/",
+   "media_id": "18351862900249333",
+   "posted_at": "2026-10-30T07:32:04Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 更正：貼文截圖裡「9月27日 週日 今天」「10月8日 星期四」這些日期和待辦，是 App 示範畫面的範例資料，不是今天的日期，也不是真的提醒，造成誤會很抱歉。實際使用時，看到的只會是你自己加的待辦。\n📲 請到個人檔案（bio）的連結下載",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "改寫後通過；收據 reports/outreach_scale/local_review/ig_correction_1126_en_zh.md"
+   }
+  },
+  {
+   "card": "mochi-en-pain-20261022",
+   "app": "mochi",
+   "locale": "en",
+   "shortcode": "DfkqgwVH326",
+   "permalink": "https://www.instagram.com/p/DfkqgwVH326/",
+   "media_id": "18222695020341172",
+   "posted_at": "2026-11-10T19:32:17Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 Correction: the date and to-dos in these screenshots (like \"Thursday, October 8\" marked \"Today\") are sample data from the app's demo screens, not today's date or real reminders. Sorry for any confusion! In the app, you'll only see the to-dos you add yourself.\n📲 Download via the link in bio",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "改寫後通過；收據 reports/outreach_scale/local_review/ig_correction_1126_en_zh.md"
+   }
+  },
+  {
+   "card": "mochi-pt-BR-pain-20261022",
+   "app": "mochi",
+   "locale": "pt-BR",
+   "shortcode": "Df71wQ_GTRU",
+   "permalink": "https://www.instagram.com/p/Df71wQ_GTRU/",
+   "media_id": "18135137680744238",
+   "posted_at": "2026-11-19T19:33:03Z",
+   "reason": "過期倒數／過期日期（reports/outreach_scale/pain_carousel_factcheck_2026-11-25.md 撤文清單）",
+   "text": "📝 Correção: as datas e as tarefas nas imagens deste post (como \"dom., 27 de set. · Hoje\" e \"quinta-feira, 8 de outubro\") são exemplos das telas de demonstração do app, não datas reais nem lembretes atuais. Desculpe pela confusão! No app, você vê só as tarefas que você mesmo adicionar.\n📲 Baixe pelo link na bio",
+   "review": {
+    "status": "pass",
+    "by": "opus 在地審（新開子 agent）",
+    "at": "2026-11-26 00:1x 台北",
+    "note": "原稿通過；收據 reports/outreach_scale/local_review/ig_correction_1126_ja_pt.md"
+   }
+  }
+ ]
+}

@@ -22,8 +22,9 @@ name: Threads posts
 # top-level publish, threads_cap.py also reads Threads' own 24-hour count of
 # the account's top-level posts (threads-autopilot's included): 3 or more is
 # a skip (green, the ⏸ line); a count that cannot be read posts nothing.
-# A slot whose room check finds the account full stays open for 2 hours (threads_cap.py full): the next
-# clip-backup.yml run (03:47 for 03:00) tries again; only then is it a recorded cap skip. The 13:00 slot's grace
+# A slot whose room check finds the account full stays open for 2 hours (threads_cap.py full; the 03:00 slot 3 hours,
+# threads_cap.SLOT_RETRY_GRACE): the next clip-backup.yml run (03:47, then 04:47 for 03:00) tries again; only then is
+# it a recorded cap skip. The 13:00 slot's grace
 # ends at 14:30 (threads_cap.SLOT_CUTOFF_UTC, 2026-11-27) and 14:30-18:00 UTC belongs to threads-autopilot's 15 UTC
 # slot (threads_cap.RESERVED_UTC): a full 13:00 slot is a cap skip instead of taking that slot's share.
 # run-name records the slot so social_slot_gate.py can read it back.
@@ -127,18 +128,31 @@ jobs:
       - name: Check the account's daily cap (3 posts, Taiwan date)
         # Shared with every Threads post path (threads-autopilot included).
         # Full: since 2026-11-15 not done at once (the day before's post at the same slot is often a few minutes
-        # short of leaving Threads' rolling 24 hours): inside 2 hours of the slot's fire time it stays open and
-        # the next clip-backup.yml run dispatches it again (threads_cap.py full, OPEN_STEP below); after that it
-        # is a cap skip with a receipt. Count unknown: fail, so a backfill can retry.
+        # short of leaving Threads' rolling 24 hours): inside 2 hours of the slot's fire time (the 03:00 slot:
+        # 3 hours, threads_cap.SLOT_RETRY_GRACE; the 13:00 slot: until 14:30) it stays open and the next
+        # clip-backup.yml run dispatches it again (threads_cap.py full, OPEN_STEP below); after that it is a cap
+        # skip with a receipt. Room but the grace is over, for a slot an earlier green run left open for a retry
+        # (social_slot_gate.py retried=true: a late backup, heal or delayed schedule): no post, a past-grace skip
+        # with a receipt (threads_cap.py within, 2026-11-27), so a late retry never takes a later slot's share.
+        # A slot no run ever started still posts late with room, as before: on a day the Mac dispatcher (and
+        # threads-autopilot's 15 UTC on the same Mac) is down, a late GitHub schedule is the account's only post.
+        # Count unknown: fail, so a backfill can retry.
         id: room
         if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour != '1'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           SLOT: ${{ steps.slot.outputs.slot }}
+          RETRIED: ${{ steps.slot.outputs.retried }}
         run: |
           python3 .github/scripts/test_threads_cap.py -q
           python3 .github/scripts/threads_series.py room && rc=0 || rc=$?
-          if [ "$rc" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$rc" = 0 ] && [ "$RETRIED" != "true" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$rc" = 0 ]; then
+            python3 .github/scripts/threads_cap.py within --slot "$SLOT" --receipt "$RUNNER_TEMP/cap-skip.json" && inside=0 || inside=$?
+            if [ "$inside" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+            if [ "$inside" = 3 ]; then echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi  # threads_cap.PAST_GRACE_EXIT
+            echo "::error::could not check the slot's grace; nothing posted"; exit 1
+          fi
           if [ "$rc" = 1 ]; then
             echo "ok=false" >> "$GITHUB_OUTPUT"
             python3 .github/scripts/threads_cap.py full --slot "$SLOT" --receipt "$RUNNER_TEMP/cap-skip.json"
@@ -151,7 +165,7 @@ jobs:
         if: steps.room.outputs.retry == 'true'
         run: echo "::notice::Threads 帳號已滿，這格寬限內再試（不記完成）"
       - name: Record the cap skip receipt
-        # threads_cap.py full wrote $RUNNER_TEMP/cap-skip.json once the grace was over; it goes into
+        # threads_cap.py full (or within, room past the grace) wrote $RUNNER_TEMP/cap-skip.json once the grace was over; it goes into
         # .github/growth/threads-cap-skips.json. A record only, so a failed push is a warning.
         if: always() && steps.room.outputs.capskip == 'true'
         continue-on-error: true

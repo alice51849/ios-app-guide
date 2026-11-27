@@ -82,15 +82,54 @@ def covered_slots(runs, left_open=None, relevant=None):
     return covered
 
 
-def missing_slots(runs, now, left_open=None):
+def left_open_slots(runs, left_open, relevant):
+    """Today's slots a green threads-post run left open for a retry (the account was full inside the grace)."""
+    if left_open is None:
+        return set()
+    found = set()
+    for run in runs:
+        if not isinstance(run, dict) or run.get("status") != "completed" or run.get("conclusion") != "success":
+            continue
+        try:
+            slot = gate.run_slot(run, SLOTS)
+        except ValueError:
+            continue
+        if slot in relevant and left_open(run):
+            found.add(slot)
+    return found
+
+
+def plan_slots(runs, now, left_open=None):
+    """(missing, expired) for today's due slots no run filled. A slot left open for a retry is only dispatched again
+    inside its grace (threads_cap.slot_deadline); past it (``expired``) the slot never posts
+    (threads_cap.PAST_GRACE_EXIT), so a late post cannot take the evening slot's share."""
     now = gate._utc(now)
+    if left_open is not None:
+        answers = {}
+        ask = left_open
+
+        def left_open(run):  # one API call per run, however often it is asked
+            key = run.get("id") or id(run)
+            if key not in answers:
+                answers[key] = ask(run)
+            return answers[key]
+
     today = {slot for slot, _ in taiwan_day_slots(now)}
     covered = covered_slots(runs, left_open, today)
-    return [
-        slot
-        for slot, fires in taiwan_day_slots(now)
-        if fires + GRACE <= now and slot not in covered
-    ]
+    retried = left_open_slots(runs, left_open, today - covered)
+    missing, expired = [], []
+    for slot, fires in taiwan_day_slots(now):
+        if fires + GRACE > now or slot in covered:
+            continue
+        if slot in retried and threads_cap.past_grace(slot, now):
+            expired.append(slot)
+        else:
+            missing.append(slot)
+    return missing, expired
+
+
+def missing_slots(runs, now, left_open=None):
+    return plan_slots(runs, now, left_open)[0]
 
 
 def dispatch(repository, token, slot, ref="main"):
@@ -133,7 +172,10 @@ def main(argv=None):
     def left_open(run):
         return gate.run_ran_step(repository, run, token, threads_cap.OPEN_STEP)
 
-    missing = missing_slots(runs, now, left_open)
+    missing, expired = plan_slots(runs, now, left_open)
+    for slot in expired:
+        print(f"::notice::Threads backfill: slot {slot.isoformat()} was left open but its grace ended at "
+              f"{threads_cap.slot_deadline(slot).strftime('%H:%M')} UTC: not dispatched again (past-grace skip)")
     if not missing:
         print("Threads backfill: every due slot of today (Taiwan) is filled or running")
         return 0

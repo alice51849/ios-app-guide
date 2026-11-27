@@ -35,6 +35,7 @@ on:
   schedule:
     - cron: '47 0 * * *'    # after the 22:xx slot (US evening) of the day before
     - cron: '47 3 * * *'    # after the 01:xx slot (Asia morning); Threads 01:40 + 03:00
+    - cron: '47 4 * * *'    # Threads only: a second retry of the 03:00 slot (grace to 06:00, threads_cap.SLOT_RETRY_GRACE)
     - cron: '47 11 * * *'   # after the 09:xx slot (Asia evening / Europe morning)
     - cron: '47 14 * * *'   # after the 12:xx slot (Taipei 20:xx); Threads: the 13:00 evening slot, before Taiwan midnight
     - cron: '47 17 * * *'   # after the 15:xx slot (Americas)
@@ -88,6 +89,7 @@ jobs:
           case "$SCHEDULE" in
             "47 0 * * *")  s=22; fired="00:47"; back=1 ;;   # the slot was on the day before
             "47 3 * * *")  s=1;  fired="03:47" ;;
+            "47 4 * * *")  s=;   fired= ;;   # Threads only (no clip slot): the Threads step still runs
             "47 11 * * *") s=9;  fired="11:47" ;;
             "47 14 * * *") s=12; fired="14:47" ;;
             "47 17 * * *") s=15; fired="17:47" ;;

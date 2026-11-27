@@ -9,6 +9,15 @@
     "results": 9,
     "term": "краткое содержание pdf",
     "weight": 0.1
+   },
+   "TH": {
+    "date": "2026-11-26",
+    "locale": "th",
+    "paid": false,
+    "rank": 7,
+    "results": 80,
+    "term": "พรอมต์ ai",
+    "weight": 0.1
    }
   },
   "aim990": {
@@ -22,29 +31,29 @@
     "weight": 0.45
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
-    "rank": 8,
-    "results": 27,
+    "rank": 7,
+    "results": 28,
     "term": "toeic lecture",
     "weight": 0.3
    },
    "JP": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "ja",
     "paid": false,
-    "rank": 10,
+    "rank": 1,
     "results": 16,
     "term": "toeic 弱点",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 6,
-    "results": 24,
+    "results": 25,
     "term": "토익 990",
     "weight": 0.3
    },
@@ -60,47 +69,47 @@
   },
   "battai": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 5,
-    "results": 126,
+    "results": 130,
     "term": "saúde da bateria",
     "weight": 0.2
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": true,
     "rank": 8,
-    "results": 12,
+    "results": 13,
     "term": "akku kapazität",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": true,
-    "rank": 6,
-    "results": 17,
+    "rank": 9,
+    "results": 19,
     "term": "capacité batterie",
     "weight": 0.3
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": true,
     "rank": 4,
-    "results": 164,
+    "results": 167,
     "term": "バッテリー 劣化",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
-    "rank": 5,
-    "results": 175,
+    "rank": 4,
+    "results": 176,
     "term": "배터리 용량",
     "weight": 0.3
    },
@@ -114,7 +123,7 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 4,
@@ -123,27 +132,27 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
     "rank": 4,
-    "results": 170,
+    "results": 169,
     "term": "電池檢測",
     "weight": 0.3
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 10,
-    "results": 188,
-    "term": "độ chai pin",
+    "results": 45,
+    "term": "tuổi thọ pin",
     "weight": 0.08
    }
   },
   "claudeusagemini": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 5,
@@ -152,39 +161,39 @@
     "weight": 0.2
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 2,
-    "results": 20,
-    "term": "ki nutzung tracker",
+    "results": 5,
+    "term": "copilot nutzung",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
-    "rank": 4,
-    "results": 6,
+    "rank": 3,
+    "results": 5,
     "term": "suivi utilisation ia",
     "weight": 0.3
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
-    "rank": 2,
-    "results": 18,
-    "term": "codex 使用制限",
+    "rank": 3,
+    "results": 31,
+    "term": "claude 使用量",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 2,
-    "results": 23,
-    "term": "claude 사용량",
+    "results": 6,
+    "term": "copilot 사용량",
     "weight": 0.3
    },
    "RU": {
@@ -197,7 +206,7 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 2,
@@ -206,12 +215,12 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
-    "rank": 2,
-    "results": 17,
-    "term": "ai 用量追蹤",
+    "rank": 3,
+    "results": 18,
+    "term": "codex 額度",
     "weight": 0.3
    },
    "US": {
@@ -224,7 +233,7 @@
     "weight": 1.0
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 3,
@@ -235,11 +244,11 @@
   },
   "cvdesk": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 1,
-    "results": 105,
+    "results": 109,
     "term": "currículo ats",
     "weight": 0.2
    },
@@ -253,39 +262,48 @@
     "weight": 0.45
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 1,
-    "results": 100,
+    "results": 105,
     "term": "ats lebenslauf",
     "weight": 0.4
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
     "rank": 10,
-    "results": 66,
+    "results": 67,
     "term": "ats 履歴書",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
-    "rank": 4,
-    "results": 57,
+    "rank": 3,
+    "results": 59,
     "term": "ats 이력서",
     "weight": 0.3
    },
+   "TH": {
+    "date": "2026-11-26",
+    "locale": "th",
+    "paid": false,
+    "rank": 8,
+    "results": 191,
+    "term": "เรซูเม่ ats",
+    "weight": 0.1
+   },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 2,
-    "results": 36,
-    "term": "ats 履歷",
+    "rank": 6,
+    "results": 72,
+    "term": "履歷範本",
     "weight": 0.3
    }
   },
@@ -302,12 +320,12 @@
   },
   "duowallpaperstudio": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 3,
-    "results": 5,
-    "term": "papel de parede combinando",
+    "results": 3,
+    "term": "fundo tela dupla",
     "weight": 0.2
    },
    "CN": {
@@ -320,20 +338,20 @@
     "weight": 0.45
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
-    "rank": 8,
-    "results": 12,
+    "rank": 5,
+    "results": 10,
     "term": "passende hintergrundbilder",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
     "rank": 2,
-    "results": 13,
+    "results": 12,
     "term": "fond d'écran pliable",
     "weight": 0.3
    },
@@ -347,21 +365,21 @@
     "weight": 0.45
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
     "rank": 2,
-    "results": 6,
-    "term": "おそろい 壁紙",
+    "results": 4,
+    "term": "有機el 壁紙",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 2,
-    "results": 38,
-    "term": "폴더블폰 바탕화면",
+    "results": 5,
+    "term": "커버화면 바탕화면",
     "weight": 0.3
    },
    "RU": {
@@ -374,7 +392,7 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 6,
@@ -383,7 +401,7 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
     "rank": 2,
@@ -401,27 +419,27 @@
     "weight": 1.0
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 3,
-    "results": 3,
+    "results": 4,
     "term": "hình nền khớp",
     "weight": 0.08
    }
   },
   "easyam": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 4,
-    "results": 12,
-    "term": "despertador dia útil",
+    "rank": 8,
+    "results": 27,
+    "term": "despertador escala",
     "weight": 0.2
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 5,
@@ -430,11 +448,11 @@
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
-    "rank": 3,
-    "results": 12,
+    "rank": 4,
+    "results": 13,
     "term": "réveil jours fériés",
     "weight": 0.3
    },
@@ -448,7 +466,7 @@
     "weight": 0.45
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
     "rank": 2,
@@ -466,7 +484,7 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 2,
@@ -475,12 +493,12 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 2,
-    "results": 28,
-    "term": "假日不響 鬧鐘",
+    "rank": 4,
+    "results": 19,
+    "term": "國定假日 鬧鐘",
     "weight": 0.3
    },
    "US": {
@@ -493,18 +511,18 @@
     "weight": 1.0
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 8,
-    "results": 12,
+    "results": 13,
     "term": "báo thức tắt ngày lễ",
     "weight": 0.08
    }
   },
   "foldparty": {
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
     "rank": 4,
@@ -513,10 +531,10 @@
     "weight": 0.3
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
-    "rank": 8,
+    "rank": 9,
     "results": 12,
     "term": "เกม จอพับ",
     "weight": 0.1
@@ -524,7 +542,7 @@
   },
   "gbago": {
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 5,
@@ -533,7 +551,7 @@
     "weight": 0.3
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 6,
@@ -542,7 +560,7 @@
     "weight": 0.1
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 8,
@@ -553,7 +571,7 @@
   },
   "gmoneylite": {
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 5,
@@ -564,11 +582,11 @@
   },
   "hourstaglite": {
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
-    "rank": 7,
-    "results": 9,
+    "rank": 6,
+    "results": 8,
     "term": "dépenses conscientes",
     "weight": 0.3
    },
@@ -582,7 +600,7 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 2,
@@ -591,82 +609,62 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
-    "rank": 7,
-    "results": 46,
+    "rank": 2,
+    "results": 45,
     "term": "理性消費",
     "weight": 0.3
    }
   },
   "jellyday": {
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
-    "rank": 7,
+    "rank": 2,
     "results": 100,
     "term": "แพลนเนอร์รายวัน",
     "weight": 0.1
    }
   },
-  "kumo": {
-   "TH": {
-    "date": "2026-11-23",
-    "locale": "th",
-    "paid": false,
-    "rank": 8,
-    "results": 14,
-    "term": "รอบเอว สัดส่วน",
-    "weight": 0.1
-   },
-   "TW": {
-    "date": "2026-11-24",
-    "locale": "zh-Hant",
-    "paid": true,
-    "rank": 9,
-    "results": 193,
-    "term": "減重 日誌",
-    "weight": 0.3
-   }
-  },
   "ledmovingtext": {
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
-    "rank": 8,
-    "results": 38,
+    "rank": 7,
+    "results": 37,
     "term": "お迎え ボード",
     "weight": 0.6
    }
   },
   "lumibopomofo": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 2,
-    "results": 5,
+    "results": 6,
     "term": "aprender zhuyin",
     "weight": 0.2
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 4,
-    "results": 11,
+    "results": 12,
     "term": "zhuyin lernen",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
     "rank": 2,
-    "results": 6,
+    "results": 5,
     "term": "apprendre zhuyin",
     "weight": 0.3
    },
@@ -680,20 +678,20 @@
     "weight": 0.45
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
     "rank": 3,
-    "results": 165,
+    "results": 166,
     "term": "注音符号",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
-    "rank": 7,
-    "results": 10,
+    "rank": 9,
+    "results": 11,
     "term": "주음부호",
     "weight": 0.3
    },
@@ -707,21 +705,21 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 6,
-    "results": 7,
+    "results": 8,
     "term": "เรียนจู้อิน",
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
-    "rank": 9,
-    "results": 182,
-    "term": "注音 學習",
+    "rank": 3,
+    "results": 46,
+    "term": "學注音符號",
     "weight": 0.3
    },
    "US": {
@@ -736,16 +734,16 @@
   },
   "lumibopomofopro": {
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
-    "rank": 7,
-    "results": 11,
+    "rank": 8,
+    "results": 12,
     "term": "zhuyin lernen",
     "weight": 0.4
    },
    "JP": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "ja",
     "paid": false,
     "rank": 3,
@@ -754,11 +752,11 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 1,
-    "results": 10,
+    "results": 11,
     "term": "주음부호",
     "weight": 0.3
    },
@@ -774,16 +772,16 @@
   },
   "lumimission": {
    "CN": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "zh-Hans",
     "paid": true,
     "rank": 1,
-    "results": 53,
-    "term": "奖励 贴纸",
+    "results": 54,
+    "term": "奖励贴纸",
     "weight": 0.45
    },
    "DE": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "de",
     "paid": false,
     "rank": 8,
@@ -801,7 +799,7 @@
     "weight": 0.1
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 10,
@@ -812,21 +810,21 @@
   },
   "lumiweather": {
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
-    "rank": 4,
+    "rank": 3,
     "results": 42,
     "term": "was anziehen wetter",
     "weight": 0.4
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": true,
-    "rank": 7,
-    "results": 179,
-    "term": "服装 天気",
+    "rank": 3,
+    "results": 27,
+    "term": "今日何着る？気温",
     "weight": 0.6
    },
    "RU": {
@@ -839,19 +837,19 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
-    "rank": 4,
+    "rank": 3,
     "results": 160,
     "term": "天氣 穿搭",
     "weight": 0.3
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
-    "rank": 6,
+    "rank": 5,
     "results": 26,
     "term": "thời tiết trẻ em",
     "weight": 0.08
@@ -859,18 +857,18 @@
   },
   "maskmyfile": {
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
     "rank": 3,
-    "results": 50,
+    "results": 52,
     "term": "個人情報 マスク",
     "weight": 0.6
    }
   },
   "metrotimehelper": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 3,
@@ -888,16 +886,16 @@
     "weight": 0.45
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
-    "rank": 3,
-    "results": 3,
+    "rank": 4,
+    "results": 4,
     "term": "mrt fahrplan",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "fr",
     "paid": false,
     "rank": 3,
@@ -906,10 +904,10 @@
     "weight": 0.3
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
-    "rank": 4,
+    "rank": 5,
     "results": 8,
     "term": "mrt 시간표",
     "weight": 0.3
@@ -924,40 +922,31 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 5,
     "results": 6,
     "term": "เที่ยวสุดท้าย",
     "weight": 0.1
-   },
-   "VN": {
-    "date": "2026-11-23",
-    "locale": "vi",
-    "paid": false,
-    "rank": 10,
-    "results": 12,
-    "term": "lịch tàu mrt",
-    "weight": 0.08
    }
   },
   "mochi": {
    "BR": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 4,
-    "results": 187,
+    "results": 188,
     "term": "lista de tarefas",
     "weight": 0.2
    },
    "CA": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "en",
-    "paid": true,
+    "paid": false,
     "rank": 3,
-    "results": 185,
+    "results": 187,
     "term": "cute to do list",
     "weight": 0.25
    },
@@ -980,40 +969,31 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
-    "rank": 3,
-    "results": 192,
+    "rank": 4,
+    "results": 188,
     "term": "เช็คลิสต์",
     "weight": 0.1
    },
    "US": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "en",
     "paid": true,
     "rank": 2,
-    "results": 173,
+    "results": 165,
     "term": "todo list cute",
     "weight": 1.0
-   },
-   "VN": {
-    "date": "2026-11-23",
-    "locale": "vi",
-    "paid": false,
-    "rank": 10,
-    "results": 41,
-    "term": "sổ kế hoạch dễ thương",
-    "weight": 0.08
    }
   },
   "mochidonestamp": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 3,
-    "results": 21,
+    "results": 23,
     "term": "registro última vez",
     "weight": 0.2
    },
@@ -1027,58 +1007,40 @@
     "weight": 0.1
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
-    "rank": 8,
-    "results": 13,
+    "rank": 4,
+    "results": 14,
     "term": "บันทึกครั้งล่าสุด",
     "weight": 0.1
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
-    "rank": 6,
-    "results": 69,
+    "rank": 5,
+    "results": 70,
     "term": "lần cuối",
     "weight": 0.08
    }
   },
   "moneytag": {
-   "BR": {
-    "date": "2026-11-24",
-    "locale": "pt-BR",
-    "paid": false,
-    "rank": 7,
-    "results": 31,
-    "term": "despesas do projeto",
-    "weight": 0.2
-   },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 6,
-    "results": 12,
+    "results": 14,
     "term": "nebenjob einnahmen",
     "weight": 0.4
    },
-   "FR": {
-    "date": "2026-11-24",
-    "locale": "fr",
-    "paid": false,
-    "rank": 5,
-    "results": 76,
-    "term": "dépenses projet",
-    "weight": 0.3
-   },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
     "rank": 1,
-    "results": 11,
+    "results": 10,
     "term": "專案支出",
     "weight": 0.3
    }
@@ -1103,31 +1065,22 @@
     "weight": 0.45
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 3,
-    "results": 44,
+    "results": 45,
     "term": "발표 자료",
     "weight": 0.3
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 1,
     "results": 1,
     "term": "สรุปหน้าเดียว",
     "weight": 0.1
-   },
-   "TW": {
-    "date": "2026-11-24",
-    "locale": "zh-Hant",
-    "paid": false,
-    "rank": 5,
-    "results": 95,
-    "term": "一頁 摘要",
-    "weight": 0.3
    },
    "US": {
     "date": "2026-11-25",
@@ -1139,11 +1092,11 @@
     "weight": 1.0
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 9,
-    "results": 11,
+    "results": 10,
     "term": "tóm tắt một trang",
     "weight": 0.08
    }
@@ -1159,40 +1112,51 @@
     "weight": 0.45
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 3,
-    "results": 13,
+    "rank": 4,
+    "results": 15,
     "term": "qr code 連結 檢查",
     "weight": 0.3
    }
   },
+  "savetag": {
+   "TH": {
+    "date": "2026-11-26",
+    "locale": "th",
+    "paid": false,
+    "rank": 8,
+    "results": 105,
+    "term": "บุ๊กมาร์ก",
+    "weight": 0.1
+   }
+  },
   "scanto": {
    "US": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "en",
     "paid": false,
     "rank": 7,
-    "results": 192,
+    "results": 188,
     "term": "Offline PDF & OCR",
     "weight": 1.0
    }
   },
   "sereno": {
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 10,
-    "results": 147,
+    "rank": 9,
+    "results": 146,
     "term": "褐噪音",
     "weight": 0.3
    }
   },
   "shotinbox": {
    "US": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "en",
     "paid": false,
     "rank": 2,
@@ -1201,7 +1165,7 @@
     "weight": 1.0
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
     "rank": 2,
@@ -1221,7 +1185,7 @@
     "weight": 0.45
    },
    "DE": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "de",
     "paid": false,
     "rank": 2,
@@ -1229,35 +1193,26 @@
     "term": "nachttischuhr",
     "weight": 0.4
    },
-   "JP": {
-    "date": "2026-11-25",
-    "locale": "ja",
-    "paid": true,
-    "rank": 10,
-    "results": 163,
-    "term": "置き時計",
-    "weight": 0.6
+   "US": {
+    "date": "2026-11-27",
+    "locale": "en",
+    "paid": false,
+    "rank": 7,
+    "results": 181,
+    "term": "desk clock",
+    "weight": 1.0
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
-    "rank": 10,
-    "results": 38,
-    "term": "đồng hồ đầu giường",
+    "rank": 8,
+    "results": 174,
+    "term": "đồng hồ để bàn",
     "weight": 0.08
    }
   },
   "tripbeecute": {
-   "BR": {
-    "date": "2026-11-24",
-    "locale": "pt-BR",
-    "paid": false,
-    "rank": 8,
-    "results": 190,
-    "term": "diário de viagem",
-    "weight": 0.2
-   },
    "CN": {
     "date": "2026-11-25",
     "locale": "zh-Hans",
@@ -1268,7 +1223,7 @@
     "weight": 0.45
    },
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 5,
@@ -1277,10 +1232,10 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
-    "rank": 3,
+    "rank": 4,
     "results": 16,
     "term": "和朋友 排行程",
     "weight": 0.3
@@ -1288,38 +1243,29 @@
   },
   "tripbeelite": {
    "JP": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "ja",
     "paid": false,
     "rank": 10,
-    "results": 189,
+    "results": 188,
     "term": "旅程",
     "weight": 0.6
    }
   },
   "tripplanet": {
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
     "rank": 2,
     "results": 169,
     "term": "こども 旅行 ゲーム",
     "weight": 0.6
-   },
-   "TW": {
-    "date": "2026-11-24",
-    "locale": "zh-Hant",
-    "paid": false,
-    "rank": 5,
-    "results": 33,
-    "term": "小孩 旅行",
-    "weight": 0.3
    }
   },
   "unblurry": {
    "BR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "pt-BR",
     "paid": false,
     "rank": 4,
@@ -1328,45 +1274,47 @@
     "weight": 0.2
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": true,
-    "rank": 4,
-    "results": 59,
+    "rank": 5,
+    "results": 60,
     "term": "ぼやけた 写真 修正",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
-    "rank": 7,
-    "results": 26,
+    "rank": 8,
+    "results": 29,
     "term": "흐린 사진 복구",
     "weight": 0.3
    },
    "US": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "en",
     "paid": true,
-    "rank": 4,
-    "results": 181,
+    "rank": 3,
+    "results": 179,
     "term": "Unblur & HD",
     "weight": 1.0
    }
   },
-  "wifiaidlite": {
-   "DE": {
-    "date": "2026-11-23",
-    "locale": "de",
+  "wifiaid": {
+   "VN": {
+    "date": "2026-11-26",
+    "locale": "vi",
     "paid": false,
-    "rank": 8,
-    "results": 27,
-    "term": "wlan kein internet",
-    "weight": 0.4
-   },
+    "rank": 10,
+    "results": 18,
+    "term": "chẩn đoán wifi",
+    "weight": 0.08
+   }
+  },
+  "wifiaidlite": {
    "JP": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "ja",
     "paid": false,
     "rank": 7,
@@ -1375,7 +1323,7 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
     "paid": false,
     "rank": 1,
@@ -1384,30 +1332,30 @@
     "weight": 0.3
    },
    "VN": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "vi",
     "paid": false,
-    "rank": 7,
-    "results": 171,
+    "rank": 9,
+    "results": 172,
     "term": "kiểm tra mạng",
     "weight": 0.08
    }
   },
   "wordmate": {
    "TW": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": true,
     "rank": 4,
-    "results": 183,
+    "results": 181,
     "term": "44 種語言背單字",
     "weight": 0.3
    },
    "US": {
-    "date": "2026-11-25",
+    "date": "2026-11-27",
     "locale": "en",
     "paid": false,
-    "rank": 10,
+    "rank": 9,
     "results": 173,
     "term": "44 languages",
     "weight": 1.0
@@ -1415,7 +1363,7 @@
   },
   "wordmatelite": {
    "TH": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "th",
     "paid": false,
     "rank": 1,
@@ -1428,42 +1376,42 @@
    "CN": {
     "date": "2026-11-25",
     "locale": "zh-Hans",
-    "paid": true,
+    "paid": false,
     "rank": 9,
     "results": 16,
     "term": "密码保护 zip",
     "weight": 0.45
    },
    "JP": {
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "locale": "ja",
     "paid": false,
-    "rank": 6,
-    "results": 9,
+    "rank": 9,
+    "results": 10,
     "term": "パスワード付きzip",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "ko",
-    "paid": true,
-    "rank": 7,
-    "results": 56,
-    "term": "암호 zip 파일",
+    "paid": false,
+    "rank": 10,
+    "results": 70,
+    "term": "7z 압축 풀기",
     "weight": 0.3
    },
    "TW": {
-    "date": "2026-11-24",
+    "date": "2026-11-27",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 9,
+    "rank": 8,
     "results": 16,
     "term": "密碼保護 zip",
     "weight": 0.3
    }
   }
  },
- "as_of": "2026-11-25",
+ "as_of": "2026-11-27",
  "fresh_days": 7,
  "schema": "lumi.search-terms/v1",
  "source": "00_GrowthEngine data/rank_watch/history.csv + reports/funnel-latest.json",

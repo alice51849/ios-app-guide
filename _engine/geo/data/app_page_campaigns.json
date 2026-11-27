@@ -1,5 +1,5 @@
 {
-  "_note": "既有 App 頁的頁專屬追蹤碼表（gen_store_attribution.APP_PAGE_CAMPAIGNS 查表；鍵＝相對 pages/ 的頁路徑，目錄頁寫 index.html）。只收已上線、有收據的既有頁，不開新網址。JellyDay 七頁：交辦 G5（reports/squads/B/jellyday_lines_audit_2026-11-24.md），碼照 reports/yi30/live_receipts/2026-11-22_B_jellyday.jsonl。",
+  "_note": "既有 App 頁的頁專屬追蹤碼表（gen_store_attribution.APP_PAGE_CAMPAIGNS 查表；鍵＝相對 pages/ 的頁路徑，目錄頁寫 index.html）。只收已上線、有收據的既有頁，不開新網址。JellyDay 七頁：交辦 G5（reports/squads/B/jellyday_lines_audit_2026-11-24.md），碼照 reports/yi30/live_receipts/2026-11-22_B_jellyday.jsonl。apps/jellyday/visual-planner-apps-compared.html：誠實比較頁（ops/handoff/support_push/ios-app-guide/squadb_cmp_1127/，11-27 部署後 App Store 連結與智慧橫幅被每日重產蓋成 geo_pick，2026-11-28 補表）。",
   "pages": {
     "apps/jellyday/index.html": {"campaign": "sup_jellyday_en_1122", "app_id": "6835673714"},
     "apps/jellyday/l/ja/index.html": {"campaign": "sup_jellyday_ja_1122", "app_id": "6835673714"},
@@ -7,6 +7,7 @@
     "apps/jellyday/l/zh-Hans/index.html": {"campaign": "sup_jellyday_zhhans_1122", "app_id": "6835673714"},
     "apps/jellyday/l/zh-Hant/index.html": {"campaign": "sup_jellyday_zhhant_1122", "app_id": "6835673714"},
     "apps/jellyday/visual-daily-planner-timeline.html": {"campaign": "sqb1121_jellyday_us_timeline", "app_id": "6835673714"},
-    "apps/jellyday/l/zh-Hant/visual-daily-planner-timeline.html": {"campaign": "sqb1121_jellyday_tw_timeline", "app_id": "6835673714"}
+    "apps/jellyday/l/zh-Hant/visual-daily-planner-timeline.html": {"campaign": "sqb1121_jellyday_tw_timeline", "app_id": "6835673714"},
+    "apps/jellyday/visual-planner-apps-compared.html": {"campaign": "sqb1127_jellyday_cmp", "app_id": "6835673714"}
   }
 }

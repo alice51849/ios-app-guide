@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "nl-NL",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2074,25 +2074,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis te starten · eenmalige ontgrendeling",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Geen account",
-        "Geen advertenties"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Productiviteit",
         "Gratis te starten · eenmalige ontgrendeling",
-        "Geen account",
-        "Geen advertenties",
+        "Widget",
         "Apple Watch",
         "App Store · Gratis"
       ],
@@ -2908,7 +2903,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Urenregistratie — Leg hem omgekeerd neer | iOS App",
-      "decision_context": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt. Leg je telefoon met het scherm naar beneden en de timer start; pak hem op en hij pauzeert, zodat alleen echte focustijd meetelt voor je studie- en werkuren. Zie vandaag, deze week, je reeks en de verdeling per vak of project, plus hoe vaak je je telefoon oppakte en hoe lang je aaneengesloten gefocust was. Stel een deadline en een doel in, en Studydown laat zien welk dagtempo je nog nodig hebt. Kies een activiteit, start de meting en leg je telefoon stil neer met het scherm omlaag. Houd de app open tijdens het meten. Pak je de telefoon op, dan pauzeert de meting na de ingestelde wachttijd. Zodra je de app verlaat, wordt er geen tijd meer bijgeteld. • Geef activiteiten een eigen naam en kleur en pas de volgorde aan. Voeg registraties handmatig toe of corrigeer ze. • Bekijk vandaag, deze week, opeenvolgende actieve dagen en de verdeling per activiteit. • Stel weekdoelen en deadlines in. Kies dagelijkse herinneringen of een interval van enkele uren. • Bewaar registraties als CSV. Pro biedt ook JSON-back-ups en herstel. Probeer maximaal 3 activiteiten met een totale proefduur van 5 minuten; die wordt niet dagelijks vernieuwd. Een al gestarte sessie blijft volledig bewaard. Met één aankoop ontgrendelt Pro onbeperkte activiteiten en tijd, uitgebreide analyses, doelen, deadlines, widgets, Apple Watch en back-ups. Geen abonnement. De timer en je registraties werken op je apparaat, zonder account of advertenties. Jij bepaalt of je bestanden deelt. Aankopen en aankopen herstellen verlopen via Apple. Contact: hourstag.app@gmail.com Geoptimaliseerd voor iPhone Duo.",
+      "decision_context": "Leg je telefoon met het scherm naar beneden en de timer start; pak hem op en hij pauzeert, zodat alleen echte focustijd meetelt voor je studie- en werkuren. Zie vandaag, deze week, je reeks en de verdeling per vak of project, plus hoe vaak je je telefoon oppakte en hoe lang je aaneengesloten gefocust was. Stel een deadline en een doel in, en Studydown laat zien welk dagtempo je nog nodig hebt. Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt. Kies een activiteit, start de meting en leg je telefoon stil neer met het scherm omlaag. Houd de app open tijdens het meten. Pak je de telefoon op, dan pauzeert de meting na de ingestelde wachttijd. Zodra je de app verlaat, wordt er geen tijd meer bijgeteld. • Geef activiteiten een eigen naam en kleur en pas de volgorde aan. Voeg registraties handmatig toe of corrigeer ze. • Bekijk vandaag, deze week, opeenvolgende actieve dagen en de verdeling per activiteit. • Stel weekdoelen en deadlines in. Kies dagelijkse herinneringen of een interval van enkele uren. • Bewaar registraties als CSV. Pro biedt ook JSON-back-ups en herstel. De gratis versie biedt maximaal 3 activiteiten en in totaal 5 minuten registratietijd; die wordt niet dagelijks vernieuwd. Een al gestarte sessie blijft volledig bewaard. Met één aankoop ontgrendelt Pro onbeperkte activiteiten en tijd, uitgebreide analyses, doelen, deadlines, widgets, Apple Watch en back-ups. Geen abonnement. De timer en je registraties werken op je apparaat, zonder account of advertenties. Jij bepaalt of je bestanden deelt. Aankopen en aankopen herstellen verlopen via Apple. Contact: hourstag.app@gmail.com Geoptimaliseerd voor iPhone Duo.",
       "category": "productivity",
       "category_label": "Productiviteit",
       "purchase_model": "free_with_lifetime_unlock",

@@ -6,7 +6,7 @@
   "name": "Lumi Studio Uitgever Zoekintentiecatalogus",
   "description": "Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.",
   "inLanguage": "nl-NL",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-27",
   "numberOfItems": 61,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2243,7 +2243,7 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
         "price": "2.99",
         "priceCurrency": "EUR",

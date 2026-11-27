@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ms",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2074,25 +2074,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Percuma untuk bermula · buka kunci sekali sahaja",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Tiada akaun",
-        "Tiada iklan"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widjet",
         "Apple Watch"
       ],
       "badge_labels": [
         "Produktiviti",
         "Percuma untuk bermula · buka kunci sekali sahaja",
-        "Tiada akaun",
-        "Tiada iklan",
+        "Widjet",
         "Apple Watch",
         "App Store · Percuma"
       ],
@@ -2908,7 +2903,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Pemasa Fokus — Tiarapkan telefon | iOS App",
-      "decision_context": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka. Tiarapkan telefon dan pemasa terus bermula, angkat dan ia berhenti, jadi hanya masa fokus sebenar yang dikira dalam jam belajar dan kerja anda. Lihat masa hari ini dan minggu ini, rentetan hari serta pecahan mengikut subjek atau projek, berserta berapa kali anda mengangkat telefon dan berapa lama anda fokus tanpa henti. Tetapkan tarikh akhir dan sasaran, dan Studydown menunjukkan kadar harian yang masih anda perlukan. Pilih aktiviti, mulakan pemasaan dan biarkan telefon tidak bergerak di atas meja. Pastikan aplikasi kekal terbuka semasa pemasaan. Apabila telefon diangkat, kiraan dijeda selepas tempoh kelonggaran yang anda pilih. Masa tidak ditambah selepas anda keluar daripada aplikasi. • Namakan aktiviti, pilih warna dan susun mengikut kehendak anda. Tambah atau betulkan rekod secara manual. • Semak jumlah hari ini dan minggu ini, hari berturut-turut serta agihan masa mengikut aktiviti. • Tetapkan sasaran mingguan dan tarikh akhir. Pilih peringatan harian atau setiap beberapa jam. • Simpan rekod sebagai CSV. Pro turut menyediakan sandaran dan pemulihan JSON. Cuba sehingga 3 aktiviti dengan kuota keseluruhan 5 minit; kuota ini tidak diperbaharui setiap hari. Sesi yang telah bermula disimpan sepenuhnya. Satu pembelian Pro membuka aktiviti dan rekod masa tanpa had, statistik lanjutan, sasaran, tarikh akhir, widget, Apple Watch dan sandaran. Tiada langganan. Pemasaan dan rekod berfungsi pada peranti, tanpa akaun atau iklan. Anda memilih sama ada mahu berkongsi fail. Pembelian dan pemulihan pembelian menggunakan perkhidmatan Apple. Hubungi: hourstag.app@gmail.com Dioptimumkan untuk iPhone Duo.",
+      "decision_context": "Tiarapkan telefon dan pemasa terus bermula, angkat dan ia berhenti, jadi hanya masa fokus sebenar yang dikira dalam jam belajar dan kerja anda. Lihat masa hari ini dan minggu ini, rentetan hari serta pecahan mengikut subjek atau projek, berserta berapa kali anda mengangkat telefon dan berapa lama anda fokus tanpa henti. Tetapkan tarikh akhir dan sasaran, dan Studydown menunjukkan kadar harian yang masih anda perlukan. Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka. Pilih aktiviti, mulakan pemasaan dan biarkan telefon tidak bergerak di atas meja. Pastikan aplikasi kekal terbuka semasa pemasaan. Apabila telefon diangkat, kiraan dijeda selepas tempoh kelonggaran yang anda pilih. Masa tidak ditambah selepas anda keluar daripada aplikasi. • Namakan aktiviti, pilih warna dan susun mengikut kehendak anda. Tambah atau betulkan rekod secara manual. • Semak jumlah hari ini dan minggu ini, hari berturut-turut serta agihan masa mengikut aktiviti. • Tetapkan sasaran mingguan dan tarikh akhir. Pilih peringatan harian atau setiap beberapa jam. • Simpan rekod sebagai CSV. Pro turut menyediakan sandaran dan pemulihan JSON. Versi percuma merangkumi sehingga 3 aktiviti dengan kuota keseluruhan 5 minit; kuota ini tidak diperbaharui setiap hari. Sesi yang telah bermula disimpan sepenuhnya. Satu pembelian Pro membuka aktiviti dan rekod masa tanpa had, statistik lanjutan, sasaran, tarikh akhir, widget, Apple Watch dan sandaran. Tiada langganan. Pemasaan dan rekod berfungsi pada peranti, tanpa akaun atau iklan. Anda memilih sama ada mahu berkongsi fail. Pembelian dan pemulihan pembelian menggunakan perkhidmatan Apple. Hubungi: hourstag.app@gmail.com Dioptimumkan untuk iPhone Duo.",
       "category": "productivity",
       "category_label": "Produktiviti",
       "purchase_model": "free_with_lifetime_unlock",

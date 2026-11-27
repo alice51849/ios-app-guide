@@ -2,7 +2,7 @@
 title: "лучшее простое приложение для списка дел на iPhone без подписки"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ru/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ publisher: "Lumi Studio"
 
 - Работа и организация
 - Бесплатно начать · разовая разблокировка
-- Без учётной записи
-- Без рекламы
+- Виджет
 - Apple Watch
 - App Store · Бесплатно
 

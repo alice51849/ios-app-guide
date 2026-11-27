@@ -537,7 +537,7 @@
   },
   "current_inventory": {
     "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
-    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
+    "copy_sha256": "973e6656b9b3726e65d444696071d694849e0437527933c18130e8ecc2cab142",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 61
@@ -545,7 +545,7 @@
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
     "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
-    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
+    "copy_sha256": "973e6656b9b3726e65d444696071d694849e0437527933c18130e8ecc2cab142",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 61,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
@@ -794,11 +794,11 @@
         "passed": true
       },
       "non_template": {
-        "detail": "83/83 unique signatures; max Jaccard=0.263",
+        "detail": "83/83 unique signatures; max Jaccard=0.279",
         "passed": true
       },
       "non_thin": {
-        "detail": "minimum=200 units; threshold=180",
+        "detail": "minimum=202 units; threshold=180",
         "passed": true
       },
       "primary_intent_coverage": {
@@ -815,14 +815,14 @@
       }
     },
     "materialization_safe": true,
-    "maximum_editorial_jaccard": 0.262774,
+    "maximum_editorial_jaccard": 0.279412,
     "maximum_similarity_pair": [
       "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "en-US:lumibopomofopro:complete-zhuyin-path-for-heritage-family"
     ],
-    "minimum_content_units": 200
+    "minimum_content_units": 202
   },
-  "release_contract_digest": "3ea422da295ee0979f089d86e4164cede7e6d010f9fafc2aaebcdd9b0e944bad",
+  "release_contract_digest": "c68cf8e27ce6557cab4b26e3fa70ad167a969005497843338e127271144de1a5",
   "release_state": "exact",
   "schema_version": 1
 }

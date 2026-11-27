@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sv",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2032,25 +2032,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Inget konto",
-        "Inga annonser"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Produktivitet",
         "Gratis att börja · engångsupplåsning",
-        "Inget konto",
-        "Inga annonser",
+        "Widget",
         "Apple Watch",
         "App Store · Gratis"
       ],
@@ -2866,7 +2861,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Tidtagning — Lägg den med skärmen nedåt | iOS App",
-      "decision_context": "Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld. Lägg telefonen med skärmen nedåt så startar tiden, lyft den så pausas den, så bara verklig fokustid räknas till dina plugg- och arbetstimmar. Se i dag, den här veckan, din svit och fördelningen per ämne eller projekt, plus hur ofta du lyfte telefonen och hur länge du höll fokus i ett sträck. Ange en deadline och ett mål, så visar Studydown vilket dagstempo du fortfarande behöver. Välj en aktivitet, starta mätningen och låt telefonen ligga stilla på bordet. Håll appen öppen under mätningen. När du lyfter telefonen pausas räkningen efter den tidsmarginal du har valt. Ingen mer tid läggs till när du lämnar appen. • Ge aktiviteterna egna namn och färger och ordna dem som du vill. Lägg till eller rätta registreringar manuellt. • Se dagens och veckans översikt, dagar i rad och fördelningen mellan aktiviteter. • Sätt veckomål och slutdatum. Välj påminnelser varje dag eller med några timmars mellanrum. • Spara registreringarna som CSV. Pro ger även säkerhetskopiering och återställning med JSON. Prova upp till 3 aktiviteter och sammanlagt 5 registrerade minuter; utrymmet fylls inte på varje dag. Ett redan påbörjat pass sparas i sin helhet. Ett engångsköp av Pro låser upp obegränsade aktiviteter och registrering, utökad statistik, mål, slutdatum, widgetar, Apple Watch och säkerhetskopior. Inget abonnemang. Tidtagning och registreringar finns på enheten, utan konto eller reklam. Du väljer själv om du delar filer. Köp och återställning av köp använder Apples tjänster. Kontakt: hourstag.app@gmail.com Optimerad för iPhone Duo.",
+      "decision_context": "Lägg telefonen med skärmen nedåt så startar tiden, lyft den så pausas den, så bara verklig fokustid räknas till dina plugg- och arbetstimmar. Se i dag, den här veckan, din svit och fördelningen per ämne eller projekt, plus hur ofta du lyfte telefonen och hur länge du höll fokus i ett sträck. Ange en deadline och ett mål, så visar Studydown vilket dagstempo du fortfarande behöver. Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld. Välj en aktivitet, starta mätningen och låt telefonen ligga stilla på bordet. Håll appen öppen under mätningen. När du lyfter telefonen pausas räkningen efter den tidsmarginal du har valt. Ingen mer tid läggs till när du lämnar appen. • Ge aktiviteterna egna namn och färger och ordna dem som du vill. Lägg till eller rätta registreringar manuellt. • Se dagens och veckans översikt, dagar i rad och fördelningen mellan aktiviteter. • Sätt veckomål och slutdatum. Välj påminnelser varje dag eller med några timmars mellanrum. • Spara registreringarna som CSV. Pro ger även säkerhetskopiering och återställning med JSON. Gratisversionen omfattar upp till 3 aktiviteter och sammanlagt 5 registrerade minuter; utrymmet fylls inte på varje dag. Ett redan påbörjat pass sparas i sin helhet. Ett engångsköp av Pro låser upp obegränsade aktiviteter och registrering, utökad statistik, mål, slutdatum, widgetar, Apple Watch och säkerhetskopior. Inget abonnemang. Tidtagning och registreringar finns på enheten, utan konto eller reklam. Du väljer själv om du delar filer. Köp och återställning av köp använder Apples tjänster. Kontakt: hourstag.app@gmail.com Optimerad för iPhone Duo.",
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",

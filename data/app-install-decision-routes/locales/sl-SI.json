@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sl-SI",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2029,25 +2029,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Brezplačen začetek",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Brez računa",
-        "Brez oglasov"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Gradnik",
         "Apple Watch"
       ],
       "badge_labels": [
         "Produktivnost",
         "Brezplačen začetek",
-        "Brez računa",
-        "Brez oglasov",
+        "Gradnik",
         "Apple Watch",
         "App Store · Brezplačno"
       ],
@@ -2863,7 +2858,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Merjenje časa — Položi ga z zaslonom navzdol | iOS App",
-      "decision_context": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta. Telefon položite z zaslonom navzdol in merjenje se začne, dvignete ga in se ustavi, zato se v ure učenja in dela šteje le resnična zbranost. Oglejte si čas za danes in ta teden, niz dni ter razdelitev po predmetih ali projektih, pa tudi, kolikokrat ste dvignili telefon in kako dolgo je trajala vaša zbranost. Določite rok in cilj, Studydown pa vam pokaže, koliko morate še narediti vsak dan. Izberite dejavnost, začnite merjenje in pustite telefon pri miru na mizi. Med merjenjem naj aplikacija ostane odprta. Ko telefon dvignete, se štetje začasno ustavi po nastavljenem zamiku. Po izhodu iz aplikacije se čas ne prišteva več. • Poimenujte dejavnosti, jim dodelite barve in uredite vrstni red. Zapise lahko ročno dodate ali popravite. • Preverite današnji in tedenski pregled, zaporedne aktivne dni in razporeditev časa. • Postavite tedenske cilje in roke. Opomnike nastavite vsak dan ali vsakih nekaj ur. • Shranite zapise v CSV. Pro omogoča tudi varnostne kopije JSON in obnovitev. Preizkusite do 3 dejavnosti in skupaj 5 minut beleženja; ta omejitev se ne ponastavi vsak dan. Že začeta seja se ohrani v celoti. Z enkratnim nakupom Pro dobite neomejene dejavnosti in beleženje, podrobne statistike, cilje, roke, gradnike, Apple Watch in varnostne kopije. Brez naročnine. Merjenje in zapisi ostanejo v napravi, brez računa in oglasov. Sami se odločite, ali boste delili datoteke. Nakup in obnovitev nakupov uporabljata storitve Apple. Stik: hourstag.app@gmail.com Optimizirano za iPhone Duo.",
+      "decision_context": "Telefon položite z zaslonom navzdol in merjenje se začne, dvignete ga in se ustavi, zato se v ure učenja in dela šteje le resnična zbranost. Oglejte si čas za danes in ta teden, niz dni ter razdelitev po predmetih ali projektih, pa tudi, kolikokrat ste dvignili telefon in kako dolgo je trajala vaša zbranost. Določite rok in cilj, Studydown pa vam pokaže, koliko morate še narediti vsak dan. Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta. Izberite dejavnost, začnite merjenje in pustite telefon pri miru na mizi. Med merjenjem naj aplikacija ostane odprta. Ko telefon dvignete, se štetje začasno ustavi po nastavljenem zamiku. Po izhodu iz aplikacije se čas ne prišteva več. • Poimenujte dejavnosti, jim dodelite barve in uredite vrstni red. Zapise lahko ročno dodate ali popravite. • Preverite današnji in tedenski pregled, zaporedne aktivne dni in razporeditev časa. • Postavite tedenske cilje in roke. Opomnike nastavite vsak dan ali vsakih nekaj ur. • Shranite zapise v CSV. Pro omogoča tudi varnostne kopije JSON in obnovitev. Brezplačna različica vključuje do 3 dejavnosti in skupaj 5 minut beleženja; ta omejitev se ne ponastavi vsak dan. Že začeta seja se ohrani v celoti. Z enkratnim nakupom Pro dobite neomejene dejavnosti in beleženje, podrobne statistike, cilje, roke, gradnike, Apple Watch in varnostne kopije. Brez naročnine. Merjenje in zapisi ostanejo v napravi, brez računa in oglasov. Sami se odločite, ali boste delili datoteke. Nakup in obnovitev nakupov uporabljata storitve Apple. Stik: hourstag.app@gmail.com Optimizirano za iPhone Duo.",
       "category": "productivity",
       "category_label": "Produktivnost",
       "purchase_model": "free_with_lifetime_unlock",

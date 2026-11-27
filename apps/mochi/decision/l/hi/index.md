@@ -2,7 +2,7 @@
 title: "iPhone के लिए सर्वश्रेष्ठ सरल टू-डू लिस्ट ऐप बिना सदस्यता के"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/hi/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - मुफ़्त शुरुआत · एक बार अनलॉक
-- कोई खाता नहीं
-- कोई विज्ञापन नहीं
+- विजेट
 - Apple Watch
 - App Store · मुफ़्त
 

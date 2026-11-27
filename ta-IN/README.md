@@ -161,6 +161,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 3,050 பத�
 
 [முகப்பு](https://open.cait518.cc/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://open.cait518.cc/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-11-23
+புதுப்பிக்கப்பட்டது: 2026-11-27
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

@@ -2,7 +2,7 @@
 title: "paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/fi/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkist
 
 - Tuottavuus
 - Ilmainen aloitus
-- Ei tiliä
-- Ei mainoksia
+- Widget
 - Apple Watch
 - App Store · Ilmainen
 

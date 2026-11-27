@@ -2,7 +2,7 @@
 title: "nejlepší jednoduchá aplikace na seznam úkolů na iPhonu bez předplatného"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/cs/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čis
 
 - Produktivita
 - Zdarma na začátek
-- Bez účtu
-- Bez reklam
+- Widget
 - Apple Watch
 - App Store · Zdarma
 

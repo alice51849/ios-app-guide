@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație simplă de listă de făcut pe iPhone fără abonament"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ro/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivi
 
 - Productivitate
 - Început gratuit
-- Fără cont
-- Fără reclame
+- Widget
 - Apple Watch
 - App Store · Gratuit
 - ★ 5.0/5 · 1

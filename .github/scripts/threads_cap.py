@@ -35,7 +35,20 @@ ROOM, FULL, UNKNOWN = "room", "full", "unknown"
 # slot recorded as a cap skip, with a receipt (.github/growth/threads-cap-skips.json). Every retry still goes
 # through account_status(): the cap itself is never loosened.
 RETRY, SKIP = "retry", "skip"
+# After its grace (slot_deadline) a slot that an earlier green run left open for a retry never posts, even with
+# room (2.7 review 2026-11-27): a late retry (a dropped 04:47 backup, then the 11:47 backup, the watchdog or a
+# delayed schedule) would hold the account's 3rd share until the same time tomorrow and push the 13:00 evening
+# slot into a cap skip. threads-post.yml checks it after the room check (threads_cap.py within, only when
+# social_slot_gate.py says retried=true) and records a skip receipt instead; threads_backfill.py does not dispatch
+# a left-open slot again once its grace is over. A slot no run ever started still posts late with room, as before
+# (on a day the Mac dispatcher is down a late GitHub schedule can be the account's only post).
+PAST_GRACE_EXIT = 3
 RETRY_GRACE = dt.timedelta(hours=2)
+# Per-slot grace overrides (UTC slot hour -> grace). 2026-11-27 (also 11-20): the 03:00 slot found the account full
+# because the day before's post went out at 04:05:07; the 03:47 backup's run checked at 04:01, 3.5 minutes short, and
+# with the grace ending at 05:00 the next backup (11:47) was past it, so the slot was a cap skip. 03:00 gets 3 hours
+# (to 06:00) and a 04:47 backup (BACKUP_TIMES) that falls inside it. Every other slot keeps RETRY_GRACE.
+SLOT_RETRY_GRACE = {3: dt.timedelta(hours=3)}
 OPEN_STEP = "Threads cap full: slot left open for a retry"
 SLOT_FIRE_MINUTE = {1: 40, 3: 0, 13: 0}  # threads-post.yml crons
 # Per-slot shares (coordinator ruling 2026-11-27 00:5x Taipei, option 乙): the 3-in-24-hours cap is unchanged,
@@ -46,12 +59,13 @@ SLOT_FIRE_MINUTE = {1: 40, 3: 0, 13: 0}  # threads-post.yml crons
 #   SLOT_CUTOFF_UTC   the latest UTC time of day a slot's retry may still post (same UTC day as the slot).
 #   RESERVED_UTC      [start, end) UTC times of day that belong to threads-autopilot's 15 UTC slot: no Guide
 #                     path publishes a top-level Threads post inside them (account_status answers FULL).
-# The other neighbours do not overlap: 03:00 + 2 hours ends at 05:00, long before 13:00, and the 15 UTC slot
-# ends by 18:00, long before the next day's 01:40 / 03:00.
+# The other neighbours do not overlap: 03:00 + 3 hours (SLOT_RETRY_GRACE) ends at 06:00, long before 13:00 (and
+# threads-autopilot leaves every slot but 15 UTC to the Guide), and the 15 UTC slot ends by 18:00, long before the
+# next day's 01:40 / 03:00.
 SLOT_CUTOFF_UTC = {13: dt.time(14, 30)}
 RESERVED_UTC = ((dt.time(14, 30), dt.time(18, 0)),)
 # clip-backup.yml crons (UTC hour, minute): each one runs threads_backfill.py. test_threads_cap.py keeps them in sync.
-BACKUP_TIMES = ((0, 47), (3, 47), (11, 47), (14, 47), (17, 47), (20, 47))
+BACKUP_TIMES = ((0, 47), (3, 47), (4, 47), (11, 47), (14, 47), (17, 47), (20, 47))
 BACKUP_MARGIN = dt.timedelta(minutes=5)  # a backup this close sees the deferred run still running and skips it
 SKIPS_FILE = Path(__file__).resolve().parents[1] / "growth" / "threads-cap-skips.json"
 SKIPS_KEEP = 120
@@ -76,10 +90,15 @@ def next_backup(now):
     raise AssertionError("no backup time")  # pragma: no cover
 
 
+def slot_grace(slot):
+    """The retry grace of a slot: SLOT_RETRY_GRACE for its UTC hour, else RETRY_GRACE."""
+    return SLOT_RETRY_GRACE.get(_utc(slot).hour, RETRY_GRACE)
+
+
 def slot_deadline(slot):
-    """The end of a slot's retry grace: fire time + RETRY_GRACE, cut at SLOT_CUTOFF_UTC for that slot."""
+    """The end of a slot's retry grace: fire time + slot_grace(), cut at SLOT_CUTOFF_UTC for that slot."""
     slot = _utc(slot)
-    deadline = slot + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(slot.hour, 0)) + RETRY_GRACE
+    deadline = slot + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(slot.hour, 0)) + slot_grace(slot)
     cutoff = SLOT_CUTOFF_UTC.get(slot.hour)
     if cutoff is not None:
         deadline = min(deadline, dt.datetime.combine(slot.date(), cutoff, tzinfo=dt.timezone.utc))
@@ -112,14 +131,36 @@ def full_slot_action(slot, now):
     return SKIP
 
 
-def skip_receipt(slot, now, label="threads-post"):
+def past_grace(slot, now):
+    """True once ``now`` is at or after the slot's retry grace end (slot_deadline): the slot no longer posts."""
+    return _utc(now) >= slot_deadline(slot)
+
+
+def within_grace(slot, now, receipt_path="", output_path=""):
+    """The room check found room: post only inside the slot's grace. Past it, record a skip (receipt) instead.
+
+    Returns True inside the grace. Past it, writes the receipt (reason past_grace) and capskip=true."""
+    if not past_grace(slot, now):
+        return True
+    receipt = skip_receipt(slot, now, reason="past_grace")
+    if receipt_path:
+        Path(receipt_path).write_text(json.dumps(receipt, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"::notice::這格（{_utc(slot).isoformat()}）的寬限到 {slot_deadline(slot).strftime('%H:%M')} 世界時已過："
+          f"帳號雖有空位也不發（免得佔到後面那格的額度），記為過期跳過")
+    if output_path:
+        with open(output_path, "a", encoding="utf-8") as out:
+            out.write("retry=false\ncapskip=true\n")
+    return False
+
+
+def skip_receipt(slot, now, label="threads-post", reason="cap_full_after_grace"):
     slot, now = _utc(slot), _utc(now)
     return {
         "slot": slot.isoformat(),
         "decided_at": now.replace(microsecond=0).isoformat(),
-        "reason": "cap_full_after_grace",
+        "reason": reason,
         "cap": ACCOUNT_DAILY_CAP,
-        "grace_minutes": int(RETRY_GRACE.total_seconds() // 60),
+        "grace_minutes": int(slot_grace(slot).total_seconds() // 60),
         "workflow": label,
         "run_id": os.environ.get("GITHUB_RUN_ID", ""),
     }
@@ -212,6 +253,11 @@ def main(argv=None):
     full.add_argument("--slot", required=True, help="UTC slot start (social_slot_gate.py slot output)")
     full.add_argument("--now", default="", help="tests only: the current UTC time")
     full.add_argument("--receipt", default="", help="where to write the skip receipt")
+    within = sub.add_parser("within", help="the room check found room: exit 0 inside the slot's grace, "
+                            f"{PAST_GRACE_EXIT} (and a skip receipt) once it is over")
+    within.add_argument("--slot", required=True, help="UTC slot start (social_slot_gate.py slot output)")
+    within.add_argument("--now", default="", help="tests only: the current UTC time")
+    within.add_argument("--receipt", default="", help="where to write the skip receipt")
     merge = sub.add_parser("merge-skip", help="fold a skip receipt into .github/growth/threads-cap-skips.json")
     merge.add_argument("receipt")
     args = parser.parse_args(argv)
@@ -219,6 +265,11 @@ def main(argv=None):
         now = dt.datetime.fromisoformat(args.now) if args.now else dt.datetime.now(dt.timezone.utc)
         full_slot(dt.datetime.fromisoformat(args.slot), now, args.receipt, os.environ.get("GITHUB_OUTPUT", ""))
         return 0
+    if args.command == "within":
+        now = dt.datetime.fromisoformat(args.now) if args.now else dt.datetime.now(dt.timezone.utc)
+        inside = within_grace(dt.datetime.fromisoformat(args.slot), now, args.receipt,
+                              os.environ.get("GITHUB_OUTPUT", ""))
+        return 0 if inside else PAST_GRACE_EXIT
     merge_skip(args.receipt)
     return 0
 

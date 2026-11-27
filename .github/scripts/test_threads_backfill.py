@@ -224,5 +224,79 @@ class CapFullRetryTests(unittest.TestCase):
         self.assertNotIn(dt.datetime(2026, 11, 14, 3, tzinfo=UTC), B.missing_slots(runs, now, lambda r: True))
 
 
+
+class PastGraceTests(unittest.TestCase):
+    """2.7 review 2026-11-27: once a slot's grace is over (threads_cap.slot_deadline) a slot left open is not
+    dispatched again, so a late 03:00 post (04:47 backup dropped, then 11:47) never takes the evening slot's share."""
+
+    SCHEDULED = run("2026-11-27T03:01:00Z", "Threads posts · cron 0 3 * * *")
+    RETRY_0347 = run("2026-11-27T04:01:00Z", "Threads posts · post slot 3 2026-11-27", event="workflow_dispatch")
+    SLOT = dt.datetime(2026, 11, 27, 3, tzinfo=UTC)
+
+    @staticmethod
+    def left_open(r):
+        return "slot 3" in r["display_title"] or "0 3" in r["display_title"]
+
+    def test_left_open_at_03_47_is_dispatched_again_at_the_04_47_backup(self):
+        now = dt.datetime(2026, 11, 27, 4, 48, tzinfo=UTC)
+        missing, expired = B.plan_slots([self.SCHEDULED, self.RETRY_0347], now, self.left_open)
+        self.assertIn(self.SLOT, missing)
+        self.assertEqual([], expired)
+
+    def test_04_47_never_came_so_11_56_does_not_dispatch_the_03_slot(self):
+        now = dt.datetime(2026, 11, 27, 11, 56, tzinfo=UTC)
+        missing, expired = B.plan_slots([self.SCHEDULED, self.RETRY_0347], now, self.left_open)
+        self.assertNotIn(self.SLOT, missing)
+        self.assertEqual([self.SLOT], expired)
+        self.assertNotIn(self.SLOT, B.missing_slots([self.SCHEDULED, self.RETRY_0347], now, self.left_open))
+
+    def test_main_prints_the_past_grace_skip_and_dispatches_nothing_for_it(self):
+        now = dt.datetime(2026, 11, 27, 11, 56, tzinfo=UTC)
+        runs = [self.SCHEDULED, self.RETRY_0347, run("2026-11-27T01:41:00Z", "Threads posts · cron 40 1 * * *")]
+        real_datetime = dt.datetime
+
+        class Clock(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return now
+
+        with mock.patch.object(B.gate, "fetch_runs", return_value=runs), \
+                mock.patch.object(B.gate, "run_ran_step", side_effect=lambda repo, r, tok, step: self.left_open(r)), \
+                mock.patch.object(B.dt, "datetime", Clock), \
+                mock.patch.object(B, "dispatch") as dispatch, \
+                mock.patch("sys.stdout", new_callable=io.StringIO) as out, \
+                mock.patch.dict("os.environ", {"GITHUB_REPOSITORY": "o/r", "GITHUB_TOKEN": "t"}):
+            self.assertEqual(0, B.main([]))
+        dispatch.assert_not_called()
+        self.assertIn("past-grace skip", out.getvalue())
+        self.assertIn("06:00", out.getvalue())
+
+    def test_a_slot_no_run_ever_filled_is_still_dispatched(self):
+        # Never run (GitHub dropped it): dispatched as before, and threads-post.yml posts it with room as before
+        # (social_slot_gate.py retried=false, so threads_cap.py within is not asked).
+        now = dt.datetime(2026, 11, 27, 11, 56, tzinfo=UTC)
+        self.assertIn(self.SLOT, B.missing_slots([], now, self.left_open))
+
+    def test_the_13_slot_is_not_affected(self):
+        # Dropped 13:00 run: still due for a dispatch after 13:30 (its grace check is threads-post's).
+        self.assertIn(dt.datetime(2026, 11, 27, 13, tzinfo=UTC),
+                      B.missing_slots([self.SCHEDULED], dt.datetime(2026, 11, 27, 13, 35, tzinfo=UTC), self.left_open))
+        # A green 13:00 run that did not leave its slot open covers it.
+        done = run("2026-11-27T13:02:00Z", "Threads posts · cron 0 13 * * *")
+        early = run("2026-11-27T01:41:00Z", "Threads posts · cron 40 1 * * *")
+        self.assertEqual([], B.missing_slots([early, self.SCHEDULED, done], dt.datetime(2026, 11, 27, 14, 50, tzinfo=UTC),
+                                             lambda r: False))
+
+    def test_each_run_is_asked_about_its_open_step_once(self):
+        asked = []
+
+        def left_open(r):
+            asked.append(r["id"])
+            return self.left_open(r)
+
+        B.plan_slots([self.SCHEDULED, self.RETRY_0347], dt.datetime(2026, 11, 27, 11, 56, tzinfo=UTC), left_open)
+        self.assertEqual(sorted(set(asked)), sorted(asked))
+
+
 if __name__ == "__main__":
     unittest.main()

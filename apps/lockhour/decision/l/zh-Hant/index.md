@@ -2,7 +2,7 @@
 title: "讀書時封鎖社群媒體的最佳 iPhone App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/zh-Hant/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · 免費
-- ★ 5.0/5 · 1
+- ★ 5.0/5 · 2
 
 [在 App Store 取得 LockHour Pro →](https://apps.apple.com/tw/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 

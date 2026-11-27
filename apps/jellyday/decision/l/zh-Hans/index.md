@@ -2,7 +2,7 @@
 title: "JellyDay：可视化日程规划表 — 可爱自律作息时间表：每日计划、时间管理、时间轴、专注倒计时 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/zh-Hans/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

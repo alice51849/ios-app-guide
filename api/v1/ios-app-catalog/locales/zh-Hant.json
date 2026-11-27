@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-26",
-  "content_digest": "a680ca7a645055a25fb340101aa71e2d481af1975b14fb54c4de8c25af664930",
+  "date_modified": "2026-11-27",
+  "content_digest": "f3cc42de67a69d9ca2ba2baffb65f6f8cf340316d0864bc29e2bac083e0f754b",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -59,7 +59,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/notesstudio100.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6798813048"
+      }
     },
     {
       "key": "aibriefpack",
@@ -91,8 +97,7 @@
         "懶人包",
         "複製貼上",
         "工作效率",
-        "掃描",
-        "提示詞管理"
+        "掃描"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -107,7 +112,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/aibriefpack.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6791658210"
+      }
     },
     {
       "key": "aim990",
@@ -156,7 +167,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/aim990.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6784974530"
+      }
     },
     {
       "key": "battai",
@@ -191,10 +210,7 @@
         "充電助手",
         "充電測試",
         "發燙",
-        "掉電",
-        "電池檢測",
-        "電池",
-        "電池容量"
+        "掉電"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -209,7 +225,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6802423998"
+      }
     },
     {
       "key": "caldaily",
@@ -259,7 +283,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/caldaily.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6794178671"
+      }
     },
     {
       "key": "countdaysnow",
@@ -309,7 +341,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/countdaysnow.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6807079789"
+      }
     },
     {
       "key": "cvdesk",
@@ -340,9 +378,7 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習",
-        "履歷範本",
-        "履歷製作"
+        "實習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -357,7 +393,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/cvdesk.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6781337213"
+      }
     },
     {
       "key": "cyca",
@@ -386,9 +430,7 @@
         "生理痛",
         "經期紀錄",
         "經血量",
-        "心情",
-        "經期 追蹤",
-        "月經週期"
+        "心情"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -403,7 +445,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/cyca.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 4.7,
+        "rating_count": 3,
+        "storefront_url": "https://apps.apple.com/tw/app/id6782251621"
+      }
     },
     {
       "key": "dailymate",
@@ -517,7 +567,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dailymatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6794725568"
+      }
     },
     {
       "key": "dbhalo",
@@ -566,7 +624,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6806826699"
+      }
     },
     {
       "key": "easyam",
@@ -620,7 +686,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6821790092"
+      }
     },
     {
       "key": "duowallpaperstudio",
@@ -675,7 +749,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/duowallpaperstudio.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6824946559"
+      }
     },
     {
       "key": "gmoney",
@@ -761,8 +843,7 @@
         "懶人記帳",
         "背包客",
         "旅費",
-        "出國記帳",
-        "出國預算"
+        "出國記帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -777,7 +858,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/gmoneylite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6793436548"
+      }
     },
     {
       "key": "gbago",
@@ -866,8 +955,7 @@
         "儲蓄",
         "花費",
         "小資族",
-        "節流",
-        "衝動購物"
+        "節流"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -882,7 +970,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/hourstaglite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6794039979"
+      }
     },
     {
       "key": "hourstag",
@@ -992,7 +1088,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/jellyday.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6835673714"
+      }
     },
     {
       "key": "kumo",
@@ -1031,9 +1133,7 @@
         "日誌",
         "手帳",
         "助手",
-        "健康",
-        "減重 日誌",
-        "腰圍 體脂"
+        "健康"
       ],
       "purchase_model": "neutral",
       "one_time_option": false,
@@ -1048,7 +1148,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/kumo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6830824515"
+      }
     },
     {
       "key": "ledmovingtext",
@@ -1084,8 +1192,7 @@
         "招牌",
         "燈光",
         "接送",
-        "手幅",
-        "跑馬燈"
+        "手幅"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1100,7 +1207,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/ledmovingtext.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6806639602"
+      }
     },
     {
       "key": "lockhour",
@@ -1148,7 +1263,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lockhour.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6780107485"
+      }
     },
     {
       "key": "lumibopomofo",
@@ -1181,8 +1304,7 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號",
-        "注音 學習"
+        "學注音符號"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1197,7 +1319,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumibopomofo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 4.7,
+        "rating_count": 9,
+        "storefront_url": "https://apps.apple.com/tw/app/id6773017109"
+      }
     },
     {
       "key": "lumibopomofopro",
@@ -1287,8 +1417,7 @@
         "學英文",
         "幼稚園",
         "親子",
-        "幼兒學習",
-        "兒童 字母"
+        "幼兒學習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1303,7 +1432,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumiletters.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 4.5,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6778748533"
+      }
     },
     {
       "key": "lumiletterspro",
@@ -1340,8 +1477,7 @@
         "親子",
         "練習",
         "描寫",
-        "小朋友",
-        "兒童 自然發音"
+        "小朋友"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1416,7 +1552,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumimath.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6778269699"
+      }
     },
     {
       "key": "lumimathpro",
@@ -1515,10 +1659,7 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起",
-        "兒童 習慣",
-        "睡前 習慣",
-        "獎勵 貼紙"
+        "早睡早起"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1533,7 +1674,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumimission.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 4.5,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6779750237"
+      }
     },
     {
       "key": "lumimissionpro",
@@ -1626,9 +1775,7 @@
         "手錶",
         "即時",
         "逐時",
-        "一週",
-        "天氣 穿搭",
-        "穿搭 天氣"
+        "一週"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1643,7 +1790,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumiweather.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 4.5,
+        "rating_count": 4,
+        "storefront_url": "https://apps.apple.com/tw/app/id6779552704"
+      }
     },
     {
       "key": "maskmyfile",
@@ -1691,7 +1846,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/maskmyfile.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6792850916"
+      }
     },
     {
       "key": "foldparty",
@@ -1730,8 +1891,7 @@
         "經營",
         "街機",
         "節奏",
-        "反應",
-        "折疊手機 遊戲"
+        "反應"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1844,8 +2004,7 @@
         "任務",
         "主題",
         "整理",
-        "行事曆",
-        "可愛 行事曆"
+        "行事曆"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1860,7 +2019,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/mochi.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 4.6,
+        "rating_count": 7,
+        "storefront_url": "https://apps.apple.com/tw/app/id6785004775"
+      }
     },
     {
       "key": "mochidonestamp",
@@ -1910,7 +2077,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/mochidonestamp.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6790800323"
+      }
     },
     {
       "key": "moneytag",
@@ -1964,7 +2139,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/moneytag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6801956402"
+      }
     },
     {
       "key": "onepageppt",
@@ -1998,8 +2181,7 @@
         "ppt製作",
         "專案",
         "提報",
-        "pdf",
-        "一頁 摘要"
+        "pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2014,7 +2196,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6798814385"
+      }
     },
     {
       "key": "photocream",
@@ -2064,7 +2252,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/photocream.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 3.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6781808054"
+      }
     },
     {
       "key": "picclear",
@@ -2107,7 +2303,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/picclear.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6780223070"
+      }
     },
     {
       "key": "qrcodehalo",
@@ -2145,8 +2347,7 @@
         "郵件",
         "行事曆",
         "定位",
-        "聯絡人",
-        "qr code 讀取"
+        "聯絡人"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2161,7 +2362,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6806779853"
+      }
     },
     {
       "key": "savetag",
@@ -2198,8 +2405,7 @@
         "社群收藏",
         "網頁書籤",
         "管理",
-        "整理",
-        "收藏 連結"
+        "整理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2214,7 +2420,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/savetag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6802505528"
+      }
     },
     {
       "key": "scanto",
@@ -2247,8 +2461,7 @@
         "信件",
         "健保卡",
         "駕照",
-        "搜尋",
-        "ocr 掃描"
+        "搜尋"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2263,7 +2476,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/scanto.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6779977651"
+      }
     },
     {
       "key": "sereno",
@@ -2315,7 +2536,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/sereno.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6788236641"
+      }
     },
     {
       "key": "shotinbox",
@@ -2352,8 +2581,7 @@
         "截圖清理",
         "螢幕截圖",
         "連結",
-        "相簿清理",
-        "截圖 整理"
+        "相簿清理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2368,7 +2596,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/shotinbox.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6802166527"
+      }
     },
     {
       "key": "snapport",
@@ -2455,7 +2691,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6792856304"
+      }
     },
     {
       "key": "sononote",
@@ -2498,7 +2740,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/sononote.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/tw/app/id6782139553"
+      }
     },
     {
       "key": "stayclock",
@@ -2541,7 +2791,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6814035888"
+      }
     },
     {
       "key": "studydown",
@@ -2591,7 +2849,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/studydown.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6807335593"
+      }
     },
     {
       "key": "tripplanet",
@@ -2628,8 +2894,7 @@
         "搭車",
         "週末",
         "海島",
-        "動物園",
-        "小孩 旅行"
+        "動物園"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2644,7 +2909,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tripplanet.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6787193643"
+      }
     },
     {
       "key": "tripbeecute",
@@ -2684,9 +2957,7 @@
         "家人",
         "週末",
         "蜜月",
-        "自由行",
-        "出國 倒數",
-        "旅遊 手帳"
+        "自由行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2701,7 +2972,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tripbeecute.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6826987407"
+      }
     },
     {
       "key": "tripbeelite",
@@ -2753,7 +3030,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tripbeelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6791299610"
+      }
     },
     {
       "key": "tripbee",
@@ -2842,8 +3127,7 @@
         "低光源修復",
         "人臉增強",
         "手震模糊",
-        "文件清晰",
-        "照片 變清晰"
+        "文件清晰"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2858,7 +3142,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/unblurry.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6782275018"
+      }
     },
     {
       "key": "claudeusagemini",
@@ -2904,7 +3194,15 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6818607603"
+      }
     },
     {
       "key": "wifiaid",
@@ -2939,9 +3237,7 @@
         "上不了網",
         "連不上",
         "延遲",
-        "ping",
-        "網路 檢查",
-        "wifi 診斷"
+        "ping"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -3013,7 +3309,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaidlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6793414462"
+      }
     },
     {
       "key": "wordmatelite",
@@ -3061,7 +3363,13 @@
       },
       "app_store_url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/wordmatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6797601720"
+      }
     },
     {
       "key": "wordmate",
@@ -3150,9 +3458,7 @@
         "批次解壓",
         "離線",
         "壓縮軟體",
-        "壓縮工具",
-        "密碼保護 zip",
-        "開啟 rar 檔案"
+        "壓縮工具"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -2,7 +2,7 @@
 title: "ଆଇଫୋନ୍ ପାଇଁ ସରଳ ଟୁ-ଡୁ ତାଲିକା ଆପ୍, କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/or-IN/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ publisher: "Lumi Studio"
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ
-- କୌଣସି ଖାତା ନାହିଁ
-- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଉଇଜେଟ
 - Apple Watch
 - App Store · ମାଗଣା
 

@@ -178,6 +178,26 @@ def should_post(runs, current_run_id, slots, now, current_slot=None, left_open=N
     return True, current_slot
 
 
+def slot_retried(runs, current_run_id, slots, current_slot, left_open):
+    """True when an earlier green run of ``current_slot`` left it open for a retry (``left_open(run)``).
+
+    threads-post.yml reads it back as ``retried``: only such a slot stops at the end of its retry grace
+    (threads_cap.py within); a slot no run ever started still posts late, as before (2.7 review 2026-11-27)."""
+    if left_open is None:
+        return False
+    for run in runs:
+        if (
+            not isinstance(run, dict)
+            or str(run.get("id")) == str(current_run_id)
+            or run.get("status") != "completed"
+            or run.get("conclusion") != "success"
+        ):
+            continue
+        if run_slot(run, slots) == current_slot and left_open(run):
+            return True
+    return False
+
+
 def run_ran_step(repository, run, token, step_name):
     """True when a completed run ran (and passed) the step named ``step_name``. A read failure counts as False,
     so the run keeps completing its slot as before (never an extra post)."""
@@ -237,7 +257,8 @@ def fetch_runs(repository, workflow, token):
     return runs
 
 
-def write_output(path, allowed, slot):
+def write_output(path, allowed, slot, retried=None):
+    """``retried`` (only with --open-step): an earlier green run left this slot open for a retry."""
     if not path:
         raise ValueError("GITHUB_OUTPUT is required")
     with Path(path).open("a", encoding="utf-8") as output:
@@ -245,6 +266,8 @@ def write_output(path, allowed, slot):
         output.write(f"slot={slot.isoformat()}\n")
         output.write(f"hour={slot.hour}\n")
         output.write(f"date={slot.date().isoformat()}\n")
+        if retried is not None:
+            output.write(f"retried={'true' if retried else 'false'}\n")
 
 
 def main():
@@ -283,8 +306,13 @@ def main():
     runs = fetch_runs(repository, args.workflow, token)
     left_open = None
     if args.open_step:
-        def left_open(run):
-            return run_ran_step(repository, run, token, args.open_step)
+        answers = {}
+
+        def left_open(run):  # one jobs lookup per run, asked by should_post and slot_retried
+            key = str(run.get("id"))
+            if key not in answers:
+                answers[key] = run_ran_step(repository, run, token, args.open_step)
+            return answers[key]
     allowed, slot = should_post(
         runs,
         os.environ.get("GITHUB_RUN_ID", ""),
@@ -293,7 +321,10 @@ def main():
         current,
         left_open,
     )
-    write_output(os.environ.get("GITHUB_OUTPUT", ""), allowed, slot)
+    retried = None
+    if left_open is not None:
+        retried = allowed and slot_retried(runs, os.environ.get("GITHUB_RUN_ID", ""), slots, slot, left_open)
+    write_output(os.environ.get("GITHUB_OUTPUT", ""), allowed, slot, retried)
     print(
         f"cloud social slot {slot.isoformat()}: "
         f"{'publish' if allowed else 'already completed; skip'}"

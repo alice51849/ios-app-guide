@@ -281,5 +281,69 @@ class OpenStepTests(unittest.TestCase):
             self.assertFalse(gate.run_ran_step("o/r", {"id": 7}, "t", "Open"))
 
 
+class RetriedOutputTests(unittest.TestCase):
+    """2.7 review 2026-11-27: threads-post.yml stops a slot at the end of its grace only when an earlier green run
+    left it open (retried=true); a slot no run ever started still posts late with room."""
+
+    SLOT = dt.datetime(2026, 11, 27, 3, tzinfo=UTC)
+    LEFT_OPEN = {"id": 7, "status": "completed", "conclusion": "success",
+                 "created_at": "2026-11-27T04:01:00Z", "display_title": "Threads posts · post slot 3 2026-11-27"}
+    OTHER_DAY = {"id": 6, "status": "completed", "conclusion": "success",
+                 "created_at": "2026-11-26T03:01:00Z", "display_title": "Threads posts · cron 0 3 * * *"}
+
+    def main_outputs(self, runs, open_step="Threads cap full: slot left open for a retry"):
+        import os
+        from unittest import mock
+        asked = []
+
+        def ran(repository, run, token, step):
+            asked.append(run["id"])
+            return run["id"] == 7
+
+        with tempfile.TemporaryDirectory() as root:
+            out = Path(root) / "out"
+            argv = ["social_slot_gate.py", "--workflow", "threads-post.yml", "--slots", "1,3,13",
+                    "--slot-hour", "3", "--slot-date", "2026-11-27"]
+            if open_step:
+                argv += ["--open-step", open_step]
+            with mock.patch("sys.argv", argv), mock.patch.object(gate, "fetch_runs", return_value=runs), \
+                    mock.patch.object(gate, "run_ran_step", side_effect=ran), mock.patch("sys.stdout"), \
+                    mock.patch.dict(os.environ, {"GITHUB_OUTPUT": str(out), "GITHUB_RUN_ID": "9",
+                                                 "GITHUB_REPOSITORY": "o/r", "GITHUB_TOKEN": "t"}):
+                gate.main()
+            outputs = dict(line.split("=", 1) for line in out.read_text().split())
+        return outputs, asked
+
+    def test_slot_retried_only_for_an_earlier_green_run_that_left_this_slot_open(self):
+        self.assertTrue(gate.slot_retried([self.LEFT_OPEN], "9", THREADS, self.SLOT, lambda run: True))
+        self.assertFalse(gate.slot_retried([self.LEFT_OPEN], "9", THREADS, self.SLOT, lambda run: False))
+        self.assertFalse(gate.slot_retried([self.LEFT_OPEN], "7", THREADS, self.SLOT, lambda run: True))  # itself
+        self.assertFalse(gate.slot_retried([self.OTHER_DAY], "9", THREADS, self.SLOT, lambda run: True))
+        self.assertFalse(gate.slot_retried([], "9", THREADS, self.SLOT, lambda run: True))
+        self.assertFalse(gate.slot_retried([self.LEFT_OPEN], "9", THREADS, self.SLOT, None))
+
+    def test_main_says_retried_true_for_a_left_open_slot(self):
+        outputs, asked = self.main_outputs([self.LEFT_OPEN, self.OTHER_DAY])
+        self.assertEqual("true", outputs["should_post"])
+        self.assertEqual("true", outputs["retried"])
+        self.assertEqual(1, asked.count(7))  # one jobs lookup per run
+
+    def test_main_says_retried_false_for_a_slot_no_run_ever_started(self):
+        outputs, _ = self.main_outputs([self.OTHER_DAY])
+        self.assertEqual("true", outputs["should_post"])
+        self.assertEqual("false", outputs["retried"])
+
+    def test_without_open_step_there_is_no_retried_output(self):
+        outputs, asked = self.main_outputs([self.OTHER_DAY], open_step="")
+        self.assertNotIn("retried", outputs)
+        self.assertEqual([], asked)
+
+    def test_write_output_adds_retried_only_when_given(self):
+        with tempfile.TemporaryDirectory() as root:
+            path = Path(root) / "output"
+            gate.write_output(path, True, self.SLOT, True)
+            self.assertTrue(path.read_text(encoding="utf-8").endswith("retried=true\n"))
+
+
 if __name__ == "__main__":
     unittest.main()

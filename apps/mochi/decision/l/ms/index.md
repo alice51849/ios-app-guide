@@ -2,7 +2,7 @@
 title: "aplikasi senarai tugasan mudah terbaik iPhone tanpa langganan"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ms/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak b
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja
-- Tiada akaun
-- Tiada iklan
+- Widjet
 - Apple Watch
 - App Store · Percuma
 

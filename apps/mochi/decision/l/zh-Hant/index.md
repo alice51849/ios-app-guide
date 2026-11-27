@@ -2,7 +2,7 @@
 title: "iPhone 上最佳簡單待辦清單應用程式，無訂閱"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ publisher: "Lumi Studio"
 
 - 效率工具
 - 免費開始 · 一次性解鎖
-- 免帳號
-- 無廣告
+- 主畫面小工具
 - Apple Watch
 - App Store · 免費
 - ★ 4.6/5 · 7

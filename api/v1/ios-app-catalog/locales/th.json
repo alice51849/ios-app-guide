@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-26",
-  "content_digest": "a680ca7a645055a25fb340101aa71e2d481af1975b14fb54c4de8c25af664930",
+  "date_modified": "2026-11-27",
+  "content_digest": "f3cc42de67a69d9ca2ba2baffb65f6f8cf340316d0864bc29e2bac083e0f754b",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -27,8 +27,7 @@
         "เลคเชอร์",
         "วาดรูป",
         "ออฟไลน์",
-        "มหาลัย",
-        "จดโน้ตด้วยลายมือ"
+        "มหาลัย"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -43,7 +42,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/notesstudio100.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6798813048"
+      }
     },
     {
       "key": "aibriefpack",
@@ -77,7 +82,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/aibriefpack.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6791658210"
+      }
     },
     {
       "key": "aim990",
@@ -113,7 +124,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/aim990.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6784974530"
+      }
     },
     {
       "key": "battai",
@@ -148,7 +165,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/battai.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6802423998"
+      }
     },
     {
       "key": "caldaily",
@@ -168,8 +191,7 @@
         "วันทำการ",
         "ค่าน้ำมัน",
         "ส่วนลด",
-        "วิศวะ",
-        "เครื่องคิดเลข วิดเจ็ต"
+        "วิศวะ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -184,7 +206,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/caldaily.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6794178671"
+      }
     },
     {
       "key": "countdaysnow",
@@ -219,7 +247,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/countdaysnow.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6807079789"
+      }
     },
     {
       "key": "cvdesk",
@@ -252,7 +286,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/cvdesk.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6781337213"
+      }
     },
     {
       "key": "cyca",
@@ -270,8 +310,7 @@
         "ไดอารี่",
         "มีลูก",
         "ปวดประจำเดือน",
-        "คำนวณ",
-        "ติดตามประจำเดือน"
+        "คำนวณ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -286,7 +325,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/cyca.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6782251621"
+      }
     },
     {
       "key": "dailymate",
@@ -362,7 +407,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/dailymatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6794725568"
+      }
     },
     {
       "key": "dbhalo",
@@ -395,7 +446,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/dbhalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6806826699"
+      }
     },
     {
       "key": "easyam",
@@ -432,7 +489,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/easyam.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6821790092"
+      }
     },
     {
       "key": "duowallpaperstudio",
@@ -471,7 +534,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/duowallpaperstudio.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6824946559"
+      }
     },
     {
       "key": "gmoney",
@@ -488,8 +557,7 @@
         "การเงิน",
         "จัดการเงิน",
         "กระเป๋าเงิน",
-        "คำนวณเงิน",
-        "บันทึกค่าใช้จ่ายเที่ยว"
+        "คำนวณเงิน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -541,7 +609,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/gmoneylite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6793436548"
+      }
     },
     {
       "key": "gbago",
@@ -561,8 +635,7 @@
         "สูตรโกง",
         "จอยเกม",
         "ออฟไลน์",
-        "เร่งความเร็ว",
-        "อีมูเลเตอร์ gbc"
+        "เร่งความเร็ว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -616,7 +689,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/hourstaglite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6794039979"
+      }
     },
     {
       "key": "hourstag",
@@ -676,8 +755,7 @@
         "รูทีน",
         "อ่านหนังสือ",
         "งาน",
-        "เช้า",
-        "แพลนเนอร์รายวัน"
+        "เช้า"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -692,7 +770,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/jellyday.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6835673714"
+      }
     },
     {
       "key": "kumo",
@@ -715,10 +799,7 @@
         "จับเวลา",
         "16:8",
         "น่ารัก",
-        "ติดตาม",
-        "รอบเอว สัดส่วน",
-        "if อดอาหาร",
-        "จับเวลา อดอาหาร"
+        "ติดตาม"
       ],
       "purchase_model": "neutral",
       "one_time_option": false,
@@ -733,7 +814,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/kumo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6830824515"
+      }
     },
     {
       "key": "ledmovingtext",
@@ -768,7 +855,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/ledmovingtext.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6806639602"
+      }
     },
     {
       "key": "lockhour",
@@ -804,7 +897,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lockhour.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6780107485"
+      }
     },
     {
       "key": "lumibopomofo",
@@ -839,7 +938,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumibopomofo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6773017109"
+      }
     },
     {
       "key": "lumibopomofopro",
@@ -914,7 +1019,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumiletters.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6778748533"
+      }
     },
     {
       "key": "lumiletterspro",
@@ -935,8 +1046,7 @@
         "ปฐมวัย",
         "เกมเด็ก",
         "เด็กเล็ก",
-        "ออกเสียง",
-        "โฟนิกส์เด็ก"
+        "ออกเสียง"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -996,7 +1106,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumimath.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6778269699"
+      }
     },
     {
       "key": "lumimathpro",
@@ -1072,7 +1188,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumimission.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6779750237"
+      }
     },
     {
       "key": "lumimissionpro",
@@ -1090,8 +1212,7 @@
         "อนุบาล",
         "ไปโรงเรียน",
         "เข้านอน",
-        "ตื่นนอน",
-        "กิจวัตรก่อนนอน"
+        "ตื่นนอน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1150,7 +1271,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumiweather.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6779552704"
+      }
     },
     {
       "key": "maskmyfile",
@@ -1186,7 +1313,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/maskmyfile.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6792850916"
+      }
     },
     {
       "key": "foldparty",
@@ -1209,8 +1342,7 @@
         "ฝึกสมอง",
         "ผ่อนคลาย",
         "จังหวะ",
-        "สวน",
-        "เกม จอพับ"
+        "สวน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1250,8 +1382,7 @@
         "แผนที่",
         "ออนเซ็น",
         "เที่ยวสุดท้าย",
-        "แจ้งเตือน",
-        "ตารางเวลา mrt"
+        "แจ้งเตือน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1309,7 +1440,15 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/mochi.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "rating_value": 5.0,
+        "rating_count": 3,
+        "storefront_url": "https://apps.apple.com/th/app/id6785004775"
+      }
     },
     {
       "key": "mochidonestamp",
@@ -1327,9 +1466,7 @@
         "ช่วงเวลา",
         "ประวัติ",
         "วิดเจ็ต",
-        "ล้างแอร์",
-        "บันทึกครั้งล่าสุด",
-        "เตือนงานบ้าน"
+        "ล้างแอร์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1344,7 +1481,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/mochidonestamp.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6790800323"
+      }
     },
     {
       "key": "moneytag",
@@ -1380,7 +1523,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/moneytag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6801956402"
+      }
     },
     {
       "key": "onepageppt",
@@ -1417,7 +1566,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/onepageppt.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6798814385"
+      }
     },
     {
       "key": "photocream",
@@ -1451,7 +1606,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/photocream.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6781808054"
+      }
     },
     {
       "key": "picclear",
@@ -1483,7 +1644,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/picclear.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6780223070"
+      }
     },
     {
       "key": "qrcodehalo",
@@ -1518,7 +1685,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/qrcodehalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6806779853"
+      }
     },
     {
       "key": "savetag",
@@ -1553,7 +1726,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/savetag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6802505528"
+      }
     },
     {
       "key": "scanto",
@@ -1587,7 +1766,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/scanto.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6779977651"
+      }
     },
     {
       "key": "sereno",
@@ -1622,7 +1807,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/sereno.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6788236641"
+      }
     },
     {
       "key": "shotinbox",
@@ -1659,7 +1850,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/shotinbox.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6802166527"
+      }
     },
     {
       "key": "snapport",
@@ -1712,8 +1909,7 @@
         "dpi",
         "ภาพ",
         "พิกเซล",
-        "รูปภาพ",
-        "รูปติดบัตร ฟรี"
+        "รูปภาพ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1728,7 +1924,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/snapportlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6792856304"
+      }
     },
     {
       "key": "sononote",
@@ -1758,7 +1960,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/sononote.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6782139553"
+      }
     },
     {
       "key": "stayclock",
@@ -1774,8 +1982,7 @@
         "วิดเจ็ตนาฬิกา",
         "นาฬิกาปลุก",
         "ธีมนาฬิกา",
-        "จอเบิร์น",
-        "นาฬิกาพลิก"
+        "จอเบิร์น"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1790,7 +1997,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/stayclock.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6814035888"
+      }
     },
     {
       "key": "studydown",
@@ -1826,7 +2039,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/studydown.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6807335593"
+      }
     },
     {
       "key": "tripplanet",
@@ -1861,7 +2080,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/tripplanet.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6787193643"
+      }
     },
     {
       "key": "tripbeecute",
@@ -1895,7 +2120,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/tripbeecute.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6826987407"
+      }
     },
     {
       "key": "tripbeelite",
@@ -1913,8 +2144,7 @@
         "ที่พัก",
         "แจ้งเตือน",
         "พยากรณ์อากาศ",
-        "นับถอยหลัง",
-        "แผนเที่ยว"
+        "นับถอยหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1929,7 +2159,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/tripbeelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6791299610"
+      }
     },
     {
       "key": "tripbee",
@@ -2004,7 +2240,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/unblurry.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6782275018"
+      }
     },
     {
       "key": "claudeusagemini",
@@ -2040,7 +2282,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/claudeusagemini.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6818607603"
+      }
     },
     {
       "key": "wifiaid",
@@ -2120,7 +2368,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6793414462"
+      }
     },
     {
       "key": "wordmatelite",
@@ -2153,7 +2407,13 @@
       },
       "app_store_url": "https://apps.apple.com/th/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/wordmatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6797601720"
+      }
     },
     {
       "key": "wordmate",

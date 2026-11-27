@@ -2,7 +2,7 @@
 title: "najlepsza prosta aplikacja listy zadań na iPhone bez subskrypcji"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/pl/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Jeśli większość aplikacji do zadań wydaje się przeładowana, właściwa to
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie
-- Bez konta
-- Bez reklam
+- Widżet
 - Apple Watch
 - App Store · Bezpłatnie
 

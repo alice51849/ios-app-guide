@@ -355,6 +355,38 @@ def read_public_history(required_ids=(), since=None):
     raise RequestError("Telegram native history is incomplete; publication blocked")
 
 
+class SourceDrift(ValueError):
+    """main moved past this run's reviewed checkout; this run never sends."""
+
+
+DRIFT_RETRY_OUTPUT = "drift_retry"
+
+
+def offer_drift_retry(error, context, ledger):
+    """Tell the workflow it may dispatch this slot once more, on the new main.
+
+    Only for a drift found before this slot holds any intent (the startup check,
+    or the check before the reservation): nothing was reserved or sent, so the
+    one re-dispatch (telegram-daily.yml drift_retry job) runs every gate again on
+    the reviewed new main and the ledger still keeps one intent a slot. A drift
+    after the reservation leaves the slot reserved (status not_sent): no retry.
+    """
+    if not isinstance(error, SourceDrift) or context is None:
+        return False
+    if ledger is not None and context["slot"] in ledger.get("intents", {}):
+        return False
+    output = os.environ.get("GITHUB_OUTPUT", "")
+    if not output:
+        return False
+    with open(output, "a", encoding="utf-8") as handle:
+        handle.write(f"{DRIFT_RETRY_OUTPUT}=true\n")
+    print(
+        "::warning::Telegram source drifted before this slot was reserved; "
+        "the workflow re-dispatches the slot once on the new main"
+    )
+    return True
+
+
 class GitHubLedger:
     """CAS updates on an orphan data branch; never write the publisher branch."""
 
@@ -384,7 +416,7 @@ class GitHubLedger:
     def assert_current_source(self, source_sha):
         current = self.api("git/ref/heads/main")
         if current.get("object", {}).get("sha") != _sha(source_sha):
-            raise ValueError("publisher source drifted from current main; no send")
+            raise SourceDrift("publisher source drifted from current main; no send")
 
     def historical_source(self, run_id):
         try:
@@ -2649,6 +2681,80 @@ def self_test():
                     path.unlink()
                 directory.rmdir()
 
+        def test_source_drift_is_a_named_value_error(self):
+            store = GitHubLedger("fixture")
+            store.api = mock.Mock(return_value={"object": {"sha": "9" * 40}})
+            with self.assertRaisesRegex(SourceDrift, "drifted from current main"):
+                store.assert_current_source("1" * 40)
+            self.assertTrue(issubclass(SourceDrift, ValueError))
+            store.api = mock.Mock(return_value={"object": {"sha": "1" * 40}})
+            store.assert_current_source("1" * 40)
+
+        def drift_main(self, drifts, ledger=None):
+            """main() with every network edge mocked; returns (exit, GITHUB_OUTPUT text, send mock)."""
+            directory = Path(".tel-test-work")
+            directory.mkdir(parents=True, exist_ok=True)
+            output = directory / f"gh-output-{secrets.token_hex(8)}"
+            output.write_text("", encoding="utf-8")
+            self.store.assert_current_source.side_effect = drifts
+            self.store.load.return_value = ledger
+            try:
+                with (
+                    mock.patch.dict(os.environ, {
+                        "TELEGRAM_BOT_TOKEN": "fixture-token", "TELEGRAM_CHAT_ID": "***",
+                        "GITHUB_OUTPUT": str(output),
+                    }),
+                    mock.patch.object(module, "production_context", return_value=self.context),
+                    mock.patch.object(module.CR, "paused_notice", return_value=False),
+                    mock.patch.object(module, "load_pool", return_value=[]),
+                    mock.patch.object(module, "manual_queue", return_value=()),
+                    mock.patch.object(module, "GitHubLedger", return_value=self.store),
+                    mock.patch.object(module, "read_native_chat", return_value=self.chat),
+                    mock.patch.object(module, "reconcile_pending"),
+                    mock.patch.object(module, "page_unready_apps", return_value=set()),
+                    mock.patch.object(module, "held_apps", return_value=set()),
+                    mock.patch.object(module, "choose_unpublished", return_value=self.item),
+                    mock.patch.object(module, "_publish_item", return_value=self.response) as send,
+                ):
+                    code = main([])
+                return code, output.read_text(encoding="utf-8"), send
+            finally:
+                output.unlink()
+
+        def test_drift_at_startup_offers_one_redispatch_and_never_sends(self):
+            # 2026-11-26 15:00Z run 45846726364: a hand push landed during the tests.
+            code, output, send = self.drift_main([SourceDrift("publisher source drifted")])
+            self.assertEqual(1, code)
+            self.assertEqual("drift_retry=true\n", output)
+            send.assert_not_called()
+            self.store.save.assert_not_called()
+
+        def test_drift_before_reservation_offers_one_redispatch(self):
+            code, output, send = self.drift_main(
+                [None, SourceDrift("publisher source drifted")], ledger=self.ledger,
+            )
+            self.assertEqual(1, code)
+            self.assertEqual("drift_retry=true\n", output)
+            send.assert_not_called()
+            self.assertNotIn(self.context["slot"], self.ledger["intents"])
+            self.store.save.assert_not_called()
+
+        def test_drift_after_reservation_keeps_the_slot_and_offers_nothing(self):
+            code, output, send = self.drift_main(
+                [None, None, SourceDrift("publisher source drifted")], ledger=self.ledger,
+            )
+            self.assertEqual(1, code)
+            self.assertEqual("", output)
+            send.assert_not_called()
+            self.assertEqual("not_sent", self.ledger["intents"][self.context["slot"]]["status"])
+
+        def test_other_failures_offer_no_redispatch(self):
+            code, output, send = self.drift_main([ValueError("checkout does not match")])
+            self.assertEqual(1, code)
+            self.assertEqual("", output)
+            send.assert_not_called()
+            self.assertFalse(offer_drift_retry(SourceDrift("x"), None, None))
+
         def test_nonproduction_main_cannot_send_even_with_credentials(self):
             with (
                 mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "fixture-token", "TELEGRAM_CHAT_ID": "***"}, clear=True),
@@ -2678,6 +2784,7 @@ def main(argv=None):
     if not tok or not chat:
         print("missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID", file=sys.stderr)
         return 1
+    context = ledger = None
     try:
         context = production_context()
         if CR.paused_notice("telegram"):  # channel rotation holdout week: no Telegram main post, green
@@ -2727,6 +2834,10 @@ def main(argv=None):
             if secret:
                 detail = detail.replace(secret, "[redacted]")
         print(f"Telegram post blocked/failed: {detail}", file=sys.stderr)
+        try:
+            offer_drift_retry(error, context, ledger)
+        except OSError:
+            print("::warning::could not offer the drift re-dispatch", file=sys.stderr)
         return 1
 
 

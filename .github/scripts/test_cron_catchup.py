@@ -443,6 +443,52 @@ class CatchUpWiringTests(unittest.TestCase):
         self.assertEqual("9", manual["Which slot"]["MANUAL_SLOT"])
 
 
+class TelegramDriftRetryTests(unittest.TestCase):
+    """A push to main during the post job's tests (11-26 09:00Z, 15:00Z) re-dispatches the slot once."""
+
+    def setUp(self):
+        self.info = workflow("telegram-daily.yml")
+        self.job = self.info["text"].split("\n  drift_retry:\n", 1)[1].split("\n  catalog:\n", 1)[0]
+
+    def offered(self, event, cron, drift, retry=""):
+        context = {"github.event_name": event, "github.ref": "refs/heads/main",
+                   "github.event.schedule": cron if event == "schedule" else None,
+                   "needs.post.outputs.drift_retry": drift}
+        if event == "workflow_dispatch":
+            context.update(inputs_context(self.info, {"cron": cron, "drift_retry": retry}))
+        return truthy(evaluate(self.info["jobs"]["drift_retry"]["if"], context))
+
+    def test_only_an_offered_drift_re_dispatches_and_only_once(self):
+        self.assertEqual("", self.info["inputs"]["drift_retry"].get("default"))
+        self.assertEqual("false", self.info["inputs"]["drift_retry"].get("required"))
+        for cron in self.info["crons"]:
+            with self.subTest(cron=cron):
+                self.assertTrue(self.offered("schedule", cron, "true"))
+                self.assertTrue(self.offered("workflow_dispatch", cron, "true"))
+                self.assertFalse(self.offered("workflow_dispatch", cron, "true", retry="true"))
+                self.assertFalse(self.offered("schedule", cron, None))
+                self.assertFalse(self.offered("schedule", cron, ""))
+        self.assertFalse(self.offered("workflow_dispatch", "", "true"))
+
+    def test_the_offer_comes_from_the_publisher_step(self):
+        self.assertIn("drift_retry: ${{ steps.publish.outputs.drift_retry }}", self.info["text"])
+        publish = next(s for s in self.info["steps"] if s.get("name") == "Post to Telegram channel (free, no OpenAI)")
+        self.assertEqual("publish", publish.get("id"))
+        self.assertIn("needs: post", self.job)
+
+    def test_the_re_dispatch_names_the_same_slot_and_marks_the_retry(self):
+        self.assertIn("actions: write", self.job)
+        self.assertNotIn("contents:", self.job)
+        self.assertNotIn("actions/checkout", self.job)
+        self.assertNotIn("TELEGRAM_", self.job)
+        self.assertIn("SCHEDULE: ${{ github.event.schedule || inputs.cron }}", self.job)
+        self.assertIn('gh workflow run telegram-daily.yml --repo "$GITHUB_REPOSITORY" --ref main', self.job)
+        self.assertIn('-f cron="$SCHEDULE" -f drift_retry=true', self.job)
+        step = next(s for s in self.info["steps"] if s["job"] == "drift_retry")
+        for cron in self.info["crons"]:
+            context = {"github.event_name": "schedule", "github.event.schedule": cron}
+            self.assertEqual(cron, interpolate(step["env"]["SCHEDULE"], context))
+
 class EvaluatorTests(unittest.TestCase):
     def test_loose_equality_and_short_circuit_values(self):
         self.assertTrue(evaluate("inputs.cron == ''", {}))  # null == '' (both 0)

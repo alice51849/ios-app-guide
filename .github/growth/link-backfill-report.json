@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-26T17:01:07Z",
+ "generated": "2026-11-27T01:49:08Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 97,
-  "ok_backfilled_earlier": 139,
+  "ok_backfilled_earlier": 141,
   "unknown_app": 47,
-  "ok_store_only": 592,
+  "ok_store_only": 590,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -3459,16 +3459,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteSIGj_QG",
    "date": "2026-08-31",
    "app": "dailymate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "DailyMate: Everyday Phrases Real Sentences for Daily Life Skip disconnected words. Learn 8,400 complete phrases in 47 languages with system ",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18117259355266925",
-   "at": "2026-11-26T16:58:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4416,11 +4411,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteHBRjpYh",
    "date": "2026-08-31",
    "app": "cvdesk",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "CV Desk: ATS Resume ATS CV Maker & Resume Builder Beat the resume robots. Get an instant ATS score, fix what recruiter filters reject, and e",
    "why": "url+brand",
    "ios_id": "6781337213",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18171175102476146",
+   "at": "2026-11-27T01:46:41Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4620,16 +4620,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteMqvgLzD",
    "date": "2026-08-31",
    "app": "cyca",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Cyca: Period & Cycle Tracker Ovulation, Calendar & PMS Understand your body, calmly. Track periods, ovulation, fertile window and PMS in a s",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18135525205784628",
-   "at": "2026-11-26T16:58:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4719,11 +4714,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteBNlDd_u",
    "date": "2026-08-31",
    "app": "caldaily",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "CalDaily: Calculator & Themes Widget, tools, tidy history Every result you keep can be named, tagged and found again. Eight advanced tools, ",
    "why": "url+brand",
    "ios_id": "6794178671",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18423794674083825",
+   "at": "2026-11-27T01:46:41Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

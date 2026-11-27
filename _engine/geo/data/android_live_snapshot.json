@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-27T01:22:55+0800",
+ "source_generated": "2026-11-27T19:50:19+0800",
  "count": 61,
- "content_sha256": "fcc29337ce9cae4eb76ddcd3ff5e4debdaa54fc2e5c43d65ccac42413f4fd410",
+ "content_sha256": "ef2a4cb7e148b1e428fe891dd3a59e343f17b1a930df41d8eddd887f7c41a215",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -100,7 +100,7 @@
    "copy": {
     "en-US": {
      "title": "UsageNow: AI Usage Tracker",
-     "short_description": "Claude, Codex, Copilot and Gemini usage limits and reset times"
+     "short_description": "Claude, Codex, Copilot and Gemini usage limits, reset times and alerts"
     },
     "zh-TW": {
      "title": "UsageNow：AI 用量與額度追蹤",
@@ -598,7 +598,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Math Pro: Kids Numbers",
-     "short_description": "Math for kids 5–8: logic puzzles, patterns & number sense in a space adventure"
+     "short_description": "Math for kids 5–8: 40+ logic, pattern & story-problem types with voice guidance"
     },
     "zh-TW": {
      "title": "Lumi 數學星球：兒童數學・心算練習",
@@ -745,7 +745,7 @@
    "copy": {
     "en-US": {
      "title": "Mochi DoneStamp: Last Time",
-     "short_description": "Last time tracker for chores and upkeep: days since, plus recurring reminders"
+     "short_description": "Last time tracker: chores & upkeep last done, days since, recurring reminders"
     },
     "zh-TW": {
      "title": "Mochi DoneStamp：上次何時",

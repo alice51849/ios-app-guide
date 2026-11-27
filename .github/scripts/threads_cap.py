@@ -36,6 +36,11 @@ ROOM, FULL, UNKNOWN = "room", "full", "unknown"
 # through account_status(): the cap itself is never loosened.
 RETRY, SKIP = "retry", "skip"
 RETRY_GRACE = dt.timedelta(hours=2)
+# Per-slot grace overrides (UTC slot hour -> grace). 2026-11-27 (also 11-20): the 03:00 slot found the account full
+# because the day before's post went out at 04:05:07; the 03:47 backup's run checked at 04:01, 3.5 minutes short, and
+# with the grace ending at 05:00 the next backup (11:47) was past it, so the slot was a cap skip. 03:00 gets 3 hours
+# (to 06:00) and a 04:47 backup (BACKUP_TIMES) that falls inside it. Every other slot keeps RETRY_GRACE.
+SLOT_RETRY_GRACE = {3: dt.timedelta(hours=3)}
 OPEN_STEP = "Threads cap full: slot left open for a retry"
 SLOT_FIRE_MINUTE = {1: 40, 3: 0, 13: 0}  # threads-post.yml crons
 # Per-slot shares (coordinator ruling 2026-11-27 00:5x Taipei, option 乙): the 3-in-24-hours cap is unchanged,
@@ -46,12 +51,13 @@ SLOT_FIRE_MINUTE = {1: 40, 3: 0, 13: 0}  # threads-post.yml crons
 #   SLOT_CUTOFF_UTC   the latest UTC time of day a slot's retry may still post (same UTC day as the slot).
 #   RESERVED_UTC      [start, end) UTC times of day that belong to threads-autopilot's 15 UTC slot: no Guide
 #                     path publishes a top-level Threads post inside them (account_status answers FULL).
-# The other neighbours do not overlap: 03:00 + 2 hours ends at 05:00, long before 13:00, and the 15 UTC slot
-# ends by 18:00, long before the next day's 01:40 / 03:00.
+# The other neighbours do not overlap: 03:00 + 3 hours (SLOT_RETRY_GRACE) ends at 06:00, long before 13:00 (and
+# threads-autopilot leaves every slot but 15 UTC to the Guide), and the 15 UTC slot ends by 18:00, long before the
+# next day's 01:40 / 03:00.
 SLOT_CUTOFF_UTC = {13: dt.time(14, 30)}
 RESERVED_UTC = ((dt.time(14, 30), dt.time(18, 0)),)
 # clip-backup.yml crons (UTC hour, minute): each one runs threads_backfill.py. test_threads_cap.py keeps them in sync.
-BACKUP_TIMES = ((0, 47), (3, 47), (11, 47), (14, 47), (17, 47), (20, 47))
+BACKUP_TIMES = ((0, 47), (3, 47), (4, 47), (11, 47), (14, 47), (17, 47), (20, 47))
 BACKUP_MARGIN = dt.timedelta(minutes=5)  # a backup this close sees the deferred run still running and skips it
 SKIPS_FILE = Path(__file__).resolve().parents[1] / "growth" / "threads-cap-skips.json"
 SKIPS_KEEP = 120
@@ -76,10 +82,15 @@ def next_backup(now):
     raise AssertionError("no backup time")  # pragma: no cover
 
 
+def slot_grace(slot):
+    """The retry grace of a slot: SLOT_RETRY_GRACE for its UTC hour, else RETRY_GRACE."""
+    return SLOT_RETRY_GRACE.get(_utc(slot).hour, RETRY_GRACE)
+
+
 def slot_deadline(slot):
-    """The end of a slot's retry grace: fire time + RETRY_GRACE, cut at SLOT_CUTOFF_UTC for that slot."""
+    """The end of a slot's retry grace: fire time + slot_grace(), cut at SLOT_CUTOFF_UTC for that slot."""
     slot = _utc(slot)
-    deadline = slot + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(slot.hour, 0)) + RETRY_GRACE
+    deadline = slot + dt.timedelta(minutes=SLOT_FIRE_MINUTE.get(slot.hour, 0)) + slot_grace(slot)
     cutoff = SLOT_CUTOFF_UTC.get(slot.hour)
     if cutoff is not None:
         deadline = min(deadline, dt.datetime.combine(slot.date(), cutoff, tzinfo=dt.timezone.utc))
@@ -119,7 +130,7 @@ def skip_receipt(slot, now, label="threads-post"):
         "decided_at": now.replace(microsecond=0).isoformat(),
         "reason": "cap_full_after_grace",
         "cap": ACCOUNT_DAILY_CAP,
-        "grace_minutes": int(RETRY_GRACE.total_seconds() // 60),
+        "grace_minutes": int(slot_grace(slot).total_seconds() // 60),
         "workflow": label,
         "run_id": os.environ.get("GITHUB_RUN_ID", ""),
     }

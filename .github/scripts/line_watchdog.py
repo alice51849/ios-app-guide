@@ -186,7 +186,7 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
             "heal": "monitor",
             "reason": "no slot gate or dedupe: a rerun would post a duplicate card",
         },
-        # 03:47 (backs up clip slot 1 + Threads 01/03), 14:47 (Threads 13 only),
+        # 03:47 (backs up clip slot 1 + Threads 01/03), 04:47 (Threads 03 second retry), 14:47 (Threads 13 only),
         # 17:47 (clip slot 15). clip_posts.py skips a clip already in
         # clip-posts.json and Threads goes through threads_backfill.py ->
         # threads-post.yml (gate + cap), so a rerun only fills misses.
@@ -203,7 +203,8 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
             "reason": "slot gate --slots 1,15 keyed on the cron input; clip-posts.json dedupes each clip per platform",
         },
         "clip-backup.yml": {
-            "slots": {0: 47, 3: 47, 11: 47, 14: 47, 17: 47, 20: 47},
+            # 04:47 (2026-11-27) is Threads only: no clip slot, so a heal dispatches slot="" (Threads check only).
+            "slots": {0: 47, 3: 47, 4: 47, 11: 47, 14: 47, 17: 47, 20: 47},
             "max_age_hours": SLOT_MAX_AGE_HOURS,
             "heal": "inputs",
             "inputs": {"slot": "{clip_slot}", "date": "{date}"},

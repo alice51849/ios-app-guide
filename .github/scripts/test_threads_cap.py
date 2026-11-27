@@ -403,10 +403,11 @@ class FullSlotRetryTest(unittest.TestCase):
         self.assertEqual(self.at(12, 14, 47), threads_cap.next_backup(self.at(12, 13, 4)))
 
     def test_after_the_last_retry_inside_the_grace_the_slot_is_a_cap_skip_with_a_receipt(self):
-        # 03:47 backup for 03:00 (next backup 11:47 > 05:00). 13:00 is cut at 14:30 (SLOT_CUTOFF_UTC, 11-27):
+        # 04:47 backup for 03:00 (next backup 11:47 > 06:00; the 03:00 grace is 3 hours since 11-27, so the 03:47
+        # backup is no longer the last one: see Slot03SecondRetryTest). 13:00 is cut at 14:30 (SLOT_CUTOFF_UTC, 11-27):
         # the 14:47 backup is past it, so a full 13:00 slot is a cap skip at once and never runs into the
         # 15 UTC slot of threads-autopilot (11-26 it posted at 15:01:47 and took that slot's share).
-        for slot, now in ((self.at(14, 3), self.at(14, 3, 48)), (self.at(12, 13), self.at(12, 13, 4)),
+        for slot, now in ((self.at(14, 3), self.at(14, 4, 48)), (self.at(12, 13), self.at(12, 13, 4)),
                           (self.at(12, 13), self.at(12, 14, 48)), (self.at(12, 13), self.at(12, 15, 30))):
             action, outputs, receipt, printed = self.run_full(slot, now)
             self.assertEqual(threads_cap.SKIP, action)
@@ -418,8 +419,10 @@ class FullSlotRetryTest(unittest.TestCase):
             self.assertIn("滿額跳過", printed)
 
     def test_a_backup_too_close_to_catch_the_run_finished_is_not_counted(self):
-        # 03:45: the 03:47 backup would still see this run running, so the next one (11:47) is past the grace.
-        self.assertEqual(threads_cap.SKIP, threads_cap.full_slot_action(self.at(14, 3), self.at(14, 3, 45)))
+        # 04:45: the 04:47 backup would still see this run running, so the next one (11:47) is past the grace.
+        self.assertEqual(threads_cap.SKIP, threads_cap.full_slot_action(self.at(14, 3), self.at(14, 4, 45)))
+        # 03:45: the 03:47 backup is skipped the same way; the 04:47 one still catches the slot.
+        self.assertEqual(self.at(14, 4, 47), threads_cap.next_backup(self.at(14, 3, 45)))
 
     def test_backup_times_match_clip_backup_crons(self):
         import re
@@ -463,7 +466,7 @@ class SlotSharesTest(unittest.TestCase):
 
     def test_the_13_slot_grace_ends_at_14_30_and_the_03_slot_keeps_its_two_hours(self):
         self.assertEqual(self.at(14, 30), threads_cap.slot_deadline(self.at(13)))
-        self.assertEqual(self.at(5, 0), threads_cap.slot_deadline(self.at(3)))
+        self.assertEqual(self.at(6, 0), threads_cap.slot_deadline(self.at(3)))  # 3 hours since 11-27
         self.assertEqual(self.at(3, 40), threads_cap.slot_deadline(self.at(1)))
 
     def test_reserved_window_is_threads_autopilots_15_utc_slot(self):
@@ -495,6 +498,104 @@ class SlotSharesTest(unittest.TestCase):
             self.assertEqual(threads_cap.ROOM, threads_cap.account_status("tok", opener=FakeGraph(2), now=self.at(13, 11)))
             self.assertEqual(threads_cap.FULL, threads_cap.account_status("tok", opener=FakeGraph(3), now=self.at(13, 11)))
             self.assertEqual(threads_cap.ROOM, threads_cap.account_status("tok", opener=FakeGraph(2), now=self.at(18, 0)))
+
+
+
+class Slot03SecondRetryTest(unittest.TestCase):
+    """2026-11-27 (also 11-20): the day before's 03:00-slot post went out at 04:05:07Z, so the 03:47 backup's run
+    found the account full at 04:01, 3.5 minutes short; with the grace ending at 05:00 the next backup was 11:47 and
+    the slot was a cap skip. 03:00 now has 3 hours (to 06:00) and a 04:47 backup inside them. The cap is still 3."""
+
+    import datetime as _dt
+    UTC = _dt.timezone.utc
+    # The account's top-level posts on 11-26: the 03:00 slot's retry, the 13:00 evening slot and
+    # threads-autopilot's 15 UTC slot.
+    POSTS = (_dt.datetime(2026, 11, 26, 4, 5, 7, tzinfo=_dt.timezone.utc),
+             _dt.datetime(2026, 11, 26, 13, 4, tzinfo=_dt.timezone.utc),
+             _dt.datetime(2026, 11, 26, 15, 6, tzinfo=_dt.timezone.utc))
+
+    def at(self, hour, minute=0, second=0, day=27):
+        return self._dt.datetime(2026, 11, day, hour, minute, second, tzinfo=self.UTC)
+
+    def used(self, now):
+        """Threads' own rolling count: top-level posts in the 24 hours before now."""
+        return sum(1 for post in self.POSTS if now - self._dt.timedelta(hours=24) < post <= now)
+
+    def status(self, now):
+        with mock.patch("sys.stdout", new_callable=io.StringIO):
+            return threads_cap.account_status("tok", opener=FakeGraph(self.used(now)), now=now)
+
+    def test_full_at_04_01_is_left_open_for_the_04_47_backup_not_a_cap_skip(self):
+        slot, checked = self.at(3), self.at(4, 1, 30)
+        self.assertEqual(threads_cap.FULL, self.status(checked))
+        self.assertEqual(self.at(4, 47), threads_cap.next_backup(checked))
+        self.assertEqual(threads_cap.RETRY, threads_cap.full_slot_action(slot, checked))
+        with mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertEqual(threads_cap.RETRY, threads_cap.full_slot(slot, checked))
+        self.assertIn("04:47", out.getvalue())
+        self.assertIn("06:00", out.getvalue())
+        self.assertNotIn("滿額跳過", out.getvalue())
+
+    def test_at_the_04_47_retry_only_two_posts_are_inside_the_window_so_one_more_may_go_out(self):
+        for now in (self.at(4, 47), self.at(4, 52, 10)):
+            self.assertEqual(2, self.used(now), now)
+            self.assertEqual(threads_cap.ROOM, self.status(now), now)
+        # The retry adds the 3rd post of the window: the next one is full again, the cap never reaches 4.
+        posted = self.at(4, 52, 10)
+        self.assertEqual(3, self.used(posted) + 1)
+        with mock.patch.object(self, "POSTS", self.POSTS + (posted,)):
+            self.assertEqual(threads_cap.FULL, self.status(self.at(5, 30)))
+
+    def test_still_full_after_the_04_47_retry_is_a_cap_skip_with_a_three_hour_receipt(self):
+        handle, receipt = tempfile.mkstemp(suffix=".json")
+        os.close(handle)
+        self.addCleanup(os.unlink, receipt)
+        with mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertEqual(threads_cap.SKIP, threads_cap.full_slot(self.at(3), self.at(4, 52), receipt))
+        row = json.loads(Path(receipt).read_text())
+        self.assertEqual(180, row["grace_minutes"])
+        self.assertEqual(self.at(3).isoformat(), row["slot"])
+        self.assertIn("06:00", out.getvalue())
+        self.assertEqual(threads_cap.SKIP, threads_cap.full_slot_action(self.at(3), self.at(6, 0)))
+
+    def test_only_the_03_slot_grace_is_widened(self):
+        self.assertEqual({3: self._dt.timedelta(hours=3)}, threads_cap.SLOT_RETRY_GRACE)
+        self.assertEqual(self._dt.timedelta(hours=2), threads_cap.RETRY_GRACE)
+        self.assertEqual(self._dt.timedelta(hours=3), threads_cap.slot_grace(self.at(3)))
+        for hour in (1, 13):
+            self.assertEqual(threads_cap.RETRY_GRACE, threads_cap.slot_grace(self.at(hour)), hour)
+        self.assertEqual(self.at(3, 40), threads_cap.slot_deadline(self.at(1)))
+        self.assertEqual(self.at(14, 30), threads_cap.slot_deadline(self.at(13)))
+        # A 01:40 slot still full at 03:48 is a cap skip as before (its grace ends at 03:40).
+        self.assertEqual(threads_cap.SKIP, threads_cap.full_slot_action(self.at(1), self.at(3, 48)))
+        # A 13:00 slot is still a cap skip once 14:30 has passed or no backup comes before it.
+        self.assertEqual(threads_cap.SKIP, threads_cap.full_slot_action(self.at(13), self.at(13, 4)))
+        receipt = threads_cap.skip_receipt(self.at(13), self.at(13, 4))
+        self.assertEqual(120, receipt["grace_minutes"])
+
+    def test_the_widened_03_grace_does_not_reach_the_next_slot_or_the_reserved_window(self):
+        # 03:00 + 3 hours ends at 06:00: before the 13:00 slot fires and before 14:30-18:00 (threads-autopilot's
+        # 15 UTC share), and after the 01:40 slot's own deadline (03:40), which is unchanged.
+        deadline = threads_cap.slot_deadline(self.at(3))
+        self.assertEqual(self.at(6, 0), deadline)
+        self.assertLess(deadline, self.at(13, threads_cap.SLOT_FIRE_MINUTE[13]))
+        for start, _end in threads_cap.RESERVED_UTC:
+            self.assertLessEqual(deadline.time(), start)
+        with mock.patch.dict(os.environ, {"THREADS_RESERVED_WINDOWS": "on"}):
+            for clock in (self.at(4, 47), self.at(5, 59, 59)):
+                self.assertFalse(threads_cap.in_reserved(clock), clock)
+        self.assertLessEqual(threads_cap.slot_deadline(self.at(1)), self.at(3, 47))
+        # Every backup inside the 03:00 grace is on the same Taiwan day (no next-day room is taken).
+        inside = [(h, m) for h, m in threads_cap.BACKUP_TIMES if self.at(3) < self.at(h, m) < deadline]
+        self.assertEqual([(3, 47), (4, 47)], inside)
+
+    def test_the_04_47_backup_fills_the_03_slot_of_the_same_taiwan_day_only(self):
+        import threads_backfill
+        backup = self.at(4, 47)
+        self.assertIn((4, 47), threads_cap.BACKUP_TIMES)
+        self.assertEqual(backup.astimezone(threads_cap.TW).date(), self.at(3).astimezone(threads_cap.TW).date())
+        # No threads-post run yet today: the 01 and 03 slots are due, the 13:00 evening slot is not.
+        self.assertEqual([self.at(1), self.at(3)], threads_backfill.missing_slots([], backup))
 
 
 if __name__ == "__main__":

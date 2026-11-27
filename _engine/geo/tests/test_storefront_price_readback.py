@@ -258,6 +258,156 @@ class RefreshWritesReadbackTests(unittest.TestCase):
             )
         self.assertEqual("0", second["tw"][app_id]["price"])
 
+    def _fresh_payload(self, detail, *, checked, paid_seen=None):
+        app_id = str(APPSTORE[self.APP_KEY])
+        payload = {
+            "version": 2,
+            "checked_at": checked.isoformat().replace("+00:00", "Z"),
+            "app_count": 1,
+            "app_ids": [app_id],
+            "storefronts": sorted(stores.AVAILABILITY_STOREFRONTS),
+            "countries": {"tw": [app_id]},
+            "details": {"tw": {app_id: detail}},
+        }
+        if paid_seen is not None:
+            payload["paid_seen"] = paid_seen
+        return app_id, payload
+
+    def test_unconfirmed_zero_is_refetched_once_twelve_hours_pass(self):
+        # 11-27: a snapshot that starts a zero chain cannot confirm it, so
+        # waiting out MAX_AGE (20h) kept every free listing unprinted for 20h
+        # instead of the rule's 12h.  The refresher re-fetches as soon as a
+        # re-fetch could confirm it; before that the snapshot stays fresh.
+        zero_since = self.START.isoformat().replace("+00:00", "Z")
+        detail = {**FREE, **RB_ZERO, "zero_since": zero_since}
+        app_id, payload = self._fresh_payload(detail, checked=self.START)
+        ids = {app_id}
+        self.assertTrue(refresher._is_fresh(
+            payload, self.START + dt.timedelta(hours=11, minutes=59), ids
+        ))
+        self.assertFalse(refresher._is_fresh(
+            payload, self.START + dt.timedelta(hours=12), ids
+        ))
+
+    def test_confirmed_or_once_paid_zero_never_forces_a_refetch(self):
+        zero_since = self.START.isoformat().replace("+00:00", "Z")
+        detail = {**FREE, **RB_ZERO, "zero_since": zero_since}
+        later = self.START + dt.timedelta(hours=13)
+        # Already confirmed in this snapshot: nothing to gain.
+        app_id, payload = self._fresh_payload(detail, checked=later)
+        self.assertTrue(refresher._is_fresh(
+            payload, later + dt.timedelta(hours=6), {app_id}
+        ))
+        # Once seen paid: never printed "Free", so no refresh loop.
+        app_id, payload = self._fresh_payload(
+            detail, checked=self.START, paid_seen={"tw": [app_id]}
+        )
+        self.assertTrue(refresher._is_fresh(payload, later, {app_id}))
+        # Zero without a matching readback: not a confirmable chain.
+        app_id, payload = self._fresh_payload(
+            {**FREE, **RB_PAID, "zero_since": zero_since}, checked=self.START
+        )
+        self.assertTrue(refresher._is_fresh(payload, later, {app_id}))
+
+    def test_availability_only_storefront_zero_never_forces_a_refetch(self):
+        # hk/mo are queried for availability but are not in
+        # LOCALE_STOREFRONTS: their zero_since restarts on every refresh, so
+        # they must never make a refresh due (that would loop every 12h).
+        extra = sorted(
+            set(stores.AVAILABILITY_STOREFRONTS)
+            - set(stores.LOCALE_STOREFRONTS.values())
+        )
+        self.assertTrue(extra)
+        zero_since = self.START.isoformat().replace("+00:00", "Z")
+        later = self.START + dt.timedelta(hours=13)
+        for country in extra:
+            app_id, payload = self._fresh_payload(
+                {**FREE, **RB_ZERO, "zero_since": zero_since},
+                checked=self.START,
+            )
+            payload["countries"] = {country: [app_id]}
+            payload["details"] = {
+                country: payload["details"]["tw"]
+            }
+            with self.subTest(country=country):
+                self.assertTrue(
+                    refresher._is_fresh(payload, later, {app_id})
+                )
+
+    def test_two_due_refreshes_in_a_row_leave_a_fresh_snapshot(self):
+        app_id = str(APPSTORE[self.APP_KEY])
+
+        def lookup(ids, country):
+            return {
+                str(value): {
+                    "price": 0.0,
+                    "currency": "TWD",
+                    "formattedPrice": "免費",
+                }
+                for value in ids
+            }
+
+        with tempfile.TemporaryDirectory() as directory:
+            for hours in (0, 12):
+                at = self.START + dt.timedelta(hours=hours)
+                with mock.patch.object(
+                    refresher, "live_app_keys", return_value={self.APP_KEY}
+                ), mock.patch.object(
+                    refresher, "_utc_now", return_value=at
+                ), mock.patch.object(
+                    refresher, "_lookup_country_records", side_effect=lookup
+                ):
+                    refresher.refresh(directory, force=hours == 0)
+            payload = json.loads(
+                (Path(directory) / stores.STATE_FILE).read_text(
+                    encoding="utf-8"
+                )
+            )
+        ids = {app_id}
+        second = self.START + dt.timedelta(hours=12)
+        self.assertEqual(
+            second.isoformat().replace("+00:00", "Z"), payload["checked_at"]
+        )
+        # Every storefront (hk/mo included) read zero both times; after the
+        # second (due) refresh only MAX_AGE may make the snapshot stale.
+        for hours in (1, 12, 13, 19):
+            self.assertTrue(refresher._is_fresh(
+                payload, second + dt.timedelta(hours=hours), ids
+            ))
+        self.assertFalse(refresher._is_fresh(
+            payload, second + refresher.MAX_AGE, ids
+        ))
+
+    def test_due_refetch_confirms_zero_without_relaxing_the_rule(self):
+        with tempfile.TemporaryDirectory() as directory:
+            app_id, _, first = self._refresh(
+                directory, self.ZERO_READ, at=self.START
+            )
+            self.assertNotIn(app_id, first["tw"])
+            # Unforced refresh 12h later: due, so it re-reads twice and
+            # the 12h-old confirmed zero becomes printable.
+            at = self.START + dt.timedelta(hours=12)
+            with mock.patch.object(
+                refresher, "live_app_keys", return_value={self.APP_KEY}
+            ), mock.patch.object(
+                refresher, "_utc_now", return_value=at
+            ), mock.patch.object(
+                refresher,
+                "_lookup_country_records",
+                side_effect=lambda ids, country: {
+                    str(value): {
+                        "price": 0.0,
+                        "currency": "TWD",
+                        "formattedPrice": "免費",
+                    }
+                    for value in ids
+                },
+            ) as lookup:
+                refresher.refresh(directory)
+            self.assertTrue(lookup.called)
+            loaded = stores.load_storefront_details(directory, now=at)
+        self.assertEqual("0", loaded["tw"][app_id]["price"])
+
     def test_disagreeing_second_pass_prints_no_price(self):
         with tempfile.TemporaryDirectory() as directory:
             app_id, payload, loaded = self._refresh(

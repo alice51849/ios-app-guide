@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-27T19:50:19+0800",
+ "source_generated": "2026-11-28T00:04:00+0800",
  "count": 61,
- "content_sha256": "ef2a4cb7e148b1e428fe891dd3a59e343f17b1a930df41d8eddd887f7c41a215",
+ "content_sha256": "f554fb4470d14460004c2ceea141e90716f2c381b82959d0fbe4a9f9ab32d01e",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -493,7 +493,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Bopomofo: Learn Zhuyin",
-     "short_description": "Learn Chinese for kids: Zhuyin (Bopomofo) Mandarin sounds, tracing, tone games"
+     "short_description": "Learn Chinese for kids: Zhuyin (Bopomofo) Mandarin phonics, tracing, tone games"
     },
     "zh-TW": {
      "title": "Lumi注音星球：注音符號學習遊戲",
@@ -913,7 +913,7 @@
    "copy": {
     "en-US": {
      "title": "ScanTo Pro: PDF Scanner & OCR",
-     "short_description": "Document scanner & PDF scanner with on-device OCR: search text, nothing uploaded"
+     "short_description": "Document scanner: scan to PDF, search text with on-device OCR, nothing uploaded"
     },
     "zh-TW": {
      "title": "ScanTo Pro: 離線PDF掃描器",

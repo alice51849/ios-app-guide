@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-27T01:49:08Z",
+ "generated": "2026-11-27T12:32:45Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 97,
-  "ok_backfilled_earlier": 141,
+  "ok_reply": 98,
+  "ok_backfilled_earlier": 143,
   "unknown_app": 47,
-  "ok_store_only": 590,
+  "ok_store_only": 588,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17884144458631768",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgPot7IoGi4",
+   "date": "2026-11-27",
+   "app": "countdaysnow",
+   "status": "ok_reply",
+   "text": "日檢 JLPT 倒數 9 天 把剩下的天數變成讀書計畫 App Store／Google Play 搜尋「CountDaysNow」",
+   "why": "brand",
+   "ios_id": "6807079789",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18153196720563223",
@@ -2537,11 +2549,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctd0zOCmvM",
    "date": "2026-08-31",
    "app": "aim990",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Aim990 Master TOEIC Listening & Reading Unlock your potential with Aim990! A 30-day study plan designed to boost your TOEIC Listening and Re",
    "why": "url+brand",
    "ios_id": "6784974530",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17869564302678920",
+   "at": "2026-11-27T12:30:06Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3041,11 +3058,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdvPNknzE",
    "date": "2026-08-31",
    "app": "aibriefpack",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "AI Brief: AI Prompt from Files Files to Clear Context Bring screenshots, documents, and notes together. Keep the facts. Review private detai",
    "why": "url+brand",
    "ios_id": "6791658210",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17997049989027578",
+   "at": "2026-11-27T12:30:06Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4411,16 +4433,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteHBRjpYh",
    "date": "2026-08-31",
    "app": "cvdesk",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "CV Desk: ATS Resume ATS CV Maker & Resume Builder Beat the resume robots. Get an instant ATS score, fix what recruiter filters reject, and e",
    "why": "url+brand",
    "ios_id": "6781337213",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18171175102476146",
-   "at": "2026-11-27T01:46:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4714,16 +4731,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteBNlDd_u",
    "date": "2026-08-31",
    "app": "caldaily",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "CalDaily: Calculator & Themes Widget, tools, tidy history Every result you keep can be named, tagged and found again. Eight advanced tools, ",
    "why": "url+brand",
    "ios_id": "6794178671",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18423794674083825",
-   "at": "2026-11-27T01:46:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

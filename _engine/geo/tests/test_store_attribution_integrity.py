@@ -155,6 +155,8 @@ class AttributionIntegrityTests(unittest.TestCase):
         "apps/jellyday/l/zh-Hant/index.html": ("sup_jellyday_zhhant_1122", "tw"),
         "apps/jellyday/visual-daily-planner-timeline.html": ("sqb1121_jellyday_us_timeline", "us"),
         "apps/jellyday/l/zh-Hant/visual-daily-planner-timeline.html": ("sqb1121_jellyday_tw_timeline", "tw"),
+        # 小組 B 誠實比較頁（11-27 部署後被重產蓋成 geo_pick，11-28 補表）。
+        "apps/jellyday/visual-planner-apps-compared.html": ("sqb1127_jellyday_cmp", "us"),
     }
 
     def test_jellyday_guide_pages_keep_page_specific_campaign_from_data_table(self):
@@ -168,7 +170,7 @@ class AttributionIntegrityTests(unittest.TestCase):
             self.assertEqual(code, attribution.campaign_token(page))
             self.assertTrue(attribution.app_bound_campaign(code, jelly_id))
             self.assertFalse(attribution.app_bound_campaign(code, APP_ID))
-        # 只動這七頁：同款其他頁、決策頁、別款頁照舊。
+        # 只動表內這八頁：同款其他頁、決策頁、別款頁照舊。
         for page in (
             "apps/jellyday/privacy.html", "apps/jellyday/l/ja/support.html",
             "apps/jellyday/decision/l/en-US/index.html", "apps/mochi/index.html",

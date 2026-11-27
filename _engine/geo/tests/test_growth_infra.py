@@ -22550,7 +22550,7 @@ class GeneratorTests(unittest.TestCase):
                 f'<a href="{cleanup_localized_assets.SITE}/zh-Hant/'
                 'alternatives/snapport-private-alternative.html">guide</a>'
                 f'<a href="{cleanup_localized_assets.SITE}/alternatives/'
-                'zafe-no-subscription.html">old app</a>'
+                'retiredfake-no-subscription.html">old app</a>'
                 f'<a href="{cleanup_localized_assets.SITE}/zh-Hant/'
                 'tools/helper.html">localized tool fallback</a>'
                 f'<link rel="alternate" hreflang="en" href="'
@@ -22607,7 +22607,7 @@ class GeneratorTests(unittest.TestCase):
             root_answer = pages / "answers" / "old-app.html"
             root_answer.write_text(
                 f'<a href="{cleanup_localized_assets.SITE}/alternatives/'
-                'zafe-no-subscription.html">old app</a>',
+                'retiredfake-no-subscription.html">old app</a>',
                 encoding="utf-8",
             )
             (localized_alt / "index.html").write_text(
@@ -27277,8 +27277,8 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(set(), managed)
 
         # 要用「仍在 APPS 名冊、但 App Store 不公開」的 key 才能代表下架中的 App;
-        # 已從名冊移除的 key 會被 generation_scope 忽略(2026-10-03 Zodira/Zafe 退役後
-        # 用不存在的假 key 取代 zafe,測試因此失敗,雲端 geo-daily 連續失敗)。
+        # 已從名冊移除的 key 會被 generation_scope 忽略(2026-10-03 Zodira 與已移除款退役後
+        # 用不存在的假 key 取代舊 key,測試因此失敗,雲端 geo-daily 連續失敗)。
         keys, managed = aeo_pages.generation_scope(
             ["aim990"],
             {"snapport": {"key": "snapport"}},

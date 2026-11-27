@@ -39,7 +39,7 @@ class AvailabilityFollowupTests(unittest.TestCase):
         self.root = Path(self.stack.enter_context(tempfile.TemporaryDirectory()))
         self.roster = manifest.canonical_manifest()
         # Adoption tests need a registered App that is not yet on the roster.
-        # Zafe used to be that App but left the registry; hold back one live
+        # A removed App used to be that App but left the registry; hold back one live
         # App from the fixture roster so it plays the "registered, not yet
         # adopted" role against the real APPSTORE/APPS registry.
         self.candidate = sorted(

@@ -825,7 +825,6 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
     APPS, APPSTORE = _apps()
     defs = [
         ("bf","best-for","bestfor",[
-            ("photo-hide",f"Best iPhone App to Hide Photos — {cn} 2026",f"Photo privacy.",f"Best App to Hide Photos iPhone ({cn} 2026)","Real privacy?",[("maskmyfile","Mask private details before sharing. On device."),("picclear","Clear the shots you did not mean to keep.")],[("Secure?","Yes, AES."),("iCloud?","Never.")]),
             ("scan-offline",f"Best Offline Scanner — iPhone {cn} 2026","PDF offline.",f"Best Offline Scanner iPhone ({cn} 2026)","No internet.",[("scanto",f"Local PDF. One-time.")],[("Internet?","No."),("Uploads?","Never.")]),
             ("passport-photo",f"Best Passport Photo App — iPhone {cn} 2026","Photo at home.",f"Best Passport Photo App iPhone ({cn} 2026)","No photographer.",[("snapport",f"Auto crop.")],[("Specs?","Yes."),("Guarantee?","Yes.")]),
             ("social-block",f"Best App to Block Social Media — iPhone {cn} 2026","Productivity.",f"Block Social Media iPhone ({cn} 2026)","More focus?",[("lockhour","Set aside blocks of time for focused work."),("mochi","Keep the day's tasks small and visible.")],[("Screen Time?","Yes."),("WhatsApp?","Screen Time.")]),

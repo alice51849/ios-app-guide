@@ -28,6 +28,10 @@ import app_store_storefronts as stores  # noqa: E402
 import check_storefront_snapshot as checker  # noqa: E402
 import commit_storefront_snapshot as committer  # noqa: E402
 import refresh_storefront_availability as refresher  # noqa: E402
+if str(GEO / "tests") not in sys.path:
+    sys.path.insert(0, str(GEO / "tests"))
+# Module import only (no TestCase bound here), so its tests do not run twice.
+import test_alternatives_i18n as stale_guard  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
 
@@ -245,6 +249,64 @@ class FailedPushKeepsOldBehaviourTests(_Repos):
         self.git(checkout, "fetch", "-q", "origin", "main")
         self.git(checkout, "merge", "-q", "--no-edit", "-X", "theirs", "FETCH_HEAD")
         self.assertEqual("", self.git(checkout, "diff", "FETCH_HEAD", "--", stores.STATE_FILE))
+
+
+class TrackingRefUntouchedTests(_Repos):
+    """11-27 run 45926703662: our own push must not make the checkout look stale."""
+
+    def behind(self, checkout: Path) -> int:
+        with mock.patch.dict("os.environ", {"ALTERNATIVES_GUIDE_BASE_REF": ""}):
+            return stale_guard.AlternativesExact50Tests._guide_commits_behind(checkout)
+
+    def test_pushed_snapshot_leaves_origin_main_and_the_stale_guard_at_zero(self):
+        checkout = self.clone("worker")
+        before = self.git(checkout, "rev-parse", "refs/remotes/origin/main")
+        self.refresh(checkout, T0)
+        with mock.patch("builtins.print"):
+            self.assertEqual("pushed", committer.publish(checkout, retry_delay=0, now=_iso(T0)))
+        # origin really moved, the caller's tracking ref did not.
+        self.assertEqual(
+            committer.MESSAGE,
+            self.git(self.origin, "log", "-1", "--format=%s", "main").strip(),
+        )
+        self.assertEqual(before, self.git(checkout, "rev-parse", "refs/remotes/origin/main"))
+        self.assertEqual("0", self.git(checkout, "rev-list", "--count", "HEAD..origin/main").strip())
+        self.assertEqual(0, self.behind(checkout))
+
+    def test_fetch_without_push_does_not_move_origin_main_either(self):
+        checkout = self.clone("worker")
+        competitor = self.clone("competitor")
+        (competitor / "other.txt").write_text("theirs\n", encoding="utf-8")
+        self.git(competitor, "add", "-A")
+        self.git(competitor, "commit", "-q", "-m", "foreign")
+        self.git(competitor, "push", "-q", "origin", "HEAD:refs/heads/main")
+        before = self.git(checkout, "rev-parse", "refs/remotes/origin/main")
+        self.git(checkout, "remote", "set-url", "--push", "origin", str(self.root / "missing.git"))
+        self.refresh(checkout, T0)
+        with mock.patch("builtins.print"):
+            self.assertEqual(
+                "not-pushed",
+                committer.publish(checkout, attempts=1, retry_delay=0, now=_iso(T0)),
+            )
+        self.assertEqual(before, self.git(checkout, "rev-parse", "refs/remotes/origin/main"))
+
+    def test_guard_still_catches_a_checkout_that_really_fell_behind(self):
+        checkout = self.clone("worker")
+        self.refresh(checkout, T0)
+        with mock.patch("builtins.print"):
+            self.assertEqual("pushed", committer.publish(checkout, retry_delay=0, now=_iso(T0)))
+        self.assertEqual(0, self.behind(checkout))
+        # A plain fetch (what any later step or person does) exposes the real lag.
+        self.git(checkout, "fetch", "-q", "origin")
+        self.assertEqual(1, self.behind(checkout))
+        probe = stale_guard.AlternativesExact50Tests(
+            "test_explicit_stack_binding_rejects_mutable_or_unknown_base"
+        )
+        with mock.patch.object(
+            stale_guard.AlternativesExact50Tests, "_production_guide", return_value=checkout
+        ), mock.patch.dict("os.environ", {"ALTERNATIVES_GUIDE_BASE_REF": ""}), \
+                self.assertRaisesRegex(AssertionError, "落後"):
+            probe._require_production_guide()
 
 
 class SnapshotFormatTests(unittest.TestCase):

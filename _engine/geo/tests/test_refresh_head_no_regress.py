@@ -11,6 +11,8 @@ from __future__ import annotations
 
 import io
 import json
+import os
+import signal
 from contextlib import redirect_stdout
 from pathlib import Path
 import sys
@@ -45,6 +47,19 @@ BODY_ZH = [
 ]
 LEAD_EN = "Pick the list that does less, on purpose."
 LEAD_ZH = "選一個刻意少做一點的清單。"
+# Latin-script locale: no native-script signal, only the comparisons.
+H1_DE = "Die ruhigste Checklisten-App"
+TITLE_DE = "Die ruhigste Checklisten-App: ehrlicher iPhone-Kaufratgeber"
+LEAD_DE = "Wähle die Liste, die absichtlich weniger tut."
+BODY_DE = [
+    "Eine Checkliste sollte sofort öffnen und nicht stören.",
+    "Erinnerungen kommen zur eingestellten Zeit, sonst nichts.",
+    "Listen synchronisieren ohne Konto zwischen deinen Geräten.",
+    "Es gibt keine Serien, Abzeichen oder Produktivitätswerte.",
+]
+# RENAMED_BRANDS: the published translation may still use the old name.
+NEW_BRAND = "Trip Planet: Kids Quest"
+OLD_BRAND = "Lumi Trip Planet"
 
 
 def _jsonld(app_id: str) -> str:
@@ -125,7 +140,7 @@ class RefreshHeadNoRegressTests(unittest.TestCase):
         out = io.StringIO()
         self.report = self.root / "_report" / "refresh_guarded.json"
         with redirect_stdout(out):
-            i18n.run_refresh(
+            self.exit_code = i18n.run_refresh(
                 langs, str(self.trans), slugs=[SLUG], guarded_report=self.report
             )
         self.stdout = out.getvalue()
@@ -271,11 +286,26 @@ class RefreshHeadNoRegressTests(unittest.TestCase):
         self.assertEqual(published, target.read_text(encoding="utf-8"))
         report = json.loads(self.report.read_text(encoding="utf-8"))
         self.assertEqual(1, report["guarded"])
+        self.assertTrue(report["complete"])
+        self.assertTrue(report["warning"])  # one page, still a warning
+        self.assertEqual(1, report["critical_conflicts"])
         self.assertEqual(
             {"locale": "zh-Hant", "slug": SLUG, "reasons": ["lead"],
-             "conflicts": ["lead:price_or_number"]},
+             "conflicts": ["lead:price_or_number"],
+             # Enough to add the missing i18n_trans entry by hand.
+             "conflict_details": [
+                 {"field": "lead", "kind": "price_or_number",
+                  "english": "Pick the list for $3.99.",
+                  "published": "選一個 $2.99 的清單。"}
+             ]},
             report["pages"][0],
         )
+        warnings = [x for x in self.stdout.splitlines() if x.startswith("::warning::")]
+        self.assertTrue(
+            any(f"zh-Hant/{SLUG} lead:price_or_number" in x for x in warnings),
+            self.stdout,
+        )
+        self.assertEqual(0, summary["unchanged"])  # guarded is not unchanged
 
     def test_unpinned_purchase_wording_is_never_kept(self) -> None:
         # "one-time"/"subscription" cannot be compared across languages.
@@ -412,6 +442,193 @@ class RefreshHeadNoRegressTests(unittest.TestCase):
             [], i18n.regressed_head_fields(self.source, published, published)
         )
 
+
+    # -- 反證補測(拿掉對應修法會紅) ------------------------------------
+
+    def _published_de(self, h1: str = H1_DE, lead: str = LEAD_DE) -> str:
+        return _page("de-DE", TITLE_DE, h1, lead, BODY_DE[:1] + BODY_EN[1:])
+
+    def test_latin_locale_case_and_space_only_english_is_not_kept(self) -> None:
+        # de-DE has no native-script signal: only the case/space-insensitive
+        # comparison tells this h1 is the English query, not a translation.
+        target = self._existing("de-DE", self._published_de(h1="Best  Quiet Checklist App"))
+        self._dictionary("de-DE", dict(zip(BODY_EN, BODY_DE)))
+        self.assertEqual(1, self._refresh(["de-DE"])["refreshed"])
+        page = target.read_text(encoding="utf-8")
+        self.assertIn(f">{H1_EN}</h1>", page)
+        self.assertNotIn("Best  Quiet Checklist App", page)
+        self.assertIn(f"<title>{TITLE_DE}</title>", page)  # real translation kept
+        self.assertTrue(i18n._is_english("Best  Quiet Checklist App",
+                                         i18n._english_head_texts(self.source, ()),
+                                         "de-DE"))
+
+    def test_latin_locale_dictionary_pointing_at_older_en_us_text_is_english(self) -> None:
+        # Same as the zh-Hant case, but de-DE cannot fall back on the script
+        # check: only the en-US page in english_texts shows "older" is English.
+        older = "Pick the list that does less."
+        self._existing("en-US", _page("en-US", TITLE_EN, H1_EN, older, BODY_EN))
+        target = self._existing("de-DE", self._published_de())
+        self._dictionary("de-DE", {**dict(zip(BODY_EN, BODY_DE)), LEAD_EN: older})
+        self.assertEqual(1, self._refresh(["de-DE"])["refreshed"])
+        page = target.read_text(encoding="utf-8")
+        self.assertIn(f">{LEAD_DE}</p>", page)
+        self.assertNotIn(older, page)
+        self.assertIn(BODY_DE[-1], page)
+
+    def test_published_translation_with_old_app_name_is_kept_under_new_name(self) -> None:
+        self._set_source(_page("en", TITLE_EN, H1_EN,
+                               f"{NEW_BRAND} keeps the list quiet.", BODY_EN))
+        target = self._existing("zh-Hant", _page(
+            "zh-Hant", TITLE_ZH, H1_ZH, f"{OLD_BRAND} 讓清單保持安靜。",
+            BODY_ZH[:1] + BODY_EN[1:],
+        ))
+        self._dictionary("zh-Hant", self._body_dictionary())
+        summary = self._refresh(["zh-Hant"])
+        self.assertEqual(1, summary["refreshed"], self.stdout)
+        page = target.read_text(encoding="utf-8")
+        self.assertIn(f">{NEW_BRAND} 讓清單保持安靜。</p>", page)
+        self.assertNotIn(OLD_BRAND, page)
+
+    def test_dictionary_text_with_old_app_name_is_renamed_on_rewrite(self) -> None:
+        self._set_source(_page("en", TITLE_EN, H1_EN,
+                               f"{NEW_BRAND} keeps the list quiet.", BODY_EN))
+        target = self._existing("zh-Hant", _page(
+            "zh-Hant", TITLE_ZH, H1_ZH, f"{NEW_BRAND} 讓清單保持安靜。",
+            BODY_ZH[:1] + BODY_EN[1:],
+        ))
+        body = self._body_dictionary()
+        body[BODY_EN[1]] = f"{OLD_BRAND} 的提醒只會在你設定的時間出現。"
+        self._dictionary("zh-Hant", body)
+        self.assertEqual(1, self._refresh(["zh-Hant"])["refreshed"], self.stdout)
+        page = target.read_text(encoding="utf-8")
+        self.assertIn(f"{NEW_BRAND} 的提醒只會在你設定的時間出現。", page)
+        self.assertNotIn(OLD_BRAND, page)
+
+    def test_translation_dropping_the_app_name_is_never_kept(self) -> None:
+        self.assertEqual(
+            "app_name",
+            i18n._keep_conflict("lead", f"{NEW_BRAND} keeps kids busy.",
+                                "這款 App 讓孩子忙不停。", None),
+        )
+        self._set_source(_page("en", TITLE_EN, H1_EN,
+                               f"{NEW_BRAND} keeps kids busy.", BODY_EN))
+        published = _page("zh-Hant", TITLE_ZH, H1_ZH, "這款 App 讓孩子忙不停。",
+                          BODY_ZH[:1] + BODY_EN[1:])
+        target = self._existing("zh-Hant", published)
+        self._dictionary("zh-Hant", self._body_dictionary())
+        summary = self._refresh(["zh-Hant"])
+        self.assertEqual(0, summary["refreshed"])
+        self.assertEqual(1, summary["guarded"])
+        self.assertEqual(published, target.read_text(encoding="utf-8"))
+        self.assertIn("::warning::refresh kept 1 head translation(s)", self.stdout)
+        self.assertIn(f"zh-Hant/{SLUG} lead:app_name", self.stdout)
+        details = json.loads(self.report.read_text(encoding="utf-8"))["pages"][0][
+            "conflict_details"]
+        self.assertEqual(
+            [{"field": "lead", "kind": "app_name",
+              "english": f"{NEW_BRAND} keeps kids busy.",
+              "published": "這款 App 讓孩子忙不停。"}],
+            details,
+        )
+
+    def test_one_critical_conflict_warns_below_the_count_thresholds(self) -> None:
+        for kind in ("price_or_number", "app_name"):
+            out = io.StringIO()
+            page = {"locale": "ja", "slug": "s", "reasons": ["lead"],
+                    "conflicts": [f"lead:{kind}"]}
+            with redirect_stdout(out):
+                i18n._report_guarded([page], 1000, None)
+            lines = out.getvalue().splitlines()
+            self.assertTrue(lines[0].startswith("::warning::"), lines)
+            self.assertIn(f"ja/s lead:{kind}", lines[1])
+        out = io.StringIO()
+        with redirect_stdout(out):
+            i18n._report_guarded(
+                [{"locale": "ja", "slug": "s", "reasons": ["lead"],
+                  "conflicts": ["lead:purchase_wording"]}], 1000, None)
+        self.assertNotIn("::warning::", out.getvalue())
+
+    def _two_locale_run_with_price_conflict(self) -> None:
+        # zh-Hant is guarded (old price), ja comes after it.
+        self._set_source(_page("en", TITLE_EN, H1_EN, "Pick the list for $3.99.", BODY_EN))
+        self._existing("zh-Hant", _page("zh-Hant", TITLE_ZH, H1_ZH, "選一個 $2.99 的清單。",
+                                        BODY_ZH[:1] + BODY_EN[1:]))
+        self._existing("ja", _page("ja", TITLE_EN, H1_EN, LEAD_EN, BODY_EN))
+        self._dictionary("zh-Hant", self._body_dictionary())
+        self._dictionary("ja", {BODY_EN[0]: "チェックリストはすぐ開くべきです。"})
+        self.report = self.root / "_report" / "refresh_guarded.json"
+        self.report.parent.mkdir(parents=True, exist_ok=True)
+        # The previous run's report must not survive as this run's.
+        self.report.write_text(json.dumps({
+            "complete": True, "guarded": 1, "pages": [
+                {"locale": "fr-FR", "slug": "stale", "reasons": ["h1"], "conflicts": []}
+            ]}), encoding="utf-8")
+
+    def test_sigterm_mid_pass_leaves_partial_incomplete_report(self) -> None:
+        self._two_locale_run_with_price_conflict()
+        real_render = i18n.render_localized
+        calls = []
+
+        def render(source, lang, *args, **kwargs):
+            calls.append(lang)
+            if lang == "ja":
+                os.kill(os.getpid(), signal.SIGTERM)  # bounded_timeout's stop
+            return real_render(source, lang, *args, **kwargs)
+
+        previous = signal.getsignal(signal.SIGTERM)
+        with mock.patch.object(i18n, "render_localized", side_effect=render):
+            summary = self._refresh(["zh-Hant", "ja", "ko"])
+        self.assertEqual(["zh-Hant", "ja"], calls)
+        self.assertIs(previous, signal.getsignal(signal.SIGTERM))  # restored
+        self.assertFalse(summary["complete"])
+        self.assertEqual(128 + signal.SIGTERM, self.exit_code)
+        report = json.loads(self.report.read_text(encoding="utf-8"))
+        self.assertFalse(report["complete"])
+        self.assertEqual([("zh-Hant", SLUG)],
+                         [(p["locale"], p["slug"]) for p in report["pages"]])
+        self.assertIn("(incomplete pass)", self.stdout)
+
+    def test_killed_pass_still_left_the_guarded_page_on_disk(self) -> None:
+        # SIGKILL (no handler runs): what was guarded so far is already on
+        # disk, and the stale report was replaced at the start.
+        self._two_locale_run_with_price_conflict()
+        real_render = i18n.render_localized
+
+        class Killed(BaseException):
+            pass
+
+        def render(source, lang, *args, **kwargs):
+            if lang == "ja":
+                report = json.loads(self.report.read_text(encoding="utf-8"))
+                self.on_disk = report
+                raise Killed
+            return real_render(source, lang, *args, **kwargs)
+
+        with mock.patch.object(i18n, "render_localized", side_effect=render):
+            with self.assertRaises(Killed):
+                self._refresh(["zh-Hant", "ja"])
+        self.assertFalse(self.on_disk["complete"])
+        self.assertEqual([("zh-Hant", SLUG)],
+                         [(p["locale"], p["slug"]) for p in self.on_disk["pages"]])
+        self.assertEqual(["lead:price_or_number"], self.on_disk["pages"][0]["conflicts"])
+        # Nothing but the report itself is left in its folder (no temp file).
+        self.assertEqual(["refresh_guarded.json"],
+                         sorted(x.name for x in self.report.parent.iterdir()))
+
+    def test_report_restarts_incomplete_before_the_first_page(self) -> None:
+        self._two_locale_run_with_price_conflict()
+        seen = []
+
+        def render(*_args, **_kwargs):
+            seen.append(json.loads(self.report.read_text(encoding="utf-8")))
+            raise RuntimeError("stop here")
+
+        with mock.patch.object(i18n, "render_localized", side_effect=render):
+            summary = self._refresh(["zh-Hant"])
+        self.assertEqual({"complete": False, "pages": []},
+                         {k: seen[0][k] for k in ("complete", "pages")})
+        self.assertTrue(summary["complete"])
+        self.assertEqual(1, summary["failed"])
 
 if __name__ == "__main__":
     unittest.main()

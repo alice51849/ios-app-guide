@@ -10,6 +10,7 @@ import html
 import json
 import os
 import re
+import signal
 import subprocess
 import sys
 import time
@@ -3249,6 +3250,7 @@ def preserve_localized_head_fields(
     *,
     lang: str | None = None,
     slug: str | None = None,
+    conflict_details: list[dict[str, str]] | None = None,
 ) -> tuple[dict[str, str], list[str], list[str]]:
     """Keep the published translation of head fields the dictionary lacks.
 
@@ -3258,7 +3260,9 @@ def preserve_localized_head_fields(
     claims (_keep_conflict).  Units the dictionary does translate keep the
     fresh dictionary translation.  Returns (mapping, kept fields, conflicts);
     a conflict means the field will render English and the backstop keeps
-    the whole page instead.
+    the whole page instead.  *conflict_details*, when given, receives the
+    English unit and the published translation of each conflict so the
+    dictionary (i18n_trans) can be given a current translation.
     """
     english_units = set(mapping)
     if english_texts is None:
@@ -3285,11 +3289,11 @@ def preserve_localized_head_fields(
         old_units = published.get(name)
         if not old_units or len(old_units) != len(units):
             continue
-        for unit, old in zip(units, old_units):
+        for unit, published_old in zip(units, old_units):
             if unit not in preserved:
                 continue
             # A renamed app reads under its current name (as the render will).
-            old = apply_brand_renames(old, source, lang)
+            old = apply_brand_renames(published_old, source, lang)
             if not (
                 _same_text(preserved[unit], unit)
                 or preserved[unit] in english_units
@@ -3307,6 +3311,15 @@ def preserve_localized_head_fields(
             conflict = _keep_conflict(name, unit, old, pinned_query)
             if conflict:
                 conflicts.append(f"{name}:{conflict}")
+                if conflict_details is not None:
+                    conflict_details.append(
+                        {
+                            "field": name,
+                            "kind": conflict,
+                            "english": unit,
+                            "published": published_old,
+                        }
+                    )
                 continue
             preserved[unit] = old
             kept.append(name)
@@ -3407,150 +3420,180 @@ def run_refresh(
         )
 
     improved = unchanged = failed = renamed = relabeled = guarded = 0
-    guarded_pages: list[dict[str, Any]] = []
+    # Started over (complete: false) before the first page, kept current as
+    # pages are guarded, flushed again on SIGTERM: bounded_timeout ends a
+    # long pass with SIGTERM and a report written only at the end would
+    # leave the previous run's file standing in for this one.
+    report = _GuardedReport(guarded_report)
+    report.start()
+    stop = _TerminationRequest(report)
     touched_slugs: list[str] = []
-    for slug in candidates:
-        src_path = ANSWERS / f"{slug}.html"
-        if not src_path.exists():
-            continue
-        source = src_path.read_text(encoding="utf-8")
-        strings, spans, json_spans = extract_strings(source)
-        english_texts: set[str] | None = None  # built on the first rewrite
-        en_us_path = ROOT / "en-US" / "answers" / f"{slug}.html"
-        catalog_english: str | None = None
-        slug_touched = False
-        for lang in langs:
-            target = ROOT / lang / "answers" / f"{slug}.html"
-            if not target.exists():
+    try:
+        for slug in candidates:
+            if stop.requested:
+                break
+            src_path = ANSWERS / f"{slug}.html"
+            if not src_path.exists():
                 continue
-            if lang in ENGLISH_LOCALES:
-                if _refresh_brand_names(target, source, lang, slug):
-                    renamed += 1
-                    slug_touched = True
-                continue
-            gm = global_maps[lang]
-            mapping = {x: gm.get(x, x) for x in strings}
-            mapping = apply_locale_text_overrides(mapping, lang)
-            require_no_cross_app_translation(strings, mapping, slug, lang)
-            try:
-                existing = target.read_text(encoding="utf-8")
-            except OSError:
-                continue
-            # The gain gate keeps measuring the dictionary alone, so the set of
-            # pages a refresh rewrites is exactly what it was before; units
-            # kept from the published page are not new coverage.
-            new_ratio = _untranslated_ratio(strings, mapping)
-            old_ratio = _existing_untranslated_ratio(existing, strings)
-            localized: str | None = None
-            regressed: list[str] = []
-            if not new_ratio > old_ratio - min_gain:
-                if catalog_english is None and en_us_path.is_file():
-                    catalog_english = en_us_path.read_text(encoding="utf-8")
-                if english_texts is None:
-                    # The English locale pages are what downstream compares a
-                    # localized head field against ("English fallback").
-                    english_texts = _english_head_texts(
-                        source,
-                        tuple(
-                            path.read_text(encoding="utf-8")
-                            for path in (
-                                ROOT / english / "answers" / f"{slug}.html"
-                                for english in sorted(ENGLISH_LOCALES)
-                            )
-                            if path.is_file()
-                        ),
-                    )
-                # Per-unit no-regress: head fields already translated on the
-                # published page keep that translation when the dictionary has
-                # none (it can never learn <h1>/<title>, _HEAD_TEXT_FIELDS).
-                mapping, _kept, conflicts = preserve_localized_head_fields(
-                    source, existing, mapping, english_texts, lang=lang, slug=slug
-                )
+            source = src_path.read_text(encoding="utf-8")
+            strings, spans, json_spans = extract_strings(source)
+            english_texts: set[str] | None = None  # built on the first rewrite
+            en_us_path = ROOT / "en-US" / "answers" / f"{slug}.html"
+            catalog_english: str | None = None
+            slug_touched = False
+            for lang in langs:
+                if stop.requested:
+                    break
+                target = ROOT / lang / "answers" / f"{slug}.html"
+                if not target.exists():
+                    continue
+                if lang in ENGLISH_LOCALES:
+                    if _refresh_brand_names(target, source, lang, slug):
+                        renamed += 1
+                        slug_touched = True
+                    continue
+                gm = global_maps[lang]
+                mapping = {x: gm.get(x, x) for x in strings}
+                mapping = apply_locale_text_overrides(mapping, lang)
+                require_no_cross_app_translation(strings, mapping, slug, lang)
                 try:
-                    localized = render_localized(
+                    existing = target.read_text(encoding="utf-8")
+                except OSError:
+                    continue
+                # The gain gate keeps measuring the dictionary alone, so the set of
+                # pages a refresh rewrites is exactly what it was before; units
+                # kept from the published page are not new coverage.
+                new_ratio = _untranslated_ratio(strings, mapping)
+                old_ratio = _existing_untranslated_ratio(existing, strings)
+                localized: str | None = None
+                regressed: list[str] = []
+                if not new_ratio > old_ratio - min_gain:
+                    if catalog_english is None and en_us_path.is_file():
+                        catalog_english = en_us_path.read_text(encoding="utf-8")
+                    if english_texts is None:
+                        # The English locale pages are what downstream compares a
+                        # localized head field against ("English fallback").
+                        english_texts = _english_head_texts(
+                            source,
+                            tuple(
+                                path.read_text(encoding="utf-8")
+                                for path in (
+                                    ROOT / english / "answers" / f"{slug}.html"
+                                    for english in sorted(ENGLISH_LOCALES)
+                                )
+                                if path.is_file()
+                            ),
+                        )
+                    # Per-unit no-regress: head fields already translated on the
+                    # published page keep that translation when the dictionary has
+                    # none (it can never learn <h1>/<title>, _HEAD_TEXT_FIELDS).
+                    details: list[dict[str, str]] = []
+                    mapping, _kept, conflicts = preserve_localized_head_fields(
                         source,
-                        lang,
-                        slug,
+                        existing,
                         mapping,
-                        strings=strings,
-                        spans=spans,
-                        json_spans=json_spans,
+                        english_texts,
+                        lang=lang,
+                        slug=slug,
+                        conflict_details=details,
+                    )
+                    try:
+                        localized = render_localized(
+                            source,
+                            lang,
+                            slug,
+                            mapping,
+                            strings=strings,
+                            spans=spans,
+                            json_spans=json_spans,
+                        )
+                    except Exception as exc:  # noqa: BLE001 - report and continue
+                        failed += 1
+                        print(
+                            f"failed {lang}/{slug}.html: {exc}",
+                            file=sys.stderr,
+                            flush=True,
+                        )
+                        continue
+                    # Backstop: a field the preservation could not pair (markup
+                    # differs) must not regress either -- keep the page instead.
+                    localized = apply_brand_renames(localized, source, lang)
+                    regressed = regressed_head_fields(
+                        source, existing, localized, english_texts, lang,
+                        catalog_english=catalog_english,
+                    )
+                    if market_surface_policy.application_ids(
+                        existing
+                    ) != market_surface_policy.application_ids(localized):
+                        # A localized page may promote a different app than the
+                        # English source (per-market owner); never reassign it.
+                        regressed.append("app_owner")
+                    if regressed:
+                        guarded += 1
+                        report.add(
+                            {
+                                "locale": lang,
+                                "slug": slug,
+                                "reasons": regressed,
+                                # Why a localized head unit could not be kept,
+                                # with the English sentence and the published
+                                # translation so i18n_trans can be given one.
+                                "conflicts": conflicts,
+                                "conflict_details": details,
+                            },
+                            refreshed=improved,
+                        )
+                        print(
+                            f"kept {lang}/{slug}.html: refresh would revert "
+                            f"localized {', '.join(regressed)}"
+                            + (f" ({', '.join(conflicts)})" if conflicts else ""),
+                            flush=True,
+                        )
+                if localized is None or regressed:
+                    relabeled_text, relabel_count = relabel_purchase_label_lists(
+                        existing, lang
+                    )
+                    if relabel_count:
+                        target.write_text(relabeled_text, encoding="utf-8")
+                        relabeled += 1
+                        slug_touched = True
+                        print(
+                            f"relabeled purchase model in {lang}/{slug}.html",
+                            flush=True,
+                        )
+                    if _refresh_brand_names(target, source, lang, slug):
+                        renamed += 1
+                        slug_touched = True
+                    elif not relabel_count and not regressed:
+                        # A guarded page is counted under "guarded" only.
+                        unchanged += 1
+                    continue
+                try:
+                    target.write_text(localized, encoding="utf-8")
+                    improved += 1
+                    report.refreshed = improved  # for a SIGTERM flush
+                    slug_touched = True
+                    print(
+                        f"refreshed {lang}/{slug}.html "
+                        f"{(1 - old_ratio) * 100:.0f}% -> {(1 - new_ratio) * 100:.0f}%",
+                        flush=True,
                     )
                 except Exception as exc:  # noqa: BLE001 - report and continue
                     failed += 1
-                    print(
-                        f"failed {lang}/{slug}.html: {exc}",
-                        file=sys.stderr,
-                        flush=True,
-                    )
-                    continue
-                # Backstop: a field the preservation could not pair (markup
-                # differs) must not regress either -- keep the page instead.
-                localized = apply_brand_renames(localized, source, lang)
-                regressed = regressed_head_fields(
-                    source, existing, localized, english_texts, lang,
-                    catalog_english=catalog_english,
-                )
-                if market_surface_policy.application_ids(
-                    existing
-                ) != market_surface_policy.application_ids(localized):
-                    # A localized page may promote a different app than the
-                    # English source (per-market owner); never reassign it.
-                    regressed.append("app_owner")
-                if regressed:
-                    guarded += 1
-                    guarded_pages.append(
-                        {
-                            "locale": lang,
-                            "slug": slug,
-                            "reasons": regressed,
-                            # Why a localized head unit could not be kept.
-                            "conflicts": conflicts,
-                        }
-                    )
-                    print(
-                        f"kept {lang}/{slug}.html: refresh would revert "
-                        f"localized {', '.join(regressed)}"
-                        + (f" ({', '.join(conflicts)})" if conflicts else ""),
-                        flush=True,
-                    )
-            if localized is None or regressed:
-                relabeled_text, relabel_count = relabel_purchase_label_lists(
-                    existing, lang
-                )
-                if relabel_count:
-                    target.write_text(relabeled_text, encoding="utf-8")
-                    relabeled += 1
-                    slug_touched = True
-                    print(
-                        f"relabeled purchase model in {lang}/{slug}.html",
-                        flush=True,
-                    )
-                if _refresh_brand_names(target, source, lang, slug):
-                    renamed += 1
-                    slug_touched = True
-                elif not relabel_count:
-                    unchanged += 1
-                continue
-            try:
-                target.write_text(localized, encoding="utf-8")
-                improved += 1
-                slug_touched = True
-                print(
-                    f"refreshed {lang}/{slug}.html "
-                    f"{(1 - old_ratio) * 100:.0f}% -> {(1 - new_ratio) * 100:.0f}%",
-                    flush=True,
-                )
-            except Exception as exc:  # noqa: BLE001 - report and continue
-                failed += 1
-                print(f"failed {lang}/{slug}.html: {exc}", file=sys.stderr, flush=True)
-        if slug_touched:
-            touched_slugs.append(slug)
-        if limit and len(touched_slugs) >= limit:
-            break
+                    print(f"failed {lang}/{slug}.html: {exc}", file=sys.stderr, flush=True)
+            if slug_touched:
+                touched_slugs.append(slug)
+            if limit and len(touched_slugs) >= limit:
+                break
 
+    finally:
+        stop.restore()
+
+    complete = not stop.requested
+    if not complete:
+        print("refresh stopped by SIGTERM; report marked incomplete", flush=True)
     # Summary line first: the JSON totals stay the last stdout line.
-    _report_guarded(guarded_pages, improved, guarded_report)
+    report.finish(improved, complete=complete)
     print(
         json.dumps(
             {
@@ -3560,59 +3603,189 @@ def run_refresh(
                 "unchanged": unchanged,
                 "guarded": guarded,
                 "failed": failed,
+                "complete": complete,
             },
             ensure_ascii=False,
         ),
         flush=True,
     )
-    return 0
+    return 0 if complete else 128 + signal.SIGTERM
 
 
 # A whole page kept for no-regress reasons is safe but freezes its body copy;
 # this many in one pass means a dictionary or source change needs a look.
 GUARDED_WARN_COUNT = 50
 GUARDED_WARN_SHARE = 0.10
+# A kept page whose head translation states another price/number or app name
+# than the current English freezes a stale store claim: always surfaced.
+GUARDED_CRITICAL_CONFLICTS = frozenset({"price_or_number", "app_name"})
+GUARDED_CRITICAL_LISTED = 20
+# Every guarded page is written at once up to this many; past that,
+# rewriting the whole report per page turns quadratic, so writes are spaced
+# by the interval (at most that much pending) and SIGTERM flushes the rest.
+GUARDED_EAGER_PAGES = 200
+GUARDED_WRITE_INTERVAL = 0.5
 DEFAULT_GUARDED_REPORT = Path(__file__).resolve().parent / "reports" / "refresh_guarded.json"
 
 
-def _report_guarded(
+class _GuardedReport:
+    """refresh_guarded.json kept current while run_refresh runs."""
+
+    def __init__(self, path: Path | None) -> None:
+        self.path = path
+        self.pages: list[dict[str, Any]] = []
+        self.refreshed = 0
+        self._last_write = 0.0
+
+    def start(self) -> None:
+        self.flush()
+
+    def add(self, page: dict[str, Any], *, refreshed: int) -> None:
+        self.pages.append(page)
+        self.refreshed = refreshed
+        if (
+            len(self.pages) <= GUARDED_EAGER_PAGES
+            or time.monotonic() - self._last_write >= GUARDED_WRITE_INTERVAL
+        ):
+            self.flush()
+
+    def flush(self) -> None:
+        if self.path is not None:
+            _write_guarded(
+                self.path, _guarded_payload(self.pages, self.refreshed, False)
+            )
+        self._last_write = time.monotonic()
+
+    def finish(self, refreshed: int, *, complete: bool) -> None:
+        _report_guarded(self.pages, refreshed, self.path, complete=complete)
+
+
+class _TerminationRequest:
+    """SIGTERM ends run_refresh between pages instead of mid-write.
+
+    The handler flushes the report at once (bounded_timeout follows SIGTERM
+    with SIGKILL after a short grace) and the loop stops at the next page, so
+    a page file is never left half written by the signal.
+    """
+
+    def __init__(self, report: _GuardedReport) -> None:
+        self.requested = False
+        self._report = report
+        self._previous: Any = None
+        self._installed = False
+        try:
+            self._previous = signal.signal(signal.SIGTERM, self._handle)
+            self._installed = True
+        except ValueError:  # not the main thread: keep the default
+            pass
+
+    def _handle(self, _signum: int, _frame: Any) -> None:
+        self.requested = True
+        try:
+            self._report.flush()
+        except OSError as exc:
+            print(f"guarded report flush failed: {exc}", file=sys.stderr, flush=True)
+
+    def restore(self) -> None:
+        if self._installed:
+            signal.signal(signal.SIGTERM, self._previous)
+            self._installed = False
+
+
+def _write_guarded(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.{time.monotonic_ns()}.tmp")
+    try:
+        tmp.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        os.replace(tmp, path)
+    finally:
+        tmp.unlink(missing_ok=True)
+
+
+def _critical_conflicts(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    found: list[dict[str, Any]] = []
+    for page in pages:
+        for conflict in page.get("conflicts", []):
+            field, _, kind = conflict.rpartition(":")
+            if kind in GUARDED_CRITICAL_CONFLICTS:
+                found.append(
+                    {"locale": page["locale"], "slug": page["slug"],
+                     "field": field, "kind": kind}
+                )
+    return found
+
+
+def _guarded_payload(
     pages: list[dict[str, Any]],
     refreshed: int,
-    path: Path | None,
-) -> None:
+    complete: bool,
+) -> dict[str, Any]:
     by_reason: dict[str, int] = {}
     for page in pages:
         for reason in page["reasons"]:
             by_reason[reason] = by_reason.get(reason, 0) + 1
     attempted = refreshed + len(pages)
     share = len(pages) / attempted if attempted else 0.0
-    warn = len(pages) >= GUARDED_WARN_COUNT or (
-        bool(pages) and share > GUARDED_WARN_SHARE
+    critical = _critical_conflicts(pages)
+    warn = (
+        len(pages) >= GUARDED_WARN_COUNT
+        or (bool(pages) and share > GUARDED_WARN_SHARE)
+        or bool(critical)
     )
+    return {
+        # false until the pass ran to its end: a stopped pass leaves a
+        # partial list, never the previous run's.
+        "complete": complete,
+        "guarded": len(pages),
+        "attempted_rewrites": attempted,
+        "share": share,
+        "warning": warn,
+        "by_reason": dict(sorted(by_reason.items())),
+        "critical_conflicts": len(critical),
+        "pages": sorted(pages, key=lambda p: (p["slug"], p["locale"])),
+    }
+
+
+def _report_guarded(
+    pages: list[dict[str, Any]],
+    refreshed: int,
+    path: Path | None,
+    *,
+    complete: bool = True,
+) -> None:
+    payload = _guarded_payload(pages, refreshed, complete)
     line = (
-        f"refresh guarded {len(pages)} page(s) of {attempted} rewrite(s) "
-        f"({share:.0%}); by reason: "
-        + (", ".join(f"{k}={v}" for k, v in sorted(by_reason.items())) or "none")
-    )
-    print(f"::warning::{line}" if warn else line, flush=True)
-    if path is None:
-        return
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(
-            {
-                "guarded": len(pages),
-                "attempted_rewrites": attempted,
-                "warning": warn,
-                "by_reason": dict(sorted(by_reason.items())),
-                "pages": sorted(pages, key=lambda p: (p["slug"], p["locale"])),
-            },
-            ensure_ascii=False,
-            indent=2,
+        f"refresh guarded {payload['guarded']} page(s) of "
+        f"{payload['attempted_rewrites']} rewrite(s) ({payload['share']:.0%}); "
+        "by reason: "
+        + (
+            ", ".join(f"{k}={v}" for k, v in payload["by_reason"].items())
+            or "none"
         )
-        + "\n",
-        encoding="utf-8",
+        + ("" if complete else " (incomplete pass)")
     )
+    print(f"::warning::{line}" if payload["warning"] else line, flush=True)
+    critical = _critical_conflicts(pages)
+    if critical:
+        # Whatever the totals: these pages keep an old price/number or app
+        # name in a head translation the dictionary cannot replace.
+        listed = ", ".join(
+            f"{c['locale']}/{c['slug']} {c['field']}:{c['kind']}"
+            for c in critical[:GUARDED_CRITICAL_LISTED]
+        )
+        more = len(critical) - GUARDED_CRITICAL_LISTED
+        print(
+            f"::warning::refresh kept {len(critical)} head translation(s) "
+            f"stating an old price/number or app name: {listed}"
+            + (f" (+{more} more)" if more > 0 else "")
+            + "; add the English sentence to i18n_trans (see conflict_details)",
+            flush=True,
+        )
+    if path is not None:
+        _write_guarded(path, payload)
 
 
 def main() -> int:

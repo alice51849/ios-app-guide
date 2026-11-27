@@ -17,7 +17,11 @@ sys.path.insert(0, str(ROOT / "social"))
 
 from app_store_storefronts import (  # noqa: E402
     AVAILABILITY_STOREFRONTS,
+    LOCALE_STOREFRONTS,
     STATE_FILE,
+    ZERO_CONFIRM_MIN_GAP,
+    _is_zero_price,
+    _parse_utc,
     load_storefront_availability,
     load_storefront_details,
     snapshot_paid_seen,
@@ -72,7 +76,56 @@ def _is_fresh(
         checked = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError:
         return False
-    return dt.timedelta(0) <= now - checked < MAX_AGE
+    if not dt.timedelta(0) <= now - checked < MAX_AGE:
+        return False
+    return not _zero_confirmation_due(payload, checked, now)
+
+
+def _zero_confirmation_due(
+    payload: dict[str, object],
+    checked: dt.datetime,
+    now: dt.datetime,
+) -> bool:
+    """Whether a re-fetch now could confirm a zero the snapshot cannot yet.
+
+    A zero price is printable only once ``zero_since`` is ZERO_CONFIRM_MIN_GAP
+    before the snapshot's own checked_at, so a snapshot that started a zero
+    chain cannot confirm it however long it is kept.  Waiting for MAX_AGE
+    would hide every such listing's price for MAX_AGE instead of the rule's
+    ZERO_CONFIRM_MIN_GAP.  The rule itself is unchanged: the re-fetch must
+    still read the same zero twice; this only schedules it on time.
+
+    Only records that can ever be confirmed make it due, so a due refresh
+    cannot recur every 12 hours: listings ever seen paid are never printed
+    "Free", and storefronts outside LOCALE_STOREFRONTS (e.g. hk, mo, which
+    are queried for availability only) are dropped by
+    load_storefront_details -- the same filter the refresher uses to carry
+    zero_since over -- so their zero chain restarts on every refresh and
+    must be ignored here.
+    """
+    details = payload.get("details")
+    if not isinstance(details, dict):
+        return False
+    paid_anywhere = set().union(*snapshot_paid_seen(payload).values())
+    printable_countries = set(LOCALE_STOREFRONTS.values())
+    for country, app_details in details.items():
+        if country not in printable_countries or not isinstance(
+            app_details, dict
+        ):
+            continue
+        for app_id, detail in app_details.items():
+            if not isinstance(detail, dict) or str(app_id) in paid_anywhere:
+                continue
+            zero_since = _parse_utc(detail.get("zero_since"))
+            if (
+                zero_since is not None
+                and _is_zero_price(detail.get("price"))
+                and detail.get("price_readback") == detail.get("price")
+                and checked - zero_since < ZERO_CONFIRM_MIN_GAP
+                and now - zero_since >= ZERO_CONFIRM_MIN_GAP
+            ):
+                return True
+    return False
 
 
 def _public_detail(item: dict[str, object]) -> dict[str, object] | None:

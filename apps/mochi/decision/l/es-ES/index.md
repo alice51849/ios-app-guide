@@ -19,7 +19,7 @@ Si la mayoría de apps de tareas te parecen pesadas, la adecuada es una lista li
 - Apple Watch
 - App Store · Gratis
 
-[Consigue Mochi en la App Store →](https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
+[Obtener Mochi en App Store →](https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

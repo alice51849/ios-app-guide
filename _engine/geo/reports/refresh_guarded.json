@@ -1,0 +1,846 @@
+{
+  "complete": true,
+  "guarded": 32,
+  "attempted_rewrites": 1056,
+  "share": 0.030303030303030304,
+  "warning": true,
+  "by_reason": {
+    "meta:description": 32,
+    "meta:og:description": 32
+  },
+  "critical_conflicts": 64,
+  "pages": [
+    {
+      "locale": "ja",
+      "slug": "best-simple-to-do-list-app-iphone-no-subscription",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management… — Mochi.",
+          "published": "多くのToDoアプリが重く感じるなら、リマインダーとApple Watch対応を備えたクリーンなチェックリストで、意図的にプロジェクト管理機能を省いたMochiが最適です。"
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management… — Mochi.",
+          "published": "多くのToDoアプリが重く感じるなら、リマインダーとApple Watch対応を備えたクリーンなチェックリストで、意図的にプロジェクト管理機能を省いたMochiが最適です。"
+        }
+      ]
+    },
+    {
+      "locale": "ko",
+      "slug": "best-simple-to-do-list-app-iphone-no-subscription",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management… — Mochi.",
+          "published": "대부분 할 일 앱이 복잡하게 느껴진다면, 알림과 Apple Watch 지원이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞습니다."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management… — Mochi.",
+          "published": "대부분 할 일 앱이 복잡하게 느껴진다면, 알림과 Apple Watch 지원이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞습니다."
+        }
+      ]
+    },
+    {
+      "locale": "th",
+      "slug": "best-simple-to-do-list-app-iphone-no-subscription",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management… — Mochi.",
+          "published": "ถ้าแอปจดบันทึกส่วนใหญ่รู้สึกซับซ้อน แอปที่ใช่คือรายการตรวจสอบสะอาดพร้อมการแจ้งเตือนและรองรับ Apple Watch — และไม่มีฟีเจอร์จัดการโครงการ."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management… — Mochi.",
+          "published": "ถ้าแอปจดบันทึกส่วนใหญ่รู้สึกซับซ้อน แอปที่ใช่คือรายการตรวจสอบสะอาดพร้อมการแจ้งเตือนและรองรับ Apple Watch — และไม่มีฟีเจอร์จัดการโครงการ."
+        }
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "slug": "bopomofo-tracing-app-for-kids",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "«bopomofo tracing app for kids» — مسار حل واقعي مع Lumi Bopomofo وما ينبغي التحقق منه قبل الدفع مقابل أي تطبيق."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "«bopomofo tracing app for kids» — مسار حل واقعي مع Lumi Bopomofo وما ينبغي التحقق منه قبل الدفع مقابل أي تطبيق."
+        }
+      ]
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "bopomofo-tracing-app-for-kids",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "“bopomofo tracing app for kids” — um percurso realista com a Lumi Bopomofo e o que confirmar antes de pagar por uma aplicação."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "“bopomofo tracing app for kids” — um percurso realista com a Lumi Bopomofo e o que confirmar antes de pagar por uma aplicação."
+        }
+      ]
+    },
+    {
+      "locale": "tr",
+      "slug": "bopomofo-tracing-app-for-kids",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "“bopomofo tracing app for kids” sorusuna gerçekçi bir çözüm yolu: Lumi Bopomofo ile uygulamalı adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "“bopomofo tracing app for kids” sorusuna gerçekçi bir çözüm yolu: Lumi Bopomofo ile uygulamalı adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler."
+        }
+      ]
+    },
+    {
+      "locale": "vi",
+      "slug": "bopomofo-tracing-app-for-kids",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "“bopomofo tracing app for kids” — quy trình giải quyết thực tế với Lumi Bopomofo và những điều nên kiểm tra trước khi trả tiền cho một ứng dụng."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Best bopomofo tracing app for kids: how to choose Zhuyin practice that is playful, no-ads, and useful for early Chinese reading.",
+          "published": "“bopomofo tracing app for kids” — quy trình giải quyết thực tế với Lumi Bopomofo và những điều nên kiểm tra trước khi trả tiền cho một ứng dụng."
+        }
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "slug": "my-child-confuses-similar-looking-bopomofo-symbols-like-and-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "«My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?» — مسار حل واقعي مع Lumi Bopomofo وما ينبغي التحقق منه قبل الدفع مقابل أي تطبيق."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "«My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?» — مسار حل واقعي مع Lumi Bopomofo وما ينبغي التحقق منه قبل الدفع مقابل أي تطبيق."
+        }
+      ]
+    },
+    {
+      "locale": "id",
+      "slug": "my-child-confuses-similar-looking-bopomofo-symbols-like-and-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — alur penyelesaian yang realistis dengan Lumi Bopomofo dan hal yang perlu dicek sebelum membayar sebuah aplikasi."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — alur penyelesaian yang realistis dengan Lumi Bopomofo dan hal yang perlu dicek sebelum membayar sebuah aplikasi."
+        }
+      ]
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "my-child-confuses-similar-looking-bopomofo-symbols-like-and-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — um percurso realista com a Lumi Bopomofo e o que confirmar antes de pagar por uma aplicação."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — um percurso realista com a Lumi Bopomofo e o que confirmar antes de pagar por uma aplicação."
+        }
+      ]
+    },
+    {
+      "locale": "th",
+      "slug": "my-child-confuses-similar-looking-bopomofo-symbols-like-and-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — แนวทางแก้ปัญหาที่เป็นจริงด้วย Lumi Bopomofo และสิ่งที่ควรตรวจสอบก่อนจ่ายเงินซื้อแอป"
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — แนวทางแก้ปัญหาที่เป็นจริงด้วย Lumi Bopomofo และสิ่งที่ควรตรวจสอบก่อนจ่ายเงินซื้อแอป"
+        }
+      ]
+    },
+    {
+      "locale": "tr",
+      "slug": "my-child-confuses-similar-looking-bopomofo-symbols-like-and-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” sorusuna gerçekçi bir çözüm yolu: Lumi Bopomofo ile uygulamalı adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” sorusuna gerçekçi bir çözüm yolu: Lumi Bopomofo ile uygulamalı adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler."
+        }
+      ]
+    },
+    {
+      "locale": "vi",
+      "slug": "my-child-confuses-similar-looking-bopomofo-symbols-like-and-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — quy trình giải quyết thực tế với Lumi Bopomofo và những điều nên kiểm tra trước khi trả tiền cho một ứng dụng."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+          "published": "“My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?” — quy trình giải quyết thực tế với Lumi Bopomofo và những điều nên kiểm tra trước khi trả tiền cho một ứng dụng."
+        }
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "«My child keeps confusing the second and third Bopomofo tones — how do I help?» — مسار حل واقعي مع Lumi Bopomofo وما ينبغي التحقق منه قبل الدفع مقابل أي تطبيق."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "«My child keeps confusing the second and third Bopomofo tones — how do I help?» — مسار حل واقعي مع Lumi Bopomofo وما ينبغي التحقق منه قبل الدفع مقابل أي تطبيق."
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "„My child keeps confusing the second and third Bopomofo tones — how do I help?“ – ein realistischer Lösungsweg mit Lumi Bopomofo und ehrliche Hinweise, worauf Sie vor dem Kauf einer iPhone-App achten sollten."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "„My child keeps confusing the second and third Bopomofo tones — how do I help?“ – ein realistischer Lösungsweg mit Lumi Bopomofo und ehrliche Hinweise, worauf Sie vor dem Kauf einer iPhone-App achten sollten."
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "«My child keeps confusing the second and third Bopomofo tones — how do I help?»: un recorrido realista con Lumi Bopomofo y lo que conviene comprobar antes de pagar por una app."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "«My child keeps confusing the second and third Bopomofo tones — how do I help?»: un recorrido realista con Lumi Bopomofo y lo que conviene comprobar antes de pagar por una app."
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "« My child keeps confusing the second and third Bopomofo tones — how do I help? » : un parcours réaliste avec Lumi Bopomofo et des conseils honnêtes sur ce qu’il faut vérifier avant de payer une app."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "« My child keeps confusing the second and third Bopomofo tones — how do I help? » : un parcours réaliste avec Lumi Bopomofo et des conseils honnêtes sur ce qu’il faut vérifier avant de payer une app."
+        }
+      ]
+    },
+    {
+      "locale": "id",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — alur penyelesaian yang realistis dengan Lumi Bopomofo dan hal yang perlu dicek sebelum membayar sebuah aplikasi."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — alur penyelesaian yang realistis dengan Lumi Bopomofo dan hal yang perlu dicek sebelum membayar sebuah aplikasi."
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "「My child keeps confusing the second and third Bopomofo tones — how do I help?」で迷ったら:Lumi Bopomofo を使った現実的な解決の流れと、支払う前に確認すべきポイントを正直に整理しました。"
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "「My child keeps confusing the second and third Bopomofo tones — how do I help?」で迷ったら:Lumi Bopomofo を使った現実的な解決の流れと、支払う前に確認すべきポイントを正直に整理しました。"
+        }
+      ]
+    },
+    {
+      "locale": "ko",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "'My child keeps confusing the second and third Bopomofo tones — how do I help?' 고민이라면: Lumi Bopomofo 기반의 현실적인 해결 과정과 결제 전에 확인할 점을 정직하게 정리했습니다."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "'My child keeps confusing the second and third Bopomofo tones — how do I help?' 고민이라면: Lumi Bopomofo 기반의 현실적인 해결 과정과 결제 전에 확인할 점을 정직하게 정리했습니다."
+        }
+      ]
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — um passo a passo realista com o Lumi Bopomofo e o que conferir antes de pagar por um app."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — um passo a passo realista com o Lumi Bopomofo e o que conferir antes de pagar por um app."
+        }
+      ]
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — um percurso realista com a Lumi Bopomofo e o que confirmar antes de pagar por uma aplicação."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — um percurso realista com a Lumi Bopomofo e o que confirmar antes de pagar por uma aplicação."
+        }
+      ]
+    },
+    {
+      "locale": "th",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — แนวทางแก้ปัญหาที่เป็นจริงด้วย Lumi Bopomofo และสิ่งที่ควรตรวจสอบก่อนจ่ายเงินซื้อแอป"
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — แนวทางแก้ปัญหาที่เป็นจริงด้วย Lumi Bopomofo และสิ่งที่ควรตรวจสอบก่อนจ่ายเงินซื้อแอป"
+        }
+      ]
+    },
+    {
+      "locale": "tr",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” sorusuna gerçekçi bir çözüm yolu: Lumi Bopomofo ile uygulamalı adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” sorusuna gerçekçi bir çözüm yolu: Lumi Bopomofo ile uygulamalı adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler."
+        }
+      ]
+    },
+    {
+      "locale": "vi",
+      "slug": "my-child-keeps-confusing-the-second-and-third-bopomofo-tones-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — quy trình giải quyết thực tế với Lumi Bopomofo và những điều nên kiểm tra trước khi trả tiền cho một ứng dụng."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch.",
+          "published": "“My child keeps confusing the second and third Bopomofo tones — how do I help?” — quy trình giải quyết thực tế với Lumi Bopomofo và những điều nên kiểm tra trước khi trả tiền cho một ứng dụng."
+        }
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "slug": "my-child-learns-the-bopomofo-symbols-but-keeps-forgetting-them-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "إجابة عملية عن «My child learns the Bopomofo symbols but keeps forgetting them — how do I help?»: خطوات الحل على iPhone بمثال Lumi Bopomofo، مع نصائح صادقة من دون مبالغة."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "إجابة عملية عن «My child learns the Bopomofo symbols but keeps forgetting them — how do I help?»: خطوات الحل على iPhone بمثال Lumi Bopomofo، مع نصائح صادقة من دون مبالغة."
+        }
+      ]
+    },
+    {
+      "locale": "id",
+      "slug": "my-child-learns-the-bopomofo-symbols-but-keeps-forgetting-them-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "Jawaban praktis untuk “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: langkah penyelesaian di iPhone dengan contoh Lumi Bopomofo, plus saran jujur tanpa melebih-lebihkan."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "Jawaban praktis untuk “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: langkah penyelesaian di iPhone dengan contoh Lumi Bopomofo, plus saran jujur tanpa melebih-lebihkan."
+        }
+      ]
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "my-child-learns-the-bopomofo-symbols-but-keeps-forgetting-them-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "Resposta prática a “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: como resolver no iPhone com a Lumi Bopomofo, com conselhos honestos e sem exageros."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "Resposta prática a “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: como resolver no iPhone com a Lumi Bopomofo, com conselhos honestos e sem exageros."
+        }
+      ]
+    },
+    {
+      "locale": "th",
+      "slug": "my-child-learns-the-bopomofo-symbols-but-keeps-forgetting-them-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "คำตอบที่ใช้ได้จริงสำหรับ “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: วิธีจัดการบน iPhone โดยใช้ Lumi Bopomofo พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง"
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "คำตอบที่ใช้ได้จริงสำหรับ “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: วิธีจัดการบน iPhone โดยใช้ Lumi Bopomofo พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง"
+        }
+      ]
+    },
+    {
+      "locale": "tr",
+      "slug": "my-child-learns-the-bopomofo-symbols-but-keeps-forgetting-them-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "“My child learns the Bopomofo symbols but keeps forgetting them — how do I help?” için pratik yanıt: Lumi Bopomofo örneğiyle iPhone’da adım adım çözüm ve abartısız, dürüst uygulama seçme önerileri."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "“My child learns the Bopomofo symbols but keeps forgetting them — how do I help?” için pratik yanıt: Lumi Bopomofo örneğiyle iPhone’da adım adım çözüm ve abartısız, dürüst uygulama seçme önerileri."
+        }
+      ]
+    },
+    {
+      "locale": "vi",
+      "slug": "my-child-learns-the-bopomofo-symbols-but-keeps-forgetting-them-how-do-i-help",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:app_name",
+        "meta:og:description:app_name"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "Câu trả lời thiết thực cho “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: cách xử lý trên iPhone với Lumi Bopomofo, kèm lời khuyên trung thực, không phóng đại."
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "app_name",
+          "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
+          "published": "Câu trả lời thiết thực cho “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: cách xử lý trên iPhone với Lumi Bopomofo, kèm lời khuyên trung thực, không phóng đại."
+        }
+      ]
+    },
+    {
+      "locale": "th",
+      "slug": "what-is-the-best-app-to-teach-bopomofo-zhuyin-to-my-child-who-was-born-in-the-us",
+      "reasons": [
+        "meta:description",
+        "meta:og:description"
+      ],
+      "conflicts": [
+        "meta:description:price_or_number",
+        "meta:og:description:price_or_number"
+      ],
+      "conflict_details": [
+        {
+          "field": "meta:description",
+          "kind": "price_or_number",
+          "english": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice.",
+          "published": "คำตอบที่ใช้ได้จริงสำหรับ “แอปไหนดีที่สุดในการสอนปอพอมอฟอ/จู้ยิน (Zhuyin) ให้ลูกที่เกิดในสหรัฐฯ”: วิธีจัดการบน iPhone โดยใช้ Lumi Bopomofo พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง"
+        },
+        {
+          "field": "meta:og:description",
+          "kind": "price_or_number",
+          "english": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice.",
+          "published": "คำตอบที่ใช้ได้จริงสำหรับ “แอปไหนดีที่สุดในการสอนปอพอมอฟอ/จู้ยิน (Zhuyin) ให้ลูกที่เกิดในสหรัฐฯ”: วิธีจัดการบน iPhone โดยใช้ Lumi Bopomofo พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง"
+        }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import re
 import subprocess
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from urllib.parse import urlsplit, urlunsplit
@@ -3060,6 +3061,9 @@ _HEAD_TEXT_FIELDS: tuple[tuple[str, re.Pattern[str]], ...] = (
         ),
     ),
 )
+# Fields publisher_intent_catalog reads and alternatives_i18n compares
+# byte-for-byte against en-US.
+_CATALOG_FIELDS = ("h1", "lead", "app_store_cta", "publisher_disclosure")
 _HEAD_META_RE = re.compile(
     r"<meta\b[^>]*(?:name|property)=[\"']"
     r"(description|og:title|og:description)[\"'][^>]*>",
@@ -3084,9 +3088,14 @@ def _head_field_segments(page: str) -> dict[str, list[str]]:
     return fields
 
 
+def _normalized(value: str) -> str:
+    # finalize_html flips arrows on RTL pages; case and spacing are not a
+    # translation either.
+    return " ".join(value.replace("←", "→").casefold().split())
+
+
 def _same_text(left: str, right: str) -> bool:
-    # finalize_html flips arrows on RTL pages; that is not a translation.
-    return left.strip().replace("←", "→") == right.strip().replace("←", "→")
+    return _normalized(left) == _normalized(right)
 
 
 def _english_head_texts(source: str, english_pages: tuple[str, ...]) -> set[str]:
@@ -3100,13 +3109,136 @@ def _english_head_texts(source: str, english_pages: tuple[str, ...]) -> set[str]
     texts: set[str] = set()
     for page in (source, *english_pages):
         for units in _head_field_segments(page).values():
-            texts.update(unit.strip().replace("←", "→") for unit in units)
-            texts.add(" ".join(units).strip().replace("←", "→"))
+            texts.update(_normalized(unit) for unit in units)
+            texts.add(_normalized(" ".join(units)))
     return texts
 
 
-def _is_english(value: str, english: set[str]) -> bool:
-    return value.strip().replace("←", "→") in english
+def _lacks_native_script(value: str, lang: str | None) -> bool:
+    """Latin-only text on a page whose language has its own script."""
+    ranges = NATIVE_SCRIPT_RANGES.get(lang or "")
+    if not ranges:
+        return False  # Latin-script locales: no reliable script signal
+    letters = [ch for ch in value if ch.isalpha()]
+    return bool(letters) and not any(
+        start <= ord(ch) <= end for ch in letters for start, end in ranges
+    )
+
+
+def _is_english(value: str, english: set[str], lang: str | None = None) -> bool:
+    return _normalized(value) in english or _lacks_native_script(value, lang)
+
+
+# Store-facing claims (6.4): a kept translation may only stand next to fresh
+# body copy when it still states exactly what the current English states.
+_PURCHASE_WORDING_RE = re.compile(
+    r"\b(?:free|one[- ]time|pay(?:s|ing)? once|paid|lifetime|subscri\w*|"
+    r"unlock\w*|trial|in-app|purchase\w*|price\w*|cost\w*|buy)\b",
+    re.I,
+)
+# "ad-free" is not a price claim, and "plus" is an ordinary word in several
+# Latin-script locales; "Lite"/"Plus" app tiers are compared as app names.
+_LATIN_CLAIM_RE = re.compile(r"(?<![A-Za-z-])(free|pro|premium)(?![A-Za-z])", re.I)
+
+
+_NUMBER_RE = re.compile(r"\d+(?:[.,\u066b\u066c'\u2019]\d+)*")
+
+
+def _digit_runs(value: str) -> list[str]:
+    """Numbers (prices, years, counts) in any digit script, separators dropped.
+
+    "$2.99", "2,99 $" and "٢٫٩٩" all read 299, so a localized number format
+    still matches while a changed price or count does not.
+    """
+    ascii_digits = "".join(
+        str(unicodedata.digit(ch)) if ch.isdigit() else ch for ch in value
+    )
+    return sorted(re.sub(r"\D", "", run) for run in _NUMBER_RE.findall(ascii_digits))
+
+
+def _without_app_names(value: str) -> str:
+    # "Pro"/"Lite" inside a portfolio app name is the name, compared as such.
+    for name in portfolio_app_names_in(value):
+        value = re.sub(rf"(?<!\w){re.escape(name)}(?!\w)", " ", value)
+    return value
+
+
+def _latin_claims(value: str) -> list[str]:
+    return sorted(
+        m.casefold() for m in _LATIN_CLAIM_RE.findall(_without_app_names(value))
+    )
+
+
+def _answer_slug(value: str) -> str:
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", value.lower())).strip("-")
+
+
+def _keep_conflict(
+    name: str,
+    unit: str,
+    old: str,
+    pinned_query: str | None,
+) -> str | None:
+    """Why the published translation *old* may not stand in for *unit*.
+
+    Numbers and prices, currency symbols and portfolio app names must match
+    exactly, and so must Free/Pro-type words left in Latin.  Purchase wording
+    (free, one-time, subscription, ...) cannot be compared across languages,
+    so a unit carrying it is only kept where it is pinned to the page itself:
+    the <h1> query the slug was made from (it cannot change without the file
+    changing) and the part of the <title>/og:title that repeats it.
+    """
+    if pinned_query and name.startswith("meta:") and (
+        _normalized(pinned_query) in _normalized(old)
+    ):
+        # ensure_locale_meta's frame: it quotes the pinned <h1> query around
+        # generic wording and translates none of the English description, so
+        # it can only go stale through something the frame itself adds.
+        frame = re.sub(re.escape(pinned_query), " ", old, flags=re.I)
+        english_page = f"{unit} {pinned_query}"
+        if not set(_digit_runs(frame)) <= set(_digit_runs(english_page)):
+            return "price_or_number"
+        if any(
+            unicodedata.category(ch) == "Sc" and ch not in english_page
+            for ch in frame
+        ):
+            return "price_or_number"
+        if not set(portfolio_app_names_in(frame)) <= set(
+            portfolio_app_names_in(english_page)
+        ):
+            return "app_name"
+        if not set(_latin_claims(frame)) <= set(_latin_claims(english_page)):
+            return "free_pro"
+        return None
+    if _digit_runs(unit) != _digit_runs(old):
+        return "price_or_number"
+    currency = sorted(ch for ch in unit if unicodedata.category(ch) == "Sc")
+    if currency != sorted(ch for ch in old if unicodedata.category(ch) == "Sc"):
+        return "price_or_number"
+    if sorted(portfolio_app_names_in(unit)) != sorted(portfolio_app_names_in(old)):
+        return "app_name"
+    rest = unit
+    if pinned_query:
+        if name == "h1" and _same_text(unit, pinned_query):
+            rest = ""
+        elif name in {"title", "meta:og:title"} and _normalized(unit).startswith(
+            _normalized(pinned_query)
+        ):
+            rest = unit[len(pinned_query):]
+    if rest == unit:
+        if _latin_claims(unit) != _latin_claims(old):
+            return "free_pro"
+    else:
+        # The pinned query's own "free"/"pro" may be translated; the published
+        # text still may not add one the English never says, and the
+        # unpinned remainder must keep its own.
+        if not set(_latin_claims(old)) <= set(_latin_claims(unit)):
+            return "free_pro"
+        if not set(_latin_claims(rest)) <= set(_latin_claims(old)):
+            return "free_pro"
+    if _PURCHASE_WORDING_RE.search(_without_app_names(rest)):
+        return "purchase_wording"
+    return None
 
 
 def preserve_localized_head_fields(
@@ -3114,14 +3246,19 @@ def preserve_localized_head_fields(
     existing: str,
     mapping: dict[str, str],
     english_texts: set[str] | None = None,
-) -> tuple[dict[str, str], list[str]]:
+    *,
+    lang: str | None = None,
+    slug: str | None = None,
+) -> tuple[dict[str, str], list[str], list[str]]:
     """Keep the published translation of head fields the dictionary lacks.
 
     A field unit is kept only when the dictionary would render it as English
-    and the published page already shows something else at the same position
-    of the same field (equal unit count); the published text is never another
-    English source string and never names an unrelated portfolio app.  Units
-    the dictionary does translate keep the fresh dictionary translation.
+    and the published page already shows a translation at the same position
+    of the same field (equal unit count) that states the same store-facing
+    claims (_keep_conflict).  Units the dictionary does translate keep the
+    fresh dictionary translation.  Returns (mapping, kept fields, conflicts);
+    a conflict means the field will render English and the backstop keeps
+    the whole page instead.
     """
     english_units = set(mapping)
     if english_texts is None:
@@ -3133,33 +3270,47 @@ def preserve_localized_head_fields(
         for unit in english_units
         for name in portfolio_app_names_in(unit)
     }
+    source_fields = _head_field_segments(source)
+    h1_units = source_fields.get("h1", [])
+    pinned_query = (
+        h1_units[0]
+        if slug and len(h1_units) == 1 and _answer_slug(h1_units[0]) == slug
+        else None
+    )
     published = _head_field_segments(existing)
     preserved = dict(mapping)
     kept: list[str] = []
-    for name, units in _head_field_segments(source).items():
+    conflicts: list[str] = []
+    for name, units in source_fields.items():
         old_units = published.get(name)
         if not old_units or len(old_units) != len(units):
             continue
         for unit, old in zip(units, old_units):
             if unit not in preserved:
                 continue
+            # A renamed app reads under its current name (as the render will).
+            old = apply_brand_renames(old, source, lang)
             if not (
                 _same_text(preserved[unit], unit)
                 or preserved[unit] in english_units
-                or _is_english(preserved[unit], english_texts)
+                or _is_english(preserved[unit], english_texts, lang)
             ):
                 continue  # dictionary already localizes it
             if (
                 _same_text(old, unit)
                 or old in english_units
-                or _is_english(old, english_texts)
+                or _is_english(old, english_texts, lang)
             ):
                 continue  # published page is English here too
             if cross_app_names_introduced(unit, old, allowed_bases):
                 continue
+            conflict = _keep_conflict(name, unit, old, pinned_query)
+            if conflict:
+                conflicts.append(f"{name}:{conflict}")
+                continue
             preserved[unit] = old
             kept.append(name)
-    return preserved, sorted(set(kept))
+    return preserved, sorted(set(kept)), sorted(set(conflicts))
 
 
 def regressed_head_fields(
@@ -3167,13 +3318,20 @@ def regressed_head_fields(
     existing: str,
     rendered: str,
     english_texts: set[str] | None = None,
+    lang: str | None = None,
+    catalog_english: str | None = None,
 ) -> list[str]:
     """Head fields localized on the published page that *rendered* reverts.
 
-    A field regresses when the published page shows it localized (not equal
-    to English) and the new render shows the English text again -- or, for
-    <title>, the English <h1> query again (ensure_locale_meta frames an
-    English title around the untranslated query).
+    *catalog_english* is the published en-US page: a catalog field that
+    would become byte-equal to it (alternatives_i18n's "English fallback")
+    while the published page differed is flagged too, even when the
+    published text was itself an older English wording.
+
+    A field regresses when the published page shows it localized (not
+    English) and the new render shows English again -- or, for <title>, the
+    English <h1> query again (ensure_locale_meta frames an English title
+    around the untranslated query).
     """
     english = _head_field_segments(source)
     before = _head_field_segments(existing)
@@ -3184,13 +3342,26 @@ def regressed_head_fields(
     for name in english:
         old_value = " ".join(before.get(name, []))
         new_value = " ".join(after.get(name, []))
-        if not old_value or _is_english(old_value, english_texts):
+        if not old_value or _is_english(old_value, english_texts, lang):
             continue
-        if _is_english(new_value, english_texts):
+        if _is_english(new_value, english_texts, lang):
             regressed.append(name)
-    en_query = " ".join(english.get("h1", [])).strip()
-    old_title = " ".join(before.get("title", []))
-    new_title = " ".join(after.get("title", []))
+    if catalog_english:
+        reference = _head_field_segments(catalog_english)
+        for name in _CATALOG_FIELDS:
+            en_value = " ".join(reference.get(name, [])).strip()
+            old_value = " ".join(before.get(name, [])).strip()
+            new_value = " ".join(after.get(name, [])).strip()
+            if (
+                en_value
+                and name not in regressed
+                and new_value == en_value
+                and old_value != en_value
+            ):
+                regressed.append(name)
+    en_query = _normalized(" ".join(english.get("h1", [])))
+    old_title = _normalized(" ".join(before.get("title", [])))
+    new_title = _normalized(" ".join(after.get("title", [])))
     if (
         en_query
         and "title" not in regressed
@@ -3208,6 +3379,7 @@ def run_refresh(
     limit: int | None = None,
     min_gain: float = 0.01,
     slugs: list[str] | None = None,
+    guarded_report: Path | None = None,
 ) -> int:
     """Re-localize *already generated* answer pages after the dictionaries grew.
 
@@ -3235,6 +3407,7 @@ def run_refresh(
         )
 
     improved = unchanged = failed = renamed = relabeled = guarded = 0
+    guarded_pages: list[dict[str, Any]] = []
     touched_slugs: list[str] = []
     for slug in candidates:
         src_path = ANSWERS / f"{slug}.html"
@@ -3243,6 +3416,8 @@ def run_refresh(
         source = src_path.read_text(encoding="utf-8")
         strings, spans, json_spans = extract_strings(source)
         english_texts: set[str] | None = None  # built on the first rewrite
+        en_us_path = ROOT / "en-US" / "answers" / f"{slug}.html"
+        catalog_english: str | None = None
         slug_touched = False
         for lang in langs:
             target = ROOT / lang / "answers" / f"{slug}.html"
@@ -3269,6 +3444,8 @@ def run_refresh(
             localized: str | None = None
             regressed: list[str] = []
             if not new_ratio > old_ratio - min_gain:
+                if catalog_english is None and en_us_path.is_file():
+                    catalog_english = en_us_path.read_text(encoding="utf-8")
                 if english_texts is None:
                     # The English locale pages are what downstream compares a
                     # localized head field against ("English fallback").
@@ -3286,8 +3463,8 @@ def run_refresh(
                 # Per-unit no-regress: head fields already translated on the
                 # published page keep that translation when the dictionary has
                 # none (it can never learn <h1>/<title>, _HEAD_TEXT_FIELDS).
-                mapping, _kept = preserve_localized_head_fields(
-                    source, existing, mapping, english_texts
+                mapping, _kept, conflicts = preserve_localized_head_fields(
+                    source, existing, mapping, english_texts, lang=lang, slug=slug
                 )
                 try:
                     localized = render_localized(
@@ -3309,8 +3486,10 @@ def run_refresh(
                     continue
                 # Backstop: a field the preservation could not pair (markup
                 # differs) must not regress either -- keep the page instead.
+                localized = apply_brand_renames(localized, source, lang)
                 regressed = regressed_head_fields(
-                    source, existing, localized, english_texts
+                    source, existing, localized, english_texts, lang,
+                    catalog_english=catalog_english,
                 )
                 if market_surface_policy.application_ids(
                     existing
@@ -3320,9 +3499,19 @@ def run_refresh(
                     regressed.append("app_owner")
                 if regressed:
                     guarded += 1
+                    guarded_pages.append(
+                        {
+                            "locale": lang,
+                            "slug": slug,
+                            "reasons": regressed,
+                            # Why a localized head unit could not be kept.
+                            "conflicts": conflicts,
+                        }
+                    )
                     print(
                         f"kept {lang}/{slug}.html: refresh would revert "
-                        f"localized {', '.join(regressed)}",
+                        f"localized {', '.join(regressed)}"
+                        + (f" ({', '.join(conflicts)})" if conflicts else ""),
                         flush=True,
                     )
             if localized is None or regressed:
@@ -3360,6 +3549,8 @@ def run_refresh(
         if limit and len(touched_slugs) >= limit:
             break
 
+    # Summary line first: the JSON totals stay the last stdout line.
+    _report_guarded(guarded_pages, improved, guarded_report)
     print(
         json.dumps(
             {
@@ -3375,6 +3566,53 @@ def run_refresh(
         flush=True,
     )
     return 0
+
+
+# A whole page kept for no-regress reasons is safe but freezes its body copy;
+# this many in one pass means a dictionary or source change needs a look.
+GUARDED_WARN_COUNT = 50
+GUARDED_WARN_SHARE = 0.10
+DEFAULT_GUARDED_REPORT = Path(__file__).resolve().parent / "reports" / "refresh_guarded.json"
+
+
+def _report_guarded(
+    pages: list[dict[str, Any]],
+    refreshed: int,
+    path: Path | None,
+) -> None:
+    by_reason: dict[str, int] = {}
+    for page in pages:
+        for reason in page["reasons"]:
+            by_reason[reason] = by_reason.get(reason, 0) + 1
+    attempted = refreshed + len(pages)
+    share = len(pages) / attempted if attempted else 0.0
+    warn = len(pages) >= GUARDED_WARN_COUNT or (
+        bool(pages) and share > GUARDED_WARN_SHARE
+    )
+    line = (
+        f"refresh guarded {len(pages)} page(s) of {attempted} rewrite(s) "
+        f"({share:.0%}); by reason: "
+        + (", ".join(f"{k}={v}" for k, v in sorted(by_reason.items())) or "none")
+    )
+    print(f"::warning::{line}" if warn else line, flush=True)
+    if path is None:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(
+            {
+                "guarded": len(pages),
+                "attempted_rewrites": attempted,
+                "warning": warn,
+                "by_reason": dict(sorted(by_reason.items())),
+                "pages": sorted(pages, key=lambda p: (p["slug"], p["locale"])),
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
 
 
 def main() -> int:
@@ -3451,6 +3689,7 @@ def main() -> int:
             limit=args.limit,
             min_gain=args.min_gain,
             slugs=args.slugs or None,
+            guarded_report=DEFAULT_GUARDED_REPORT,
         )
     if sum(
         bool(value)

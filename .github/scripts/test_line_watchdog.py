@@ -530,7 +530,7 @@ class OtherSlotLineTests(unittest.TestCase):
         rows, gh = self.judge("clip-backup.yml", runs, at("2026-10-16T00:41:00Z"))
         row = rows["clip-backup.yml 17:47Z"]
         self.assertEqual("retriggered", row["action"])
-        self.assertEqual({"slot": "15", "date": "2026-10-15"}, row["dispatch_inputs"])
+        self.assertEqual({"cron": "47 17 * * *"}, row["dispatch_inputs"])  # the cron, like social-extra (11-27)
         self.assertTrue(rows["clip-backup.yml 03:47Z"]["fresh"])
         self.assertTrue(rows["clip-backup.yml 14:47Z"]["fresh"])
 
@@ -546,14 +546,38 @@ class OtherSlotLineTests(unittest.TestCase):
         self.assertEqual("outside_taiwan_day", rows["clip-backup.yml 14:47Z"]["action"])
         self.assertEqual([], gh.dispatched())
 
-    def test_clip_backup_missed_asia_backup_uses_clip_slot_1(self):
+    def test_clip_backup_missed_asia_backup_carries_its_cron(self):
         runs = [slot_run("2026-10-15T17:49:00Z", "Hook clip backup posts", run_id=3),
                 slot_run("2026-10-15T14:49:00Z", "Hook clip backup posts", run_id=2),
                 slot_run("2026-10-15T03:49:00Z", "Hook clip backup posts", run_id=1)]
         rows, _ = self.judge("clip-backup.yml", runs, at("2026-10-16T12:41:00Z"), dispatch=False)
         row = rows["clip-backup.yml 03:47Z"]
         self.assertEqual("would_retrigger", row["action"])
-        self.assertEqual({"slot": "1", "date": "2026-10-16"}, row["dispatch_inputs"])
+        self.assertEqual({"cron": "47 3 * * *"}, row["dispatch_inputs"])
+
+    def test_a_late_03_47_heal_counts_for_03_47_not_the_04_47_slot(self):
+        # 2026-11-27: the heal carries its cron, so a 03:47 heal started at 05:10 serves 03:47 (no false red, no
+        # second dispatch), and the 04:47 slot is judged on its own run.
+        runs = [slot_run("2026-11-27T05:10:00Z", "Hook clip backup posts · cron 47 3 * * *", run_id=2),
+                slot_run("2026-11-27T04:49:00Z", "Hook clip backup posts · cron 47 4 * * *", run_id=1)]
+        rows, gh = self.judge("clip-backup.yml", runs, at("2026-11-27T06:12:00Z"))
+        self.assertTrue(rows["clip-backup.yml 03:47Z"]["fresh"])
+        self.assertTrue(rows["clip-backup.yml 04:47Z"]["fresh"])
+        for line in ("clip-backup.yml 03:47Z", "clip-backup.yml 04:47Z"):
+            self.assertNotIn(rows[line]["action"], ("retriggered", "would_retrigger"), line)
+        # A missed 04:47 is healed with its own cron (Threads only: "Which slot" sets no clip slot for it).
+        rows, gh = self.judge("clip-backup.yml", runs[:1], at("2026-11-27T06:12:00Z"), dispatch=False)
+        self.assertEqual({"cron": "47 4 * * *"}, rows["clip-backup.yml 04:47Z"]["dispatch_inputs"])
+        self.assertTrue(rows["clip-backup.yml 03:47Z"]["fresh"])
+
+    def test_clip_backup_heal_cron_is_one_the_workflow_handles(self):
+        text = (WORKFLOW_DIR / "clip-backup.yml").read_text(encoding="utf-8")
+        spec = GUIDE_SLOTS["clip-backup.yml"]
+        for hour, minute in spec["slots"].items():
+            cron = spec["inputs"]["cron"].format(hour=hour)
+            self.assertIn(f"- cron: '{cron}'", text)
+            self.assertIn(f'"{cron}")', text)
+            self.assertEqual(f"{minute} {hour} * * *", cron)
 
 
 class GuideProfileSlotRunTests(unittest.TestCase):

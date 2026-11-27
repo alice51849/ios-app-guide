@@ -128,9 +128,12 @@ jobs:
       - name: Check the account's daily cap (3 posts, Taiwan date)
         # Shared with every Threads post path (threads-autopilot included).
         # Full: since 2026-11-15 not done at once (the day before's post at the same slot is often a few minutes
-        # short of leaving Threads' rolling 24 hours): inside 2 hours of the slot's fire time it stays open and
-        # the next clip-backup.yml run dispatches it again (threads_cap.py full, OPEN_STEP below); after that it
-        # is a cap skip with a receipt. Count unknown: fail, so a backfill can retry.
+        # short of leaving Threads' rolling 24 hours): inside 2 hours of the slot's fire time (the 03:00 slot:
+        # 3 hours, threads_cap.SLOT_RETRY_GRACE; the 13:00 slot: until 14:30) it stays open and the next
+        # clip-backup.yml run dispatches it again (threads_cap.py full, OPEN_STEP below); after that it is a cap
+        # skip with a receipt. Room but the grace is over (a late backup, heal or delayed schedule): no post, a
+        # past-grace skip with a receipt (threads_cap.py within, 2026-11-27), so a late post never takes a later
+        # slot's share. Count unknown: fail, so a backfill can retry.
         id: room
         if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour != '1'
         env:
@@ -139,7 +142,12 @@ jobs:
         run: |
           python3 .github/scripts/test_threads_cap.py -q
           python3 .github/scripts/threads_series.py room && rc=0 || rc=$?
-          if [ "$rc" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$rc" = 0 ]; then
+            python3 .github/scripts/threads_cap.py within --slot "$SLOT" --receipt "$RUNNER_TEMP/cap-skip.json" && inside=0 || inside=$?
+            if [ "$inside" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+            if [ "$inside" = 3 ]; then echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi  # threads_cap.PAST_GRACE_EXIT
+            echo "::error::could not check the slot's grace; nothing posted"; exit 1
+          fi
           if [ "$rc" = 1 ]; then
             echo "ok=false" >> "$GITHUB_OUTPUT"
             python3 .github/scripts/threads_cap.py full --slot "$SLOT" --receipt "$RUNNER_TEMP/cap-skip.json"
@@ -152,7 +160,7 @@ jobs:
         if: steps.room.outputs.retry == 'true'
         run: echo "::notice::Threads 帳號已滿，這格寬限內再試（不記完成）"
       - name: Record the cap skip receipt
-        # threads_cap.py full wrote $RUNNER_TEMP/cap-skip.json once the grace was over; it goes into
+        # threads_cap.py full (or within, room past the grace) wrote $RUNNER_TEMP/cap-skip.json once the grace was over; it goes into
         # .github/growth/threads-cap-skips.json. A record only, so a failed push is a warning.
         if: always() && steps.room.outputs.capskip == 'true'
         continue-on-error: true

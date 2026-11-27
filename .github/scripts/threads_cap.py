@@ -35,6 +35,12 @@ ROOM, FULL, UNKNOWN = "room", "full", "unknown"
 # slot recorded as a cap skip, with a receipt (.github/growth/threads-cap-skips.json). Every retry still goes
 # through account_status(): the cap itself is never loosened.
 RETRY, SKIP = "retry", "skip"
+# After a slot's grace (slot_deadline) the slot never posts, even with room (2.7 review 2026-11-27): a late post
+# (a dropped 04:47 backup, then the 11:47 backup, the watchdog or a scheduled run GitHub delayed by hours) would
+# hold the account's 3rd share until the same time tomorrow and push the 13:00 evening slot into a cap skip.
+# threads-post.yml checks it after the room check (threads_cap.py within) and records a skip receipt instead;
+# threads_backfill.py does not dispatch a left-open slot again once its grace is over.
+PAST_GRACE_EXIT = 3
 RETRY_GRACE = dt.timedelta(hours=2)
 # Per-slot grace overrides (UTC slot hour -> grace). 2026-11-27 (also 11-20): the 03:00 slot found the account full
 # because the day before's post went out at 04:05:07; the 03:47 backup's run checked at 04:01, 3.5 minutes short, and
@@ -123,12 +129,34 @@ def full_slot_action(slot, now):
     return SKIP
 
 
-def skip_receipt(slot, now, label="threads-post"):
+def past_grace(slot, now):
+    """True once ``now`` is at or after the slot's retry grace end (slot_deadline): the slot no longer posts."""
+    return _utc(now) >= slot_deadline(slot)
+
+
+def within_grace(slot, now, receipt_path="", output_path=""):
+    """The room check found room: post only inside the slot's grace. Past it, record a skip (receipt) instead.
+
+    Returns True inside the grace. Past it, writes the receipt (reason past_grace) and capskip=true."""
+    if not past_grace(slot, now):
+        return True
+    receipt = skip_receipt(slot, now, reason="past_grace")
+    if receipt_path:
+        Path(receipt_path).write_text(json.dumps(receipt, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"::notice::這格（{_utc(slot).isoformat()}）的寬限到 {slot_deadline(slot).strftime('%H:%M')} 世界時已過："
+          f"帳號雖有空位也不發（免得佔到後面那格的額度），記為過期跳過")
+    if output_path:
+        with open(output_path, "a", encoding="utf-8") as out:
+            out.write("retry=false\ncapskip=true\n")
+    return False
+
+
+def skip_receipt(slot, now, label="threads-post", reason="cap_full_after_grace"):
     slot, now = _utc(slot), _utc(now)
     return {
         "slot": slot.isoformat(),
         "decided_at": now.replace(microsecond=0).isoformat(),
-        "reason": "cap_full_after_grace",
+        "reason": reason,
         "cap": ACCOUNT_DAILY_CAP,
         "grace_minutes": int(slot_grace(slot).total_seconds() // 60),
         "workflow": label,
@@ -223,6 +251,11 @@ def main(argv=None):
     full.add_argument("--slot", required=True, help="UTC slot start (social_slot_gate.py slot output)")
     full.add_argument("--now", default="", help="tests only: the current UTC time")
     full.add_argument("--receipt", default="", help="where to write the skip receipt")
+    within = sub.add_parser("within", help="the room check found room: exit 0 inside the slot's grace, "
+                            f"{PAST_GRACE_EXIT} (and a skip receipt) once it is over")
+    within.add_argument("--slot", required=True, help="UTC slot start (social_slot_gate.py slot output)")
+    within.add_argument("--now", default="", help="tests only: the current UTC time")
+    within.add_argument("--receipt", default="", help="where to write the skip receipt")
     merge = sub.add_parser("merge-skip", help="fold a skip receipt into .github/growth/threads-cap-skips.json")
     merge.add_argument("receipt")
     args = parser.parse_args(argv)
@@ -230,6 +263,11 @@ def main(argv=None):
         now = dt.datetime.fromisoformat(args.now) if args.now else dt.datetime.now(dt.timezone.utc)
         full_slot(dt.datetime.fromisoformat(args.slot), now, args.receipt, os.environ.get("GITHUB_OUTPUT", ""))
         return 0
+    if args.command == "within":
+        now = dt.datetime.fromisoformat(args.now) if args.now else dt.datetime.now(dt.timezone.utc)
+        inside = within_grace(dt.datetime.fromisoformat(args.slot), now, args.receipt,
+                              os.environ.get("GITHUB_OUTPUT", ""))
+        return 0 if inside else PAST_GRACE_EXIT
     merge_skip(args.receipt)
     return 0
 

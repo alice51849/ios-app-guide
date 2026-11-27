@@ -21,6 +21,10 @@ on:
       cron:
         description: "Cron dispatcher only: the missed schedule of the current slot, e.g. 0 9 * * *"
         required: true
+      drift_retry:
+        description: "Set only by this workflow's drift_retry job: this run is the one re-dispatch after a source drift"
+        required: false
+        default: ""
 
 permissions:
   actions: read
@@ -40,6 +44,7 @@ jobs:
     timeout-minutes: 20
     outputs:
       should_post: ${{ steps.slot.outputs.should_post }}
+      drift_retry: ${{ steps.publish.outputs.drift_retry }}
     permissions:
       actions: read
       contents: write # telegram-native-ledger 孤立資料分支的 CAS 寫入，與鉤子片發文紀錄。
@@ -68,6 +73,7 @@ jobs:
           python3 .github/scripts/test_social_slot_gate.py -q
           python3 .github/scripts/test_social_posting.py -q -b
       - name: Post to Telegram channel (free, no OpenAI)
+        id: publish
         if: steps.slot.outputs.should_post == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -131,6 +137,37 @@ jobs:
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 90
+
+  drift_retry:
+    # 2026-11-26 09:00Z and 15:00Z: a push to main landed while the post job ran its
+    # tests, so telegram_post.py refused to send (publisher source drifted from current
+    # main) and the slot went empty. telegram_post.py offers drift_retry=true only when
+    # that drift came before the slot held any intent (nothing reserved, nothing sent);
+    # this job then dispatches the same slot once on the new main, where every gate
+    # (checkout == main, slot clock, ledger one intent a slot, tests) runs again.
+    # Never a second time: the re-dispatched run carries drift_retry=true.
+    needs: post
+    if: >-
+      always()
+      && github.ref == 'refs/heads/main'
+      && (github.event_name == 'schedule'
+      || (github.event_name == 'workflow_dispatch' && inputs.cron != ''))
+      && needs.post.outputs.drift_retry == 'true'
+      && inputs.drift_retry != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write # dispatch telegram-daily.yml once; no contents access
+    steps:
+      - name: Re-dispatch this slot once on the new main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+        run: |
+          sleep 60 # let a burst of pushes settle; the new run checks main again anyway
+          gh workflow run telegram-daily.yml --repo "$GITHUB_REPOSITORY" --ref main \
+            -f cron="$SCHEDULE" -f drift_retry=true
+          echo "::notice::re-dispatched slot $SCHEDULE once after a source drift"
 
   catalog:
     # 每日全 App 目錄(portfolio_daily.py):全部上架 App 依類別列出，每款一條

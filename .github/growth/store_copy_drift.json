@@ -582,70 +582,70 @@
     "Cyca 经期周期追踪・排卵",
     "Cyca"
    ],
-   "live_updated": "2026-11-20",
-   "live_version": "1.0.16",
+   "live_updated": "2026-11-27",
+   "live_version": "1.0.17",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-27",
+     "live_version": "1.0.17",
      "same": true
     },
     "zh-Hant": {
@@ -2145,14 +2145,14 @@
     "Lumi 레터 Pro"
    ],
    "live_updated": "2026-11-26",
-   "live_version": "1.3.10",
+   "live_version": "1.3.11",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
+     "same": true
     },
     "en-GB": {
      "added": [],
@@ -2163,26 +2163,24 @@
     },
     "en-US": {
      "added": [],
-     "dropped": [
-      "Also sold in the Lumi Learning Bundle on the App Store: four paid Lumi apps for Zhuyin, English phonics, math and daily routines in one purchase."
-     ],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
-     "same": false
+     "dropped": [],
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
+     "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
+     "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
+     "same": true
     },
     "ja": {
      "added": [],
@@ -2201,8 +2199,8 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.3.10",
+     "live_updated": "2026-11-26",
+     "live_version": "1.3.11",
      "same": true
     },
     "zh-Hant": {
@@ -2213,7 +2211,7 @@
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "lumimath": {
    "blocked_terms": [],
@@ -2230,13 +2228,13 @@
     "Lumi數學星球"
    ],
    "live_updated": "2026-11-26",
-   "live_version": "1.0.26",
+   "live_version": "1.0.27",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "en-GB": {
@@ -2249,22 +2247,22 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "ja": {
@@ -2284,8 +2282,8 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-16",
-     "live_version": "1.0.26",
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.27",
      "same": true
     },
     "zh-Hant": {
@@ -2309,14 +2307,14 @@
     "Lumi 數學星球"
    ],
    "live_updated": "2026-11-26",
-   "live_version": "1.0.19",
+   "live_version": "1.0.20",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
+     "same": true
     },
     "en-GB": {
      "added": [],
@@ -2327,27 +2325,24 @@
     },
     "en-US": {
      "added": [],
-     "dropped": [
-      "Made for parents who want to pay once and keep purchase screens away from their kids. One purchase unlocks everything. There are no in-app purchases. Supports Family Sharing, so up to six family members can use it. Schools and organizations can buy it in volume through Apple School Manager. All 14 planets and 46 question types are included.",
-      "Also sold in the Lumi Learning Bundle on the App Store: four paid Lumi apps for Zhuyin, English phonics, math and daily routines in one purchase."
-     ],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
-     "same": false
+     "dropped": [],
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
+     "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
+     "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
+     "same": true
     },
     "ja": {
      "added": [],
@@ -2366,9 +2361,9 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.19",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.20",
+     "same": true
     },
     "zh-Hant": {
      "added": [],
@@ -2378,7 +2373,7 @@
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "lumimission": {
    "blocked_terms": [],
@@ -2496,14 +2491,14 @@
     "Lumi 미션 별 Pro"
    ],
    "live_updated": "2026-11-26",
-   "live_version": "1.0.17",
+   "live_version": "1.0.18",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
+     "same": true
     },
     "en-GB": {
      "added": [],
@@ -2514,27 +2509,24 @@
     },
     "en-US": {
      "added": [],
-     "dropped": [
-      "Made for parents who want to pay once and keep purchase screens away from their kids. One purchase unlocks everything. There are no in-app purchases. Supports Family Sharing, so up to six family members can use it. Schools and organizations can buy it in volume through Apple School Manager. All 5 daily missions, all 6 buddies and custom missions are included.",
-      "Also sold in the Lumi Learning Bundle on the App Store: four paid Lumi apps for Zhuyin, English phonics, math and daily routines in one purchase."
-     ],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
-     "same": false
+     "dropped": [],
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
+     "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
+     "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
+     "same": true
     },
     "ja": {
      "added": [],
@@ -2553,16 +2545,16 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
+     "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.0.17",
-     "same": false
+     "live_updated": "2026-11-26",
+     "live_version": "1.0.18",
+     "same": true
     },
     "zh-Hant": {
      "added": [],
@@ -2572,7 +2564,7 @@
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "lumiweather": {
    "blocked_terms": [],
@@ -3384,70 +3376,70 @@
    "brands": [
     "PicClear Pro"
    ],
-   "live_updated": "2026-11-14",
-   "live_version": "1.9.11",
+   "live_updated": "2026-11-27",
+   "live_version": "1.9.12",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-14",
-     "live_version": "1.9.11",
+     "live_updated": "2026-11-27",
+     "live_version": "1.9.12",
      "same": true
     },
     "zh-Hant": {
@@ -5135,11 +5127,11 @@
   "gb"
  ],
  "counts": {
-  "green": 58,
-  "red": 3,
+  "green": 61,
+  "red": 0,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-27T05:30:43Z",
+ "generated_at": "2026-11-27T19:55:38Z",
  "schema": "growth.store-copy-drift/v1"
 }

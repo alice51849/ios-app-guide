@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-27",
- "generated_at": "2026-11-27T02:00:58Z",
+ "generated_at": "2026-11-27T10:10:56Z",
  "items": {
   "bluesky": [
    {
@@ -64,7 +64,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #Lumi注音星球",
+    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Lumi注音星球 — 準備上小一？先玩注音 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -138,42 +138,85 @@
    },
    {
     "kind": "clip",
-    "key": "lumiweather/en",
-    "locale": "en",
-    "app": "lumiweather",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kuyoqm.mp4",
-    "hook": "It tells you what to wear",
-    "name": "Lumi Weather: What to Wear",
-    "title": "It tells you what to wear | What to Wear | Lumi Weather",
+    "key": "hourstaglite_b/fr",
+    "locale": "fr",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
+    "hook": "Déjà à sec ? Où va l'argent ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Déjà à sec ? Où va l'argent ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#WhatToWear",
-     "#OutingScore",
-     "#Umbrella",
-     "#LumiWeather"
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "It tells you what to wear\nGood day out? See exactly why\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #LumiWeather",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Lumi Weather: What to Wear — It tells you what to wear — Good day out? See exactly why",
-    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+    "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "a",
+    "alt": "HoursTag Lite: Prix en heures — Déjà à sec ? Où va l'argent ? — HoursTag Lite affiche vos achats en heures — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "jacket",
-     "sunscreen",
-     "dress",
-     "humidity",
-     "feels",
-     "like"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "What to Wear",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f7a5003af9c1539f",
+     "board": "a93acda324b6d926",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "cyca/en",
+    "locale": "en",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
+    "hook": "Where does your period data go?",
+    "name": "Cyca: Period & Cycle Tracker",
+    "title": "Where does your period data go? | Private Ovulation Calendar | Cyca period tracker",
+    "tags": [
+     "#PeriodCycleTracker",
+     "#PrivateOvulationCalendar",
+     "#Menstrual",
+     "#CycaPeriodTracker"
+    ],
+    "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Cycaperiodtracker",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "Cyca: Period & Cycle Tracker — Where does your period data go? — No account. It stays on your phone — Private Ovulation Calendar",
+    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+    },
+    "keywords": [
+     "menstrual",
+     "diary",
+     "cramp",
+     "forecast",
+     "body",
+     "journal"
+    ],
+    "keyline": "Private Ovulation Calendar",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -181,90 +224,68 @@
    },
    {
     "kind": "clip",
-    "key": "wifiaidlite/zh-Hant",
+    "key": "hourstag/ja",
+    "locale": "ja",
+    "app": "hourstag",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
+    "hook": "これ買うのに、何時間働く？",
+    "name": "HoursTag: 価格を時間に",
+    "title": "これ買うのに、何時間働く？ | 価格を時間に | HoursTag 価格を時間に",
+    "tags": [
+     "#価格を時間に",
+     "#家計簿",
+     "#節約",
+     "#支出管理",
+     "#HoursTag価格を時間に"
+    ],
+    "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #HoursTag価格を時間に",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "HoursTag: 価格を時間に — これ買うのに、何時間働く？ — 必要？欲しい？それとも衝動？",
+    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+    },
+    "keywords": [
+     "家計簿",
+     "節約",
+     "支出管理",
+     "お金管理",
+     "浪費",
+     "貯金"
+    ],
+    "keyline": "価格を時間に",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "662531e69466d413",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/chore/mochidonestamp/washer/zh-Hant",
     "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
-    "hook": "還告訴你下一步",
-    "name": "WiFi Aid Lite",
-    "title": "還告訴你下一步 | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261127.jpg",
+    "caption": "上次做是幾天前？ 清洗衣機槽\n建議約每 1–2 個月\n週期為一般建議，請以產品說明書為準\n\nMochi DoneStamp: 事情做完點一下，記住上次是什麼時候\nApp Store／Google Play 搜尋「Mochi DoneStamp」\n\n#上次何時 #機車保養 #換機油",
+    "title": "上次做是幾天前？ 清洗衣機槽",
+    "alt": "Mochi DoneStamp — 上次做是幾天前？ 清洗衣機槽 — 建議約每 1–2 個月 — 週期為一般建議，請以產品說明書為準 — 上次何時",
+    "name": "Mochi DoneStamp",
+    "hook": "上次做是幾天前？ 清洗衣機槽",
     "tags": [
-     "#斷線",
-     "#連不上",
-     "#網路慢",
-     "#網路卡卡",
-     "#WiFiAidLite"
+     "#上次何時",
+     "#機車保養",
+     "#換機油",
+     "#家電",
+     "#MochiDoneStamp上次何時"
     ],
-    "caption": "還告訴你下一步\nWi-Fi、DNS 還是網際網路？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #WiFiAidLite",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "WiFi Aid Lite — 還告訴你下一步 — Wi-Fi、DNS 還是網際網路？ — 斷線 · 連不上 · 網路慢",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "斷線",
-     "連不上",
-     "網路慢",
-     "網路卡卡",
-     "不穩",
-     "測試"
-    ],
-    "keyline": "斷線 · 連不上 · 網路慢",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "tripplanet_b/en",
-    "locale": "en",
-    "app": "tripplanet_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c16081f83c.mp4",
-    "hook": "Mission done? Earn a reward",
-    "name": "Trip Planet: Kids Travel Games",
-    "title": "Mission done? Earn a reward | Road Trip & Flight Missions | Trip Planet",
-    "tags": [
-     "#RoadTrip",
-     "#FlightMissions",
-     "#PassportStamps",
-     "#TripPlanet"
-    ],
-    "caption": "Mission done? Earn a reward\nPick a background for every trip\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #TripPlanet",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Trip Planet: Kids Travel Games — Mission done? Earn a reward — Pick a background for every trip — Road Trip & Flight Missions",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
-    },
-    "keywords": [
-     "vacation",
-     "airplane",
-     "toddler",
-     "preschool",
-     "passport",
-     "stamps"
-    ],
-    "keyline": "Road Trip & Flight Missions",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "973fb7ac04f10b2b",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "store": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp"
    },
    {
     "kind": "card",
@@ -451,7 +472,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Lumi注音星球 — 準備上小一？先玩注音 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -525,42 +546,85 @@
    },
    {
     "kind": "clip",
-    "key": "lumiweather/en",
-    "locale": "en",
-    "app": "lumiweather",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kuyoqm.mp4",
-    "hook": "It tells you what to wear",
-    "name": "Lumi Weather: What to Wear",
-    "title": "It tells you what to wear | What to Wear | Lumi Weather",
+    "key": "hourstaglite_b/fr",
+    "locale": "fr",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
+    "hook": "Déjà à sec ? Où va l'argent ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Déjà à sec ? Où va l'argent ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#WhatToWear",
-     "#OutingScore",
-     "#Umbrella",
-     "#LumiWeather"
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "It tells you what to wear\nGood day out? See exactly why\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #Umbrella #LumiWeather",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Lumi Weather: What to Wear — It tells you what to wear — Good day out? See exactly why",
-    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+    "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "a",
+    "alt": "HoursTag Lite: Prix en heures — Déjà à sec ? Où va l'argent ? — HoursTag Lite affiche vos achats en heures — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "jacket",
-     "sunscreen",
-     "dress",
-     "humidity",
-     "feels",
-     "like"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "What to Wear",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f7a5003af9c1539f",
+     "board": "a93acda324b6d926",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "cyca/en",
+    "locale": "en",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
+    "hook": "Where does your period data go?",
+    "name": "Cyca: Period & Cycle Tracker",
+    "title": "Where does your period data go? | Private Ovulation Calendar | Cyca period tracker",
+    "tags": [
+     "#PeriodCycleTracker",
+     "#PrivateOvulationCalendar",
+     "#Menstrual",
+     "#CycaPeriodTracker"
+    ],
+    "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "Cyca: Period & Cycle Tracker — Where does your period data go? — No account. It stays on your phone — Private Ovulation Calendar",
+    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+    },
+    "keywords": [
+     "menstrual",
+     "diary",
+     "cramp",
+     "forecast",
+     "body",
+     "journal"
+    ],
+    "keyline": "Private Ovulation Calendar",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -568,90 +632,68 @@
    },
    {
     "kind": "clip",
-    "key": "wifiaidlite/zh-Hant",
+    "key": "hourstag/ja",
+    "locale": "ja",
+    "app": "hourstag",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
+    "hook": "これ買うのに、何時間働く？",
+    "name": "HoursTag: 価格を時間に",
+    "title": "これ買うのに、何時間働く？ | 価格を時間に | HoursTag 価格を時間に",
+    "tags": [
+     "#価格を時間に",
+     "#家計簿",
+     "#節約",
+     "#支出管理",
+     "#HoursTag価格を時間に"
+    ],
+    "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "HoursTag: 価格を時間に — これ買うのに、何時間働く？ — 必要？欲しい？それとも衝動？",
+    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+    },
+    "keywords": [
+     "家計簿",
+     "節約",
+     "支出管理",
+     "お金管理",
+     "浪費",
+     "貯金"
+    ],
+    "keyline": "価格を時間に",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "662531e69466d413",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/chore/mochidonestamp/washer/zh-Hant",
     "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
-    "hook": "還告訴你下一步",
-    "name": "WiFi Aid Lite",
-    "title": "還告訴你下一步 | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261127.jpg",
+    "caption": "上次做是幾天前？ 清洗衣機槽\n建議約每 1–2 個月\n週期為一般建議，請以產品說明書為準\n\nMochi DoneStamp: 事情做完點一下，記住上次是什麼時候\nApp Store／Google Play 搜尋「Mochi DoneStamp」\n\n#上次何時 #機車保養 #換機油 #家電 #MochiDoneStamp上次何時",
+    "title": "上次做是幾天前？ 清洗衣機槽",
+    "alt": "Mochi DoneStamp — 上次做是幾天前？ 清洗衣機槽 — 建議約每 1–2 個月 — 週期為一般建議，請以產品說明書為準 — 上次何時",
+    "name": "Mochi DoneStamp",
+    "hook": "上次做是幾天前？ 清洗衣機槽",
     "tags": [
-     "#斷線",
-     "#連不上",
-     "#網路慢",
-     "#網路卡卡",
-     "#WiFiAidLite"
+     "#上次何時",
+     "#機車保養",
+     "#換機油",
+     "#家電",
+     "#MochiDoneStamp上次何時"
     ],
-    "caption": "還告訴你下一步\nWi-Fi、DNS 還是網際網路？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "WiFi Aid Lite — 還告訴你下一步 — Wi-Fi、DNS 還是網際網路？ — 斷線 · 連不上 · 網路慢",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "斷線",
-     "連不上",
-     "網路慢",
-     "網路卡卡",
-     "不穩",
-     "測試"
-    ],
-    "keyline": "斷線 · 連不上 · 網路慢",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "tripplanet_b/en",
-    "locale": "en",
-    "app": "tripplanet_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c16081f83c.mp4",
-    "hook": "Mission done? Earn a reward",
-    "name": "Trip Planet: Kids Travel Games",
-    "title": "Mission done? Earn a reward | Road Trip & Flight Missions | Trip Planet",
-    "tags": [
-     "#RoadTrip",
-     "#FlightMissions",
-     "#PassportStamps",
-     "#TripPlanet"
-    ],
-    "caption": "Mission done? Earn a reward\nPick a background for every trip\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #PassportStamps #TripPlanet",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Trip Planet: Kids Travel Games — Mission done? Earn a reward — Pick a background for every trip — Road Trip & Flight Missions",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
-    },
-    "keywords": [
-     "vacation",
-     "airplane",
-     "toddler",
-     "preschool",
-     "passport",
-     "stamps"
-    ],
-    "keyline": "Road Trip & Flight Missions",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "973fb7ac04f10b2b",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "store": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp"
    }
   ],
   "youtube": [
@@ -730,7 +772,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "今日複習，再練一次\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "今日複習，再練一次\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Lumi注音星球 — 今日複習，再練一次 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -832,178 +874,178 @@
    },
    {
     "kind": "clip",
-    "key": "lumiweather/en",
-    "locale": "en",
-    "app": "lumiweather",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kuyoqm.mp4",
-    "hook": "It tells you what to wear",
-    "name": "Lumi Weather: What to Wear",
-    "title": "It tells you what to wear | What to Wear | Lumi Weather",
+    "key": "hourstaglite_b/fr",
+    "locale": "fr",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
+    "hook": "HoursTag Lite affiche vos achats en heures",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "HoursTag Lite affiche vos achats en heures | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#WhatToWear",
-     "#OutingScore",
-     "#Umbrella",
-     "#LumiWeather"
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "It tells you what to wear\nGood day out? See exactly why\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #Umbrella #LumiWeather",
-    "button": "Get it on the App Store",
+    "caption": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
     "variant": "b",
-    "alt": "Lumi Weather: What to Wear — It tells you what to wear — Good day out? See exactly why",
-    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+    "alt": "HoursTag Lite: Prix en heures — HoursTag Lite affiche vos achats en heures — Avant d'acheter : combien d'heures ? — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "jacket",
-     "sunscreen",
-     "dress",
-     "humidity",
-     "feels",
-     "like"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "What to Wear",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f7a5003af9c1539f",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "It tells you what to wear | Lumi Weather #Shorts",
-     "description": "It tells you what to wear\nGood day out? See exactly why\nWhat to Wear\n\nLumi Weather: What to Wear\nApp Store: https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6779552704?action=write-review\n\njacket · sunscreen · dress · humidity · feels · like\n\n#Shorts #WhatToWear #LumiWeather",
+     "title": "HoursTag Lite affiche vos achats en heures | HoursTag Lite #Shorts",
+     "description": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\n\nHoursTag Lite: Prix en heures\nApp Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nachat impulsif · dépenses · vaut le coup · besoin · envie · shopping\n\n#Shorts #AchatConscient #HoursTagLite",
      "tags": [
-      "jacket",
-      "sunscreen",
-      "dress",
-      "humidity",
-      "feels",
-      "like",
-      "WhatToWear",
-      "OutingScore",
-      "Umbrella",
-      "LumiWeather",
-      "Lumi Weather"
+      "achat impulsif",
+      "dépenses",
+      "vaut le coup",
+      "besoin",
+      "envie",
+      "shopping",
+      "AchatConscient",
+      "AchatImpulsif",
+      "VautLeCoup",
+      "HoursTagLite",
+      "HoursTag Lite"
      ]
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wifiaidlite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
-    "hook": "Wi-Fi、DNS 還是網際網路？",
-    "name": "WiFi Aid Lite",
-    "title": "Wi-Fi、DNS 還是網際網路？ | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
+    "key": "cyca/en",
+    "locale": "en",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
+    "hook": "No account. It stays on your phone",
+    "name": "Cyca: Period & Cycle Tracker",
+    "title": "No account. It stays on your phone | Private Ovulation Calendar | Cyca period tracker",
     "tags": [
-     "#斷線",
-     "#連不上",
-     "#網路慢",
-     "#網路卡卡",
-     "#WiFiAidLite"
+     "#PeriodCycleTracker",
+     "#PrivateOvulationCalendar",
+     "#Menstrual",
+     "#CycaPeriodTracker"
     ],
-    "caption": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite",
-    "button": "在 App Store 下載",
+    "caption": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "WiFi Aid Lite — Wi-Fi、DNS 還是網際網路？ — 還是網站本身？ — 斷線 · 連不上 · 網路慢",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "alt": "Cyca: Period & Cycle Tracker — No account. It stays on your phone — Period & ovulation at a glance — Private Ovulation Calendar",
+    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dyoutube%26utm_campaign%3Dcyca",
     "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "斷線",
-     "連不上",
-     "網路慢",
-     "網路卡卡",
-     "不穩",
-     "測試"
+     "menstrual",
+     "diary",
+     "cramp",
+     "forecast",
+     "body",
+     "journal"
     ],
-    "keyline": "斷線 · 連不上 · 網路慢",
+    "keyline": "Private Ovulation Calendar",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Wi-Fi、DNS 還是網際網路？ | WiFi Aid Lite #Shorts",
-     "description": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n斷線 · 連不上 · 網路慢 · 網路卡卡 · 不穩 · 測試\n\n#Shorts #斷線 #WiFiAidLite",
+     "title": "No account. It stays on your phone | Cyca period tracker #Shorts",
+     "description": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\n\nCyca: Period & Cycle Tracker\nApp Store: https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dyoutube%26utm_campaign%3Dcyca\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6782251621?action=write-review\n\nmenstrual · diary · cramp · forecast · body · journal\n\n#Shorts #PeriodCycleTracker #Cycaperiodtracker",
      "tags": [
-      "斷線",
-      "連不上",
-      "網路慢",
-      "網路卡卡",
-      "不穩",
-      "測試",
-      "WiFiAidLite",
-      "WiFi Aid Lite"
+      "menstrual",
+      "diary",
+      "cramp",
+      "forecast",
+      "body",
+      "journal",
+      "PeriodCycleTracker",
+      "PrivateOvulationCalendar",
+      "CycaPeriodTracker",
+      "Cyca period tracker"
      ]
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "tripplanet_b/en",
-    "locale": "en",
-    "app": "tripplanet_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c16081f83c.mp4",
-    "hook": "Mission done? Earn a reward",
-    "name": "Trip Planet: Kids Travel Games",
-    "title": "Mission done? Earn a reward | Road Trip & Flight Missions | Trip Planet",
+    "key": "hourstag/ja",
+    "locale": "ja",
+    "app": "hourstag",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
+    "hook": "目標も労働時間で",
+    "name": "HoursTag: 価格を時間に",
+    "title": "目標も労働時間で | 価格を時間に | HoursTag 価格を時間に",
     "tags": [
-     "#RoadTrip",
-     "#FlightMissions",
-     "#PassportStamps",
-     "#TripPlanet"
+     "#価格を時間に",
+     "#家計簿",
+     "#節約",
+     "#支出管理",
+     "#HoursTag価格を時間に"
     ],
-    "caption": "Mission done? Earn a reward\nPick a background for every trip\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #PassportStamps #TripPlanet",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Trip Planet: Kids Travel Games — Mission done? Earn a reward — Pick a background for every trip — Road Trip & Flight Missions",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "caption": "目標も労働時間で\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "HoursTag: 価格を時間に — 目標も労働時間で — 必要？欲しい？それとも衝動？",
+    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
     },
     "keywords": [
-     "vacation",
-     "airplane",
-     "toddler",
-     "preschool",
-     "passport",
-     "stamps"
+     "家計簿",
+     "節約",
+     "支出管理",
+     "お金管理",
+     "浪費",
+     "貯金"
     ],
-    "keyline": "Road Trip & Flight Missions",
+    "keyline": "価格を時間に",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "973fb7ac04f10b2b",
+     "board": "662531e69466d413",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Mission done? Earn a reward | Trip Planet #Shorts",
-     "description": "Mission done? Earn a reward\nPick a background for every trip\nRoad Trip & Flight Missions\n\nTrip Planet: Kids Travel Games\nApp Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6787193643?action=write-review\n\nvacation · airplane · toddler · preschool · passport · stamps\n\n#Shorts #RoadTrip #TripPlanet",
+     "title": "目標も労働時間で | HoursTag 価格を時間に #Shorts",
+     "description": "目標も労働時間で\n必要？欲しい？それとも衝動？\n価格を時間に\n\nHoursTag: 価格を時間に\nApp Store: https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6754218117?action=write-review\n\n家計簿 · 節約 · 支出管理 · お金管理 · 浪費 · 貯金\n\n#Shorts #価格を時間に #HoursTag価格を時間に",
      "tags": [
-      "vacation",
-      "airplane",
-      "toddler",
-      "preschool",
-      "passport",
-      "stamps",
-      "RoadTrip",
-      "FlightMissions",
-      "PassportStamps",
-      "TripPlanet",
-      "Trip Planet"
+      "家計簿",
+      "節約",
+      "支出管理",
+      "お金管理",
+      "浪費",
+      "貯金",
+      "価格を時間に",
+      "HoursTag価格を時間に",
+      "HoursTag 価格を時間に"
      ]
     },
     "slot": 15
@@ -1074,7 +1116,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Lumi注音星球 — 選對注音，餵小夥伴 — 贏得星星與，成就徽章 — 注音遊戲：聽音、描寫、拼音",
@@ -1101,7 +1143,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+     "description": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
      "link": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8"
     },
     "slot": 1
@@ -1156,145 +1198,170 @@
    },
    {
     "kind": "clip",
-    "key": "lumiweather/en",
-    "locale": "en",
-    "app": "lumiweather",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kuyoqm.mp4",
-    "hook": "Right on your Home Screen",
-    "name": "Lumi Weather: What to Wear",
-    "title": "Right on your Home Screen | What to Wear | Lumi Weather",
+    "key": "hourstaglite_b/fr",
+    "locale": "fr",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
+    "hook": "HoursTag Lite affiche vos achats en heures",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "HoursTag Lite affiche vos achats en heures | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#WhatToWear",
-     "#OutingScore",
-     "#Umbrella",
-     "#LumiWeather"
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "Right on your Home Screen\nIt tells you what to wear\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #Umbrella #LumiWeather",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Lumi Weather: What to Wear — Right on your Home Screen — It tells you what to wear",
-    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+    "caption": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Prix en heures — HoursTag Lite affiche vos achats en heures — Avant d'acheter : combien d'heures ? — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "jacket",
-     "sunscreen",
-     "dress",
-     "humidity",
-     "feels",
-     "like"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "What to Wear",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f7a5003af9c1539f",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Right on your Home Screen\nIt tells you what to wear\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #Umbrella #LumiWeather\n\nGet it on the App Store: https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
-     "link": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8"
+     "description": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+     "link": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wifiaidlite/zh-Hant",
+    "key": "cyca/en",
+    "locale": "en",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
+    "hook": "No account. It stays on your phone",
+    "name": "Cyca: Period & Cycle Tracker",
+    "title": "No account. It stays on your phone | Private Ovulation Calendar | Cyca period tracker",
+    "tags": [
+     "#PeriodCycleTracker",
+     "#PrivateOvulationCalendar",
+     "#Menstrual",
+     "#CycaPeriodTracker"
+    ],
+    "caption": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Cyca: Period & Cycle Tracker — No account. It stays on your phone — Period & ovulation at a glance — Private Ovulation Calendar",
+    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+    },
+    "keywords": [
+     "menstrual",
+     "diary",
+     "cramp",
+     "forecast",
+     "body",
+     "journal"
+    ],
+    "keyline": "Private Ovulation Calendar",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e3d67d897d7076a",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+     "link": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "hourstag/ja",
+    "locale": "ja",
+    "app": "hourstag",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
+    "hook": "必要？欲しい？それとも衝動？",
+    "name": "HoursTag: 価格を時間に",
+    "title": "必要？欲しい？それとも衝動？ | 価格を時間に | HoursTag 価格を時間に",
+    "tags": [
+     "#価格を時間に",
+     "#家計簿",
+     "#節約",
+     "#支出管理",
+     "#HoursTag価格を時間に"
+    ],
+    "caption": "必要？欲しい？それとも衝動？\n出費を時間で、ふり返る\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "HoursTag: 価格を時間に — 必要？欲しい？それとも衝動？ — 出費を時間で、ふり返る",
+    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+    },
+    "keywords": [
+     "家計簿",
+     "節約",
+     "支出管理",
+     "お金管理",
+     "浪費",
+     "貯金"
+    ],
+    "keyline": "価格を時間に",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "662531e69466d413",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "必要？欲しい？それとも衝動？\n出費を時間で、ふり返る\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+     "link": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/chore/mochidonestamp/washer/zh-Hant",
     "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
-    "hook": "網路又卡了？",
-    "name": "WiFi Aid Lite",
-    "title": "網路又卡了？ | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261127.jpg",
+    "caption": "上次做是幾天前？ 清洗衣機槽\n建議約每 1–2 個月\n週期為一般建議，請以產品說明書為準\n\nMochi DoneStamp: 事情做完點一下，記住上次是什麼時候\nApp Store／Google Play 搜尋「Mochi DoneStamp」\n\n#上次何時 #機車保養 #換機油 #家電 #MochiDoneStamp上次何時",
+    "title": "上次做是幾天前？ 清洗衣機槽",
+    "alt": "Mochi DoneStamp — 上次做是幾天前？ 清洗衣機槽 — 建議約每 1–2 個月 — 週期為一般建議，請以產品說明書為準 — 上次何時",
+    "name": "Mochi DoneStamp",
+    "hook": "上次做是幾天前？ 清洗衣機槽",
     "tags": [
-     "#斷線",
-     "#連不上",
-     "#網路慢",
-     "#網路卡卡",
-     "#WiFiAidLite"
+     "#上次何時",
+     "#機車保養",
+     "#換機油",
+     "#家電",
+     "#MochiDoneStamp上次何時"
     ],
-    "caption": "網路又卡了？\nWi-Fi、DNS 還是網際網路？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite",
     "button": "在 App Store 下載",
-    "variant": "a",
-    "alt": "WiFi Aid Lite — 網路又卡了？ — Wi-Fi、DNS 還是網際網路？ — 斷線 · 連不上 · 網路慢",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "斷線",
-     "連不上",
-     "網路慢",
-     "網路卡卡",
-     "不穩",
-     "測試"
-    ],
-    "keyline": "斷線 · 連不上 · 網路慢",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
+    "store": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
     "pinterest": {
-     "description": "網路又卡了？\nWi-Fi、DNS 還是網際網路？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-     "link": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "tripplanet_b/en",
-    "locale": "en",
-    "app": "tripplanet_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c16081f83c.mp4",
-    "hook": "A trip story card to keep",
-    "name": "Trip Planet: Kids Travel Games",
-    "title": "A trip story card to keep | Road Trip & Flight Missions | Trip Planet",
-    "tags": [
-     "#RoadTrip",
-     "#FlightMissions",
-     "#PassportStamps",
-     "#TripPlanet"
-    ],
-    "caption": "A trip story card to keep\nMission done? Earn a reward\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #PassportStamps #TripPlanet",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Trip Planet: Kids Travel Games — A trip story card to keep — Mission done? Earn a reward — Road Trip & Flight Missions",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
-    },
-    "keywords": [
-     "vacation",
-     "airplane",
-     "toddler",
-     "preschool",
-     "passport",
-     "stamps"
-    ],
-    "keyline": "Road Trip & Flight Missions",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "973fb7ac04f10b2b",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "A trip story card to keep\nMission done? Earn a reward\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #PassportStamps #TripPlanet\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-     "link": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
+     "description": "上次做是幾天前？ 清洗衣機槽\n建議約每 1–2 個月\n週期為一般建議，請以產品說明書為準\n\nMochi DoneStamp: 事情做完點一下，記住上次是什麼時候\nApp Store／Google Play 搜尋「Mochi DoneStamp」\n\n#上次何時 #機車保養 #換機油 #家電 #MochiDoneStamp上次何時\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+     "link": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8"
+    }
    }
   ],
   "tiktok": [
@@ -1361,7 +1428,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Lumi注音星球 — 準備上小一？先玩注音 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -1388,7 +1455,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
+     "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
     },
     "slot": 1
    },
@@ -1441,140 +1508,140 @@
    },
    {
     "kind": "clip",
-    "key": "lumiweather/en",
-    "locale": "en",
-    "app": "lumiweather",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kuyoqm.mp4",
-    "hook": "It tells you what to wear",
-    "name": "Lumi Weather: What to Wear",
-    "title": "It tells you what to wear | What to Wear | Lumi Weather",
+    "key": "hourstaglite_b/fr",
+    "locale": "fr",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
+    "hook": "Déjà à sec ? Où va l'argent ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Déjà à sec ? Où va l'argent ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#WhatToWear",
-     "#OutingScore",
-     "#Umbrella",
-     "#LumiWeather"
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "It tells you what to wear\nGood day out? See exactly why\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #Umbrella #LumiWeather",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Lumi Weather: What to Wear — It tells you what to wear — Good day out? See exactly why",
-    "store": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+    "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "a",
+    "alt": "HoursTag Lite: Prix en heures — Déjà à sec ? Où va l'argent ? — HoursTag Lite affiche vos achats en heures — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "jacket",
-     "sunscreen",
-     "dress",
-     "humidity",
-     "feels",
-     "like"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "What to Wear",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f7a5003af9c1539f",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "It tells you what to wear\nGood day out? See exactly why\nLumi Weather: What to Wear\nSearch “Lumi Weather” on the App Store\nAlso on Google Play\n\n#WhatToWear #OutingScore #Umbrella #LumiWeather\n\nGet it on the App Store: https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
+     "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wifiaidlite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
-    "hook": "還告訴你下一步",
-    "name": "WiFi Aid Lite",
-    "title": "還告訴你下一步 | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
+    "key": "cyca/en",
+    "locale": "en",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
+    "hook": "Where does your period data go?",
+    "name": "Cyca: Period & Cycle Tracker",
+    "title": "Where does your period data go? | Private Ovulation Calendar | Cyca period tracker",
     "tags": [
-     "#斷線",
-     "#連不上",
-     "#網路慢",
-     "#網路卡卡",
-     "#WiFiAidLite"
+     "#PeriodCycleTracker",
+     "#PrivateOvulationCalendar",
+     "#Menstrual",
+     "#CycaPeriodTracker"
     ],
-    "caption": "還告訴你下一步\nWi-Fi、DNS 還是網際網路？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite",
-    "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "WiFi Aid Lite — 還告訴你下一步 — Wi-Fi、DNS 還是網際網路？ — 斷線 · 連不上 · 網路慢",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "Cyca: Period & Cycle Tracker — Where does your period data go? — No account. It stays on your phone — Private Ovulation Calendar",
+    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
     "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "斷線",
-     "連不上",
-     "網路慢",
-     "網路卡卡",
-     "不穩",
-     "測試"
+     "menstrual",
+     "diary",
+     "cramp",
+     "forecast",
+     "body",
+     "journal"
     ],
-    "keyline": "斷線 · 連不上 · 網路慢",
+    "keyline": "Private Ovulation Calendar",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "還告訴你下一步\nWi-Fi、DNS 還是網際網路？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
+     "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "tripplanet_b/en",
-    "locale": "en",
-    "app": "tripplanet_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c16081f83c.mp4",
-    "hook": "Mission done? Earn a reward",
-    "name": "Trip Planet: Kids Travel Games",
-    "title": "Mission done? Earn a reward | Road Trip & Flight Missions | Trip Planet",
+    "key": "hourstag/ja",
+    "locale": "ja",
+    "app": "hourstag",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
+    "hook": "これ買うのに、何時間働く？",
+    "name": "HoursTag: 価格を時間に",
+    "title": "これ買うのに、何時間働く？ | 価格を時間に | HoursTag 価格を時間に",
     "tags": [
-     "#RoadTrip",
-     "#FlightMissions",
-     "#PassportStamps",
-     "#TripPlanet"
+     "#価格を時間に",
+     "#家計簿",
+     "#節約",
+     "#支出管理",
+     "#HoursTag価格を時間に"
     ],
-    "caption": "Mission done? Earn a reward\nPick a background for every trip\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #PassportStamps #TripPlanet",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Trip Planet: Kids Travel Games — Mission done? Earn a reward — Pick a background for every trip — Road Trip & Flight Missions",
-    "store": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "HoursTag: 価格を時間に — これ買うのに、何時間働く？ — 必要？欲しい？それとも衝動？",
+    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
     },
     "keywords": [
-     "vacation",
-     "airplane",
-     "toddler",
-     "preschool",
-     "passport",
-     "stamps"
+     "家計簿",
+     "節約",
+     "支出管理",
+     "お金管理",
+     "浪費",
+     "貯金"
     ],
-    "keyline": "Road Trip & Flight Missions",
+    "keyline": "価格を時間に",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "973fb7ac04f10b2b",
+     "board": "662531e69466d413",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Mission done? Earn a reward\nPick a background for every trip\nRoad Trip & Flight Missions\nTrip Planet: Kids Travel Games\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#RoadTrip #FlightMissions #PassportStamps #TripPlanet\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
+     "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag"
     },
     "slot": 15
    }
@@ -1728,7 +1795,7 @@
      "#求職",
      "#CVDeskATS履歷"
     ],
-    "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「ats 履歷」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #CVDeskATS履歷",
+    "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「履歷範本」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #CVDeskATS履歷",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "CV Desk ATS 履歷製作 — 點修正建議，提升分數 — 每款範本，都相容 ATS — 履歷範本・履歷健檢・PDF匯出",
@@ -1903,7 +1970,7 @@
      "#หางาน",
      "#CVDeskเรซูเม่ATS"
     ],
-    "caption": "ส่งออก PDF หรือ Word\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “CV Desk เรซูเม่ ATS” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่",
+    "caption": "ส่งออก PDF หรือ Word\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “เรซูเม่ ats” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่",
     "button": "ดาวน์โหลดใน App Store",
     "variant": "c",
     "alt": "CV Desk: สร้างเรซูเม่ ATS — ส่งออก PDF หรือ Word — แตะคำแนะนำแก้ไข เพิ่มคะแนน — ทำเรซูเม่สมัครงาน เทมเพลต PDF",
@@ -3921,7 +3988,7 @@
      "#注音練習",
      "#Lumi注音星球"
     ],
-    "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #Lumi注音星球",
+    "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Lumi注音星球 — 37 個注音小夥伴，等你收集 — 聽聲音，選出正確的注音 — 注音遊戲：聽音、描寫、拼音",
@@ -5842,7 +5909,7 @@
      "#明日",
      "#ルミのおてんき星"
     ],
-    "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「服装 天気」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #ルミのおてんき星",
+    "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「今日何着る？気温」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #ルミのおてんき星",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "ルミのおてんき星：天気予報・今日の服装 — 今日の空を、ホーム画面に — 着る物も持ち物も、ひと目でわかる — 今日何着る？気温・傘・紫外線・降水確率",
@@ -6994,7 +7061,7 @@
      "#摘要",
      "#OnePagePPT一頁簡報"
     ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #OnePagePPT一頁簡報",
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「OnePage PPT 一頁簡報」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #OnePagePPT一頁簡報",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
@@ -8572,7 +8639,7 @@
      "#Nightstand",
      "#StayClock"
     ],
-    "caption": "Same face on StandBy\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #StayClock",
+    "caption": "Same face on StandBy\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “desk clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #StayClock",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "Stay Clock: Flip Desk Clock — Same face on StandBy — Big time and a month calendar — Nightstand & Bedside Clock",
@@ -8658,7 +8725,7 @@
      "#ナイトスタンド",
      "#StayClock"
     ],
-    "caption": "充電中のiPhoneを、枕元の時計に\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「置き時計」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #StayClock",
+    "caption": "充電中のiPhoneを、枕元の時計に\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「Stay Clock」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #StayClock",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "Stay Clock:パタパタ卓上時計 — 充電中のiPhoneを、枕元の時計に — 大きな時刻と、月間カレンダー — 時計を常時表示・置き時計",
@@ -9043,7 +9110,7 @@
      "#國旅",
      "#TripPlanet親子旅行遊戲"
     ],
-    "caption": "小小任務，換來大大笑容\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #TripPlanet親子旅行遊戲",
+    "caption": "小小任務，換來大大笑容\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\n在 App Store 搜尋「Trip Planet 親子旅行遊戲」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #TripPlanet親子旅行遊戲",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Trip Planet 親子旅行遊戲 — 小小任務，換來大大笑容 — 搭機任務包，一鍵加入 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -9598,7 +9665,7 @@
      "#일괄",
      "#Zipbox압축풀기"
     ],
-    "caption": "풀기 전에 미리 보고 그것만 꺼내기\n암호화 압축도 가능\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '암호 zip 파일' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #Zipbox압축풀기",
+    "caption": "풀기 전에 미리 보고 그것만 꺼내기\n암호화 압축도 가능\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '7z 압축 풀기' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #Zipbox압축풀기",
     "button": "App Store에서 받기",
     "variant": "b",
     "alt": "Zipbox 압축풀기: ZIP RAR 7z — 풀기 전에 미리 보고 그것만 꺼내기 — 암호화 압축도 가능 — 압축 해제·RAR 파일 열기·암호 ZIP",
@@ -10026,7 +10093,7 @@
      "#剩餘",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #UsageNow",
+    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#限額 #配額 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號，還有額度？",
@@ -10069,7 +10136,7 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "いいところで、使用上限の通知…\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #UsageNow",
+    "caption": "いいところで、使用上限の通知…\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #UsageNow",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "UsageNow：AI使用量トラッカー — いいところで、使用上限の通知… — UsageNowで、全アカウントの残量 — Claude・Codex・Copilot・Gemini残量",
@@ -10111,7 +10178,7 @@
      "#KINutzung",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
@@ -11988,7 +12055,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #Lumi注音星球",
+    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Lumi注音星球 — 準備上小一？先玩注音 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -13341,6 +13408,49 @@
    },
    {
     "kind": "clip",
+    "key": "lumimathpro/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/777fyj.mp4",
+    "hook": "孩子玩，你來印",
+    "name": "Lumi 數學星球：兒童數學",
+    "title": "孩子玩，你來印 | 心算練習・邏輯推理・應用題 | Lumi 數學星球 兒童數學",
+    "tags": [
+     "#兒童數學",
+     "#思維",
+     "#奧數",
+     "#競賽",
+     "#Lumi數學星球兒童數學"
+    ],
+    "caption": "孩子玩，你來印\n依程度出 20 題，還附解答\n心算練習・邏輯推理・應用題\nLumi 數學星球：兒童數學\n在 App Store 搜尋「Lumi 數學星球 兒童數學」\nAndroid 版在 Google Play\n\n#兒童數學 #思維 #Lumi數學星球兒童數學",
+    "button": "在 App Store 下載",
+    "variant": "c",
+    "alt": "Lumi 數學星球：兒童數學 — 孩子玩，你來印 — 依程度出 20 題，還附解答 — 心算練習・邏輯推理・應用題",
+    "store": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
+    },
+    "keywords": [
+     "思維",
+     "奧數",
+     "競賽",
+     "資優",
+     "規律",
+     "找規律"
+    ],
+    "keyline": "心算練習・邏輯推理・應用題",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "e1637282f6e3cfc4",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "lumimathpro/ja",
     "locale": "ja",
     "app": "lumimathpro",
@@ -14469,7 +14579,7 @@
      "#使用量",
      "#UsageNow"
     ],
-    "caption": "寫到一半 AI 額度又爆了？\nClaude、Codex、Copilot、Gemini 一起看\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #UsageNow",
+    "caption": "寫到一半 AI 額度又爆了？\nClaude、Codex、Copilot、Gemini 一起看\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 寫到一半 AI 額度又爆了？ — Claude、Codex、Copilot、Gemini 一起看 — Claude、Codex、Copilot 重置倒數",
@@ -14512,7 +14622,7 @@
      "#使用制限",
      "#UsageNow"
     ],
-    "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #UsageNow",
+    "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #UsageNow",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "UsageNow：AI使用量トラッカー — 50の言語に、完全対応 — Claude・Codex・ Copilot・Geminiをまとめて — Claude・Codex・Copilot・Gemini残量",
@@ -14554,7 +14664,7 @@
      "#Programmierer",
      "#UsageNow"
     ],
-    "caption": "Schon wieder am KI-Limit?\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #UsageNow",
+    "caption": "Schon wieder am KI-Limit?\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #UsageNow",
     "button": "Im App Store laden",
     "variant": "a",
     "alt": "UsageNow: KI-Nutzung Tracker — Schon wieder am KI-Limit? — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
@@ -16171,7 +16281,7 @@
      "#排班",
      "#EasyAM假日鬧鐘"
     ],
-    "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「假日不響 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #EasyAM假日鬧鐘",
+    "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「國定假日 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #EasyAM假日鬧鐘",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日，自動跳過 — 請假、出遊，加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
@@ -16341,7 +16451,7 @@
      "#Útil",
      "#EasyAMDespertador"
     ],
-    "caption": "67 países e regiões\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador dia útil” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #EasyAMdespertador",
+    "caption": "67 países e regiões\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador escala” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #EasyAMdespertador",
     "button": "Baixar na App Store",
     "variant": "c",
     "alt": "EasyAM: Despertador e Feriados — 67 países e regiões — Feriados pulados automaticamente — Alarme que só toca em dia útil",
@@ -16724,7 +16834,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "閉じれば、クローズアップ\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「おそろい 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #FoldableWallpaperStudio",
+    "caption": "閉じれば、クローズアップ\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「有機el 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "Foldable Wallpaper Studio — 閉じれば、クローズアップ — 開けば、全景 — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -16767,7 +16877,7 @@
      "#메인화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '폴더블폰 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '커버화면 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "a",
     "alt": "Foldable Wallpaper Studio — 접으면 클로즈업 — 펼치면 같은 장면의 전경 — Duo를 접으면 클로즈업, 펼치면 전경",
@@ -16852,7 +16962,7 @@
      "#TelaDupla",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “papel de parede combinando” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #FoldableWallpaperStudio",
+    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “fundo tela dupla” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "c",
     "alt": "Foldable Wallpaper Studio — Troque a cor, escreva uma frase curta — Aberto: a cena inteira — foldable · celular · fundo",
@@ -17447,7 +17557,7 @@
      "#圍度",
      "#Kumo體重紀錄"
     ],
-    "caption": "體重上上下下？雲朵照樣長大\n每天記體重，只要 10 秒\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「減重 日誌」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #Kumo體重紀錄",
+    "caption": "體重上上下下？雲朵照樣長大\n每天記體重，只要 10 秒\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「Kumo 體重紀錄」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #Kumo體重紀錄",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤 — 體重上上下下？雲朵照樣長大 — 每天記體重，只要 10 秒 — 168斷食・喝水蛋白質・腰圍體脂・可愛雲朵",
@@ -17640,48 +17750,6 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "0e325c1c1882013a",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "mochi_thanksgiving/en",
-    "locale": "en",
-    "app": "mochi_thanksgiving",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/19a5f87b14.mp4",
-    "hook": "Cute checklist for Thanksgiving",
-    "name": "Mochi: Cute Checklist",
-    "title": "Cute checklist for Thanksgiving | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
-    "tags": [
-     "#CozyToDoListWidget",
-     "#Chores",
-     "#Cute",
-     "#MochiCuteChecklist"
-    ],
-    "caption": "Cute checklist for Thanksgiving\nTurkey, pie, groceries…tap and done\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #MochiCuteChecklist",
-    "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "Mochi: Cute Checklist — Cute checklist for Thanksgiving — Turkey, pie, groceries…tap and done — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_exam_us_bs_1127&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_exam_us_bs_1127%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "planner",
-     "todo",
-     "aesthetic",
-     "daily",
-     "reminder",
-     "routine"
-    ],
-    "keyline": "Cozy To-Do List Widget, Chores",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "53ca986526ffb1b1",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -18726,7 +18794,7 @@
      "#機上",
      "#TripPlanet"
     ],
-    "caption": "每趟旅程，蓋一個護照章\n任務完成，收集獎勵\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #TripPlanet",
+    "caption": "每趟旅程，蓋一個護照章\n任務完成，收集獎勵\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「Trip Planet」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #TripPlanet",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Trip Planet 親子旅行遊戲 — 每趟旅程，蓋一個護照章 — 任務完成，收集獎勵 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -19080,7 +19148,7 @@
      "#求職",
      "#CVDeskATS履歷"
     ],
-    "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「ats 履歷」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷",
+    "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「履歷範本」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "CV Desk ATS 履歷製作 — 點修正建議，提升分數 — 每款範本，都相容 ATS — 履歷範本・履歷健檢・PDF匯出",
@@ -19315,7 +19383,7 @@
      "#หางาน",
      "#CVDeskเรซูเม่ATS"
     ],
-    "caption": "แตะคำแนะนำแก้ไข เพิ่มคะแนน\nทุกเทมเพลต รองรับ ATS\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “CV Desk เรซูเม่ ATS” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS",
+    "caption": "แตะคำแนะนำแก้ไข เพิ่มคะแนน\nทุกเทมเพลต รองรับ ATS\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “เรซูเม่ ats” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS",
     "button": "ดาวน์โหลดใน App Store",
     "variant": "b",
     "alt": "CV Desk: สร้างเรซูเม่ ATS — แตะคำแนะนำแก้ไข เพิ่มคะแนน — ทุกเทมเพลต รองรับ ATS — ทำเรซูเม่สมัครงาน เทมเพลต PDF",
@@ -22080,7 +22148,7 @@
      "#注音練習",
      "#Lumi注音星球"
     ],
-    "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
+    "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Lumi注音星球 — 37 個注音小夥伴，等你收集 — 聽聲音，選出正確的注音 — 注音遊戲：聽音、描寫、拼音",
@@ -24695,7 +24763,7 @@
      "#明日",
      "#ルミのおてんき星"
     ],
-    "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「服装 天気」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星",
+    "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「今日何着る？気温」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "ルミのおてんき星：天気予報・今日の服装 — 今日の空を、ホーム画面に — 着る物も持ち物も、ひと目でわかる — 今日何着る？気温・傘・紫外線・降水確率",
@@ -26272,7 +26340,7 @@
      "#摘要",
      "#OnePagePPT一頁簡報"
     ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「OnePage PPT 一頁簡報」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
@@ -28421,7 +28489,7 @@
      "#Nightstand",
      "#StayClock"
     ],
-    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
+    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “desk clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Stay Clock: Flip Desk Clock — Big time and a month calendar — Flip card faces and more — Nightstand & Bedside Clock",
@@ -28539,7 +28607,7 @@
      "#ナイトスタンド",
      "#StayClock"
     ],
-    "caption": "スタンバイでも、同じ文字盤\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「置き時計」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock",
+    "caption": "スタンバイでも、同じ文字盤\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「Stay Clock」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "Stay Clock:パタパタ卓上時計 — スタンバイでも、同じ文字盤 — 大きな時刻と、月間カレンダー — 時計を常時表示・置き時計",
@@ -29069,7 +29137,7 @@
      "#國旅",
      "#TripPlanet親子旅行遊戲"
     ],
-    "caption": "搭機任務包，一鍵加入\n爸媽各用手機，一起規劃\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲",
+    "caption": "搭機任務包，一鍵加入\n爸媽各用手機，一起規劃\n帶小孩出國搭飛機・任務集章獎勵\n在 App Store 搜尋「Trip Planet 親子旅行遊戲」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Trip Planet 親子旅行遊戲 — 搭機任務包，一鍵加入 — 爸媽各用手機，一起規劃 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -29821,7 +29889,7 @@
      "#일괄",
      "#Zipbox압축풀기"
     ],
-    "caption": "ZIP·RAR·7z 등 13가지 형식\n풀기 전에 미리 보고 그것만 꺼내기\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '암호 zip 파일' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기",
+    "caption": "ZIP·RAR·7z 등 13가지 형식\n풀기 전에 미리 보고 그것만 꺼내기\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '7z 압축 풀기' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기",
     "button": "App Store에서 받기",
     "variant": "c",
     "alt": "Zipbox 압축풀기: ZIP RAR 7z — ZIP·RAR·7z 등 13가지 형식 — 풀기 전에 미리 보고 그것만 꺼내기 — 압축 해제·RAR 파일 열기·암호 ZIP",
@@ -30399,7 +30467,7 @@
      "#剩餘",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
+    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號，還有額度？",
@@ -30456,7 +30524,7 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "リセット時刻が、わかる\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow",
+    "caption": "リセット時刻が、わかる\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "UsageNow：AI使用量トラッカー — リセット時刻が、わかる — UsageNowで、全アカウントの残量 — Claude・Codex・Copilot・Gemini残量",
@@ -30512,7 +30580,7 @@
      "#KINutzung",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
@@ -33088,7 +33156,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "今日複習，再練一次\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "今日複習，再練一次\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Lumi注音星球 — 今日複習，再練一次 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -34933,6 +35001,64 @@
    },
    {
     "kind": "clip",
+    "key": "lumimathpro/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/777fyj.mp4",
+    "hook": "依程度出 20 題，還附解答",
+    "name": "Lumi 數學星球：兒童數學",
+    "title": "依程度出 20 題，還附解答 | 心算練習・邏輯推理・應用題 | Lumi 數學星球 兒童數學",
+    "tags": [
+     "#兒童數學",
+     "#思維",
+     "#奧數",
+     "#競賽",
+     "#Lumi數學星球兒童數學"
+    ],
+    "caption": "依程度出 20 題，還附解答\n再匯出學習報告，弱項一目了然\n心算練習・邏輯推理・應用題\nLumi 數學星球：兒童數學\n在 App Store 搜尋「Lumi 數學星球 兒童數學」\nAndroid 版在 Google Play\n\n#兒童數學 #思維 #奧數 #競賽 #Lumi數學星球兒童數學",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Lumi 數學星球：兒童數學 — 依程度出 20 題，還附解答 — 再匯出學習報告，弱項一目了然 — 心算練習・邏輯推理・應用題",
+    "store": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
+    },
+    "keywords": [
+     "思維",
+     "奧數",
+     "競賽",
+     "資優",
+     "規律",
+     "找規律"
+    ],
+    "keyline": "心算練習・邏輯推理・應用題",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "e1637282f6e3cfc4",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "依程度出 20 題，還附解答 | Lumi 數學星球 兒童數學 #Shorts",
+     "description": "依程度出 20 題，還附解答\n再匯出學習報告，弱項一目了然\n心算練習・邏輯推理・應用題\n\nLumi 數學星球：兒童數學\nApp Store: https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6776958488?action=write-review\n\n思維 · 奧數 · 競賽 · 資優 · 規律 · 找規律\n\n#Shorts #兒童數學 #Lumi數學星球兒童數學",
+     "tags": [
+      "思維",
+      "奧數",
+      "競賽",
+      "資優",
+      "規律",
+      "找規律",
+      "兒童數學",
+      "Lumi數學星球兒童數學",
+      "Lumi 數學星球 兒童數學"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "lumimathpro/ja",
     "locale": "ja",
     "app": "lumimathpro",
@@ -36463,7 +36589,7 @@
      "#使用量",
      "#UsageNow"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置，一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置，一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置，一眼看清 — Claude、Codex、Copilot 重置倒數",
@@ -36520,7 +36646,7 @@
      "#使用制限",
      "#UsageNow"
     ],
-    "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow",
+    "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "UsageNow：AI使用量トラッカー — 50の言語に、完全対応 — Claude・Codex・ Copilot・Geminiをまとめて — Claude・Codex・Copilot・Gemini残量",
@@ -36576,7 +36702,7 @@
      "#Programmierer",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow",
+    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — Claude, Codex, Copilot & Gemini — Rest & Reset-Zeit auf einen Blick — Claude, Codex & Copilot Limits",
@@ -38793,7 +38919,7 @@
      "#排班",
      "#EasyAM假日鬧鐘"
     ],
-    "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「假日不響 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
+    "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「國定假日 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日，自動跳過 — 請假、出遊，加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
@@ -39023,7 +39149,7 @@
      "#Útil",
      "#EasyAMDespertador"
     ],
-    "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador dia útil” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador",
+    "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador escala” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador",
     "button": "Baixar na App Store",
     "variant": "b",
     "alt": "EasyAM: Despertador e Feriados — Feriados pulados automaticamente — Adicione folgas e o alarme não toca — Alarme que só toca em dia útil",
@@ -39547,7 +39673,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "色を変えて、短い文字も\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「おそろい 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
+    "caption": "色を変えて、短い文字も\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「有機el 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "Foldable Wallpaper Studio — 色を変えて、短い文字も — 開けば、全景 — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -39605,7 +39731,7 @@
      "#메인화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "색을 바꾸고 한 줄 문구까지\n펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '폴더블폰 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
+    "caption": "색을 바꾸고 한 줄 문구까지\n펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '커버화면 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "c",
     "alt": "Foldable Wallpaper Studio — 색을 바꾸고 한 줄 문구까지 — 펼치면 같은 장면의 전경 — Duo를 접으면 클로즈업, 펼치면 전경",
@@ -39722,7 +39848,7 @@
      "#TelaDupla",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “papel de parede combinando” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio",
+    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “fundo tela dupla” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — foldable · celular · fundo",
@@ -40538,7 +40664,7 @@
      "#圍度",
      "#Kumo體重紀錄"
     ],
-    "caption": "每天記體重，只要 10 秒\n不看單日起伏，看 7 日平均趨勢\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「減重 日誌」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄",
+    "caption": "每天記體重，只要 10 秒\n不看單日起伏，看 7 日平均趨勢\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「Kumo 體重紀錄」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤 — 每天記體重，只要 10 秒 — 不看單日起伏，看 7 日平均趨勢 — 168斷食・喝水蛋白質・腰圍體脂・可愛雲朵",
@@ -40808,65 +40934,6 @@
       "AyunoIntermitente",
       "KumoControlDePeso",
       "Kumo control de peso"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "mochi_thanksgiving/en",
-    "locale": "en",
-    "app": "mochi_thanksgiving",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/19a5f87b14.mp4",
-    "hook": "Turkey, pie, groceries…tap and done",
-    "name": "Mochi: Cute Checklist",
-    "title": "Turkey, pie, groceries…tap and done | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
-    "tags": [
-     "#CozyToDoListWidget",
-     "#Chores",
-     "#Cute",
-     "#MochiCuteChecklist"
-    ],
-    "caption": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Mochi: Cute Checklist — Turkey, pie, groceries…tap and done — Tons of cute themes — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_exam_us_yt_1127&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_exam_us_yt_1127%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "planner",
-     "todo",
-     "aesthetic",
-     "daily",
-     "reminder",
-     "routine"
-    ],
-    "keyline": "Cozy To-Do List Widget, Chores",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "53ca986526ffb1b1",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Turkey, pie, groceries…tap and done | Mochi Cute Checklist #Shorts",
-     "description": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_exam_us_yt_1127&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_exam_us_yt_1127%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CozyToDoListWidget #MochiCuteChecklist",
-     "tags": [
-      "planner",
-      "todo",
-      "aesthetic",
-      "daily",
-      "reminder",
-      "routine",
-      "CozyToDoListWidget",
-      "Chores",
-      "Cute",
-      "MochiCuteChecklist",
-      "Mochi Cute Checklist"
      ]
     }
    },
@@ -42273,7 +42340,7 @@
      "#機上",
      "#TripPlanet"
     ],
-    "caption": "任務完成，收集獎勵\n幫每趟旅程，選個背景\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet",
+    "caption": "任務完成，收集獎勵\n幫每趟旅程，選個背景\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「Trip Planet」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Trip Planet 親子旅行遊戲 — 任務完成，收集獎勵 — 幫每趟旅程，選個背景 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -42650,7 +42717,7 @@
      "#求職",
      "#CVDeskATS履歷"
     ],
-    "caption": "匯出 PDF 或 Word\n點修正建議，提升分數\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「ats 履歷」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷",
+    "caption": "匯出 PDF 或 Word\n點修正建議，提升分數\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「履歷範本」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "CV Desk ATS 履歷製作 — 匯出 PDF 或 Word — 點修正建議，提升分數 — 履歷範本・履歷健檢・PDF匯出",
@@ -42677,7 +42744,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "匯出 PDF 或 Word\n點修正建議，提升分數\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「ats 履歷」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk",
+     "description": "匯出 PDF 或 Word\n點修正建議，提升分數\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「履歷範本」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk",
      "link": "https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=social&mt=8"
     },
     "boost_rank": 3
@@ -42841,7 +42908,7 @@
      "#หางาน",
      "#CVDeskเรซูเม่ATS"
     ],
-    "caption": "เรซูเม่โดน ATS ปัดตก?\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “CV Desk เรซูเม่ ATS” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS",
+    "caption": "เรซูเม่โดน ATS ปัดตก?\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “เรซูเม่ ats” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS",
     "button": "ดาวน์โหลดใน App Store",
     "variant": "a",
     "alt": "CV Desk: สร้างเรซูเม่ ATS — เรซูเม่โดน ATS ปัดตก? — แตะคำแนะนำแก้ไข เพิ่มคะแนน — ทำเรซูเม่สมัครงาน เทมเพลต PDF",
@@ -42868,7 +42935,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "เรซูเม่โดน ATS ปัดตก?\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “CV Desk เรซูเม่ ATS” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS\n\nดาวน์โหลดใน App Store: https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk",
+     "description": "เรซูเม่โดน ATS ปัดตก?\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “เรซูเม่ ats” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS\n\nดาวน์โหลดใน App Store: https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk",
      "link": "https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=social&mt=8"
     },
     "boost_rank": 3
@@ -45047,7 +45114,7 @@
      "#注音練習",
      "#Lumi注音星球"
     ],
-    "caption": "注音，原來這麼好玩！\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
+    "caption": "注音，原來這麼好玩！\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Lumi注音星球 — 注音，原來這麼好玩！ — 聽聲音，選出正確的注音 — 注音遊戲：聽音、描寫、拼音",
@@ -45074,7 +45141,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "注音，原來這麼好玩！\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+     "description": "注音，原來這麼好玩！\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
      "link": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8"
     }
    },
@@ -47148,7 +47215,7 @@
      "#明日",
      "#ルミのおてんき星"
     ],
-    "caption": "日焼け止め、今日いる？\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「服装 天気」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星",
+    "caption": "日焼け止め、今日いる？\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「今日何着る？気温」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "ルミのおてんき星：天気予報・今日の服装 — 日焼け止め、今日いる？ — 着る物も持ち物も、ひと目でわかる — 今日何着る？気温・傘・紫外線・降水確率",
@@ -47175,7 +47242,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "日焼け止め、今日いる？\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「服装 天気」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+     "description": "日焼け止め、今日いる？\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「今日何着る？気温」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
      "link": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=social&mt=8"
     }
    },
@@ -48408,7 +48475,7 @@
      "#摘要",
      "#OnePagePPT一頁簡報"
     ],
-    "caption": "匯出可編輯的 pptx\n貼上筆記、PDF 或截圖\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
+    "caption": "匯出可編輯的 pptx\n貼上筆記、PDF 或截圖\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「OnePage PPT 一頁簡報」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "OnePage PPT: AI 一頁簡報 — 匯出可編輯的 pptx — 貼上筆記、PDF 或截圖 — 簡報製作・筆記截圖秒變投影片",
@@ -48435,7 +48502,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "匯出可編輯的 pptx\n貼上筆記、PDF 或截圖\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+     "description": "匯出可編輯的 pptx\n貼上筆記、PDF 或截圖\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「OnePage PPT 一頁簡報」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
      "link": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8"
     }
    },
@@ -50134,7 +50201,7 @@
      "#Nightstand",
      "#StayClock"
     ],
-    "caption": "Phone charging? Make it a bedside clock\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
+    "caption": "Phone charging? Make it a bedside clock\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “desk clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "a",
     "alt": "Stay Clock: Flip Desk Clock — Phone charging? Make it a bedside clock — Big time and a month calendar — Nightstand & Bedside Clock",
@@ -50161,7 +50228,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Phone charging? Make it a bedside clock\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
+     "description": "Phone charging? Make it a bedside clock\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “desk clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
      "link": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8"
     }
    },
@@ -50228,7 +50295,7 @@
      "#ナイトスタンド",
      "#StayClock"
     ],
-    "caption": "大きな時刻と、月間カレンダー\nパタパタ風の、文字盤も\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「置き時計」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock",
+    "caption": "大きな時刻と、月間カレンダー\nパタパタ風の、文字盤も\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「Stay Clock」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Stay Clock:パタパタ卓上時計 — 大きな時刻と、月間カレンダー — パタパタ風の、文字盤も — 時計を常時表示・置き時計",
@@ -50255,7 +50322,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "大きな時刻と、月間カレンダー\nパタパタ風の、文字盤も\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「置き時計」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
+     "description": "大きな時刻と、月間カレンダー\nパタパタ風の、文字盤も\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「Stay Clock」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
      "link": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=social&mt=8"
     }
    },
@@ -50649,7 +50716,7 @@
      "#國旅",
      "#TripPlanet親子旅行遊戲"
     ],
-    "caption": "「到了沒？」讓旅途變冒險\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲",
+    "caption": "「到了沒？」讓旅途變冒險\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\n在 App Store 搜尋「Trip Planet 親子旅行遊戲」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Trip Planet 親子旅行遊戲 — 「到了沒？」讓旅途變冒險 — 搭機任務包，一鍵加入 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -50676,7 +50743,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "「到了沒？」讓旅途變冒險\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+     "description": "「到了沒？」讓旅途變冒險\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\n在 App Store 搜尋「Trip Planet 親子旅行遊戲」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
      "link": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51256,7 +51323,7 @@
      "#일괄",
      "#Zipbox압축풀기"
     ],
-    "caption": "ZIP·RAR·7z 등 13가지 형식\n풀기 전에 미리 보고 그것만 꺼내기\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '암호 zip 파일' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기",
+    "caption": "ZIP·RAR·7z 등 13가지 형식\n풀기 전에 미리 보고 그것만 꺼내기\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '7z 압축 풀기' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기",
     "button": "App Store에서 받기",
     "variant": "c",
     "alt": "Zipbox 압축풀기: ZIP RAR 7z — ZIP·RAR·7z 등 13가지 형식 — 풀기 전에 미리 보고 그것만 꺼내기 — 압축 해제·RAR 파일 열기·암호 ZIP",
@@ -51283,7 +51350,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "ZIP·RAR·7z 등 13가지 형식\n풀기 전에 미리 보고 그것만 꺼내기\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '암호 zip 파일' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
+     "description": "ZIP·RAR·7z 등 13가지 형식\n풀기 전에 미리 보고 그것만 꺼내기\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '7z 압축 풀기' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
      "link": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51724,7 +51791,7 @@
      "#剩餘",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
+    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號，還有額度？",
@@ -51751,7 +51818,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51771,7 +51838,7 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "UsageNowで、全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow",
+    "caption": "UsageNowで、全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — UsageNowで、全アカウントの残量 — 5時間・週間ごとに 90%でお知らせ — Claude・Codex・Copilot・Gemini残量",
@@ -51798,7 +51865,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "UsageNowで、全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "UsageNowで、全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51817,7 +51884,7 @@
      "#KINutzung",
      "#UsageNow"
     ],
-    "caption": "Reset-Zeit immer im Blick\nUsageNow zeigt alle Konten\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow",
+    "caption": "Reset-Zeit immer im Blick\nUsageNow zeigt alle Konten\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow",
     "button": "Im App Store laden",
     "variant": "c",
     "alt": "UsageNow: KI-Nutzung Tracker — Reset-Zeit immer im Blick — UsageNow zeigt alle Konten",
@@ -51844,7 +51911,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Reset-Zeit immer im Blick\nUsageNow zeigt alle Konten\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "Reset-Zeit immer im Blick\nUsageNow zeigt alle Konten\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -53870,7 +53937,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Lumi注音星球 — 選對注音，餵小夥伴 — 贏得星星與，成就徽章 — 注音遊戲：聽音、描寫、拼音",
@@ -53897,7 +53964,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+     "description": "選對注音，餵小夥伴\n贏得星星與，成就徽章\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
      "link": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8"
     }
    },
@@ -55351,6 +55418,53 @@
    },
    {
     "kind": "clip",
+    "key": "lumimathpro/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/777fyj.mp4",
+    "hook": "數學練習卷，還在自己出題？",
+    "name": "Lumi 數學星球：兒童數學",
+    "title": "數學練習卷，還在自己出題？ | 心算練習・邏輯推理・應用題 | Lumi 數學星球 兒童數學",
+    "tags": [
+     "#兒童數學",
+     "#思維",
+     "#奧數",
+     "#競賽",
+     "#Lumi數學星球兒童數學"
+    ],
+    "caption": "數學練習卷，還在自己出題？\n依程度出 20 題，還附解答\n心算練習・邏輯推理・應用題\nLumi 數學星球：兒童數學\n在 App Store 搜尋「Lumi 數學星球 兒童數學」\nAndroid 版在 Google Play\n\n#兒童數學 #思維 #奧數 #競賽 #Lumi數學星球兒童數學",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "Lumi 數學星球：兒童數學 — 數學練習卷，還在自己出題？ — 依程度出 20 題，還附解答 — 心算練習・邏輯推理・應用題",
+    "store": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
+    },
+    "keywords": [
+     "思維",
+     "奧數",
+     "競賽",
+     "資優",
+     "規律",
+     "找規律"
+    ],
+    "keyline": "心算練習・邏輯推理・應用題",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "e1637282f6e3cfc4",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "數學練習卷，還在自己出題？\n依程度出 20 題，還附解答\n心算練習・邏輯推理・應用題\nLumi 數學星球：兒童數學\n在 App Store 搜尋「Lumi 數學星球 兒童數學」\nAndroid 版在 Google Play\n\n#兒童數學 #思維 #奧數 #競賽 #Lumi數學星球兒童數學\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
+     "link": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "lumimathpro/ja",
     "locale": "ja",
     "app": "lumimathpro",
@@ -56583,7 +56697,7 @@
      "#使用量",
      "#UsageNow"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置，一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置，一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置，一眼看清 — Claude、Codex、Copilot 重置倒數",
@@ -56610,7 +56724,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置，一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置，一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56630,7 +56744,7 @@
      "#使用制限",
      "#UsageNow"
     ],
-    "caption": "作業の途中で、またAIの上限？\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow",
+    "caption": "作業の途中で、またAIの上限？\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "UsageNow：AI使用量トラッカー — 作業の途中で、またAIの上限？ — Claude・Codex・ Copilot・Geminiをまとめて — Claude・Codex・Copilot・Gemini残量",
@@ -56657,7 +56771,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "作業の途中で、またAIの上限？\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "作業の途中で、またAIの上限？\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56676,7 +56790,7 @@
      "#Programmierer",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow",
+    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — Claude, Codex, Copilot & Gemini — Rest & Reset-Zeit auf einen Blick — Claude, Codex & Copilot Limits",
@@ -56703,7 +56817,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58445,7 +58559,7 @@
      "#排班",
      "#EasyAM假日鬧鐘"
     ],
-    "caption": "內建 67 個，國家與地區\n國定假日，自動跳過\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「假日不響 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
+    "caption": "內建 67 個，國家與地區\n國定假日，自動跳過\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「國定假日 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 內建 67 個，國家與地區 — 國定假日，自動跳過 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
@@ -58472,7 +58586,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "內建 67 個，國家與地區\n國定假日，自動跳過\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「假日不響 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "description": "內建 67 個，國家與地區\n國定假日，自動跳過\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「國定假日 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
      "link": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58631,7 +58745,7 @@
      "#Útil",
      "#EasyAMDespertador"
     ],
-    "caption": "Feriado? Seu alarme fica quieto\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador dia útil” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador",
+    "caption": "Feriado? Seu alarme fica quieto\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador escala” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador",
     "button": "Baixar na App Store",
     "variant": "a",
     "alt": "EasyAM: Despertador e Feriados — Feriado? Seu alarme fica quieto — Feriados pulados automaticamente — Alarme que só toca em dia útil",
@@ -58658,7 +58772,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Feriado? Seu alarme fica quieto\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador dia útil” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador\n\nBaixar na App Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "description": "Feriado? Seu alarme fica quieto\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador escala” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador\n\nBaixar na App Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
      "link": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8"
     }
    },
@@ -59050,7 +59164,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「おそろい 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
+    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「有機el 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — 開けば、全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -59077,7 +59191,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「おそろい 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「有機el 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -59097,7 +59211,7 @@
      "#메인화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '폴더블폰 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '커버화면 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — Duo를 접으면 클로즈업, 펼치면 전경",
@@ -59124,7 +59238,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '폴더블폰 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '커버화면 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -59190,7 +59304,7 @@
      "#TelaDupla",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Fechado: um close\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “papel de parede combinando” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio",
+    "caption": "Fechado: um close\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “fundo tela dupla” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "a",
     "alt": "Foldable Wallpaper Studio — Fechado: um close — Aberto: a cena inteira — foldable · celular · fundo",
@@ -59217,7 +59331,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Fechado: um close\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “papel de parede combinando” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "Fechado: um close\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “fundo tela dupla” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -59841,7 +59955,7 @@
      "#圍度",
      "#Kumo體重紀錄"
     ],
-    "caption": "每天記體重，只要 10 秒\n不看單日起伏，看 7 日平均趨勢\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「減重 日誌」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄",
+    "caption": "每天記體重，只要 10 秒\n不看單日起伏，看 7 日平均趨勢\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「Kumo 體重紀錄」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤 — 每天記體重，只要 10 秒 — 不看單日起伏，看 7 日平均趨勢 — 168斷食・喝水蛋白質・腰圍體脂・可愛雲朵",
@@ -59868,7 +59982,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "每天記體重，只要 10 秒\n不看單日起伏，看 7 日平均趨勢\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「減重 日誌」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+     "description": "每天記體重，只要 10 秒\n不看單日起伏，看 7 日平均趨勢\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「Kumo 體重紀錄」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
      "link": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8"
     }
    },
@@ -60056,52 +60170,6 @@
     "pinterest": {
      "description": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
      "link": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "mochi_thanksgiving/en",
-    "locale": "en",
-    "app": "mochi_thanksgiving",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/19a5f87b14.mp4",
-    "hook": "Turkey, pie, groceries…tap and done",
-    "name": "Mochi: Cute Checklist",
-    "title": "Turkey, pie, groceries…tap and done | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
-    "tags": [
-     "#CozyToDoListWidget",
-     "#Chores",
-     "#Cute",
-     "#MochiCuteChecklist"
-    ],
-    "caption": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Mochi: Cute Checklist — Turkey, pie, groceries…tap and done — Tons of cute themes — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "planner",
-     "todo",
-     "aesthetic",
-     "daily",
-     "reminder",
-     "routine"
-    ],
-    "keyline": "Cozy To-Do List Widget, Chores",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "53ca986526ffb1b1",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521"
     }
    },
    {
@@ -61240,7 +61308,7 @@
      "#機上",
      "#TripPlanet"
     ],
-    "caption": "任務完成，收集獎勵\n幫每趟旅程，選個背景\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet",
+    "caption": "任務完成，收集獎勵\n幫每趟旅程，選個背景\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「Trip Planet」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Trip Planet 親子旅行遊戲 — 任務完成，收集獎勵 — 幫每趟旅程，選個背景 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -61267,7 +61335,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "任務完成，收集獎勵\n幫每趟旅程，選個背景\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+     "description": "任務完成，收集獎勵\n幫每趟旅程，選個背景\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「Trip Planet」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
      "link": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8"
     }
    },
@@ -61568,7 +61636,7 @@
      "#求職",
      "#CVDeskATS履歷"
     ],
-    "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「ats 履歷」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷",
+    "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「履歷範本」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "CV Desk ATS 履歷製作 — 點修正建議，提升分數 — 每款範本，都相容 ATS — 履歷範本・履歷健檢・PDF匯出",
@@ -61595,7 +61663,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「ats 履歷」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk"
+     "caption": "點修正建議，提升分數\n每款範本，都相容 ATS\n履歷範本・履歷健檢・PDF匯出\nCV Desk ATS 履歷製作\n在 App Store 搜尋「履歷範本」\nAndroid 版在 Google Play\n\n#ats履歷 #履歷表 #自傳 #求職 #CVDeskATS履歷\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk"
     },
     "boost_rank": 3
    },
@@ -61755,7 +61823,7 @@
      "#หางาน",
      "#CVDeskเรซูเม่ATS"
     ],
-    "caption": "ส่งออก PDF หรือ Word\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “CV Desk เรซูเม่ ATS” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS",
+    "caption": "ส่งออก PDF หรือ Word\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “เรซูเม่ ats” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS",
     "button": "ดาวน์โหลดใน App Store",
     "variant": "c",
     "alt": "CV Desk: สร้างเรซูเม่ ATS — ส่งออก PDF หรือ Word — แตะคำแนะนำแก้ไข เพิ่มคะแนน — ทำเรซูเม่สมัครงาน เทมเพลต PDF",
@@ -61782,7 +61850,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "ส่งออก PDF หรือ Word\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “CV Desk เรซูเม่ ATS” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS\n\nดาวน์โหลดใน App Store: https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk"
+     "caption": "ส่งออก PDF หรือ Word\nแตะคำแนะนำแก้ไข เพิ่มคะแนน\nทำเรซูเม่สมัครงาน เทมเพลต PDF\nCV Desk: สร้างเรซูเม่ ATS\nค้นหา “เรซูเม่ ats” ใน App Store\nมีบน Google Play ด้วย\n\n#สร้างเรซูเม่ATS #ใบสมัครงาน #ตัวอย่างเรซูเม่ #หางาน #CVDeskเรซูเม่ATS\n\nดาวน์โหลดใน App Store: https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cvdesk&referrer=utm_source%3Dsocial%26utm_campaign%3Dcvdesk"
     },
     "boost_rank": 3
    },
@@ -63914,7 +63982,7 @@
      "#注音練習",
      "#Lumi注音星球"
     ],
-    "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
+    "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Lumi注音星球 — 37 個注音小夥伴，等你收集 — 聽聲音，選出正確的注音 — 注音遊戲：聽音、描寫、拼音",
@@ -63941,7 +64009,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
+     "caption": "37 個注音小夥伴，等你收集\n聽聲音，選出正確的注音\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
     }
    },
    {
@@ -65970,7 +66038,7 @@
      "#明日",
      "#ルミのおてんき星"
     ],
-    "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「服装 天気」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星",
+    "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「今日何着る？気温」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "ルミのおてんき星：天気予報・今日の服装 — 今日の空を、ホーム画面に — 着る物も持ち物も、ひと目でわかる — 今日何着る？気温・傘・紫外線・降水確率",
@@ -65997,7 +66065,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「服装 天気」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
+     "caption": "今日の空を、ホーム画面に\n着る物も持ち物も、ひと目でわかる\n今日何着る？気温・傘・紫外線・降水確率\nルミのおてんき星：天気予報・今日の服装\nApp Storeで「今日何着る？気温」を検索\nAndroidはGoogle Playで\n\n#天気予報今日の服装 #体感温度 #日焼け止め #明日 #ルミのおてんき星\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
     }
    },
    {
@@ -67203,7 +67271,7 @@
      "#摘要",
      "#OnePagePPT一頁簡報"
     ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「OnePage PPT 一頁簡報」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
@@ -67230,7 +67298,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
+     "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「OnePage PPT 一頁簡報」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
     }
    },
    {
@@ -68892,7 +68960,7 @@
      "#Nightstand",
      "#StayClock"
     ],
-    "caption": "Same face on StandBy\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
+    "caption": "Same face on StandBy\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “desk clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "Stay Clock: Flip Desk Clock — Same face on StandBy — Big time and a month calendar — Nightstand & Bedside Clock",
@@ -68919,7 +68987,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Same face on StandBy\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock"
+     "caption": "Same face on StandBy\nBig time and a month calendar\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “desk clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock"
     }
    },
    {
@@ -68984,7 +69052,7 @@
      "#ナイトスタンド",
      "#StayClock"
     ],
-    "caption": "充電中のiPhoneを、枕元の時計に\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「置き時計」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock",
+    "caption": "充電中のiPhoneを、枕元の時計に\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「Stay Clock」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "Stay Clock:パタパタ卓上時計 — 充電中のiPhoneを、枕元の時計に — 大きな時刻と、月間カレンダー — 時計を常時表示・置き時計",
@@ -69011,7 +69079,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "充電中のiPhoneを、枕元の時計に\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「置き時計」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock"
+     "caption": "充電中のiPhoneを、枕元の時計に\n大きな時刻と、月間カレンダー\n時計を常時表示・置き時計\nStay Clock:パタパタ卓上時計\nApp Storeで「Stay Clock」を検索\nAndroidはGoogle Playで\n\n#パタパタ卓上時計 #デジタル時計 #目覚まし時計 #ナイトスタンド #StayClock\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock"
     }
    },
    {
@@ -69396,7 +69464,7 @@
      "#國旅",
      "#TripPlanet親子旅行遊戲"
     ],
-    "caption": "小小任務，換來大大笑容\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲",
+    "caption": "小小任務，換來大大笑容\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\n在 App Store 搜尋「Trip Planet 親子旅行遊戲」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲",
     "button": "在 App Store 下載",
     "variant": "c",
     "alt": "Trip Planet 親子旅行遊戲 — 小小任務，換來大大笑容 — 搭機任務包，一鍵加入 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -69423,7 +69491,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "小小任務，換來大大笑容\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
+     "caption": "小小任務，換來大大笑容\n搭機任務包，一鍵加入\n帶小孩出國搭飛機・任務集章獎勵\n在 App Store 搜尋「Trip Planet 親子旅行遊戲」\nAndroid 版在 Google Play\n\n#帶孩子 #出遊 #旅遊 #國旅 #TripPlanet親子旅行遊戲\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
     }
    },
    {
@@ -69990,7 +70058,7 @@
      "#일괄",
      "#Zipbox압축풀기"
     ],
-    "caption": "풀기 전에 미리 보고 그것만 꺼내기\n암호화 압축도 가능\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '암호 zip 파일' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기",
+    "caption": "풀기 전에 미리 보고 그것만 꺼내기\n암호화 압축도 가능\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '7z 압축 풀기' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기",
     "button": "App Store에서 받기",
     "variant": "b",
     "alt": "Zipbox 압축풀기: ZIP RAR 7z — 풀기 전에 미리 보고 그것만 꺼내기 — 암호화 압축도 가능 — 압축 해제·RAR 파일 열기·암호 ZIP",
@@ -70017,7 +70085,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "풀기 전에 미리 보고 그것만 꺼내기\n암호화 압축도 가능\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '암호 zip 파일' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox"
+     "caption": "풀기 전에 미리 보고 그것만 꺼내기\n암호화 압축도 가능\n압축 해제·RAR 파일 열기·암호 ZIP\nZipbox 압축풀기: ZIP RAR 7z\nApp Store에서 '7z 압축 풀기' 검색\nAndroid는 Google Play에서\n\n#비밀번호 #암호 #분할 #일괄 #Zipbox압축풀기\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox"
     }
    },
    {
@@ -70448,7 +70516,7 @@
      "#剩餘",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
+    "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號，還有額度？",
@@ -70475,7 +70543,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "哪個 AI 帳號，還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -70494,7 +70562,7 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "いいところで、使用上限の通知…\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow",
+    "caption": "いいところで、使用上限の通知…\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "UsageNow：AI使用量トラッカー — いいところで、使用上限の通知… — UsageNowで、全アカウントの残量 — Claude・Codex・Copilot・Gemini残量",
@@ -70521,7 +70589,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "いいところで、使用上限の通知…\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "いいところで、使用上限の通知…\nUsageNowで、全アカウントの残量\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #リセット #利用状況 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -70539,7 +70607,7 @@
      "#KINutzung",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
@@ -70566,7 +70634,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#CopilotLimits #Programmierer #KINutzung #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -72548,7 +72616,7 @@
      "#聲調",
      "#Lumi注音星球"
     ],
-    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Lumi注音星球 — 準備上小一？先玩注音 — 選對注音，餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
@@ -72575,7 +72643,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「注音 學習」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
+     "caption": "準備上小一？先玩注音\n選對注音，餵小夥伴\n注音遊戲：聽音、描寫、拼音\nLumi注音星球\n在 App Store 搜尋「學注音符號」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
     }
    },
    {
@@ -73997,6 +74065,52 @@
    },
    {
     "kind": "clip",
+    "key": "lumimathpro/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/777fyj.mp4",
+    "hook": "孩子玩，你來印",
+    "name": "Lumi 數學星球：兒童數學",
+    "title": "孩子玩，你來印 | 心算練習・邏輯推理・應用題 | Lumi 數學星球 兒童數學",
+    "tags": [
+     "#兒童數學",
+     "#思維",
+     "#奧數",
+     "#競賽",
+     "#Lumi數學星球兒童數學"
+    ],
+    "caption": "孩子玩，你來印\n依程度出 20 題，還附解答\n心算練習・邏輯推理・應用題\nLumi 數學星球：兒童數學\n在 App Store 搜尋「Lumi 數學星球 兒童數學」\nAndroid 版在 Google Play\n\n#兒童數學 #思維 #奧數 #競賽 #Lumi數學星球兒童數學",
+    "button": "在 App Store 下載",
+    "variant": "c",
+    "alt": "Lumi 數學星球：兒童數學 — 孩子玩，你來印 — 依程度出 20 題，還附解答 — 心算練習・邏輯推理・應用題",
+    "store": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
+    },
+    "keywords": [
+     "思維",
+     "奧數",
+     "競賽",
+     "資優",
+     "規律",
+     "找規律"
+    ],
+    "keyline": "心算練習・邏輯推理・應用題",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "e1637282f6e3cfc4",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "孩子玩，你來印\n依程度出 20 題，還附解答\n心算練習・邏輯推理・應用題\nLumi 數學星球：兒童數學\n在 App Store 搜尋「Lumi 數學星球 兒童數學」\nAndroid 版在 Google Play\n\n#兒童數學 #思維 #奧數 #競賽 #Lumi數學星球兒童數學\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "lumimathpro/ja",
     "locale": "ja",
     "app": "lumimathpro",
@@ -75203,7 +75317,7 @@
      "#使用量",
      "#UsageNow"
     ],
-    "caption": "寫到一半 AI 額度又爆了？\nClaude、Codex、Copilot、Gemini 一起看\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "寫到一半 AI 額度又爆了？\nClaude、Codex、Copilot、Gemini 一起看\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 寫到一半 AI 額度又爆了？ — Claude、Codex、Copilot、Gemini 一起看 — Claude、Codex、Copilot 重置倒數",
@@ -75230,7 +75344,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "寫到一半 AI 額度又爆了？\nClaude、Codex、Copilot、Gemini 一起看\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "寫到一半 AI 額度又爆了？\nClaude、Codex、Copilot、Gemini 一起看\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「codex 額度」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -75249,7 +75363,7 @@
      "#使用制限",
      "#UsageNow"
     ],
-    "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow",
+    "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow",
     "button": "App Storeで入手",
     "variant": "c",
     "alt": "UsageNow：AI使用量トラッカー — 50の言語に、完全対応 — Claude・Codex・ Copilot・Geminiをまとめて — Claude・Codex・Copilot・Gemini残量",
@@ -75276,7 +75390,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "50の言語に、完全対応\nClaude・Codex・ Copilot・Geminiをまとめて\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「claude 使用量」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #使用制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -75294,7 +75408,7 @@
      "#Programmierer",
      "#UsageNow"
     ],
-    "caption": "Schon wieder am KI-Limit?\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow",
+    "caption": "Schon wieder am KI-Limit?\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow",
     "button": "Im App Store laden",
     "variant": "a",
     "alt": "UsageNow: KI-Nutzung Tracker — Schon wieder am KI-Limit? — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
@@ -75321,7 +75435,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Schon wieder am KI-Limit?\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "Schon wieder am KI-Limit?\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „copilot nutzung“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #CopilotLimits #Programmierer #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -77025,7 +77139,7 @@
      "#排班",
      "#EasyAM假日鬧鐘"
     ],
-    "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「假日不響 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
+    "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「國定假日 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日，自動跳過 — 請假、出遊，加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
@@ -77052,7 +77166,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「假日不響 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "國定假日，自動跳過\n請假、出遊，加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「國定假日 鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
     }
    },
    {
@@ -77207,7 +77321,7 @@
      "#Útil",
      "#EasyAMDespertador"
     ],
-    "caption": "67 países e regiões\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador dia útil” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador",
+    "caption": "67 países e regiões\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador escala” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador",
     "button": "Baixar na App Store",
     "variant": "c",
     "alt": "EasyAM: Despertador e Feriados — 67 países e regiões — Feriados pulados automaticamente — Alarme que só toca em dia útil",
@@ -77234,7 +77348,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "67 países e regiões\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador dia útil” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador\n\nBaixar na App Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "67 países e regiões\nFeriados pulados automaticamente\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “despertador escala” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Alarme #Útil #EasyAMDespertador\n\nBaixar na App Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
     }
    },
    {
@@ -77617,7 +77731,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "閉じれば、クローズアップ\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「おそろい 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
+    "caption": "閉じれば、クローズアップ\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「有機el 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "a",
     "alt": "Foldable Wallpaper Studio — 閉じれば、クローズアップ — 開けば、全景 — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -77644,7 +77758,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "閉じれば、クローズアップ\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「おそろい 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "閉じれば、クローズアップ\n開けば、全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「有機el 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -77663,7 +77777,7 @@
      "#메인화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '폴더블폰 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '커버화면 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "a",
     "alt": "Foldable Wallpaper Studio — 접으면 클로즈업 — 펼치면 같은 장면의 전경 — Duo를 접으면 클로즈업, 펼치면 전경",
@@ -77690,7 +77804,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '폴더블폰 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nFoldable Wallpaper Studio\nApp Store에서 '커버화면 바탕화면' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -77754,7 +77868,7 @@
      "#TelaDupla",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “papel de parede combinando” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio",
+    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “fundo tela dupla” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "c",
     "alt": "Foldable Wallpaper Studio — Troque a cor, escreva uma frase curta — Aberto: a cena inteira — foldable · celular · fundo",
@@ -77781,7 +77895,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “papel de parede combinando” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nFoldable Wallpaper Studio\nPesquise “fundo tela dupla” na App Store\nTambém no Google Play\n\n#TelasExterna #InternaDoDuo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -78391,7 +78505,7 @@
      "#圍度",
      "#Kumo體重紀錄"
     ],
-    "caption": "體重上上下下？雲朵照樣長大\n每天記體重，只要 10 秒\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「減重 日誌」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄",
+    "caption": "體重上上下下？雲朵照樣長大\n每天記體重，只要 10 秒\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「Kumo 體重紀錄」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤 — 體重上上下下？雲朵照樣長大 — 每天記體重，只要 10 秒 — 168斷食・喝水蛋白質・腰圍體脂・可愛雲朵",
@@ -78418,7 +78532,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "體重上上下下？雲朵照樣長大\n每天記體重，只要 10 秒\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「減重 日誌」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
+     "caption": "體重上上下下？雲朵照樣長大\n每天記體重，只要 10 秒\n168斷食・喝水蛋白質・腰圍體脂・可愛雲朵\nKumo 體重紀錄・減重日記・GLP-1 注射追蹤\n在 App Store 搜尋「Kumo 體重紀錄」\nAndroid 版在 Google Play\n\n#輕斷食 #打卡 #部位 #圍度 #Kumo體重紀錄\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
     }
    },
    {
@@ -78601,51 +78715,6 @@
     },
     "tiktok": {
      "caption": "¿Peso inestable? Tu nube crece\nAnota tu peso en 10 segundos\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "mochi_thanksgiving/en",
-    "locale": "en",
-    "app": "mochi_thanksgiving",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/19a5f87b14.mp4",
-    "hook": "Cute checklist for Thanksgiving",
-    "name": "Mochi: Cute Checklist",
-    "title": "Cute checklist for Thanksgiving | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
-    "tags": [
-     "#CozyToDoListWidget",
-     "#Chores",
-     "#Cute",
-     "#MochiCuteChecklist"
-    ],
-    "caption": "Cute checklist for Thanksgiving\nTurkey, pie, groceries…tap and done\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist",
-    "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "Mochi: Cute Checklist — Cute checklist for Thanksgiving — Turkey, pie, groceries…tap and done — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "planner",
-     "todo",
-     "aesthetic",
-     "daily",
-     "reminder",
-     "routine"
-    ],
-    "keyline": "Cozy To-Do List Widget, Chores",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "53ca986526ffb1b1",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Cute checklist for Thanksgiving\nTurkey, pie, groceries…tap and done\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
     }
    },
    {
@@ -79760,7 +79829,7 @@
      "#機上",
      "#TripPlanet"
     ],
-    "caption": "每趟旅程，蓋一個護照章\n任務完成，收集獎勵\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet",
+    "caption": "每趟旅程，蓋一個護照章\n任務完成，收集獎勵\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「Trip Planet」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "Trip Planet 親子旅行遊戲 — 每趟旅程，蓋一個護照章 — 任務完成，收集獎勵 — 帶小孩出國搭飛機・任務集章獎勵",
@@ -79787,7 +79856,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "每趟旅程，蓋一個護照章\n任務完成，收集獎勵\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「小孩 旅行」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
+     "caption": "每趟旅程，蓋一個護照章\n任務完成，收集獎勵\n帶小孩出國搭飛機・任務集章獎勵\nTrip Planet 親子旅行遊戲\n在 App Store 搜尋「Trip Planet」\nAndroid 版在 Google Play\n\n#國旅 #家庭旅遊 #長途飛行 #機上 #TripPlanet\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
     }
    },
    {
@@ -79942,7 +80011,7 @@
    "dailymatelite",
    "tripplanet_b",
    "tripbee_t10",
-   "lumibopomofo_c"
+   "tripbee_t10b"
   ],
   "hook_winners": {
    "apps": {
@@ -79993,7 +80062,7 @@
     "en": {
      "hour": 9,
      "avg_views": 65.6,
-     "posts": 67,
+     "posts": 69,
      "hours": {
       "0": 24.2,
       "5": 0.0,
@@ -80003,19 +80072,19 @@
       "18": 32.6,
       "19": 0.0,
       "20": 11.3,
-      "22": 14.0
+      "22": 12.0
      }
     },
     "ja": {
      "hour": 18,
      "avg_views": 67.0,
-     "posts": 37,
+     "posts": 38,
      "hours": {
-      "1": 42.0,
+      "1": 38.0,
       "4": 26.0,
       "5": 6.2,
       "7": 0.0,
-      "9": 11.0,
+      "9": 28.0,
       "14": 21.5,
       "18": 67.0,
       "20": 23.5
@@ -80024,7 +80093,7 @@
     "ko": {
      "hour": 22,
      "avg_views": 100.5,
-     "posts": 24,
+     "posts": 25,
      "hours": {
       "1": 86.9,
       "5": 0.0,
@@ -80044,17 +80113,17 @@
     },
     "zh-Hant": {
      "hour": 12,
-     "avg_views": 26.7,
-     "posts": 65,
+     "avg_views": 25.5,
+     "posts": 68,
      "hours": {
       "1": 8.9,
       "4": 14.0,
-      "5": 0.6,
+      "5": 0.5,
       "7": 0.1,
       "9": 0.3,
-      "12": 26.7,
+      "12": 25.5,
       "14": 0.0,
-      "15": 1.0
+      "15": 0.7
      }
     }
    },
@@ -80086,6 +80155,6 @@
     }
    }
   },
-  "updated_at": "2026-11-26T08:02:24Z"
+  "updated_at": "2026-11-27T08:06:27Z"
  }
 }

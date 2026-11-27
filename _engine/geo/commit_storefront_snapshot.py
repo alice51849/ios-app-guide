@@ -19,6 +19,13 @@ later phases merge origin and get the identical bytes back; when the push fails
 the run behaves exactly as before this step (the snapshot stays in the working
 tree and the later ``git add -A`` carries it as it always did).
 
+The caller's remote-tracking ref (``refs/remotes/<remote>/<branch>``) is left
+exactly as it was too: the fetch here writes FETCH_HEAD only (``--refmap=``) and
+the ref that ``git push`` advances is put back afterwards.  Later checks such as
+``_require_production_guide`` compare HEAD with ``origin/main`` to refuse a stale
+checkout; moving that ref under an untouched HEAD made the run's own push look
+like the checkout had fallen behind (11-27 run 45926703662).
+
 Never fails the run: problems are printed as ``::warning::`` and exit 0.  Pushes are bounded (timeout per git call,
 fixed attempts, growing sleeps) and never forced; the message carries
 ``[skip ci]`` so the push itself starts no Pages deploy (the run's normal
@@ -147,11 +154,43 @@ def _ta_trailer(worktree: Path) -> str:
         return trailer.read_text(encoding="utf-8").strip() if trailer.is_file() else ""
 
 
+def _ref_value(root: Path, ref: str) -> str | None:
+    found = _git(root, "rev-parse", "--verify", "-q", ref, check=False)
+    if found.returncode != 0:
+        return None
+    return found.stdout.strip() or None
+
+
+def _restore_ref(root: Path, ref: str, value: str | None) -> None:
+    """Put the caller's remote-tracking ref back to what it was before this step."""
+    if _ref_value(root, ref) == value:
+        return
+    if value is None:
+        _git(root, "update-ref", "-d", ref, check=False)
+    else:
+        _git(root, "update-ref", ref, value, check=False)
+
+
 def _push_attempt(
     root: Path, remote: str, branch: str, base: bytes | None, timeout: int
 ) -> bool:
     """One bounded attempt; True when origin now carries this snapshot."""
-    _git(root, "fetch", "--no-tags", remote, branch, timeout=timeout)
+    tracking = f"refs/remotes/{remote}/{branch}"
+    before = _ref_value(root, tracking)
+    try:
+        return _push_attempt_inner(root, remote, branch, base, timeout)
+    finally:
+        # ``git push`` advances the tracking ref on success; HEAD stays put by
+        # design, so leaving it moved would fake a stale checkout downstream.
+        _restore_ref(root, tracking, before)
+
+
+def _push_attempt_inner(
+    root: Path, remote: str, branch: str, base: bytes | None, timeout: int
+) -> bool:
+    # ``--refmap=`` keeps the configured refspec from moving origin/<branch>
+    # opportunistically; only FETCH_HEAD is written.
+    _git(root, "fetch", "--no-tags", "--refmap=", remote, branch, timeout=timeout)
     tip = _git(root, "rev-parse", "FETCH_HEAD").stdout.strip()
     ours = (root / STATE_FILE).read_bytes()
     remote_copy = _blob(root, tip)

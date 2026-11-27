@@ -22,6 +22,7 @@ from typing import Any
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE  # noqa: E402
 import android_play  # noqa: E402
+import market_surface_policy  # noqa: E402
 import paid_upfront_surfaces  # noqa: E402
 
 
@@ -3029,6 +3030,178 @@ def _refresh_brand_names(
     return True
 
 
+# Page-head fields that downstream readers copy verbatim out of a localized
+# answer page: publisher_intent_catalog takes the publisher query from <h1>,
+# the decision context from the lead, the App Store CTA label from the first
+# App Store link and the disclosure from the footer (alternatives_i18n then
+# rejects any of them that equals English), and <title>/description/og meta
+# are what search engines show.  The shared dictionaries can never learn the
+# <h1>/<title> wording (i18n_harvest_existing.page_link_labels excludes it on
+# purpose), so an English-source re-render would turn an already translated
+# head back into English.  First match only, mirroring the catalog extractor.
+_HEAD_TEXT_FIELDS: tuple[tuple[str, re.Pattern[str]], ...] = (
+    ("title", re.compile(r"<title\b[^>]*>(.*?)</title>", re.I | re.S)),
+    ("h1", re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.I | re.S)),
+    ("lead", re.compile(r'<p class="lead[^"]*">(.*?)</p>', re.I | re.S)),
+    (
+        "app_store_cta",
+        re.compile(
+            r'<a\b(?=[^>]*\bhref="https://apps\.apple\.com/'
+            r'(?:[a-z]{2}/)?app/id\d+(?:\?[^"]*)?")[^>]*>(.*?)</a>',
+            re.I | re.S,
+        ),
+    ),
+    (
+        "publisher_disclosure",
+        re.compile(
+            r'<footer class="footer">(?:.*?)'
+            r'<div class="wrap"[^>]*>(.*?)</div></footer>',
+            re.I | re.S,
+        ),
+    ),
+)
+_HEAD_META_RE = re.compile(
+    r"<meta\b[^>]*(?:name|property)=[\"']"
+    r"(description|og:title|og:description)[\"'][^>]*>",
+    re.I,
+)
+
+
+def _head_field_segments(page: str) -> dict[str, list[str]]:
+    """Translation units of each head field, keyed like extract_strings keys."""
+    fields: dict[str, list[str]] = {}
+    for name, pattern in _HEAD_TEXT_FIELDS:
+        match = pattern.search(page)
+        if match:
+            # extract_strings' own span walk, so units match mapping keys.
+            _strings, spans, _json = extract_strings(match.group(1))
+            fields[name] = [text for _s, _e, text, kind in spans if kind == "text"]
+    for match in _HEAD_META_RE.finditer(page):
+        name = "meta:" + match.group(1).lower()
+        content = re.search(r"content=(['\"])(.*?)\1", match.group(0), re.I | re.S)
+        if name not in fields and content and content.group(2).strip():
+            fields[name] = [html.unescape(content.group(2))]
+    return fields
+
+
+def _same_text(left: str, right: str) -> bool:
+    # finalize_html flips arrows on RTL pages; that is not a translation.
+    return left.strip().replace("←", "→") == right.strip().replace("←", "→")
+
+
+def _english_head_texts(source: str, english_pages: tuple[str, ...]) -> set[str]:
+    """Normalized head texts that count as English for this page.
+
+    The published English locale page (what the catalog compares against)
+    can still carry an older English wording than the source, and a harvested
+    dictionary entry can map the new English to that older English; both are
+    English, not a translation.
+    """
+    texts: set[str] = set()
+    for page in (source, *english_pages):
+        for units in _head_field_segments(page).values():
+            texts.update(unit.strip().replace("←", "→") for unit in units)
+            texts.add(" ".join(units).strip().replace("←", "→"))
+    return texts
+
+
+def _is_english(value: str, english: set[str]) -> bool:
+    return value.strip().replace("←", "→") in english
+
+
+def preserve_localized_head_fields(
+    source: str,
+    existing: str,
+    mapping: dict[str, str],
+    english_texts: set[str] | None = None,
+) -> tuple[dict[str, str], list[str]]:
+    """Keep the published translation of head fields the dictionary lacks.
+
+    A field unit is kept only when the dictionary would render it as English
+    and the published page already shows something else at the same position
+    of the same field (equal unit count); the published text is never another
+    English source string and never names an unrelated portfolio app.  Units
+    the dictionary does translate keep the fresh dictionary translation.
+    """
+    english_units = set(mapping)
+    if english_texts is None:
+        english_texts = _english_head_texts(source, ())
+    # Same allowance as require_no_cross_app_translation: apps the English
+    # page itself names (its own app) are not "unrelated".
+    allowed_bases = {
+        _app_name_base(name)
+        for unit in english_units
+        for name in portfolio_app_names_in(unit)
+    }
+    published = _head_field_segments(existing)
+    preserved = dict(mapping)
+    kept: list[str] = []
+    for name, units in _head_field_segments(source).items():
+        old_units = published.get(name)
+        if not old_units or len(old_units) != len(units):
+            continue
+        for unit, old in zip(units, old_units):
+            if unit not in preserved:
+                continue
+            if not (
+                _same_text(preserved[unit], unit)
+                or preserved[unit] in english_units
+                or _is_english(preserved[unit], english_texts)
+            ):
+                continue  # dictionary already localizes it
+            if (
+                _same_text(old, unit)
+                or old in english_units
+                or _is_english(old, english_texts)
+            ):
+                continue  # published page is English here too
+            if cross_app_names_introduced(unit, old, allowed_bases):
+                continue
+            preserved[unit] = old
+            kept.append(name)
+    return preserved, sorted(set(kept))
+
+
+def regressed_head_fields(
+    source: str,
+    existing: str,
+    rendered: str,
+    english_texts: set[str] | None = None,
+) -> list[str]:
+    """Head fields localized on the published page that *rendered* reverts.
+
+    A field regresses when the published page shows it localized (not equal
+    to English) and the new render shows the English text again -- or, for
+    <title>, the English <h1> query again (ensure_locale_meta frames an
+    English title around the untranslated query).
+    """
+    english = _head_field_segments(source)
+    before = _head_field_segments(existing)
+    after = _head_field_segments(rendered)
+    if english_texts is None:
+        english_texts = _english_head_texts(source, ())
+    regressed: list[str] = []
+    for name in english:
+        old_value = " ".join(before.get(name, []))
+        new_value = " ".join(after.get(name, []))
+        if not old_value or _is_english(old_value, english_texts):
+            continue
+        if _is_english(new_value, english_texts):
+            regressed.append(name)
+    en_query = " ".join(english.get("h1", [])).strip()
+    old_title = " ".join(before.get("title", []))
+    new_title = " ".join(after.get("title", []))
+    if (
+        en_query
+        and "title" not in regressed
+        and old_title
+        and en_query not in old_title
+        and en_query in new_title
+    ):
+        regressed.append("title")
+    return regressed
+
+
 def run_refresh(
     langs: list[str],
     trans_dir: str,
@@ -3061,7 +3234,7 @@ def run_refresh(
             q.stem for q in ANSWERS.glob("*.html") if q.name != "index.html"
         )
 
-    improved = unchanged = failed = renamed = relabeled = 0
+    improved = unchanged = failed = renamed = relabeled = guarded = 0
     touched_slugs: list[str] = []
     for slug in candidates:
         src_path = ANSWERS / f"{slug}.html"
@@ -3069,6 +3242,7 @@ def run_refresh(
             continue
         source = src_path.read_text(encoding="utf-8")
         strings, spans, json_spans = extract_strings(source)
+        english_texts: set[str] | None = None  # built on the first rewrite
         slug_touched = False
         for lang in langs:
             target = ROOT / lang / "answers" / f"{slug}.html"
@@ -3083,13 +3257,75 @@ def run_refresh(
             mapping = {x: gm.get(x, x) for x in strings}
             mapping = apply_locale_text_overrides(mapping, lang)
             require_no_cross_app_translation(strings, mapping, slug, lang)
-            new_ratio = _untranslated_ratio(strings, mapping)
             try:
                 existing = target.read_text(encoding="utf-8")
             except OSError:
                 continue
+            # The gain gate keeps measuring the dictionary alone, so the set of
+            # pages a refresh rewrites is exactly what it was before; units
+            # kept from the published page are not new coverage.
+            new_ratio = _untranslated_ratio(strings, mapping)
             old_ratio = _existing_untranslated_ratio(existing, strings)
-            if new_ratio > old_ratio - min_gain:
+            localized: str | None = None
+            regressed: list[str] = []
+            if not new_ratio > old_ratio - min_gain:
+                if english_texts is None:
+                    # The English locale pages are what downstream compares a
+                    # localized head field against ("English fallback").
+                    english_texts = _english_head_texts(
+                        source,
+                        tuple(
+                            path.read_text(encoding="utf-8")
+                            for path in (
+                                ROOT / english / "answers" / f"{slug}.html"
+                                for english in sorted(ENGLISH_LOCALES)
+                            )
+                            if path.is_file()
+                        ),
+                    )
+                # Per-unit no-regress: head fields already translated on the
+                # published page keep that translation when the dictionary has
+                # none (it can never learn <h1>/<title>, _HEAD_TEXT_FIELDS).
+                mapping, _kept = preserve_localized_head_fields(
+                    source, existing, mapping, english_texts
+                )
+                try:
+                    localized = render_localized(
+                        source,
+                        lang,
+                        slug,
+                        mapping,
+                        strings=strings,
+                        spans=spans,
+                        json_spans=json_spans,
+                    )
+                except Exception as exc:  # noqa: BLE001 - report and continue
+                    failed += 1
+                    print(
+                        f"failed {lang}/{slug}.html: {exc}",
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                    continue
+                # Backstop: a field the preservation could not pair (markup
+                # differs) must not regress either -- keep the page instead.
+                regressed = regressed_head_fields(
+                    source, existing, localized, english_texts
+                )
+                if market_surface_policy.application_ids(
+                    existing
+                ) != market_surface_policy.application_ids(localized):
+                    # A localized page may promote a different app than the
+                    # English source (per-market owner); never reassign it.
+                    regressed.append("app_owner")
+                if regressed:
+                    guarded += 1
+                    print(
+                        f"kept {lang}/{slug}.html: refresh would revert "
+                        f"localized {', '.join(regressed)}",
+                        flush=True,
+                    )
+            if localized is None or regressed:
                 relabeled_text, relabel_count = relabel_purchase_label_lists(
                     existing, lang
                 )
@@ -3108,15 +3344,6 @@ def run_refresh(
                     unchanged += 1
                 continue
             try:
-                localized = render_localized(
-                    source,
-                    lang,
-                    slug,
-                    mapping,
-                    strings=strings,
-                    spans=spans,
-                    json_spans=json_spans,
-                )
                 target.write_text(localized, encoding="utf-8")
                 improved += 1
                 slug_touched = True
@@ -3140,6 +3367,7 @@ def run_refresh(
                 "renamed": renamed,
                 "relabeled": relabeled,
                 "unchanged": unchanged,
+                "guarded": guarded,
                 "failed": failed,
             },
             ensure_ascii=False,

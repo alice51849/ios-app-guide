@@ -20,7 +20,7 @@ Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine sa
 - App Store · Kostenlos
 - ★ 3.0/5 · 3
 
-[Holen Sie sich Mochi im App Store →](https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
+[Mochi im App Store laden →](https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

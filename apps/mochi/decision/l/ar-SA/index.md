@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - App Store · مجاني
 - ★ 5.0/5 · 2
 
-[احصل على Mochi من متجر التطبيقات →](https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
+[احصل على Mochi من متجر التطبيقات ←](https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

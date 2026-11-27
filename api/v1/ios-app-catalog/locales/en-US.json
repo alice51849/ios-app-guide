@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-27",
-  "content_digest": "f3cc42de67a69d9ca2ba2baffb65f6f8cf340316d0864bc29e2bac083e0f754b",
+  "content_digest": "bee5a37b7592c97d914b85a5fa97b641b22a8a25a312c5027a9ade3cbbd993f6",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -282,7 +282,8 @@
         "recruiter",
         "interview",
         "professional",
-        "docx"
+        "docx",
+        "ats resume"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -497,7 +498,8 @@
         "schedule",
         "wake",
         "skip",
-        "roster"
+        "roster",
+        "alarm skip holidays"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -541,7 +543,8 @@
         "amoled",
         "aesthetic",
         "phone",
-        "backdrop"
+        "backdrop",
+        "foldable wallpaper"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1003,7 +1006,9 @@
         "homeschool",
         "quiz",
         "first",
-        "grade"
+        "grade",
+        "zhuyin",
+        "bopomofo"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1464,7 +1469,9 @@
         "notes",
         "watch",
         "goals",
-        "kawaii"
+        "kawaii",
+        "checklist",
+        "todo list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1598,7 +1605,8 @@
         "pdf",
         "notes",
         "pptx",
-        "csv"
+        "csv",
+        "one page summary"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2064,7 +2072,8 @@
         "watch",
         "timezone",
         "awake",
-        "bedroom"
+        "bedroom",
+        "desk clock"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2148,7 +2157,8 @@
         "museum",
         "airport",
         "family",
-        "quest"
+        "quest",
+        "kids travel games"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2359,7 +2369,10 @@
         "requests",
         "widget",
         "remaining",
-        "llm"
+        "llm",
+        "claude usage limit",
+        "codex usage limit",
+        "ai usage tracker"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

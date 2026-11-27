@@ -131,17 +131,22 @@ jobs:
         # short of leaving Threads' rolling 24 hours): inside 2 hours of the slot's fire time (the 03:00 slot:
         # 3 hours, threads_cap.SLOT_RETRY_GRACE; the 13:00 slot: until 14:30) it stays open and the next
         # clip-backup.yml run dispatches it again (threads_cap.py full, OPEN_STEP below); after that it is a cap
-        # skip with a receipt. Room but the grace is over (a late backup, heal or delayed schedule): no post, a
-        # past-grace skip with a receipt (threads_cap.py within, 2026-11-27), so a late post never takes a later
-        # slot's share. Count unknown: fail, so a backfill can retry.
+        # skip with a receipt. Room but the grace is over, for a slot an earlier green run left open for a retry
+        # (social_slot_gate.py retried=true: a late backup, heal or delayed schedule): no post, a past-grace skip
+        # with a receipt (threads_cap.py within, 2026-11-27), so a late retry never takes a later slot's share.
+        # A slot no run ever started still posts late with room, as before: on a day the Mac dispatcher (and
+        # threads-autopilot's 15 UTC on the same Mac) is down, a late GitHub schedule is the account's only post.
+        # Count unknown: fail, so a backfill can retry.
         id: room
         if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour != '1'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           SLOT: ${{ steps.slot.outputs.slot }}
+          RETRIED: ${{ steps.slot.outputs.retried }}
         run: |
           python3 .github/scripts/test_threads_cap.py -q
           python3 .github/scripts/threads_series.py room && rc=0 || rc=$?
+          if [ "$rc" = 0 ] && [ "$RETRIED" != "true" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "$rc" = 0 ]; then
             python3 .github/scripts/threads_cap.py within --slot "$SLOT" --receipt "$RUNNER_TEMP/cap-skip.json" && inside=0 || inside=$?
             if [ "$inside" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi

@@ -663,6 +663,69 @@ class PastGraceTest(unittest.TestCase):
                         room.index("python3 .github/scripts/threads_cap.py within"))
         record = text.split("- name: Record the cap skip receipt", 1)[1].split("- name:", 1)[0]
         self.assertIn("steps.room.outputs.capskip == 'true'", record)
+        self.assertIn("RETRIED: ${{ steps.slot.outputs.retried }}", room)
+        self.assertLess(room.index('[ "$RETRIED" != "true" ]'), room.index("python3 .github/scripts/threads_cap.py within"))
+
+
+class RoomStepRetriedTest(unittest.TestCase):
+    """The room step of threads-post.yml, run as bash with the account count stubbed: past its grace only a slot an
+    earlier green run left open (social_slot_gate.py retried=true) is a past-grace skip; a slot no run ever started
+    still posts late with room (2.7 review 2026-11-27: on a day the Mac dispatcher is down it can be the only post)."""
+
+    SLOT = "2026-11-20T03:00:00+00:00"  # long past its 06:00 grace end on the real clock
+
+    def room_step(self, retried, room_rc=0):
+        import shutil
+        import subprocess
+        # No PyYAML: this file runs in threads-post.yml on a bare setup-python. The step's `run: |` block is the
+        # lines after it that are indented deeper.
+        text = (Path(__file__).resolve().parents[1] / "workflows" / "threads-post.yml").read_text(encoding="utf-8")
+        lines = text.split("        id: room\n", 1)[1].splitlines()
+        start = next(i for i, line in enumerate(lines) if line.strip() == "run: |") + 1
+        indent = len(lines[start]) - len(lines[start].lstrip())
+        body = []
+        for line in lines[start:]:
+            if line.strip() and len(line) - len(line.lstrip()) < indent:
+                break
+            body.append(line[indent:])
+        script = "\n".join(body).replace("python3 .github/scripts/test_threads_cap.py -q", "true")
+        self.assertIn("threads_cap.py within", script)
+        with tempfile.TemporaryDirectory() as root:
+            scripts = Path(root, ".github", "scripts")
+            scripts.mkdir(parents=True)
+            shutil.copy(Path(__file__).resolve().parent / "threads_cap.py", scripts / "threads_cap.py")
+            (scripts / "threads_series.py").write_text(f"import sys\nsys.exit({room_rc})\n", encoding="utf-8")
+            output = Path(root, "out")
+            output.write_text("")
+            env = {**os.environ, "GITHUB_OUTPUT": str(output), "RUNNER_TEMP": root, "SLOT": self.SLOT,
+                   "RETRIED": retried, "THREADS_TOKEN": ""}
+            done = subprocess.run(["bash", "-e", "-c", script], cwd=root, env=env, capture_output=True, text=True)
+            outputs = dict(line.split("=", 1) for line in output.read_text().split())
+            receipt = Path(root, "cap-skip.json")
+            body = json.loads(receipt.read_text()) if receipt.exists() else None
+        return done.returncode, outputs, body, done.stdout
+
+    def test_a_left_open_slot_arriving_at_11_56_is_a_past_grace_skip(self):
+        code, outputs, receipt, printed = self.room_step("true")
+        self.assertEqual(0, code)
+        self.assertEqual("false", outputs["ok"])
+        self.assertEqual("true", outputs["capskip"])
+        self.assertEqual("past_grace", receipt["reason"])
+        self.assertIn("過期跳過", printed)
+
+    def test_a_03_slot_no_run_ever_started_arriving_late_with_room_still_posts(self):
+        for retried in ("false", ""):  # "" : an older gate without the output
+            code, outputs, receipt, _ = self.room_step(retried)
+            self.assertEqual(0, code, retried)
+            self.assertEqual({"ok": "true"}, outputs, retried)
+            self.assertIsNone(receipt, retried)
+
+    def test_a_full_account_still_takes_the_full_path(self):
+        code, outputs, receipt, _ = self.room_step("false", room_rc=1)
+        self.assertEqual(0, code)
+        self.assertEqual("false", outputs["ok"])
+        self.assertEqual("true", outputs["capskip"])
+        self.assertEqual("cap_full_after_grace", receipt["reason"])
 
 
 if __name__ == "__main__":

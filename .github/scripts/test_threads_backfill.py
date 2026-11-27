@@ -271,9 +271,9 @@ class PastGraceTests(unittest.TestCase):
         self.assertIn("past-grace skip", out.getvalue())
         self.assertIn("06:00", out.getvalue())
 
-    def test_a_slot_no_run_ever_filled_is_still_dispatched_so_threads_post_records_the_skip(self):
-        # Never run (GitHub dropped it): dispatched as before; threads-post.yml then finds the grace over
-        # (threads_cap.py within) and records a past-grace skip instead of posting.
+    def test_a_slot_no_run_ever_filled_is_still_dispatched(self):
+        # Never run (GitHub dropped it): dispatched as before, and threads-post.yml posts it with room as before
+        # (social_slot_gate.py retried=false, so threads_cap.py within is not asked).
         now = dt.datetime(2026, 11, 27, 11, 56, tzinfo=UTC)
         self.assertIn(self.SLOT, B.missing_slots([], now, self.left_open))
 

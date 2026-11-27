@@ -35,11 +35,13 @@ ROOM, FULL, UNKNOWN = "room", "full", "unknown"
 # slot recorded as a cap skip, with a receipt (.github/growth/threads-cap-skips.json). Every retry still goes
 # through account_status(): the cap itself is never loosened.
 RETRY, SKIP = "retry", "skip"
-# After a slot's grace (slot_deadline) the slot never posts, even with room (2.7 review 2026-11-27): a late post
-# (a dropped 04:47 backup, then the 11:47 backup, the watchdog or a scheduled run GitHub delayed by hours) would
-# hold the account's 3rd share until the same time tomorrow and push the 13:00 evening slot into a cap skip.
-# threads-post.yml checks it after the room check (threads_cap.py within) and records a skip receipt instead;
-# threads_backfill.py does not dispatch a left-open slot again once its grace is over.
+# After its grace (slot_deadline) a slot that an earlier green run left open for a retry never posts, even with
+# room (2.7 review 2026-11-27): a late retry (a dropped 04:47 backup, then the 11:47 backup, the watchdog or a
+# delayed schedule) would hold the account's 3rd share until the same time tomorrow and push the 13:00 evening
+# slot into a cap skip. threads-post.yml checks it after the room check (threads_cap.py within, only when
+# social_slot_gate.py says retried=true) and records a skip receipt instead; threads_backfill.py does not dispatch
+# a left-open slot again once its grace is over. A slot no run ever started still posts late with room, as before
+# (on a day the Mac dispatcher is down a late GitHub schedule can be the account's only post).
 PAST_GRACE_EXIT = 3
 RETRY_GRACE = dt.timedelta(hours=2)
 # Per-slot grace overrides (UTC slot hour -> grace). 2026-11-27 (also 11-20): the 03:00 slot found the account full

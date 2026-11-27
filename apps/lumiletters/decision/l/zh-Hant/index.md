@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 離線使用
 - 無廣告
 - App Store · 免費
-- ★ 4.5/5 · 2
+- ★ 4.7/5 · 3
 
 [在 App Store 取得 Lumi Letters →](https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 

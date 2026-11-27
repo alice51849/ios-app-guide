@@ -21,6 +21,7 @@ CountDaysNow — 從重要的日子往回規劃。免費開始 · 一次買斷 �
 - 主畫面小工具
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [到 App Store 下載 CountDaysNow →](https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)
 

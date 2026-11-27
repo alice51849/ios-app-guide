@@ -21,7 +21,7 @@ LED Moving Text — Cue Flow 專門應付一張牌子不夠用的時刻。免費
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · 免費
-- ★ 5.0/5 · 1
+- ★ 5.0/5 · 2
 
 [到 App Store 下載 LED Moving Text →](https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)
 

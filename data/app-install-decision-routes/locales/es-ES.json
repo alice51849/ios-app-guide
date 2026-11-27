@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "es-ES",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2074,25 +2074,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis para empezar · desbloqueo único",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Sin cuenta",
-        "Sin anuncios"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Productividad",
         "Gratis para empezar · desbloqueo único",
-        "Sin cuenta",
-        "Sin anuncios",
+        "Widget",
         "Apple Watch",
         "App Store · Gratis"
       ],
@@ -2908,7 +2903,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Cronómetro — Dale la vuelta | iOS App",
-      "decision_context": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado. Pon el móvil boca abajo y empieza a contar; levántalo y se pausa, así solo cuenta el tiempo de concentración real en tus horas de estudio y de trabajo. Consulta el tiempo de hoy y de la semana, tu racha de días y el reparto por asignatura o proyecto, además de cuántas veces levantaste el móvil y cuánto duró tu concentración. Fija una fecha límite y un objetivo, y Studydown te muestra el ritmo diario que aún necesitas. Elige una actividad, inicia el registro y deja el móvil inmóvil sobre la mesa. Mantén la app abierta durante la medición. Al levantarlo, el contador se pausa después del margen de tolerancia elegido. Cuando sales de la app, no se añade más tiempo. • Asigna nombres y colores a las actividades y ordénalas a tu gusto. Añade o corrige registros a mano. • Consulta los resúmenes de hoy y de esta semana, los días consecutivos y el reparto por actividad. • Fija objetivos semanales y plazos. Elige recordatorios diarios o con un intervalo de varias horas. • Guarda tus registros en CSV. Pro también ofrece copias de seguridad y restauración en JSON. Prueba hasta 3 actividades y una cuota acumulada de 5 minutos; no se renueva cada día. Las sesiones ya iniciadas se conservan completas. Una compra única de Pro desbloquea actividades y registro ilimitados, estadísticas avanzadas, objetivos, plazos, widgets, Apple Watch y copias de seguridad. Sin suscripción. La medición y los registros funcionan en el dispositivo, sin cuenta ni anuncios. Tú decides si compartes archivos. Las compras y su restauración utilizan los servicios de Apple. Contacto: hourstag.app@gmail.com Optimizada para el iPhone Duo.",
+      "decision_context": "Pon el móvil boca abajo y empieza a contar; levántalo y se pausa, así solo cuenta el tiempo de concentración real en tus horas de estudio y de trabajo. Consulta el tiempo de hoy y de la semana, tu racha de días y el reparto por asignatura o proyecto, además de cuántas veces levantaste el móvil y cuánto duró tu concentración. Fija una fecha límite y un objetivo, y Studydown te muestra el ritmo diario que aún necesitas. Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado. Elige una actividad, inicia el registro y deja el móvil inmóvil sobre la mesa. Mantén la app abierta durante la medición. Al levantarlo, el contador se pausa después del margen de tolerancia elegido. Cuando sales de la app, no se añade más tiempo. • Asigna nombres y colores a las actividades y ordénalas a tu gusto. Añade o corrige registros a mano. • Consulta los resúmenes de hoy y de esta semana, los días consecutivos y el reparto por actividad. • Fija objetivos semanales y plazos. Elige recordatorios diarios o con un intervalo de varias horas. • Guarda tus registros en CSV. Pro también ofrece copias de seguridad y restauración en JSON. La versión gratuita incluye hasta 3 actividades y una cuota acumulada de 5 minutos; no se renueva cada día. Las sesiones ya iniciadas se conservan completas. Una compra única de Pro desbloquea actividades y registro ilimitados, estadísticas avanzadas, objetivos, plazos, widgets, Apple Watch y copias de seguridad. Sin suscripción. La medición y los registros funcionan en el dispositivo, sin cuenta ni anuncios. Tú decides si compartes archivos. Las compras y su restauración utilizan los servicios de Apple. Contacto: hourstag.app@gmail.com Optimizada para el iPhone Duo.",
       "category": "productivity",
       "category_label": "Productividad",
       "purchase_model": "free_with_lifetime_unlock",

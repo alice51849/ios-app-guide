@@ -5,7 +5,7 @@
   "creative_count": 61,
   "current_inventory": {
     "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
-    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
+    "copy_sha256": "973e6656b9b3726e65d444696071d694849e0437527933c18130e8ecc2cab142",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 61
@@ -14,7 +14,7 @@
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "f9b605b059beebdc69049e5cb02b836dc3031120241864ee82097c524591e62d",
+      "generated_sha256": "8badec10b5c7e6bcb94e64b18db81e6302e10fc80903d67a1aa4d7050901dcb7",
       "kind": "conversion_contracts",
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.json"
     },
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "fed2412f4dfb835eaa7a3b9c7447d7713a26aad6fa03e59ae6b84dbaecb61676",
+      "generated_sha256": "ddd7a402d13da753039ecc8c5220e189adc66cdbabd7759a6d480da1d3ed24d2",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "fce9dd50ab1ea17ccba972b2b1ef077fc20499558d4e0e46e0cf5688461f3149",
+      "generated_sha256": "300222b0b184834a7efd39abec19438166cdd38ce2c504cf5c743447181c35f3",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -154,7 +154,7 @@
       "relative_path": "en-US/decide/lockhour/stop-social-apps-during-study-blocks.html"
     },
     {
-      "generated_sha256": "01f02b3311d96c6a0c5385f628d68f68b37780fcfd018fbde4dc6b03d11fc1e2",
+      "generated_sha256": "125b8adf007b740bca9965e65c2aac68586ae3dcfb47ed220b5887d01de4281c",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
@@ -209,7 +209,7 @@
       "relative_path": "en-US/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
     },
     {
-      "generated_sha256": "2e680107350667fb5edfef439022c8dfb5b564f0ee8115b67e1c4403bd3d3dba",
+      "generated_sha256": "13315acdac8b62f19813e2ac6d8e55d2bc77816231038be871d887703ade4606",
       "kind": "route_html",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
@@ -414,7 +414,7 @@
       "relative_path": "zh-Hant/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
     },
     {
-      "generated_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
+      "generated_sha256": "ef20ca8e13075536cd433e6d2d3fe98e185c02b2def54c778115bcbda398135a",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
@@ -429,7 +429,7 @@
       "relative_path": "zh-Hant/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
     },
     {
-      "generated_sha256": "5cee8a8501a4148f48f541d609b37ba691f7e3eacbdfe0174512463e59b4fa81",
+      "generated_sha256": "f5dcca1c93f32a4c2a9aa2fd13cb8c8afec8844c6e81b810e8aba390ebddaa5a",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
@@ -457,14 +457,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
-    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
+    "copy_sha256": "973e6656b9b3726e65d444696071d694849e0437527933c18130e8ecc2cab142",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 61,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "215c8a6e929e7a5da5a2993be0e8e8fb33c63ae061347a40d32e05ce491388b7",
+  "manifest_digest": "d7f5ca222eb463c370266b648ec094cb3b78fb33ace909120f5926e4e7153caa",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "3ea422da295ee0979f089d86e4164cede7e6d010f9fafc2aaebcdd9b0e944bad",
+  "release_contract_digest": "c68cf8e27ce6557cab4b26e3fa70ad167a969005497843338e127271144de1a5",
   "release_state": "exact",
   "route_count": 83,
   "routes": [
@@ -886,8 +886,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "01f02b3311d96c6a0c5385f628d68f68b37780fcfd018fbde4dc6b03d11fc1e2",
-      "record_digest": "1d08ea7ef1e9614d2f9a2a4ce5ee9b68a7cc6f84fb5b2ceb8a3faedb93758144",
+      "output_sha256": "125b8adf007b740bca9965e65c2aac68586ae3dcfb47ed220b5887d01de4281c",
+      "record_digest": "8c0b453330ef92f72aaf8274b03331851de9d0a9f758209609263ed2334528eb",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -1073,8 +1073,8 @@
       "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "2e680107350667fb5edfef439022c8dfb5b564f0ee8115b67e1c4403bd3d3dba",
-      "record_digest": "5a1dc4ed1b41a204fe131d5720e8db27714227d62069072b67ab64fad6b816d4",
+      "output_sha256": "13315acdac8b62f19813e2ac6d8e55d2bc77816231038be871d887703ade4606",
+      "record_digest": "db402e296761d25bec0a06e6a054b011a2f7501f52a652ef968a10e1203e550d",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html",
       "route_id": "en-US:mochi:cozy-checklist-without-project-overhead",
       "route_slug": "cozy-checklist-without-project-overhead",
@@ -1753,8 +1753,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
-      "record_digest": "1a2d2d7917746e0f61045748509d386f15ca90bd397743a2893e10621059ad16",
+      "output_sha256": "ef20ca8e13075536cd433e6d2d3fe98e185c02b2def54c778115bcbda398135a",
+      "record_digest": "341b3491f6d51ef5567572c3e52383dc050f2b6c36eb8c73700e46bd9a0cef1a",
       "relative_path": "zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "zh-Hant:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -1804,8 +1804,8 @@
       "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "5cee8a8501a4148f48f541d609b37ba691f7e3eacbdfe0174512463e59b4fa81",
-      "record_digest": "a7d08a9b9e29428c184244e849c79c3c0e6bd9b56fd2dcdf006013a58b374854",
+      "output_sha256": "f5dcca1c93f32a4c2a9aa2fd13cb8c8afec8844c6e81b810e8aba390ebddaa5a",
+      "record_digest": "e6fcbb765c696cfffc8a18b274a14bf8b52ff48c555e780e10b72f1ffb155626",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html",
       "route_id": "zh-Hant:mochi:cozy-checklist-without-project-overhead",
       "route_slug": "cozy-checklist-without-project-overhead",
@@ -1882,5 +1882,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "f8201db0f4d12c0e51c821d8db5d11e8984d7775511081024b4dc22ca0f33be7"
+  "source_contract_digest": "2e94c593e9c90fa0a1ebd5a08cd2aa43324342a1d07b90e7effec41cc87b8aa1"
 }

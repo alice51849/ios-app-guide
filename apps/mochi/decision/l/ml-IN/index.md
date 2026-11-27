@@ -2,7 +2,7 @@
 title: "എളുപ്പമുള്ള ടു-ഡു ലിസ്റ്റ് ആപ്പ് iPhone-ൽ സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ml-IN/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക
-- അക്കൗണ്ട് ഇല്ല
-- വ്യാപനങ്ങൾ ഇല്ല
+- വിഡ്ജറ്റ്
 - Apple Watch
 - App Store · സൗജന്യം
 

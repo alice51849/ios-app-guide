@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalogue",
   "description": "A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-CA",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-27",
   "numberOfItems": 61,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2243,7 +2243,7 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
         "price": "3.99",
         "priceCurrency": "CAD",
@@ -2263,7 +2263,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-mochi",
         "url": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That's why Mochi exists.",
+        "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "en-CA",
-          "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That's why Mochi exists.",
+          "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-mochi"
           },

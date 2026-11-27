@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-US",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2086,28 +2086,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "No account",
-        "No ads"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Productivity",
         "Free to start · one-time unlock",
-        "No account",
-        "No ads",
+        "Widget",
         "Apple Watch",
         "App Store · Free",
-        "★ 4.2/5 · 57"
+        "★ 4.2/5 · 59"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -2122,7 +2117,7 @@
         "currency": "USD",
         "formatted_price": "Free",
         "rating_value": 4.2,
-        "rating_count": 57
+        "rating_count": 59
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",

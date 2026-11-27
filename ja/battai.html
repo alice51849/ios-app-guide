@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>BattAI: バッテリー劣化・状態スコア — バッテリー劣化チェック・充電通知 | iOS App</title>
 <meta name="description" content="バッテリーの劣化が速いか遅いか、いつごろ交換すべきかがわかります。充電なしであとどれくらい使えるかを示し、好きな残量まで充電したらすぐにお知らせし、充電のたびに記録も残します。">
-<meta name="keywords" content="最大容量, サイクル, 回数, 診断, 交換時期, 消耗, 発熱, 残量, レポート, ウィジェット, 測定, モニター, 履歴, 健康, スマホ, アラーム, 長持ち, チェッカー, パーセント, 表示, 容量, 電池, 充電速度, 寿命, バッテリー 劣化">
+<meta name="keywords" content="最大容量, サイクル, 回数, 診断, 交換時期, 消耗, 発熱, 残量, レポート, ウィジェット, 測定, モニター, 履歴, 健康, スマホ, アラーム, 長持ち, チェッカー, パーセント, 表示, 容量, 電池, 充電速度, 寿命">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
@@ -128,12 +128,9 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/battai.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"BattAI: バッテリー劣化・状態スコア","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"バッテリーの劣化が速いか遅いか、いつごろ交換すべきかがわかります。充電なしであとどれくらい使えるかを示し、好きな残量まで充電したらすぐにお知らせし、充電のたびに記録も残します。\n\niPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。\n\n設定でわかるのは今日の最大容量です。BattAIはその数字が良いのか悪いのか、機種の設計目標と比べて減り方が速いのか遅いのかを伝え、読み取りと充電をすべて残し、売るときや修理に出すときには1ページのバッテリーパスポートにまとめます。\n\n数秒でバッテリーを読み込む\n• 「設定＞バッテリー＞バッテリーの状態」のスクリーンショットを撮り、BattAIで選ぶと、iPhone上で数字を読み取ります。保存前に必ず確認・修正できます。\n• 表示される機種では、充放電回数、製造日、初回使用日も読み取り、バッテリーの年齢を自動で計算します。最大容量を自分で入力することもできます。\n• BattAIは最大容量を自分では読み取れません。どの数字にも、出どころと日付を表示します。\n\nすぐにわかる、ひと言の答え\n• 良し悪し：とても良い、通常の範囲、またはAppleのバッテリーサービスの目安である80%を下回っている。\n• 劣化の速さ：Appleが公開している機種ごとの設計目標と比べて、遅い・同じくらい・速い。これは推定で、メーカーの検査ではありません。機種・設計容量・設計目標のデータはiPhoneの機種が対象です。\n• 機種、発売年、設計容量、設計目標をひと目で。次に何をすればいいかもひと言で。\n\n「設定」Appでは見られないこと\n• あとどれくらい：最近の使い方なら、20%まであと何時間くらいかを範囲で表示（推定）。充電中は満充電までのおおよその時間。\n• バッテリーケアスコア（100点満点）：いちばん減点されている習慣を一つ教えます。例：残量が低くなりすぎる、熱いときに充電している。少し温かい程度は減点せず、熱いときだけ数えます。\n• 夜間の電池消費：寝る前から朝までに何%減ったか、1時間あたりどれくらいか、最近の平均。ガイドに沿って「時刻」のオートメーションを2つ設定します。充電したままの夜は数えません。\n\nいつ交換すべきか\n• 80%のラインを引いた、あなた自身の最大容量カーブ。\n• 80%まで下がる時期を季節や範囲で表示。正確そうな日付はつくりません。データが足りないときは推測せず、もう一度読み込むよう案内します。\n• 交換不要、半年〜1年以内に注意、交換を検討、のどれかではっきりお伝えします。\n• 毎月、もう一度読み込むようにリマインド。\n\n時間どおりに届く充電通知\n• 選んだ残量（50〜100%）で満充電通知。低残量と、iPhoneが熱くなっているときの通知もあります。\n• 手順ガイドに沿ってショートカットのオートメーションを1つ設定すれば、その残量に届いた瞬間に通知が鳴ります。設定しない場合、通知が遅れて届くことがあります。\n\n充電を毎回記録\n• オートメーションをもう1つ追加すると、つないだときと外したときを、Appを開いていなくても自動で記録：何%から何%まで、かかった時間、速度レベル（低速・標準・急速、推定）。\n• 週ごとのまとめ。充電器に名前を付けられます。\n• 充電器の成績表：実際の充電をもとに、充電器ごとの平均の速さを比較。各充電器で80%未満の充電が3回あれば比べられます。\n\nこの充電器は速い？\n• 充電したままBattAIを数分開いておくと、速度レベルとバッテリーに入る電力のおおよその範囲を表示します。例：「急速・約15〜21W（推定）」。\n• 結果を出すのは残量20〜80%で、iPhoneが熱くなっていないときだけです。Appleはアプリに充電電力を読ませないため、残量の上がる速さとバッテリー容量から推定します。\n• 充電器ごとに保存して、並べて比べられます。\n\nウィジェット、相棒キャラクター、Apple Watch\n• 残量とバッテリーの状態を表示する、シンプルなウィジェット。\n• 残量に合わせて表情が変わる、10種類のバッテリーの相棒キャラクター。\n• カーブと予測時期を表示する中サイズ、大サイズ、ロック画面ウィジェット、スタンバイ。\n• Apple Watchでは、Watch自身の残量を表示。買い切りで、iPhoneのバッテリーのまとめもWatchで見られます。\n\nシェアと売却\n• 機種・最大容量・劣化の速さを、シェアカードとして保存。\n• 1ページのバッテリーパスポートを書類または縦長画像で書き出し：読み取りごとの日付と出どころ、充放電回数、カーブ、予測時期、バッテリーの日付と年齢、充電習慣スコア、直近30日の充電中の発熱回数、よく使う充電器、充電記録の件数。推定値には推定と明記します。\n\nアンロックなしでできること、買い切りで増えること\nアンロックなしで：残量と充電状態、最大容量とバッテリーの日付の読み込みとその場の判定、あとどれくらい、ケアスコアといちばんの減点、夜間の電池消費、時間どおりの満充電通知と満充電・低残量・発熱の通知、シンプルなウィジェット1つと最初の相棒、基本のシェアカード、充電器の速度レベル。充電記録と読み取りはずっと貯まり続け、直近7日間と直近3回の充電はいつでも見られます。\nフル版は買い切りで、サブスクリプションではなく自動課金もありません：すべての履歴とバッテリーカーブ、80%まで下がる時期と交換の目安（推定）、充電ごとの詳細、充電器の電力範囲（推定）・比較・成績表、ケアスコアの3つの内訳と発熱の記録、ほかのウィジェットと相棒、バッテリーパスポートの書き出しとシェア、毎月の読み込みリマインダー、これまでの「充電の履歴」「推移」「状態の詳細」画面、Apple WatchでのiPhoneバッテリーのまとめ。\n\nBattAIではないもの\n節電・冷却アプリではなく、ステータスバーの電池アイコンも変えません。AIによる分析はありません。\n\nプライバシー\nアカウント不要、広告なし、サーバーなし。データはあなたのiPhoneの中だけに残り、アップロードされません。","url":"https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","featureList":["最大容量","サイクル","回数","診断","交換時期","消耗","発熱","残量"],"keywords":"最大容量, サイクル, 回数, 診断, 交換時期, 消耗, 発熱, 残量, レポート, ウィジェット, 測定, モニター, 履歴, 健康, スマホ, アラーム, 長持ち, チェッカー, パーセント, 表示, 容量, 電池, 充電速度, 寿命","@id":"https://apps.apple.com/app/id6802423998","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6802423998"},"downloadUrl":"https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/ja/battai.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"JPY","url":"https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
-<style>.searched-as{margin:1.2em 0;font-size:.95em;line-height:1.6}.searched-as-label{font-weight:600;margin-right:.35em}</style>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
-<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -143,6 +140,8 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">当サイトは掲載アプリの開発者であるLumi Studioが運営し、自社アプリを紹介しています。</p>
@@ -173,13 +172,6 @@
 <!-- app-store-review:start -->
 <div class="app-store-review" data-app-store-review="6802423998" style="margin:1rem 0;font-size:.9em;text-align:center"><a class="app-store-review__link" href="https://apps.apple.com/jp/app/id6802423998?action=write-review" rel="nofollow noopener">このアプリをお使いですか？App Store で評価・レビューできます</a> · <a class="app-store-review__play" data-play-review="com.alice51849.BattAI" href="https://play.google.com/store/apps/details?id=com.alice51849.BattAI&amp;showAllReviews=true" rel="nofollow noopener">Google Play</a></div>
 <!-- app-store-review:end -->
-<!-- app-hook-clip:start -->
-<figure class="app-hook-clip" data-app-key="battai" style="margin:18px 0;max-width:300px">
-<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="バッテリー最大容量 いつ80%を切る？ | BattAI: バッテリー状態スコア"><source src="https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tmc5xw.mp4" type="video/mp4"></video>
-<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">バッテリー最大容量 いつ80%を切る？</figcaption>
-</figure>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"バッテリー最大容量 いつ80%を切る？ | BattAI: バッテリー状態スコア","description":"バッテリーの劣化が速いか遅いか、いつごろ交換すべきかがわかります。充電なしであとどれくらい使えるかを示し、好きな残量まで充電したらすぐにお知らせし、充電のたびに記録も残します。","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg"],"uploadDate":"2026-11-23T00:00:00+00:00","contentUrl":"https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tmc5xw.mp4","duration":"PT13.5S","inLanguage":"ja"}</script>
-<!-- app-hook-clip:end -->
 <h2>BattAI: バッテリー劣化・状態スコア とは?</h2>
   <p>BattAI: バッテリー劣化・状態スコア は iOS アプリです。 バッテリー劣化チェック・充電通知</p>
   <p>バッテリーの劣化が速いか遅いか、いつごろ交換すべきかがわかります。充電なしであとどれくらい使えるかを示し、好きな残量まで充電したらすぐにお知らせし、充電のたびに記録も残します。</p>
@@ -241,8 +233,6 @@
     <li>残量</li>
   </ul>
 
-  <p class="searched-as"><span class="searched-as-label">このアプリはこんな検索で見つかっています：</span>バッテリー 劣化</p>
-
   <h2>価格</h2>
   <p>無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。</p>
 
@@ -258,26 +248,6 @@
 </aside>
 <!-- app-store-facts:end -->
 </main>
-<!--iag-app-related-->
-<section class="wrap app-related">
-<h2>このアプリに関する疑問と答え</h2>
-<ul>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/best-battery-health-app-app.html">最高のバッテリー状態アプリ</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/how-to-choose-a-battery-health-app-app.html">バッテリー状態アプリの選び方</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/best-battery-health-report-app.html">最高のバッテリー状態レポートアプリ</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/how-to-choose-a-battery-health-report-app.html">バッテリー状態レポートアプリの選び方</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/battery-health-app-app-for-iphone.html">iPhone向けバッテリー状態アプリ</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/replace-iphone-battery-app-for-iphone.html">iPhone向けバッテリー交換判断アプリ</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/battery-health-app-app-for-iphone-free.html">iPhone向け無料バッテリー状態アプリ</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ja/answers/best-replace-iphone-battery-app.html">最高のiPhoneバッテリー交換判断アプリ</a></li>
-</ul>
-</section>
-<!--/iag-app-related-->
-
-<!--iag-app-support-->
-<p class="wrap app-support"><a href="https://open.cait518.cc/battai-support/?ct=sup_battai_xlink" data-ls-xlink="battai">このアプリのサポートとよくある質問</a></p>
-<!--/iag-app-support-->
-
 <!-- webmcp-install-tool:start -->
 <script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6802423998","app_name":"BattAI","page_language":"ja","page_url":"https://open.cait518.cc/ios-app-guide/ja/battai.html","app_store_url":"https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","localized_description":"バッテリーの劣化が速いか遅いか、いつごろ交換すべきかがわかります。充電なしであとどれくらい使えるかを示し、好きな残量まで充電したらすぐにお知らせし、充電のたびに記録も残します。","storefront_facts":{"price":"0","currency":"JPY","formatted_price":"無料"}}</script>
 <script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>

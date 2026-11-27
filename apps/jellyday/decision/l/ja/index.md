@@ -2,7 +2,7 @@
 title: "JellyDay: かわいい1日スケジュール — 予定表・ルーティン・タイマー・タイムラインで見える時間管理 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/ja/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

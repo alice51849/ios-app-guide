@@ -6,7 +6,7 @@
   "name": "Lumi Studio Utgivaresökintentskatalog",
   "description": "En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.",
   "inLanguage": "sv",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-27",
   "numberOfItems": 61,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3299,7 +3299,7 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
         "price": "39",
         "priceCurrency": "SEK",

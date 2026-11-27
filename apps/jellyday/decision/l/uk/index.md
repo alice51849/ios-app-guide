@@ -2,7 +2,7 @@
 title: "JellyDay: Планувальник дня — Милий розклад, рутина й таймер | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/uk/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

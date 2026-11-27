@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-26",
-  "content_digest": "a680ca7a645055a25fb340101aa71e2d481af1975b14fb54c4de8c25af664930",
+  "date_modified": "2026-11-27",
+  "content_digest": "f3cc42de67a69d9ca2ba2baffb65f6f8cf340316d0864bc29e2bac083e0f754b",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -58,7 +58,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/notesstudio100.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6798813048"
+      }
     },
     {
       "key": "aibriefpack",
@@ -102,7 +108,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/aibriefpack.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6791658210"
+      }
     },
     {
       "key": "aim990",
@@ -149,7 +161,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/aim990.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6784974530"
+      }
     },
     {
       "key": "battai",
@@ -181,8 +199,7 @@
         "容量",
         "電池",
         "充電速度",
-        "寿命",
-        "バッテリー 劣化"
+        "寿命"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -197,7 +214,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/battai.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6802423998"
+      }
     },
     {
       "key": "caldaily",
@@ -245,7 +268,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/caldaily.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6794178671"
+      }
     },
     {
       "key": "countdaysnow",
@@ -289,7 +318,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/countdaysnow.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6807079789"
+      }
     },
     {
       "key": "cvdesk",
@@ -337,7 +372,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/cvdesk.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6781337213"
+      }
     },
     {
       "key": "cyca",
@@ -379,7 +420,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/cyca.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6782251621"
+      }
     },
     {
       "key": "dailymate",
@@ -480,7 +527,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/dailymatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6794725568"
+      }
     },
     {
       "key": "dbhalo",
@@ -524,7 +577,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/dbhalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6806826699"
+      }
     },
     {
       "key": "easyam",
@@ -571,7 +630,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/easyam.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6821790092"
+      }
     },
     {
       "key": "duowallpaperstudio",
@@ -615,7 +680,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/duowallpaperstudio.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6824946559"
+      }
     },
     {
       "key": "gmoney",
@@ -705,7 +776,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/gmoneylite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6793436548"
+      }
     },
     {
       "key": "gbago",
@@ -799,7 +876,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/hourstaglite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6794039979"
+      }
     },
     {
       "key": "hourstag",
@@ -900,7 +983,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/jellyday.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6835673714"
+      }
     },
     {
       "key": "kumo",
@@ -928,8 +1017,7 @@
         "シンプル",
         "推移",
         "体型",
-        "目標",
-        "ウエスト 体脂肪率"
+        "目標"
       ],
       "purchase_model": "neutral",
       "one_time_option": false,
@@ -944,7 +1032,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/kumo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6830824515"
+      }
     },
     {
       "key": "ledmovingtext",
@@ -976,8 +1070,7 @@
         "文字盤",
         "横断幕",
         "メッセージ",
-        "テロップ",
-        "お迎え ボード"
+        "テロップ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -992,7 +1085,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/ledmovingtext.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6806639602"
+      }
     },
     {
       "key": "lockhour",
@@ -1035,7 +1134,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lockhour.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6780107485"
+      }
     },
     {
       "key": "lumibopomofo",
@@ -1082,7 +1187,15 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumibopomofo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "rating_value": 4.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/jp/app/id6773017109"
+      }
     },
     {
       "key": "lumibopomofopro",
@@ -1181,7 +1294,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumiletters.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6778748533"
+      }
     },
     {
       "key": "lumiletterspro",
@@ -1282,7 +1401,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumimath.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6778269699"
+      }
     },
     {
       "key": "lumimathpro",
@@ -1382,7 +1507,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumimission.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6779750237"
+      }
     },
     {
       "key": "lumimissionpro",
@@ -1464,8 +1595,7 @@
         "台風",
         "UV",
         "おしゃれ",
-        "コーディネート",
-        "服装 天気"
+        "コーディネート"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1480,7 +1610,15 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumiweather.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "rating_value": 4.0,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/jp/app/id6779552704"
+      }
     },
     {
       "key": "maskmyfile",
@@ -1508,8 +1646,7 @@
         "診断書",
         "領収書",
         "請求書",
-        "電話番号",
-        "個人情報 隠す"
+        "電話番号"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1524,7 +1661,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/maskmyfile.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6792850916"
+      }
     },
     {
       "key": "foldparty",
@@ -1679,7 +1822,15 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/mochi.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "rating_value": 3.5,
+        "rating_count": 2,
+        "storefront_url": "https://apps.apple.com/jp/app/id6785004775"
+      }
     },
     {
       "key": "mochidonestamp",
@@ -1722,7 +1873,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/mochidonestamp.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6790800323"
+      }
     },
     {
       "key": "moneytag",
@@ -1771,7 +1928,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/moneytag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6801956402"
+      }
     },
     {
       "key": "onepageppt",
@@ -1817,7 +1980,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/onepageppt.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6798814385"
+      }
     },
     {
       "key": "photocream",
@@ -1860,7 +2029,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/photocream.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6781808054"
+      }
     },
     {
       "key": "picclear",
@@ -1901,7 +2076,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/picclear.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6780223070"
+      }
     },
     {
       "key": "qrcodehalo",
@@ -1945,7 +2126,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/qrcodehalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6806779853"
+      }
     },
     {
       "key": "savetag",
@@ -1988,7 +2175,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/savetag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6802505528"
+      }
     },
     {
       "key": "scanto",
@@ -2033,7 +2226,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/scanto.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6779977651"
+      }
     },
     {
       "key": "sereno",
@@ -2081,7 +2280,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/sereno.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6788236641"
+      }
     },
     {
       "key": "shotinbox",
@@ -2124,7 +2329,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/shotinbox.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6802166527"
+      }
     },
     {
       "key": "snapport",
@@ -2206,7 +2417,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/snapportlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6792856304"
+      }
     },
     {
       "key": "sononote",
@@ -2246,7 +2463,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/sononote.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6782139553"
+      }
     },
     {
       "key": "stayclock",
@@ -2269,8 +2492,7 @@
         "大きい文字",
         "カレンダー",
         "フリップ時計",
-        "全画面時計",
-        "置き時計"
+        "全画面時計"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2285,7 +2507,15 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/jp/app/id6814035888"
+      }
     },
     {
       "key": "studydown",
@@ -2333,7 +2563,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/studydown.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6807335593"
+      }
     },
     {
       "key": "tripplanet",
@@ -2381,7 +2617,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/tripplanet.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6787193643"
+      }
     },
     {
       "key": "tripbeecute",
@@ -2430,7 +2672,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6826987407"
+      }
     },
     {
       "key": "tripbeelite",
@@ -2464,8 +2712,7 @@
         "メモ",
         "計画",
         "行程",
-        "旅行",
-        "旅程"
+        "旅行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2480,7 +2727,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/tripbeelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6791299610"
+      }
     },
     {
       "key": "tripbee",
@@ -2563,8 +2816,7 @@
         "上げる",
         "粒状感",
         "ローライト",
-        "ホワイトボード",
-        "ぼやけた 写真 修正"
+        "ホワイトボード"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2579,7 +2831,15 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/unblurry.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/jp/app/id6782275018"
+      }
     },
     {
       "key": "claudeusagemini",
@@ -2606,9 +2866,7 @@
         "プログラミング",
         "アカウント",
         "コーディング",
-        "ai開発",
-        "claude 使用制限",
-        "トークン 使用量"
+        "ai開発"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2623,7 +2881,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6818607603"
+      }
     },
     {
       "key": "wifiaid",
@@ -2701,8 +2965,7 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方",
-        "wifi つながらない"
+        "直し方"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2717,7 +2980,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/wifiaidlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6793414462"
+      }
     },
     {
       "key": "wordmatelite",
@@ -2763,7 +3032,13 @@
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/wordmatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6797601720"
+      }
     },
     {
       "key": "wordmate",

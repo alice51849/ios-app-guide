@@ -6,7 +6,7 @@
   "name": "Lumi Studio Kiadói Keresési Szándék Katalógus",
   "description": "Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.",
   "inLanguage": "hu",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-27",
   "numberOfItems": 61,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3299,7 +3299,7 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
         "price": "1490",
         "priceCurrency": "HUF",

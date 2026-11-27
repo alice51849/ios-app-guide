@@ -6,7 +6,7 @@
   "name": "Katalog vyhledávacích záměrů vydavatele Lumi Studio",
   "description": "Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.",
   "inLanguage": "cs",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-27",
   "numberOfItems": 61,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3299,7 +3299,7 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
         "price": "79",
         "priceCurrency": "CZK",

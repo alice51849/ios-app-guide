@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-26",
-  "content_digest": "a680ca7a645055a25fb340101aa71e2d481af1975b14fb54c4de8c25af664930",
+  "date_modified": "2026-11-27",
+  "content_digest": "f3cc42de67a69d9ca2ba2baffb65f6f8cf340316d0864bc29e2bac083e0f754b",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -41,7 +41,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/notesstudio100.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6798813048"
+      }
     },
     {
       "key": "aibriefpack",
@@ -76,7 +82,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/aibriefpack.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6791658210"
+      }
     },
     {
       "key": "aim990",
@@ -110,7 +122,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/aim990.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6784974530"
+      }
     },
     {
       "key": "battai",
@@ -146,7 +164,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/battai.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6802423998"
+      }
     },
     {
       "key": "caldaily",
@@ -181,7 +205,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/caldaily.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6794178671"
+      }
     },
     {
       "key": "countdaysnow",
@@ -215,7 +245,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/countdaysnow.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6807079789"
+      }
     },
     {
       "key": "cvdesk",
@@ -250,7 +286,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/cvdesk.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6781337213"
+      }
     },
     {
       "key": "cyca",
@@ -284,7 +326,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/cyca.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6782251621"
+      }
     },
     {
       "key": "dailymate",
@@ -343,8 +391,7 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline",
-        "guia de conversação"
+        "offline"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -359,7 +406,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/dailymatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6794725568"
+      }
     },
     {
       "key": "dbhalo",
@@ -393,7 +446,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/dbhalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6806826699"
+      }
     },
     {
       "key": "easyam",
@@ -429,7 +488,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/easyam.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6821790092"
+      }
     },
     {
       "key": "duowallpaperstudio",
@@ -464,7 +529,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/duowallpaperstudio.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6824946559"
+      }
     },
     {
       "key": "gmoney",
@@ -537,7 +608,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/gmoneylite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6793436548"
+      }
     },
     {
       "key": "gbago",
@@ -559,9 +636,7 @@
         "acelerar",
         "state",
         "rápido",
-        "backup",
-        "console portátil",
-        "emulador gbc"
+        "backup"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -613,7 +688,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/hourstaglite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6794039979"
+      }
     },
     {
       "key": "hourstag",
@@ -689,7 +770,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/jellyday.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6835673714"
+      }
     },
     {
       "key": "kumo",
@@ -724,7 +811,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/kumo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6830824515"
+      }
     },
     {
       "key": "ledmovingtext",
@@ -761,7 +854,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/ledmovingtext.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6806639602"
+      }
     },
     {
       "key": "lockhour",
@@ -796,7 +895,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/lockhour.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6780107485"
+      }
     },
     {
       "key": "lumibopomofo",
@@ -831,7 +936,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/lumibopomofo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6773017109"
+      }
     },
     {
       "key": "lumibopomofopro",
@@ -904,7 +1015,15 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/lumiletters.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "rating_value": 4.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/br/app/id6778748533"
+      }
     },
     {
       "key": "lumiletterspro",
@@ -978,7 +1097,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/lumimath.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6778269699"
+      }
     },
     {
       "key": "lumimathpro",
@@ -1052,7 +1177,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/lumimission.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6779750237"
+      }
     },
     {
       "key": "lumimissionpro",
@@ -1130,7 +1261,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/lumiweather.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6779552704"
+      }
     },
     {
       "key": "maskmyfile",
@@ -1151,8 +1288,7 @@
         "lgpd",
         "exif",
         "senha",
-        "contrato",
-        "tarjar pdf"
+        "contrato"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1167,7 +1303,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/maskmyfile.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6792850916"
+      }
     },
     {
       "key": "foldparty",
@@ -1190,8 +1332,7 @@
         "cozinhar",
         "puzzle",
         "ritmo",
-        "festa",
-        "jogos dobrável"
+        "festa"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1275,10 +1416,7 @@
         "widget",
         "organização",
         "diárias",
-        "estudos",
-        "lista de tarefas",
-        "checklist",
-        "to do list"
+        "estudos"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1293,7 +1431,15 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/mochi.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "rating_value": 3.9,
+        "rating_count": 8,
+        "storefront_url": "https://apps.apple.com/br/app/id6785004775"
+      }
     },
     {
       "key": "mochidonestamp",
@@ -1327,7 +1473,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/mochidonestamp.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6790800323"
+      }
     },
     {
       "key": "moneytag",
@@ -1345,9 +1497,7 @@
         "fluxo de caixa",
         "vendas",
         "aluguel",
-        "clientes",
-        "despesas do projeto",
-        "receitas e despesas"
+        "clientes"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1362,7 +1512,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/moneytag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6801956402"
+      }
     },
     {
       "key": "onepageppt",
@@ -1399,7 +1555,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/onepageppt.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6798814385"
+      }
     },
     {
       "key": "photocream",
@@ -1437,7 +1599,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/photocream.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6781808054"
+      }
     },
     {
       "key": "picclear",
@@ -1470,7 +1638,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/picclear.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6780223070"
+      }
     },
     {
       "key": "qrcodehalo",
@@ -1508,7 +1682,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/qrcodehalo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6806779853"
+      }
     },
     {
       "key": "savetag",
@@ -1543,7 +1723,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/savetag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6802505528"
+      }
     },
     {
       "key": "scanto",
@@ -1580,7 +1766,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/scanto.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6779977651"
+      }
     },
     {
       "key": "sereno",
@@ -1615,7 +1807,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/sereno.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6788236641"
+      }
     },
     {
       "key": "shotinbox",
@@ -1649,7 +1847,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/shotinbox.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6802166527"
+      }
     },
     {
       "key": "snapport",
@@ -1716,7 +1920,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/snapportlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6792856304"
+      }
     },
     {
       "key": "sononote",
@@ -1749,7 +1959,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/sononote.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6782139553"
+      }
     },
     {
       "key": "stayclock",
@@ -1781,7 +1997,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/stayclock.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6814035888"
+      }
     },
     {
       "key": "studydown",
@@ -1800,8 +2022,7 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso",
-        "timer de foco"
+        "concurso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1816,7 +2037,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/studydown.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6807335593"
+      }
     },
     {
       "key": "tripplanet",
@@ -1836,8 +2063,7 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto",
-        "jogos para viagem de carro"
+        "aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1852,7 +2078,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tripplanet.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6787193643"
+      }
     },
     {
       "key": "tripbeecute",
@@ -1872,9 +2104,7 @@
         "checklist",
         "despesas",
         "dividir",
-        "widget",
-        "diário de viagem",
-        "viagem com amigos"
+        "widget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1889,7 +2119,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tripbeecute.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6826987407"
+      }
     },
     {
       "key": "tripbeelite",
@@ -1924,7 +2160,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tripbeelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6791299610"
+      }
     },
     {
       "key": "tripbee",
@@ -2000,7 +2242,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/unblurry.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6782275018"
+      }
     },
     {
       "key": "claudeusagemini",
@@ -2034,7 +2282,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/claudeusagemini.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6818607603"
+      }
     },
     {
       "key": "wifiaid",
@@ -2112,7 +2366,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/wifiaidlite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6793414462"
+      }
     },
     {
       "key": "wordmatelite",
@@ -2145,7 +2405,13 @@
       },
       "app_store_url": "https://apps.apple.com/br/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/wordmatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6797601720"
+      }
     },
     {
       "key": "wordmate",

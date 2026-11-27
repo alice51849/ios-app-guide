@@ -2,7 +2,7 @@
 title: "iPhone साठी सदस्यता नसलेले सर्वोत्तम सोपे टू-डू लिस्ट अॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/mr-IN/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत
-- खाते नाही
-- जाहिराती नाहीत
+- विजेट
 - Apple Watch
 - App Store · मोफत
 

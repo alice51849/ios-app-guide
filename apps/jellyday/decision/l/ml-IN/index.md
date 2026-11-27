@@ -2,7 +2,7 @@
 title: "JellyDay: ഡെയ്‌ലി പ്ലാനർ — ദിനചര്യ ടൈംടേബിൾ, ഫോക്കസ് ടൈമർ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/ml-IN/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

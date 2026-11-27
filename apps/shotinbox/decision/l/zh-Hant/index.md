@@ -2,7 +2,7 @@
 title: "iPhone 離線整理截圖的最佳 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/zh-Hant/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,6 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次性解鎖
 - 隱私優先／裝置端
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [到 App Store 下載 ShotInbox AI →](https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "meilleure application simple de liste de tâches iPhone sans abonnement"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/fr-CA/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Si la plupart des applications de tâches vous semblent lourdes, la bonne est un
 
 - Productivité
 - Gratuit au départ · déblocage unique
-- Aucun compte
-- Aucune publicité
+- Widget
 - Apple Watch
 - App Store · Gratuit
 - ★ 4.8/5 · 4

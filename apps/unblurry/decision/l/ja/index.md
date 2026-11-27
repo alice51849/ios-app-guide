@@ -2,7 +2,7 @@
 title: "iPhoneで子どものぼやけた写真を修正する最高のアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/ja/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - 追跡なし
 - プライベート／端末内
 - App Store · 無料
+- ★ 5.0/5 · 1
 
 [App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 

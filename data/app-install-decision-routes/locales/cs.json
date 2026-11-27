@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2029,25 +2029,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Bez účtu",
-        "Bez reklam"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
-        "Bez účtu",
-        "Bez reklam",
+        "Widget",
         "Apple Watch",
         "App Store · Zdarma"
       ],
@@ -2863,7 +2858,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Měření času — Polož ho displejem dolů | iOS App",
-      "decision_context": "Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené. Otočte telefon displejem dolů a měření začne, zvednete ho a zastaví se, takže se do hodin učení a práce počítá jen skutečné soustředění. Uvidíte čas za dnešek i týden, sérii dní a rozdělení podle předmětů nebo projektů, navíc kolikrát jste telefon zvedli a jak dlouho vydrželo vaše soustředění. Nastavte termín a cíl a Studydown vám ukáže, kolik času denně ještě potřebujete. Vyberte aktivitu, spusťte měření a položte telefon na stůl. Během měření nechte aplikaci otevřenou. Po zvednutí telefonu se měření pozastaví podle nastavené prodlevy. Po opuštění aplikace se další čas nezapočítává. • Pojmenujte aktivity, přiřaďte jim barvy a změňte pořadí. Záznamy lze ručně doplnit i opravit. • Prohlížejte si dnešní a týdenní souhrny, řadu aktivních dnů a rozložení času. • Stanovte si týdenní cíle a termíny. Připomínky nastavte na každý den nebo po několika hodinách. • Uložte si záznamy do CSV. Pro nabízí také zálohování a obnovu pomocí JSON. Zdarma můžete vyzkoušet až 3 aktivity a celkový limit 5 minut, který se denně neobnovuje. Již zahájená relace se uchová celá. Jednorázové zakoupení Pro odemkne neomezené aktivity a měření, podrobné analýzy, cíle, termíny, widgety, Apple Watch a zálohy. Žádné předplatné. Měření i záznamy fungují přímo v zařízení, bez účtu a reklam. O sdílení souborů rozhodujete vy. Nákup a obnovení nákupů využívají služby Apple. Kontakt: hourstag.app@gmail.com Optimalizováno pro iPhone Duo.",
+      "decision_context": "Otočte telefon displejem dolů a měření začne, zvednete ho a zastaví se, takže se do hodin učení a práce počítá jen skutečné soustředění. Uvidíte čas za dnešek i týden, sérii dní a rozdělení podle předmětů nebo projektů, navíc kolikrát jste telefon zvedli a jak dlouho vydrželo vaše soustředění. Nastavte termín a cíl a Studydown vám ukáže, kolik času denně ještě potřebujete. Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené. Vyberte aktivitu, spusťte měření a položte telefon na stůl. Během měření nechte aplikaci otevřenou. Po zvednutí telefonu se měření pozastaví podle nastavené prodlevy. Po opuštění aplikace se další čas nezapočítává. • Pojmenujte aktivity, přiřaďte jim barvy a změňte pořadí. Záznamy lze ručně doplnit i opravit. • Prohlížejte si dnešní a týdenní souhrny, řadu aktivních dnů a rozložení času. • Stanovte si týdenní cíle a termíny. Připomínky nastavte na každý den nebo po několika hodinách. • Uložte si záznamy do CSV. Pro nabízí také zálohování a obnovu pomocí JSON. Bezplatná verze nabízí až 3 aktivity a celkový limit 5 minut, který se denně neobnovuje. Již zahájená relace se uchová celá. Jednorázové zakoupení Pro odemkne neomezené aktivity a měření, podrobné analýzy, cíle, termíny, widgety, Apple Watch a zálohy. Žádné předplatné. Měření i záznamy fungují přímo v zařízení, bez účtu a reklam. O sdílení souborů rozhodujete vy. Nákup a obnovení nákupů využívají služby Apple. Kontakt: hourstag.app@gmail.com Optimalizováno pro iPhone Duo.",
       "category": "productivity",
       "category_label": "Produktivita",
       "purchase_model": "free_with_lifetime_unlock",

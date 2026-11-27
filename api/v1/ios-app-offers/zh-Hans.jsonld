@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-27",
   "numberOfItems": 61,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3963,7 +3963,7 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
         "price": "22",
         "priceCurrency": "CNY",

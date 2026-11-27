@@ -2,7 +2,7 @@
 title: "bedste simple to-do liste app til iPhone uden abonnement"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/da/index.html"
-modified: "2026-11-24"
+modified: "2026-11-27"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,7 @@ Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med 
 
 - Produktivitet
 - Gratis at komme i gang
-- Ingen konto
-- Ingen reklamer
+- Widget
 - Apple Watch
 - App Store · Gratis
 

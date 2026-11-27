@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-11-24",
-  "content_digest": "7d93cd285ff7803f777ca81bf5d7df1bb5479aebf8c11a3e6ebf86827e9eaec7",
-  "generation_digest": "0541c0635e724514ed44815d6291aa20bc76a5afdd54ff5ae6ff6549224637ef",
+  "dateModified": "2026-11-27",
+  "content_digest": "a613ed599eb46b462ceb81419550ae53267d25570d0a5e5d963cc008f489e0dc",
+  "generation_digest": "ff75e815fbc12139a68e2312f623a7cea43a59c08383a4fc6061c18b58050621",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2074,25 +2074,20 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Început gratuit",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Fără cont",
-        "Fără reclame"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Productivitate",
         "Început gratuit",
-        "Fără cont",
-        "Fără reclame",
+        "Widget",
         "Apple Watch",
         "App Store · Gratuit",
         "★ 5.0/5 · 1"
@@ -2911,7 +2906,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Studydown: Cronometru — Pune-l cu ecranul în jos | iOS App",
-      "decision_context": "Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis. Întoarce telefonul cu ecranul în jos și cronometrul începe să numere; ridică-l și se oprește, așa că la orele de învățat și de lucru se adună doar concentrarea reală. Vezi timpul de azi și din săptămâna asta, seria de zile și împărțirea pe materii sau proiecte, plus de câte ori ai ridicat telefonul și cât a durat concentrarea ta. Stabilește un termen și o țintă, iar Studydown îți arată ritmul zilnic de care mai ai nevoie. Alege o activitate, pornește măsurarea și lasă telefonul nemișcat pe masă. Păstrează aplicația deschisă în timpul măsurării. Când ridici telefonul, numărătoarea se întrerupe după perioada de grație aleasă. După ieșirea din aplicație nu se mai adaugă timp. • Alege numele, culorile și ordinea activităților. Adaugă sau corectează înregistrările manual. • Consultă totalurile de azi și din această săptămână, zilele consecutive și distribuția pe activități. • Stabilește obiective săptămânale și termene. Alege notificări zilnice sau la intervale de câteva ore. • Salvează înregistrările în CSV. Pro oferă și copii de siguranță JSON și restaurare. Încearcă până la 3 activități și un total de 5 minute înregistrate; limita nu se reînnoiește zilnic. O sesiune deja începută se păstrează integral. O singură achiziție Pro deblochează activități și înregistrare nelimitate, analize avansate, obiective, termene, widgeturi, Apple Watch și copii de siguranță. Fără abonament. Măsurarea și înregistrările funcționează pe dispozitiv, fără cont sau reclame. Tu alegi dacă distribui fișiere. Achizițiile și restaurarea lor folosesc serviciile Apple. Contact: hourstag.app@gmail.com Optimizată pentru iPhone Duo.",
+      "decision_context": "Întoarce telefonul cu ecranul în jos și cronometrul începe să numere; ridică-l și se oprește, așa că la orele de învățat și de lucru se adună doar concentrarea reală. Vezi timpul de azi și din săptămâna asta, seria de zile și împărțirea pe materii sau proiecte, plus de câte ori ai ridicat telefonul și cât a durat concentrarea ta. Stabilește un termen și o țintă, iar Studydown îți arată ritmul zilnic de care mai ai nevoie. Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis. Alege o activitate, pornește măsurarea și lasă telefonul nemișcat pe masă. Păstrează aplicația deschisă în timpul măsurării. Când ridici telefonul, numărătoarea se întrerupe după perioada de grație aleasă. După ieșirea din aplicație nu se mai adaugă timp. • Alege numele, culorile și ordinea activităților. Adaugă sau corectează înregistrările manual. • Consultă totalurile de azi și din această săptămână, zilele consecutive și distribuția pe activități. • Stabilește obiective săptămânale și termene. Alege notificări zilnice sau la intervale de câteva ore. • Salvează înregistrările în CSV. Pro oferă și copii de siguranță JSON și restaurare. Versiunea gratuită include până la 3 activități și un total de 5 minute înregistrate; limita nu se reînnoiește zilnic. O sesiune deja începută se păstrează integral. O singură achiziție Pro deblochează activități și înregistrare nelimitate, analize avansate, obiective, termene, widgeturi, Apple Watch și copii de siguranță. Fără abonament. Măsurarea și înregistrările funcționează pe dispozitiv, fără cont sau reclame. Tu alegi dacă distribui fișiere. Achizițiile și restaurarea lor folosesc serviciile Apple. Contact: hourstag.app@gmail.com Optimizată pentru iPhone Duo.",
       "category": "productivity",
       "category_label": "Productivitate",
       "purchase_model": "free_with_lifetime_unlock",

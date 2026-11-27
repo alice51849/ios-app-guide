@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-27",
- "generated_at": "2026-11-27T10:10:56Z",
+ "generated_at": "2026-11-27T16:00:34Z",
  "items": {
   "bluesky": [
    {
@@ -138,85 +138,42 @@
    },
    {
     "kind": "clip",
-    "key": "hourstaglite_b/fr",
-    "locale": "fr",
-    "app": "hourstaglite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
-    "hook": "Déjà à sec ? Où va l'argent ?",
-    "name": "HoursTag Lite: Prix en heures",
-    "title": "Déjà à sec ? Où va l'argent ? | Achat conscient: prix en temps | HoursTag Lite",
-    "tags": [
-     "#AchatConscient",
-     "#AchatImpulsif",
-     "#VautLeCoup",
-     "#HoursTagLite"
-    ],
-    "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #HoursTagLite",
-    "button": "Télécharger sur l'App Store",
-    "variant": "a",
-    "alt": "HoursTag Lite: Prix en heures — Déjà à sec ? Où va l'argent ? — HoursTag Lite affiche vos achats en heures — Achat conscient: prix en temps",
-    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
-    "review": {
-     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
-     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
-    },
-    "keywords": [
-     "achat impulsif",
-     "dépenses",
-     "vaut le coup",
-     "besoin",
-     "envie",
-     "shopping"
-    ],
-    "keyline": "Achat conscient: prix en temps",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "a93acda324b6d926",
-     "real_recording": true,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "cyca/en",
+    "key": "aibriefpack/en",
     "locale": "en",
-    "app": "cyca",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
-    "hook": "Where does your period data go?",
-    "name": "Cyca: Period & Cycle Tracker",
-    "title": "Where does your period data go? | Private Ovulation Calendar | Cyca period tracker",
+    "app": "aibriefpack",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6obv74.mp4",
+    "hook": "Add screenshots, PDFs & notes at once",
+    "name": "AI Brief: AI Prompt from Files",
+    "title": "Add screenshots, PDFs & notes at once | Summarize PDF & Screenshots | AI Brief",
     "tags": [
-     "#PeriodCycleTracker",
-     "#PrivateOvulationCalendar",
-     "#Menstrual",
-     "#CycaPeriodTracker"
+     "#AIPromptFromFiles",
+     "#SummarizePDF",
+     "#Screenshots",
+     "#AIBrief"
     ],
-    "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Cycaperiodtracker",
+    "caption": "Add screenshots, PDFs & notes at once\nSay what result you need\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #AIBrief",
     "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "Cyca: Period & Cycle Tracker — Where does your period data go? — No account. It stays on your phone — Private Ovulation Calendar",
-    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "variant": "b",
+    "alt": "AI Brief: AI Prompt from Files — Add screenshots, PDFs & notes at once — Say what result you need — Summarize PDF & Screenshots",
+    "store": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+     "url": "https://apps.apple.com/app/id6791658210?action=write-review"
     },
     "keywords": [
-     "menstrual",
-     "diary",
-     "cramp",
-     "forecast",
-     "body",
-     "journal"
+     "context",
+     "generator",
+     "maker",
+     "chat",
+     "template",
+     "question"
     ],
-    "keyline": "Private Ovulation Calendar",
+    "keyline": "Summarize PDF & Screenshots",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e3d67d897d7076a",
+     "board": "b990363568d4a345",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -224,47 +181,111 @@
    },
    {
     "kind": "clip",
-    "key": "hourstag/ja",
-    "locale": "ja",
-    "app": "hourstag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
-    "hook": "これ買うのに、何時間働く？",
-    "name": "HoursTag: 価格を時間に",
-    "title": "これ買うのに、何時間働く？ | 価格を時間に | HoursTag 価格を時間に",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#価格を時間に",
-     "#家計簿",
-     "#節約",
-     "#支出管理",
-     "#HoursTag価格を時間に"
+     "#PhotoCleaner",
+     "#CleanUpPhotos",
+     "#LargeVideos",
+     "#PicClearPro"
     ],
-    "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #HoursTag価格を時間に",
-    "button": "App Storeで入手",
-    "variant": "a",
-    "alt": "HoursTag: 価格を時間に — これ買うのに、何時間働く？ — 必要？欲しい？それとも衝動？",
-    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #PicClearPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "家計簿",
-     "節約",
-     "支出管理",
-     "お金管理",
-     "浪費",
-     "貯金"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "similar"
     ],
-    "keyline": "価格を時間に",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "662531e69466d413",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "Dos jugadores, un solo móvil",
+    "name": "Meow Party: Juegos para dos",
+    "title": "Dos jugadores, un solo móvil | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#200Minijuegos",
+     "#TuPlegable",
+     "#MismoMóvil",
+     "#MeowParty"
+    ],
+    "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "a",
+    "alt": "Meow Party: Juegos para dos — Dos jugadores, un solo móvil — 200 minijuegos de gatos adorables — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/jlpt202612/2026-11-27",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261127.jpg",
+    "caption": "日檢 JLPT 倒數 9 天\n把剩下的天數變成讀書計畫\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數計時 #生日 #還有幾天",
+    "title": "日檢 JLPT 倒數 9 天",
+    "alt": "CountDaysNow — 日檢 JLPT 倒數 9 天 — 把剩下的天數變成讀書計畫 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日・倒數小工具・紀念日・每日焦點",
+    "name": "CountDaysNow",
+    "hook": "日檢 JLPT 倒數 9 天",
+    "tags": [
+     "#倒數計時",
+     "#生日",
+     "#還有幾天",
+     "#農曆",
+     "#CountDaysNow"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -546,85 +567,42 @@
    },
    {
     "kind": "clip",
-    "key": "hourstaglite_b/fr",
-    "locale": "fr",
-    "app": "hourstaglite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
-    "hook": "Déjà à sec ? Où va l'argent ?",
-    "name": "HoursTag Lite: Prix en heures",
-    "title": "Déjà à sec ? Où va l'argent ? | Achat conscient: prix en temps | HoursTag Lite",
-    "tags": [
-     "#AchatConscient",
-     "#AchatImpulsif",
-     "#VautLeCoup",
-     "#HoursTagLite"
-    ],
-    "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
-    "button": "Télécharger sur l'App Store",
-    "variant": "a",
-    "alt": "HoursTag Lite: Prix en heures — Déjà à sec ? Où va l'argent ? — HoursTag Lite affiche vos achats en heures — Achat conscient: prix en temps",
-    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
-    "review": {
-     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
-     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
-    },
-    "keywords": [
-     "achat impulsif",
-     "dépenses",
-     "vaut le coup",
-     "besoin",
-     "envie",
-     "shopping"
-    ],
-    "keyline": "Achat conscient: prix en temps",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "a93acda324b6d926",
-     "real_recording": true,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "cyca/en",
+    "key": "aibriefpack/en",
     "locale": "en",
-    "app": "cyca",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
-    "hook": "Where does your period data go?",
-    "name": "Cyca: Period & Cycle Tracker",
-    "title": "Where does your period data go? | Private Ovulation Calendar | Cyca period tracker",
+    "app": "aibriefpack",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6obv74.mp4",
+    "hook": "Add screenshots, PDFs & notes at once",
+    "name": "AI Brief: AI Prompt from Files",
+    "title": "Add screenshots, PDFs & notes at once | Summarize PDF & Screenshots | AI Brief",
     "tags": [
-     "#PeriodCycleTracker",
-     "#PrivateOvulationCalendar",
-     "#Menstrual",
-     "#CycaPeriodTracker"
+     "#AIPromptFromFiles",
+     "#SummarizePDF",
+     "#Screenshots",
+     "#AIBrief"
     ],
-    "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "caption": "Add screenshots, PDFs & notes at once\nSay what result you need\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #Screenshots #AIBrief",
     "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "Cyca: Period & Cycle Tracker — Where does your period data go? — No account. It stays on your phone — Private Ovulation Calendar",
-    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "variant": "b",
+    "alt": "AI Brief: AI Prompt from Files — Add screenshots, PDFs & notes at once — Say what result you need — Summarize PDF & Screenshots",
+    "store": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+     "url": "https://apps.apple.com/app/id6791658210?action=write-review"
     },
     "keywords": [
-     "menstrual",
-     "diary",
-     "cramp",
-     "forecast",
-     "body",
-     "journal"
+     "context",
+     "generator",
+     "maker",
+     "chat",
+     "template",
+     "question"
     ],
-    "keyline": "Private Ovulation Calendar",
+    "keyline": "Summarize PDF & Screenshots",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e3d67d897d7076a",
+     "board": "b990363568d4a345",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -632,47 +610,111 @@
    },
    {
     "kind": "clip",
-    "key": "hourstag/ja",
-    "locale": "ja",
-    "app": "hourstag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
-    "hook": "これ買うのに、何時間働く？",
-    "name": "HoursTag: 価格を時間に",
-    "title": "これ買うのに、何時間働く？ | 価格を時間に | HoursTag 価格を時間に",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#価格を時間に",
-     "#家計簿",
-     "#節約",
-     "#支出管理",
-     "#HoursTag価格を時間に"
+     "#PhotoCleaner",
+     "#CleanUpPhotos",
+     "#LargeVideos",
+     "#PicClearPro"
     ],
-    "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
-    "button": "App Storeで入手",
-    "variant": "a",
-    "alt": "HoursTag: 価格を時間に — これ買うのに、何時間働く？ — 必要？欲しい？それとも衝動？",
-    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #LargeVideos #PicClearPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "家計簿",
-     "節約",
-     "支出管理",
-     "お金管理",
-     "浪費",
-     "貯金"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "similar"
     ],
-    "keyline": "価格を時間に",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "662531e69466d413",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "Dos jugadores, un solo móvil",
+    "name": "Meow Party: Juegos para dos",
+    "title": "Dos jugadores, un solo móvil | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#200Minijuegos",
+     "#TuPlegable",
+     "#MismoMóvil",
+     "#MeowParty"
+    ],
+    "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #TuPlegable #MismoMóvil #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "a",
+    "alt": "Meow Party: Juegos para dos — Dos jugadores, un solo móvil — 200 minijuegos de gatos adorables — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/jlpt202612/2026-11-27",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261127.jpg",
+    "caption": "日檢 JLPT 倒數 9 天\n把剩下的天數變成讀書計畫\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow",
+    "title": "日檢 JLPT 倒數 9 天",
+    "alt": "CountDaysNow — 日檢 JLPT 倒數 9 天 — 把剩下的天數變成讀書計畫 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日・倒數小工具・紀念日・每日焦點",
+    "name": "CountDaysNow",
+    "hook": "日檢 JLPT 倒數 9 天",
+    "tags": [
+     "#倒數計時",
+     "#生日",
+     "#還有幾天",
+     "#農曆",
+     "#CountDaysNow"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -874,178 +916,182 @@
    },
    {
     "kind": "clip",
-    "key": "hourstaglite_b/fr",
-    "locale": "fr",
-    "app": "hourstaglite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
-    "hook": "HoursTag Lite affiche vos achats en heures",
-    "name": "HoursTag Lite: Prix en heures",
-    "title": "HoursTag Lite affiche vos achats en heures | Achat conscient: prix en temps | HoursTag Lite",
-    "tags": [
-     "#AchatConscient",
-     "#AchatImpulsif",
-     "#VautLeCoup",
-     "#HoursTagLite"
-    ],
-    "caption": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
-    "button": "Télécharger sur l'App Store",
-    "variant": "b",
-    "alt": "HoursTag Lite: Prix en heures — HoursTag Lite affiche vos achats en heures — Avant d'acheter : combien d'heures ? — Achat conscient: prix en temps",
-    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
-    "review": {
-     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
-     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
-    },
-    "keywords": [
-     "achat impulsif",
-     "dépenses",
-     "vaut le coup",
-     "besoin",
-     "envie",
-     "shopping"
-    ],
-    "keyline": "Achat conscient: prix en temps",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "a93acda324b6d926",
-     "real_recording": true,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "HoursTag Lite affiche vos achats en heures | HoursTag Lite #Shorts",
-     "description": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\n\nHoursTag Lite: Prix en heures\nApp Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nachat impulsif · dépenses · vaut le coup · besoin · envie · shopping\n\n#Shorts #AchatConscient #HoursTagLite",
-     "tags": [
-      "achat impulsif",
-      "dépenses",
-      "vaut le coup",
-      "besoin",
-      "envie",
-      "shopping",
-      "AchatConscient",
-      "AchatImpulsif",
-      "VautLeCoup",
-      "HoursTagLite",
-      "HoursTag Lite"
-     ]
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "cyca/en",
+    "key": "aibriefpack/en",
     "locale": "en",
-    "app": "cyca",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
-    "hook": "No account. It stays on your phone",
-    "name": "Cyca: Period & Cycle Tracker",
-    "title": "No account. It stays on your phone | Private Ovulation Calendar | Cyca period tracker",
+    "app": "aibriefpack",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6obv74.mp4",
+    "hook": "Add screenshots, PDFs & notes at once",
+    "name": "AI Brief: AI Prompt from Files",
+    "title": "Add screenshots, PDFs & notes at once | Summarize PDF & Screenshots | AI Brief",
     "tags": [
-     "#PeriodCycleTracker",
-     "#PrivateOvulationCalendar",
-     "#Menstrual",
-     "#CycaPeriodTracker"
+     "#AIPromptFromFiles",
+     "#SummarizePDF",
+     "#Screenshots",
+     "#AIBrief"
     ],
-    "caption": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "caption": "Add screenshots, PDFs & notes at once\nSay what result you need\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #Screenshots #AIBrief",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Cyca: Period & Cycle Tracker — No account. It stays on your phone — Period & ovulation at a glance — Private Ovulation Calendar",
-    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=youtube&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dyoutube%26utm_campaign%3Dcyca",
+    "alt": "AI Brief: AI Prompt from Files — Add screenshots, PDFs & notes at once — Say what result you need — Summarize PDF & Screenshots",
+    "store": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+     "url": "https://apps.apple.com/app/id6791658210?action=write-review"
     },
     "keywords": [
-     "menstrual",
-     "diary",
-     "cramp",
-     "forecast",
-     "body",
-     "journal"
+     "context",
+     "generator",
+     "maker",
+     "chat",
+     "template",
+     "question"
     ],
-    "keyline": "Private Ovulation Calendar",
+    "keyline": "Summarize PDF & Screenshots",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e3d67d897d7076a",
+     "board": "b990363568d4a345",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "No account. It stays on your phone | Cyca period tracker #Shorts",
-     "description": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\n\nCyca: Period & Cycle Tracker\nApp Store: https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dyoutube%26utm_campaign%3Dcyca\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6782251621?action=write-review\n\nmenstrual · diary · cramp · forecast · body · journal\n\n#Shorts #PeriodCycleTracker #Cycaperiodtracker",
+     "title": "Add screenshots, PDFs & notes at once | AI Brief #Shorts",
+     "description": "Add screenshots, PDFs & notes at once\nSay what result you need\nSummarize PDF & Screenshots\n\nAI Brief: AI Prompt from Files\nApp Store: https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6791658210?action=write-review\n\ncontext · generator · maker · chat · template · question\n\n#Shorts #AIPromptFromFiles #AIBrief",
      "tags": [
-      "menstrual",
-      "diary",
-      "cramp",
-      "forecast",
-      "body",
-      "journal",
-      "PeriodCycleTracker",
-      "PrivateOvulationCalendar",
-      "CycaPeriodTracker",
-      "Cyca period tracker"
+      "context",
+      "generator",
+      "maker",
+      "chat",
+      "template",
+      "question",
+      "AIPromptFromFiles",
+      "SummarizePDF",
+      "Screenshots",
+      "AIBrief",
+      "AI Brief"
      ]
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "hourstag/ja",
-    "locale": "ja",
-    "app": "hourstag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
-    "hook": "目標も労働時間で",
-    "name": "HoursTag: 価格を時間に",
-    "title": "目標も労働時間で | 価格を時間に | HoursTag 価格を時間に",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Duplicates, grouped for review",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Duplicates, grouped for review | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#価格を時間に",
-     "#家計簿",
-     "#節約",
-     "#支出管理",
-     "#HoursTag価格を時間に"
+     "#PhotoCleaner",
+     "#CleanUpPhotos",
+     "#LargeVideos",
+     "#PicClearPro"
     ],
-    "caption": "目標も労働時間で\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "HoursTag: 価格を時間に — 目標も労働時間で — 必要？欲しい？それとも衝動？",
-    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "caption": "Duplicates, grouped for review\nOld screenshots, rounded up\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #LargeVideos #PicClearPro",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "PicClear Pro: Photo Cleaner — Duplicates, grouped for review — Old screenshots, rounded up — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "家計簿",
-     "節約",
-     "支出管理",
-     "お金管理",
-     "浪費",
-     "貯金"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "similar"
     ],
-    "keyline": "価格を時間に",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "662531e69466d413",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "目標も労働時間で | HoursTag 価格を時間に #Shorts",
-     "description": "目標も労働時間で\n必要？欲しい？それとも衝動？\n価格を時間に\n\nHoursTag: 価格を時間に\nApp Store: https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6754218117?action=write-review\n\n家計簿 · 節約 · 支出管理 · お金管理 · 浪費 · 貯金\n\n#Shorts #価格を時間に #HoursTag価格を時間に",
+     "title": "Duplicates, grouped for review | PicClear Pro #Shorts",
+     "description": "Duplicates, grouped for review\nOld screenshots, rounded up\nClean Up Photos & Storage\n\nPicClear Pro: Photo Cleaner\nApp Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6780223070?action=write-review\n\nduplicate · blurry · large · videos · delete · similar\n\n#Shorts #PhotoCleaner #PicClearPro",
      "tags": [
-      "家計簿",
-      "節約",
-      "支出管理",
-      "お金管理",
-      "浪費",
-      "貯金",
-      "価格を時間に",
-      "HoursTag価格を時間に",
-      "HoursTag 価格を時間に"
+      "duplicate",
+      "blurry",
+      "large",
+      "videos",
+      "delete",
+      "similar",
+      "PhotoCleaner",
+      "CleanUpPhotos",
+      "LargeVideos",
+      "PicClearPro",
+      "PicClear Pro"
+     ]
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "200 minijuegos de gatos adorables",
+    "name": "Meow Party: Juegos para dos",
+    "title": "200 minijuegos de gatos adorables | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#200Minijuegos",
+     "#TuPlegable",
+     "#MismoMóvil",
+     "#MeowParty"
+    ],
+    "caption": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #TuPlegable #MismoMóvil #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Meow Party: Juegos para dos — 200 minijuegos de gatos adorables — Completo en cualquier iPhone con botón o pellizco — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "200 minijuegos de gatos adorables | Meow Party #Shorts",
+     "description": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\n\nMeow Party: Juegos para dos\nApp Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\njugadores · personas · mismo · móvil · internet · conexión\n\n#Shorts #JuegosParaDos #MeowParty",
+     "tags": [
+      "jugadores",
+      "personas",
+      "mismo",
+      "móvil",
+      "internet",
+      "conexión",
+      "JuegosParaDos",
+      "200Minijuegos",
+      "TuPlegable",
+      "MismoMóvil",
+      "MeowParty",
+      "Meow Party"
      ]
     },
     "slot": 15
@@ -1198,145 +1244,170 @@
    },
    {
     "kind": "clip",
-    "key": "hourstaglite_b/fr",
-    "locale": "fr",
-    "app": "hourstaglite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
-    "hook": "HoursTag Lite affiche vos achats en heures",
-    "name": "HoursTag Lite: Prix en heures",
-    "title": "HoursTag Lite affiche vos achats en heures | Achat conscient: prix en temps | HoursTag Lite",
-    "tags": [
-     "#AchatConscient",
-     "#AchatImpulsif",
-     "#VautLeCoup",
-     "#HoursTagLite"
-    ],
-    "caption": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
-    "button": "Télécharger sur l'App Store",
-    "variant": "b",
-    "alt": "HoursTag Lite: Prix en heures — HoursTag Lite affiche vos achats en heures — Avant d'acheter : combien d'heures ? — Achat conscient: prix en temps",
-    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
-    "review": {
-     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
-     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
-    },
-    "keywords": [
-     "achat impulsif",
-     "dépenses",
-     "vaut le coup",
-     "besoin",
-     "envie",
-     "shopping"
-    ],
-    "keyline": "Achat conscient: prix en temps",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "a93acda324b6d926",
-     "real_recording": true,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "HoursTag Lite affiche vos achats en heures\nAvant d'acheter : combien d'heures ?\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
-     "link": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "cyca/en",
+    "key": "aibriefpack/en",
     "locale": "en",
-    "app": "cyca",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
-    "hook": "No account. It stays on your phone",
-    "name": "Cyca: Period & Cycle Tracker",
-    "title": "No account. It stays on your phone | Private Ovulation Calendar | Cyca period tracker",
+    "app": "aibriefpack",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6obv74.mp4",
+    "hook": "One clear brief for any AI",
+    "name": "AI Brief: AI Prompt from Files",
+    "title": "One clear brief for any AI | Summarize PDF & Screenshots | AI Brief",
     "tags": [
-     "#PeriodCycleTracker",
-     "#PrivateOvulationCalendar",
-     "#Menstrual",
-     "#CycaPeriodTracker"
+     "#AIPromptFromFiles",
+     "#SummarizePDF",
+     "#Screenshots",
+     "#AIBrief"
     ],
-    "caption": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "caption": "One clear brief for any AI\nAdd screenshots, PDFs & notes at once\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #Screenshots #AIBrief",
     "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "Cyca: Period & Cycle Tracker — No account. It stays on your phone — Period & ovulation at a glance — Private Ovulation Calendar",
-    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "variant": "c",
+    "alt": "AI Brief: AI Prompt from Files — One clear brief for any AI — Add screenshots, PDFs & notes at once — Summarize PDF & Screenshots",
+    "store": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+     "url": "https://apps.apple.com/app/id6791658210?action=write-review"
     },
     "keywords": [
-     "menstrual",
-     "diary",
-     "cramp",
-     "forecast",
-     "body",
-     "journal"
+     "context",
+     "generator",
+     "maker",
+     "chat",
+     "template",
+     "question"
     ],
-    "keyline": "Private Ovulation Calendar",
+    "keyline": "Summarize PDF & Screenshots",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e3d67d897d7076a",
+     "board": "b990363568d4a345",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "No account. It stays on your phone\nPeriod & ovulation at a glance\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
-     "link": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8"
+     "description": "One clear brief for any AI\nAdd screenshots, PDFs & notes at once\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #Screenshots #AIBrief\n\nGet it on the App Store: https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack",
+     "link": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "hourstag/ja",
-    "locale": "ja",
-    "app": "hourstag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
-    "hook": "必要？欲しい？それとも衝動？",
-    "name": "HoursTag: 価格を時間に",
-    "title": "必要？欲しい？それとも衝動？ | 価格を時間に | HoursTag 価格を時間に",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "iPhone storage full again?",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "iPhone storage full again? | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#価格を時間に",
-     "#家計簿",
-     "#節約",
-     "#支出管理",
-     "#HoursTag価格を時間に"
+     "#PhotoCleaner",
+     "#CleanUpPhotos",
+     "#LargeVideos",
+     "#PicClearPro"
     ],
-    "caption": "必要？欲しい？それとも衝動？\n出費を時間で、ふり返る\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "HoursTag: 価格を時間に — 必要？欲しい？それとも衝動？ — 出費を時間で、ふり返る",
-    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "caption": "iPhone storage full again?\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #LargeVideos #PicClearPro",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "PicClear Pro: Photo Cleaner — iPhone storage full again? — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "家計簿",
-     "節約",
-     "支出管理",
-     "お金管理",
-     "浪費",
-     "貯金"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "similar"
     ],
-    "keyline": "価格を時間に",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "662531e69466d413",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "必要？欲しい？それとも衝動？\n出費を時間で、ふり返る\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
-     "link": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8"
+     "description": "iPhone storage full again?\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #LargeVideos #PicClearPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+     "link": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "200 minijuegos de gatos adorables",
+    "name": "Meow Party: Juegos para dos",
+    "title": "200 minijuegos de gatos adorables | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#200Minijuegos",
+     "#TuPlegable",
+     "#MismoMóvil",
+     "#MeowParty"
+    ],
+    "caption": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #TuPlegable #MismoMóvil #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Meow Party: Juegos para dos — 200 minijuegos de gatos adorables — Completo en cualquier iPhone con botón o pellizco — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #TuPlegable #MismoMóvil #MeowParty\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/jlpt202612/2026-11-27",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261127.jpg",
+    "caption": "日檢 JLPT 倒數 9 天\n把剩下的天數變成讀書計畫\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow",
+    "title": "日檢 JLPT 倒數 9 天",
+    "alt": "CountDaysNow — 日檢 JLPT 倒數 9 天 — 把剩下的天數變成讀書計畫 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日・倒數小工具・紀念日・每日焦點",
+    "name": "CountDaysNow",
+    "hook": "日檢 JLPT 倒數 9 天",
+    "tags": [
+     "#倒數計時",
+     "#生日",
+     "#還有幾天",
+     "#農曆",
+     "#CountDaysNow"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "日檢 JLPT 倒數 9 天\n把剩下的天數變成讀書計畫\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -1508,140 +1579,140 @@
    },
    {
     "kind": "clip",
-    "key": "hourstaglite_b/fr",
-    "locale": "fr",
-    "app": "hourstaglite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fnsgsc.mp4",
-    "hook": "Déjà à sec ? Où va l'argent ?",
-    "name": "HoursTag Lite: Prix en heures",
-    "title": "Déjà à sec ? Où va l'argent ? | Achat conscient: prix en temps | HoursTag Lite",
-    "tags": [
-     "#AchatConscient",
-     "#AchatImpulsif",
-     "#VautLeCoup",
-     "#HoursTagLite"
-    ],
-    "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
-    "button": "Télécharger sur l'App Store",
-    "variant": "a",
-    "alt": "HoursTag Lite: Prix en heures — Déjà à sec ? Où va l'argent ? — HoursTag Lite affiche vos achats en heures — Achat conscient: prix en temps",
-    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
-    "review": {
-     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
-     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
-    },
-    "keywords": [
-     "achat impulsif",
-     "dépenses",
-     "vaut le coup",
-     "besoin",
-     "envie",
-     "shopping"
-    ],
-    "keyline": "Achat conscient: prix en temps",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "a93acda324b6d926",
-     "real_recording": true,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Déjà à sec ? Où va l'argent ?\nHoursTag Lite affiche vos achats en heures\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "cyca/en",
+    "key": "aibriefpack/en",
     "locale": "en",
-    "app": "cyca",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mqsxat.mp4",
-    "hook": "Where does your period data go?",
-    "name": "Cyca: Period & Cycle Tracker",
-    "title": "Where does your period data go? | Private Ovulation Calendar | Cyca period tracker",
+    "app": "aibriefpack",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6obv74.mp4",
+    "hook": "Add screenshots, PDFs & notes at once",
+    "name": "AI Brief: AI Prompt from Files",
+    "title": "Add screenshots, PDFs & notes at once | Summarize PDF & Screenshots | AI Brief",
     "tags": [
-     "#PeriodCycleTracker",
-     "#PrivateOvulationCalendar",
-     "#Menstrual",
-     "#CycaPeriodTracker"
+     "#AIPromptFromFiles",
+     "#SummarizePDF",
+     "#Screenshots",
+     "#AIBrief"
     ],
-    "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker",
+    "caption": "Add screenshots, PDFs & notes at once\nSay what result you need\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #Screenshots #AIBrief",
     "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "Cyca: Period & Cycle Tracker — Where does your period data go? — No account. It stays on your phone — Private Ovulation Calendar",
-    "store": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+    "variant": "b",
+    "alt": "AI Brief: AI Prompt from Files — Add screenshots, PDFs & notes at once — Say what result you need — Summarize PDF & Screenshots",
+    "store": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
+     "url": "https://apps.apple.com/app/id6791658210?action=write-review"
     },
     "keywords": [
-     "menstrual",
-     "diary",
-     "cramp",
-     "forecast",
-     "body",
-     "journal"
+     "context",
+     "generator",
+     "maker",
+     "chat",
+     "template",
+     "question"
     ],
-    "keyline": "Private Ovulation Calendar",
+    "keyline": "Summarize PDF & Screenshots",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e3d67d897d7076a",
+     "board": "b990363568d4a345",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Where does your period data go?\nNo account. It stays on your phone\nPrivate Ovulation Calendar\nCyca: Period & Cycle Tracker\nSearch “Cyca period tracker” on the App Store\nAlso on Google Play\n\n#PeriodCycleTracker #PrivateOvulationCalendar #Menstrual #CycaPeriodTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca"
+     "caption": "Add screenshots, PDFs & notes at once\nSay what result you need\nSummarize PDF & Screenshots\nAI Brief: AI Prompt from Files\nSearch “AI Brief” on the App Store\nAlso on Google Play\n\n#AIPromptFromFiles #SummarizePDF #Screenshots #AIBrief\n\nGet it on the App Store: https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack&referrer=utm_source%3Dsocial%26utm_campaign%3Daibriefpack"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "hourstag/ja",
-    "locale": "ja",
-    "app": "hourstag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g0j3nl.mp4",
-    "hook": "これ買うのに、何時間働く？",
-    "name": "HoursTag: 価格を時間に",
-    "title": "これ買うのに、何時間働く？ | 価格を時間に | HoursTag 価格を時間に",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#価格を時間に",
-     "#家計簿",
-     "#節約",
-     "#支出管理",
-     "#HoursTag価格を時間に"
+     "#PhotoCleaner",
+     "#CleanUpPhotos",
+     "#LargeVideos",
+     "#PicClearPro"
     ],
-    "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に",
-    "button": "App Storeで入手",
-    "variant": "a",
-    "alt": "HoursTag: 価格を時間に — これ買うのに、何時間働く？ — 必要？欲しい？それとも衝動？",
-    "store": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #LargeVideos #PicClearPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6754218117?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "家計簿",
-     "節約",
-     "支出管理",
-     "お金管理",
-     "浪費",
-     "貯金"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "similar"
     ],
-    "keyline": "価格を時間に",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "662531e69466d413",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "これ買うのに、何時間働く？\n必要？欲しい？それとも衝動？\nHoursTag: 価格を時間に\nApp Storeで「HoursTag 価格を時間に」を検索\nAndroidはGoogle Playで\n\n#価格を時間に #家計簿 #節約 #支出管理 #HoursTag価格を時間に\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.hourstag&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstag"
+     "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #CleanUpPhotos #LargeVideos #PicClearPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "Dos jugadores, un solo móvil",
+    "name": "Meow Party: Juegos para dos",
+    "title": "Dos jugadores, un solo móvil | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#200Minijuegos",
+     "#TuPlegable",
+     "#MismoMóvil",
+     "#MeowParty"
+    ],
+    "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #TuPlegable #MismoMóvil #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "a",
+    "alt": "Meow Party: Juegos para dos — Dos jugadores, un solo móvil — 200 minijuegos de gatos adorables — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #200Minijuegos #TuPlegable #MismoMóvil #MeowParty\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
     },
     "slot": 15
    }

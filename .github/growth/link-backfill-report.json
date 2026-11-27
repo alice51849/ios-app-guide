@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-27T12:32:45Z",
+ "generated": "2026-11-27T23:32:31Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 98,
-  "ok_backfilled_earlier": 143,
+  "ok_reply": 99,
+  "ok_backfilled_earlier": 145,
   "unknown_app": 47,
-  "ok_store_only": 588,
+  "ok_store_only": 586,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18123250457008244",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgQAhN8owmY",
+   "date": "2026-11-27",
+   "app": "gbago",
+   "status": "ok_reply",
+   "text": "Safe Continue resumes from your newest checkpoint only when it checks out. GBAGo: Visual Saves",
+   "why": "brand",
+   "ios_id": "6804564400",
+   "locale": "en"
+  },
   {
    "channel": "threads",
    "id": "17884144458631768",
@@ -2549,16 +2561,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctd0zOCmvM",
    "date": "2026-08-31",
    "app": "aim990",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Aim990 Master TOEIC Listening & Reading Unlock your potential with Aim990! A 30-day study plan designed to boost your TOEIC Listening and Re",
    "why": "url+brand",
    "ios_id": "6784974530",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17869564302678920",
-   "at": "2026-11-27T12:30:06Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2986,11 +2993,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdpMAjEc3",
    "date": "2026-08-31",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Bopomofo Zhuyin: Chinese Phonics Fun The joyful way to learn Zhuyin. Playful phonics, tracing, and tone games kids love — no ads, no su",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17975531823169176",
+   "at": "2026-11-27T23:30:02Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3058,16 +3070,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdvPNknzE",
    "date": "2026-08-31",
    "app": "aibriefpack",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "AI Brief: AI Prompt from Files Files to Clear Context Bring screenshots, documents, and notes together. Keep the facts. Review private detai",
    "why": "url+brand",
    "ios_id": "6791658210",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17997049989027578",
-   "at": "2026-11-27T12:30:06Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3241,11 +3248,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdjMIlRem",
    "date": "2026-08-31",
    "app": "lumibopomofopro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Bopomofo Pro: Zhuyin Zhuyin Phonics Game for Kids The complete Zhuyin world for kids. Every phonics, tracing, and tone-game adventure i",
    "why": "url+brand",
    "ios_id": "6775773117",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18110612795310699",
+   "at": "2026-11-27T23:30:02Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

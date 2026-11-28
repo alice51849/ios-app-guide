@@ -2,7 +2,7 @@
 title: "JellyDay：視覺化日程規劃表 — 可愛作息時間表：每日計畫、時間管理、時間軸、專注倒數計時器 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/zh-Hant/index.html"
-modified: "2026-11-27"
+modified: "2026-11-28"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

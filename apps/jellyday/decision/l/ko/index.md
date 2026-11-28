@@ -2,7 +2,7 @@
 title: "JellyDay: 귀여운 하루 계획표 — 한눈에 보는 일정관리, 시간관리 루틴 플래너 & 타이머 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/ko/index.html"
-modified: "2026-11-27"
+modified: "2026-11-28"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

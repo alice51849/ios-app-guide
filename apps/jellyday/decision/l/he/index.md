@@ -2,7 +2,7 @@
 title: "JellyDay: מתכנן יומי — שגרה חמודה: לוח זמנים עם טיימר | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/he/index.html"
-modified: "2026-11-27"
+modified: "2026-11-28"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

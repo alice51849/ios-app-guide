@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-28T03:21:07+0800",
+ "source_generated": "2026-11-28T12:53:47+0800",
  "count": 61,
- "content_sha256": "ca201533b1cb990f2bdf5eb5321d3c2df733553e4849f79de7c0dc0b2c101d2d",
+ "content_sha256": "46872bfc16882f6cadce7fdda939f7533e8c933dab0c0fbd510e89f75d0acc9a",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1018,7 +1018,7 @@
    "copy": {
     "en-US": {
      "title": "Sono Note: Voice to Text Notes",
-     "short_description": "Voice recorder with speech to text: transcribe notes into summaries and tasks"
+     "short_description": "Voice recorder that transcribes lectures: speech to text, summary and key points"
     },
     "zh-TW": {
      "title": "Sono Note：語音轉文字筆記",

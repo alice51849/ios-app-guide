@@ -1,10 +1,10 @@
 {
   "schema": 2,
   "note": "geo-daily 停新增網址守門每場被擋新網址數（只有數字，不含網址）；來源 _engine/geo/new_url_freeze.py＋aeo_answers/aeo_pages 的 FROZEN 輸出；K1 讀 days[].blocked_total_max",
-  "updated_at": "2026-11-28T04:56:12Z",
+  "updated_at": "2026-11-28T11:37:24Z",
   "latest": {
     "date": "2026-11-28",
-    "run_at": "2026-11-28T04:56:12Z",
+    "run_at": "2026-11-28T11:37:24Z",
     "status": "no_log",
     "blocked_new_urls": null,
     "frozen_answer_pages": 0,
@@ -16,7 +16,7 @@
   "days": [
     {
       "date": "2026-11-28",
-      "runs": 3,
+      "runs": 4,
       "blocked_new_urls_max": null,
       "blocked_new_urls_last": null,
       "frozen_new_pages_max": 0,
@@ -25,8 +25,8 @@
       "blocked_total_last": 0,
       "stripped_sitemap_url_count_last": null,
       "status_last": "no_log",
-      "last_run_at": "2026-11-28T04:56:12Z",
-      "last_run_id": "46095947639"
+      "last_run_at": "2026-11-28T11:37:24Z",
+      "last_run_id": "46123607384"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-26T08:02:24Z",
+  "updated_at": "2026-11-27T08:06:27Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 46 posts",
-    "threads": "ok: 3 posts"
+    "instagram": "ok: 45 posts",
+    "threads": "ok: 2 posts"
   },
   "boost": [
     "mochi_suneung",
@@ -17,7 +17,7 @@
     "dailymatelite",
     "tripplanet_b",
     "tripbee_t10",
-    "lumibopomofo_c"
+    "tripbee_t10b"
   ],
   "hook_winners": {
     "apps": {
@@ -56,8 +56,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 5.0,
-        "keep_slot": 1,
+        "median_views": 1.0,
+        "keep_slot": 9,
         "daily": 2
       },
       "threads": {
@@ -89,7 +89,7 @@
       "en": {
         "hour": 9,
         "avg_views": 65.6,
-        "posts": 67,
+        "posts": 69,
         "hours": {
           "0": 24.2,
           "5": 0.0,
@@ -99,19 +99,19 @@
           "18": 32.6,
           "19": 0.0,
           "20": 11.3,
-          "22": 14.0
+          "22": 12.0
         }
       },
       "ja": {
         "hour": 18,
         "avg_views": 67.0,
-        "posts": 37,
+        "posts": 38,
         "hours": {
-          "1": 42.0,
+          "1": 38.0,
           "4": 26.0,
           "5": 6.2,
           "7": 0.0,
-          "9": 11.0,
+          "9": 28.0,
           "14": 21.5,
           "18": 67.0,
           "20": 23.5
@@ -120,7 +120,7 @@
       "ko": {
         "hour": 22,
         "avg_views": 100.5,
-        "posts": 24,
+        "posts": 25,
         "hours": {
           "1": 86.9,
           "5": 0.0,
@@ -140,17 +140,17 @@
       },
       "zh-Hant": {
         "hour": 12,
-        "avg_views": 26.7,
-        "posts": 65,
+        "avg_views": 25.5,
+        "posts": 68,
         "hours": {
           "1": 8.9,
           "4": 14.0,
-          "5": 0.6,
+          "5": 0.5,
           "7": 0.1,
           "9": 0.3,
-          "12": 26.7,
+          "12": 25.5,
           "14": 0.0,
-          "15": 1.0
+          "15": 0.7
         }
       }
     },
@@ -450,6 +450,14 @@
         "avg_score": 20.0
       },
       {
+        "key": "dbhalo",
+        "posts": 5,
+        "views": 93,
+        "engagement": 1,
+        "score": 98,
+        "avg_score": 19.6
+      },
+      {
         "key": "hourstaglite_b",
         "posts": 2,
         "views": 39,
@@ -466,14 +474,6 @@
         "avg_score": 17.7
       },
       {
-        "key": "mochidonestamp",
-        "posts": 8,
-        "views": 113,
-        "engagement": 0,
-        "score": 113,
-        "avg_score": 14.1
-      },
-      {
         "key": "savetag",
         "posts": 1,
         "views": 14,
@@ -482,12 +482,20 @@
         "avg_score": 14.0
       },
       {
+        "key": "mochidonestamp",
+        "posts": 9,
+        "views": 113,
+        "engagement": 0,
+        "score": 113,
+        "avg_score": 12.6
+      },
+      {
         "key": "mochi",
-        "posts": 12,
-        "views": 138,
+        "posts": 13,
+        "views": 140,
         "engagement": 1,
-        "score": 143,
-        "avg_score": 11.9
+        "score": 145,
+        "avg_score": 11.2
       },
       {
         "key": "lumibopomofo",
@@ -546,12 +554,12 @@
         "avg_score": 9.2
       },
       {
-        "key": "dbhalo",
-        "posts": 5,
-        "views": 41,
-        "engagement": 1,
-        "score": 46,
-        "avg_score": 9.2
+        "key": "tripbee",
+        "posts": 6,
+        "views": 50,
+        "engagement": 0,
+        "score": 50,
+        "avg_score": 8.3
       },
       {
         "key": "caldaily",
@@ -568,22 +576,6 @@
         "engagement": 0,
         "score": 8,
         "avg_score": 8.0
-      },
-      {
-        "key": "qrcodehalo",
-        "posts": 1,
-        "views": 3,
-        "engagement": 1,
-        "score": 8,
-        "avg_score": 8.0
-      },
-      {
-        "key": "tripbee",
-        "posts": 5,
-        "views": 38,
-        "engagement": 0,
-        "score": 38,
-        "avg_score": 7.6
       },
       {
         "key": "duowallpaperstudio_f",
@@ -658,6 +650,14 @@
         "avg_score": 5.0
       },
       {
+        "key": "qrcodehalo",
+        "posts": 3,
+        "views": 6,
+        "engagement": 1,
+        "score": 11,
+        "avg_score": 3.7
+      },
+      {
         "key": "snapport_b",
         "posts": 1,
         "views": 3,
@@ -698,6 +698,14 @@
         "avg_score": 1.0
       },
       {
+        "key": "lumibopomofo_c",
+        "posts": 2,
+        "views": 2,
+        "engagement": 0,
+        "score": 2,
+        "avg_score": 1.0
+      },
+      {
         "key": "aim990",
         "posts": 5,
         "views": 0,
@@ -714,20 +722,20 @@
         "avg_score": 0.6
       },
       {
-        "key": "lumiletters",
-        "posts": 4,
-        "views": 2,
-        "engagement": 0,
-        "score": 2,
-        "avg_score": 0.5
-      },
-      {
         "key": "wordmate",
         "posts": 2,
         "views": 1,
         "engagement": 0,
         "score": 1,
         "avg_score": 0.5
+      },
+      {
+        "key": "lumiletters",
+        "posts": 5,
+        "views": 2,
+        "engagement": 0,
+        "score": 2,
+        "avg_score": 0.4
       },
       {
         "key": "lumimath",
@@ -770,7 +778,7 @@
         "avg_score": 0.0
       },
       {
-        "key": "lumibopomofo_c",
+        "key": "tripbee_t10b",
         "posts": 1,
         "views": 0,
         "engagement": 0,
@@ -789,11 +797,11 @@
       },
       {
         "key": "ko",
-        "posts": 25,
-        "views": 1379,
+        "posts": 26,
+        "views": 1392,
         "engagement": 1,
-        "score": 1384,
-        "avg_score": 55.4
+        "score": 1397,
+        "avg_score": 53.7
       },
       {
         "key": "sk",
@@ -812,14 +820,6 @@
         "avg_score": 45.4
       },
       {
-        "key": "fr",
-        "posts": 2,
-        "views": 78,
-        "engagement": 0,
-        "score": 78,
-        "avg_score": 39.0
-      },
-      {
         "key": "el",
         "posts": 2,
         "views": 59,
@@ -829,11 +829,19 @@
       },
       {
         "key": "ja",
-        "posts": 38,
-        "views": 1020,
+        "posts": 39,
+        "views": 1073,
         "engagement": 3,
-        "score": 1031,
-        "avg_score": 27.1
+        "score": 1084,
+        "avg_score": 27.8
+      },
+      {
+        "key": "fr",
+        "posts": 3,
+        "views": 80,
+        "engagement": 0,
+        "score": 80,
+        "avg_score": 26.7
       },
       {
         "key": "vi",
@@ -845,11 +853,11 @@
       },
       {
         "key": "zh-Hant",
-        "posts": 79,
-        "views": 1686,
+        "posts": 82,
+        "views": 1689,
         "engagement": 17,
-        "score": 1761,
-        "avg_score": 22.3
+        "score": 1764,
+        "avg_score": 21.5
       },
       {
         "key": "es",
@@ -861,11 +869,11 @@
       },
       {
         "key": "en",
-        "posts": 87,
+        "posts": 89,
         "views": 1546,
         "engagement": 14,
         "score": 1617,
-        "avg_score": 18.6
+        "avg_score": 18.2
       },
       {
         "key": "pt-BR",
@@ -1284,6 +1292,16 @@
         "avg_score": 57.0
       },
       {
+        "app": "dbhalo",
+        "locale": "ja",
+        "hook": "上の階の足音って、何dB？",
+        "posts": 1,
+        "views": 57,
+        "engagement": 0,
+        "score": 57,
+        "avg_score": 57.0
+      },
+      {
         "app": "cyca",
         "locale": "ja",
         "hook": "生理データって、どこに保存されてる？",
@@ -1644,19 +1662,19 @@
         "avg_score": 25.0
       },
       {
-        "app": "foldparty",
-        "locale": "es",
-        "hook": "200 minijuegos de gatos adorables",
-        "posts": 1,
-        "views": 24,
-        "engagement": 0,
-        "score": 24,
-        "avg_score": 24.0
-      },
-      {
         "app": "dbhalo",
         "locale": "ko",
         "hook": "밤사이 충격음도 시간·dB로 기록",
+        "posts": 1,
+        "views": 25,
+        "engagement": 0,
+        "score": 25,
+        "avg_score": 25.0
+      },
+      {
+        "app": "foldparty",
+        "locale": "es",
+        "hook": "200 minijuegos de gatos adorables",
         "posts": 1,
         "views": 24,
         "engagement": 0,
@@ -2064,6 +2082,16 @@
         "avg_score": 12.0
       },
       {
+        "app": "tripbee",
+        "locale": "ko",
+        "hook": "여행 일정, 아직도 캡처로?",
+        "posts": 1,
+        "views": 12,
+        "engagement": 0,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
         "app": "dbhalo",
         "locale": "en",
         "hook": "Spectrum, Dose & Sleep Journal.",
@@ -2404,16 +2432,6 @@
         "avg_score": 6.0
       },
       {
-        "app": "dbhalo",
-        "locale": "ja",
-        "hook": "上の階の足音って、何dB？",
-        "posts": 1,
-        "views": 6,
-        "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
         "app": "scanto",
         "locale": "en",
         "hook": "A document scanner that keeps everything on your device — ev",
@@ -2614,6 +2632,16 @@
         "avg_score": 3.0
       },
       {
+        "app": "qrcodehalo",
+        "locale": "zh-Hant",
+        "hook": "建立 9 種 QR Code",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
         "app": "ledmovingtext",
         "locale": "de",
         "hook": "Auch ganz hinten gut lesbar",
@@ -2697,6 +2725,26 @@
         "app": "studydown",
         "locale": "zh-Hant",
         "hook": "期限倒數，清清楚楚",
+        "posts": 1,
+        "views": 2,
+        "engagement": 0,
+        "score": 2,
+        "avg_score": 2.0
+      },
+      {
+        "app": "mochi",
+        "locale": "fr",
+        "hook": "Ta liste de tâches, mais en mignon",
+        "posts": 1,
+        "views": 2,
+        "engagement": 0,
+        "score": 2,
+        "avg_score": 2.0
+      },
+      {
+        "app": "lumibopomofo_c",
+        "locale": "ja",
+        "hook": "タップして、声調の違いを聞く",
         "posts": 1,
         "views": 2,
         "engagement": 0,
@@ -2837,7 +2885,7 @@
         "app": "mochidonestamp",
         "locale": "zh-Hant",
         "hook": "",
-        "posts": 1,
+        "posts": 2,
         "views": 0,
         "engagement": 0,
         "score": 0,
@@ -3412,16 +3460,46 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "tripbee_t10b",
+        "locale": "zh-Hant",
+        "hook": "Apple 地圖，一鍵導航",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "lumiletters",
+        "locale": "en",
+        "hook": "Trace every stroke",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "qrcodehalo",
+        "locale": "en",
+        "hook": "Scan a QR, it opens instantly",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 83,
-        "views": 2910,
+        "posts": 87,
+        "views": 2916,
         "engagement": 9,
-        "score": 2943,
-        "avg_score": 35.5
+        "score": 2949,
+        "avg_score": 33.9
       },
       {
         "key": "c",
@@ -3433,11 +3511,11 @@
       },
       {
         "key": "a",
-        "posts": 63,
-        "views": 796,
+        "posts": 66,
+        "views": 861,
         "engagement": 2,
-        "score": 802,
-        "avg_score": 12.7
+        "score": 867,
+        "avg_score": 13.1
       }
     ]
   },
@@ -8863,14 +8941,14 @@
       "kind": "clip",
       "variant": "a",
       "metrics": {
-        "views": 6,
-        "reach": 6,
+        "views": 57,
+        "reach": 57,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 6
+      "score": 57
     },
     {
       "channel": "instagram",
@@ -8905,14 +8983,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 24,
-        "reach": 18,
+        "views": 25,
+        "reach": 19,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 24
+      "score": 25
     },
     {
       "channel": "instagram",
@@ -9007,6 +9085,174 @@
       "locale": "zh-Hant",
       "hook": "",
       "clip": "utility/ledger/moneytag/club/zh-Hant",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18111357896257800",
+      "link": "https://www.instagram.com/reel/DgMyYESB70a/",
+      "posted_at": "2026-11-26T09:30:38",
+      "app": "tripbee",
+      "locale": "ko",
+      "hook": "여행 일정, 아직도 캡처로?",
+      "clip": "tripbee/ko",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 12,
+        "reach": 12,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 12
+    },
+    {
+      "channel": "instagram",
+      "id": "18420126376084011",
+      "link": "https://www.instagram.com/reel/DgNG8TKNm9m/",
+      "posted_at": "2026-11-26T12:30:30",
+      "app": "qrcodehalo",
+      "locale": "zh-Hant",
+      "hook": "建立 9 種 QR Code",
+      "clip": "qrcodehalo/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 3,
+        "reach": 2,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 3
+    },
+    {
+      "channel": "instagram",
+      "id": "18129835402849705",
+      "link": "https://www.instagram.com/reel/DgNcDUxAs2X/",
+      "posted_at": "2026-11-26T15:34:58",
+      "app": "tripbee_t10b",
+      "locale": "zh-Hant",
+      "hook": "Apple 地圖，一鍵導航",
+      "clip": "tripbee_t10b/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18232811758333623",
+      "link": "https://www.instagram.com/reel/DgNwOR0hsSw/",
+      "posted_at": "2026-11-26T18:31:08",
+      "app": "mochi",
+      "locale": "fr",
+      "hook": "Ta liste de tâches, mais en mignon",
+      "clip": "mochi/fr",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 2,
+        "reach": 1,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 2
+    },
+    {
+      "channel": "instagram",
+      "id": "18107934161635171",
+      "link": "https://www.instagram.com/p/DgN3g-alALU/",
+      "posted_at": "2026-11-26T19:34:41",
+      "app": "lumiletters",
+      "locale": "en",
+      "hook": "Trace every stroke",
+      "clip": "lumiletters/en",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18162308638497236",
+      "link": "https://www.instagram.com/reel/DgOLv8wsgtr/",
+      "posted_at": "2026-11-26T22:31:36",
+      "app": "qrcodehalo",
+      "locale": "en",
+      "hook": "Scan a QR, it opens instantly",
+      "clip": "qrcodehalo/en",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17994782759863605",
+      "link": "https://www.instagram.com/reel/DgOgqHpSGRh/",
+      "posted_at": "2026-11-27T01:34:27",
+      "app": "lumibopomofo_c",
+      "locale": "ja",
+      "hook": "タップして、声調の違いを聞く",
+      "clip": "lumibopomofo_c/ja",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 2,
+        "reach": 2,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 2
+    },
+    {
+      "channel": "instagram",
+      "id": "17881094307566191",
+      "link": "https://www.instagram.com/p/DgO7BMtlYoI/",
+      "posted_at": "2026-11-27T05:24:37",
+      "app": "mochidonestamp",
+      "locale": "zh-Hant",
+      "hook": "",
+      "clip": "utility/chore/mochidonestamp/washer/zh-Hant",
       "kind": "utility",
       "variant": null,
       "metrics": {

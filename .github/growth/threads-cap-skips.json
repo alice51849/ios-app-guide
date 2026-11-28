@@ -7,5 +7,23 @@
   "grace_minutes": 120,
   "workflow": "threads-post",
   "run_id": "44671481119"
+ },
+ {
+  "slot": "2026-11-27T03:00:00+00:00",
+  "decided_at": "2026-11-27T04:01:38+00:00",
+  "reason": "cap_full_after_grace",
+  "cap": 3,
+  "grace_minutes": 120,
+  "workflow": "threads-post",
+  "run_id": "45937388587"
+ },
+ {
+  "slot": "2026-11-27T13:00:00+00:00",
+  "decided_at": "2026-11-27T13:11:27+00:00",
+  "reason": "cap_full_after_grace",
+  "cap": 3,
+  "grace_minutes": 120,
+  "workflow": "threads-post",
+  "run_id": "46004764750"
  }
 ]

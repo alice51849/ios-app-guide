@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-27T01:49:08Z",
+ "generated": "2026-11-27T23:32:31Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 97,
-  "ok_backfilled_earlier": 141,
+  "ok_reply": 99,
+  "ok_backfilled_earlier": 145,
   "unknown_app": 47,
-  "ok_store_only": 590,
+  "ok_store_only": 586,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18123250457008244",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgQAhN8owmY",
+   "date": "2026-11-27",
+   "app": "gbago",
+   "status": "ok_reply",
+   "text": "Safe Continue resumes from your newest checkpoint only when it checks out. GBAGo: Visual Saves",
+   "why": "brand",
+   "ios_id": "6804564400",
+   "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "17884144458631768",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgPot7IoGi4",
+   "date": "2026-11-27",
+   "app": "countdaysnow",
+   "status": "ok_reply",
+   "text": "日檢 JLPT 倒數 9 天 把剩下的天數變成讀書計畫 App Store／Google Play 搜尋「CountDaysNow」",
+   "why": "brand",
+   "ios_id": "6807079789",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18153196720563223",
@@ -2537,7 +2561,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctd0zOCmvM",
    "date": "2026-08-31",
    "app": "aim990",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "Aim990 Master TOEIC Listening & Reading Unlock your potential with Aim990! A 30-day study plan designed to boost your TOEIC Listening and Re",
    "why": "url+brand",
    "ios_id": "6784974530",
@@ -2969,11 +2993,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdpMAjEc3",
    "date": "2026-08-31",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Bopomofo Zhuyin: Chinese Phonics Fun The joyful way to learn Zhuyin. Playful phonics, tracing, and tone games kids love — no ads, no su",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17975531823169176",
+   "at": "2026-11-27T23:30:02Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3041,7 +3070,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdvPNknzE",
    "date": "2026-08-31",
    "app": "aibriefpack",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "AI Brief: AI Prompt from Files Files to Clear Context Bring screenshots, documents, and notes together. Keep the facts. Review private detai",
    "why": "url+brand",
    "ios_id": "6791658210",
@@ -3219,11 +3248,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdjMIlRem",
    "date": "2026-08-31",
    "app": "lumibopomofopro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Bopomofo Pro: Zhuyin Zhuyin Phonics Game for Kids The complete Zhuyin world for kids. Every phonics, tracing, and tone-game adventure i",
    "why": "url+brand",
    "ios_id": "6775773117",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18110612795310699",
+   "at": "2026-11-27T23:30:02Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4411,16 +4445,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteHBRjpYh",
    "date": "2026-08-31",
    "app": "cvdesk",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "CV Desk: ATS Resume ATS CV Maker & Resume Builder Beat the resume robots. Get an instant ATS score, fix what recruiter filters reject, and e",
    "why": "url+brand",
    "ios_id": "6781337213",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18171175102476146",
-   "at": "2026-11-27T01:46:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4714,16 +4743,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcteBNlDd_u",
    "date": "2026-08-31",
    "app": "caldaily",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "CalDaily: Calculator & Themes Widget, tools, tidy history Every result you keep can be named, tagged and found again. Eight advanced tools, ",
    "why": "url+brand",
    "ios_id": "6794178671",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18423794674083825",
-   "at": "2026-11-27T01:46:41Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

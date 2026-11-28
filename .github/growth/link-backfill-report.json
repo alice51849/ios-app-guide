@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-28T07:58:20Z",
+ "generated": "2026-11-28T17:39:11Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 100,
-  "ok_backfilled_earlier": 147,
+  "ok_reply": 102,
+  "ok_backfilled_earlier": 149,
   "unknown_app": 47,
-  "ok_store_only": 584,
+  "ok_store_only": 582,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18214815496369502",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgSVLDSlbH9",
+   "date": "2026-11-28",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/29 週日）穿什麼？ 台北 15–21°C 台中 14–25°C 高雄 23–26°C 以台北來說，早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 Lumi天氣星球 會把體感溫度、",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "18112813868227071",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgSjAU9mi0K",
+   "date": "2026-11-28",
+   "app": "picclear",
+   "status": "ok_reply",
+   "text": "清出占空间的照片,腾出好几 GB 的存储空间:重复照片、相似连拍、屏幕截图、模糊照片,还有最占空间的大视频。 PicClear Pro：照片清理, 释放空间",
+   "why": "brand",
+   "ios_id": "6780223070",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "17966212638250487",
@@ -2133,16 +2157,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdeE-APid",
    "date": "2026-08-31",
    "app": "wordmatelite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Wordmate Lite: λεξιλόγιο Πέντε νέες λέξεις κάθε μέρα Ένα λεπτό την ημέρα, τίποτε άλλο. Πέντε λέξεις, προφορά με φωνή και ένα μονοπάτι από βό",
    "why": "url+brand",
    "ios_id": "6797601720",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18499599916107960",
-   "at": "2026-11-28T07:55:51Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3620,16 +3639,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdYDHijRT",
    "date": "2026-08-31",
    "app": "wordmate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Wordmate: Μάθε λεξιλόγιο 44 γλώσσες στον ρυθμό σου Μία αγορά κατά τη λήψη περιλαμβάνει όλο το Wordmate: 44 γλώσσες, όλα τα επίπεδα, διαδραστ",
    "why": "url+brand",
    "ios_id": "6789917808",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17999292429049322",
-   "at": "2026-11-28T07:55:51Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3661,11 +3675,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdRaMlTxi",
    "date": "2026-08-31",
    "app": "wifiaidlite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "WiFi Aid Lite Διάγνωση δικτύου με στοιχεία Βρείτε το πραγματικό πρόβλημα. Κάθε εργαλείο: μία δωρεάν πλήρης χρήση. Προαιρετικό ξεκλείδωμα εφ'",
    "why": "url+brand",
    "ios_id": "6793414462",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18138322159668891",
+   "at": "2026-11-28T17:36:41Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4803,11 +4822,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdLq6FFAz",
    "date": "2026-08-31",
    "app": "wifiaid",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "WiFi Aid: Εντοπισμός βλαβών Διάγνωση δικτύου με στοιχεία Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόν",
    "why": "url+brand",
    "ios_id": "6790467886",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18025780424951555",
+   "at": "2026-11-28T17:36:41Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

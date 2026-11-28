@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-27T23:32:31Z",
+ "generated": "2026-11-28T07:58:20Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 99,
-  "ok_backfilled_earlier": 145,
+  "ok_reply": 100,
+  "ok_backfilled_earlier": 147,
   "unknown_app": 47,
-  "ok_store_only": 586,
+  "ok_store_only": 584,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17966212638250487",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgRQxhAEQGc",
+   "date": "2026-11-28",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Holiday travel packing used to mean remembering the charger at the airport. Now there's a cute packing checklist on my phone: chargers, meds",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18123250457008244",
@@ -2121,11 +2133,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdeE-APid",
    "date": "2026-08-31",
    "app": "wordmatelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Wordmate Lite: λεξιλόγιο Πέντε νέες λέξεις κάθε μέρα Ένα λεπτό την ημέρα, τίποτε άλλο. Πέντε λέξεις, προφορά με φωνή και ένα μονοπάτι από βό",
    "why": "url+brand",
    "ios_id": "6797601720",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18499599916107960",
+   "at": "2026-11-28T07:55:51Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2993,16 +3010,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdpMAjEc3",
    "date": "2026-08-31",
    "app": "lumibopomofo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Bopomofo Zhuyin: Chinese Phonics Fun The joyful way to learn Zhuyin. Playful phonics, tracing, and tone games kids love — no ads, no su",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17975531823169176",
-   "at": "2026-11-27T23:30:02Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3248,16 +3260,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdjMIlRem",
    "date": "2026-08-31",
    "app": "lumibopomofopro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Bopomofo Pro: Zhuyin Zhuyin Phonics Game for Kids The complete Zhuyin world for kids. Every phonics, tracing, and tone-game adventure i",
    "why": "url+brand",
    "ios_id": "6775773117",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18110612795310699",
-   "at": "2026-11-27T23:30:02Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3613,11 +3620,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctdYDHijRT",
    "date": "2026-08-31",
    "app": "wordmate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Wordmate: Μάθε λεξιλόγιο 44 γλώσσες στον ρυθμό σου Μία αγορά κατά τη λήψη περιλαμβάνει όλο το Wordmate: 44 γλώσσες, όλα τα επίπεδα, διαδραστ",
    "why": "url+brand",
    "ios_id": "6789917808",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17999292429049322",
+   "at": "2026-11-28T07:55:51Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

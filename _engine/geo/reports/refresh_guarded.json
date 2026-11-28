@@ -1,14 +1,14 @@
 {
   "complete": false,
-  "guarded": 32,
-  "attempted_rewrites": 975,
-  "share": 0.03282051282051282,
+  "guarded": 31,
+  "attempted_rewrites": 912,
+  "share": 0.03399122807017544,
   "warning": true,
   "by_reason": {
-    "meta:description": 32,
-    "meta:og:description": 32
+    "meta:description": 31,
+    "meta:og:description": 31
   },
-  "critical_conflicts": 64,
+  "critical_conflicts": 62,
   "pages": [
     {
       "locale": "ja",
@@ -813,32 +813,6 @@
           "kind": "app_name",
           "english": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several.",
           "published": "Câu trả lời thiết thực cho “My child learns the Bopomofo symbols but keeps forgetting them — how do I help?”: cách xử lý trên iPhone với Lumi Bopomofo, kèm lời khuyên trung thực, không phóng đại."
-        }
-      ]
-    },
-    {
-      "locale": "th",
-      "slug": "what-is-the-best-app-to-teach-bopomofo-zhuyin-to-my-child-who-was-born-in-the-us",
-      "reasons": [
-        "meta:description",
-        "meta:og:description"
-      ],
-      "conflicts": [
-        "meta:description:price_or_number",
-        "meta:og:description:price_or_number"
-      ],
-      "conflict_details": [
-        {
-          "field": "meta:description",
-          "kind": "price_or_number",
-          "english": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice.",
-          "published": "คำตอบที่ใช้ได้จริงสำหรับ “แอปไหนดีที่สุดในการสอนปอพอมอฟอ/จู้ยิน (Zhuyin) ให้ลูกที่เกิดในสหรัฐฯ”: วิธีจัดการบน iPhone โดยใช้ Lumi Bopomofo พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง"
-        },
-        {
-          "field": "meta:og:description",
-          "kind": "price_or_number",
-          "english": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice.",
-          "published": "คำตอบที่ใช้ได้จริงสำหรับ “แอปไหนดีที่สุดในการสอนปอพอมอฟอ/จู้ยิน (Zhuyin) ให้ลูกที่เกิดในสหรัฐฯ”: วิธีจัดการบน iPhone โดยใช้ Lumi Bopomofo พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง"
         }
       ]
     }
